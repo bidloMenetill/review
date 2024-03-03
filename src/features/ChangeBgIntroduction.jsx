@@ -69,7 +69,7 @@ const ChangeBgIntroduction = () => {
 
   return (
     <section
-      className={`pt-[256px] bg-cover flex justify-center flex-col bg-center bg-no-repeat bg-animation `}
+      className={`pt-[256px] bg-cover flex justify-center flex-col  bg-center bg-no-repeat bg-animation `}
       style={{
         backgroundImage: `url(${bgForIntroduction[indexIntroduction]})`,
       }}

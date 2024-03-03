@@ -1,8 +1,8 @@
-import bgAboutUs from "../../shared/img/about_us_main_page_bg.jpg";
+import bgAboutUs from "../../shared/img/main_page_bg.jpg";
 const AboutUsSection = () => {
   return (
     <section
-      className="bg-cover bg-no-repeat bg-center h-[525px] "
+      className="bg-cover bg-no-repeat -mt-[9px] bg-center h-[625px] "
       style={{ backgroundImage: `url(${bgAboutUs})` }}
     >
       <section className="container mx-auto flex items-center ">
