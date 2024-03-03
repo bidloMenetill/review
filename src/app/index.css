@@ -11,6 +11,9 @@
   .container {
     @apply max-w-[1720px]  mx-auto;
   }
+  .bg-animation {
+    @apply [transition:background-image_1s_ease-in-out];
+  }
 }
 
 button {

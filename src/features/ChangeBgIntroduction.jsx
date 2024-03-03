@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import soundFrame from "../shared/img/soundFrame.png";
 import line from "../shared/img/line_in_main.svg";
 import whiteLine from "../shared/img/white_line.svg";
@@ -12,20 +12,38 @@ import bgFourth from "../shared/img/forth_main_bg.jpg";
 import bgFifth from "../shared/img/fifth_main_bg.jpg";
 
 const ChangeBgIntroduction = () => {
-  const bgForIntroduction = [bgFirst, bgSecond, bgThird, bgFourth, bgFifth];
+  const bgForIntroduction = useMemo(
+    () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],
+    []
+  );
+
   const [indexIntroduction, setIndexIntroduction] = useState(0);
-  const [bgAnimation, setBgAnimation] = useState("");
+  const [isChangingBg, setIsChangingBg] = useState(false);
+  const [timeoutId, setTimeoutId] = useState(null);
+  const [intervalActive, setIntervalActive] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndexIntroduction(
-        (prevIndex) => (prevIndex + 1) % bgForIntroduction.length
-      );
+      if (!isChangingBg && intervalActive) {
+        setIndexIntroduction(
+          (prevIndex) => (prevIndex + 1) % bgForIntroduction.length
+        );
+      }
     }, 4000);
-    return () => clearInterval(interval);
-  }, [bgForIntroduction]);
+
+    return () => {
+      clearInterval(interval);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [bgForIntroduction.length, timeoutId, isChangingBg, intervalActive]);
 
   const handleArrowClick = (direction) => {
+    if (isChangingBg) return;
+
+    setIsChangingBg(true);
+    clearTimeout(timeoutId);
+    setIntervalActive(false);
+
     if (direction === "left") {
       setIndexIntroduction((prevIndex) =>
         prevIndex === 0 ? bgForIntroduction.length - 1 : prevIndex - 1
@@ -35,15 +53,23 @@ const ChangeBgIntroduction = () => {
         prevIndex === bgForIntroduction.length - 1 ? 0 : prevIndex + 1
       );
     }
-    setBgAnimation("transition-all duration-1000");
+
     setTimeout(() => {
-      setBgAnimation("");
+      setIsChangingBg(false);
+      setIntervalActive(true);
+    }, 400);
+
+    const newTimeoutId = setTimeout(() => {
+      setIsChangingBg(false);
+      setIntervalActive(true);
     }, 1000);
+
+    setTimeoutId(newTimeoutId);
   };
 
   return (
     <section
-      className={`pt-[256px] bg-cover flex justify-center flex-col bg-center bg-no-repeat ${bgAnimation}`}
+      className={`pt-[256px] bg-cover flex justify-center flex-col bg-center bg-no-repeat bg-animation`}
       style={{
         backgroundImage: `url(${bgForIntroduction[indexIntroduction]})`,
       }}
@@ -60,18 +86,21 @@ const ChangeBgIntroduction = () => {
           <br />
           Создайте звук, который будет слышен и запомнится!
         </h1>
-        <div
-          className="absolute  flex justify-center items-center left-[-20px] top-[145px]  rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 bg-[rgba(255,255,255,0.13)]"
+        <button
+          className="arrow-left absolute flex justify-center items-center left-[-20px] top-[145px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 "
           onClick={() => handleArrowClick("left")}
+          disabled={isChangingBg}
         >
-          <img src={arrayLeft} alt="" className="p-[7px]" />
-        </div>
-        <div
-          className="absolute flex justify-center items-center right-[-20px] top-[145px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 bg-[rgba(255,255,255,0.04)]"
+          <img src={arrayLeft} alt="" className="p-[8px]" />
+        </button>
+        <button
+          className="arrow-right absolute flex justify-center items-center right-[-20px] top-[145px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 "
           onClick={() => handleArrowClick("right")}
+          disabled={isChangingBg}
         >
           <img src={arrayRight} alt="" className="p-[1px]" />
-        </div>
+        </button>
+
         <div className="flex justify-center ">
           <img
             src={soundFrame}
@@ -85,7 +114,7 @@ const ChangeBgIntroduction = () => {
       >
         {bgForIntroduction.map((bg, index) => (
           <img
-            key={index}
+            key={bg}
             src={indexIntroduction === index ? whiteLine : line}
             alt="line"
           />

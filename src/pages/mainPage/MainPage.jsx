@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../../widgets/Header";
-import IntroductionMain from "../../widgets/IntroductionMain";
+import IntroductionSection from "../../widgets/mainPage/IntroductionSection";
 
 function MainPage() {
   return (
     <>
       <Header />
-      <IntroductionMain />
+      <IntroductionSection />
     </>
   );
 }
