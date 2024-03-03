@@ -1,4 +1,3 @@
-import React from "react";
 import bgAboutUs from "../../shared/img/about_us_main_page_bg.jpg";
 const AboutUsSection = () => {
   return (
