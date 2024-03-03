@@ -58,3 +58,23 @@ button:hover::after {
 button:hover::before {
   color: orange;
 }
+
+.btn {
+  background-color: #161616;      
+}
+
+.btn:hover::before,
+.btn:hover::before {
+  color: #161616;
+  animation: none;
+  transform: none;
+  transition: none;      
+}
+
+.btn::after {
+  background: #161616;
+  transition: none;
+  color: white;
+  animation: none;
+  transform: none;      
+}
