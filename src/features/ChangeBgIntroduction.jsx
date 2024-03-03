@@ -69,7 +69,7 @@ const ChangeBgIntroduction = () => {
 
   return (
     <section
-      className={`pt-[256px] bg-cover flex justify-center flex-col bg-center bg-no-repeat bg-animation`}
+      className={`pt-[256px] bg-cover flex justify-center flex-col bg-center bg-no-repeat bg-animation `}
       style={{
         backgroundImage: `url(${bgForIntroduction[indexIntroduction]})`,
       }}
@@ -80,7 +80,7 @@ const ChangeBgIntroduction = () => {
         </h2>
         <h1 className="mt-[50px] font-montserrat font-medium text-[30px] text-center text-[#f5f5f5]">
           Откройте для себя искусство звукозаписи с{" "}
-          <span className="font-semibold underline [text-decoration-skip-ink:none] text-[#dc6441]">
+          <span className="font-semibold font-montserrat underline [text-decoration-skip-ink:none] text-[#dc6441]">
             Q-Rush.
           </span>{" "}
           <br />
