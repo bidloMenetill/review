@@ -1,13 +1,16 @@
-import React from 'react'
-import Header from '../../widgets/Header'
-
+import React from "react";
+import Header from "../../widgets/Header";
+import IntroductionSection from "../../widgets/mainPage/IntroductionSection";
+import AboutUsSection from "../../widgets/mainPage/AboutUsSection";
 
 function MainPage() {
   return (
-    <div>
-        <Header/>
-    </div>
-  )
+    <>
+      <Header />
+      <IntroductionSection />
+      <AboutUsSection />
+    </>
+  );
 }
 
-export default MainPage 
+export default MainPage;

@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import MainPage from '../pages/mainPage/MainPage'
+import { useState } from "react";
+import "./App.css";
+import MainPage from "../pages/mainPage/MainPage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-
-
   return (
-    <div>
-        <MainPage/>
-    </div>
-  )
+    <>
+      <MainPage />
+    </>
+  );
 }
 
-export default App
+export default App;

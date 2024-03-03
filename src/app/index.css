@@ -1,53 +1,60 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+@layer components {
+  .container {
+    @apply max-w-[1720px]  mx-auto font-montserrat;
+  }
+  .bg-animation {
+    @apply [transition:background-image_1s_ease-in-out];
+  }
+}
 
 button {
-  background: #FFF;
+  background: #fff;
   position: relative;
-  transition: .3s;
+  transition: 0.3s;
   color: white;
 }
 
 button::after {
-    content: '';
-    font-size: large;
-    text-align: center;
-    display: block;
-    position: absolute;
-    inset: 0;
-    background: red;
-    transition: .3s;
-    color: white;
-    z-index: 0;
+  content: "";
+  font-size: large;
+  text-align: center;
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: red;
+  transition: 0.3s;
+  color: white;
+  z-index: 0;
 }
 
 button::before {
-    content: attr(data-text);
-    font-size: large;
-    text-align: center;
-    display: block;
-    position: absolute;
-    inset: 0;
-    background: transparent;
-    transition: .3s;
-    color: white;
-    z-index: 1;
+  content: attr(data-text);
+  font-size: large;
+  text-align: center;
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: 0.3s;
+  color: white;
+  z-index: 1;
 }
 
-
 button:hover::after {
-     transform: scaleY(0) translateY(-15px);
-     transform-origin: top;
-     color: orange;
+  transform: scaleY(0) translateY(-15px);
+  transform-origin: top;
+  color: orange;
 }
 
 button:hover::before {
-    color: orange;
+  color: orange;
 }
