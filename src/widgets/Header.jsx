@@ -6,7 +6,9 @@ function Header() {
   return (
     <header className="bg-gray-700 w-[100vw] h-[100px] bg-opacity-50 flex justify-center">
       <nav className=" w-[1720px]  flex justify-between items-center">
-        <img src={logo} alt="Q-RUSH logo" />
+        <Link to={"/"}>
+          <img src={logo} alt="Q-RUSH logo" />
+        </Link>
 
         <ul className=" flex justify-evenly items-center  text-gray-100 gap-[25px] font-montserrat font-[50px] text-[20px] leading-normal ">
           <li>
