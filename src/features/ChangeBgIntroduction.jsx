@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import soundFrame from "../shared/img/soundFrame.png";
 import line from "../shared/img/line_in_main.svg";
 import whiteLine from "../shared/img/white_line.svg";
