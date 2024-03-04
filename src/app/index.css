@@ -16,14 +16,14 @@
   }
 }
 
-button {
+.button {
   background: #fff;
   position: relative;
   transition: 0.3s;
   color: white;
 }
 
-button::after {
+.button::after {
   content: "";
   font-size: large;
   text-align: center;
@@ -36,7 +36,7 @@ button::after {
   z-index: 0;
 }
 
-button::before {
+.button::before {
   content: attr(data-text);
   font-size: large;
   text-align: center;
@@ -49,12 +49,12 @@ button::before {
   z-index: 1;
 }
 
-button:hover::after {
+.button:hover::after {
   transform: scaleY(0) translateY(-15px);
   transform-origin: top;
   color: orange;
 }
 
-button:hover::before {
+.button:hover::before {
   color: orange;
 }

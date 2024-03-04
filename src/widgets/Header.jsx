@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../shared/img/rush.png";
 import Button from "../shared/ui/button/Button";
 
@@ -15,7 +16,7 @@ function Header() {
             <a href="">Услуги</a>
           </li>
           <li>
-            <a href="">Нам доверяют</a>
+            <Link to={"/trustus"}>Нам доверяют</Link>
           </li>
           <li>
             <a href="">Галерея</a>
