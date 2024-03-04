@@ -7,10 +7,10 @@ import TrustUs from "../TrustUs/TrustUs"
 function MainPage() {
   return (
     <>
-      <Header />
-      <IntroductionSection />
-      <AboutUsSection />
-      {/* <TrustUs /> */}
+      {/* <Header /> */}
+      {/* <IntroductionSection /> */}
+      {/* <AboutUsSection /> */}
+      <TrustUs />
     </>
   );
 }

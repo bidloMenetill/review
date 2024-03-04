@@ -4,7 +4,7 @@ import scriptonit from '../../shared/img/TrustUs/scriptonit.svg'
 
 const Musicians = () => {
   return (
-    <div className="bg-cover bg-no-repeat bg-center h-[810px] flex bg-black overflow-hidden">
+    <div className="bg-cover bg-no-repeat bg-center h-[810px] flex justify-center bg-black overflow-hidden">
         <div className='w-[2900px] flex  justify-center ml-[100px] text-white'>
             <div className='mt-[50px] px-[10px] relative'>
                 <div className="bg-cover bg-no-repeat bg-center w-[560px] h-[660px]"
