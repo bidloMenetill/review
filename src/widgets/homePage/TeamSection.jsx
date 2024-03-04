@@ -1,9 +1,9 @@
-import People from "../../entities/People";
+import { People } from "../../features";
 import firstHuman from "../../shared/img/first_human_main_page.png";
 import secondHuman from "../../shared/img/second_human_main_page.png";
 import thirdHuman from "../../shared/img/third_human_main_page.png";
 
-const TeamSection = () => {
+export const TeamSection = () => {
   const peopleData = {
     h2: "Команда",
     firstHuman: firstHuman,
@@ -23,5 +23,3 @@ const TeamSection = () => {
     </>
   );
 };
-
-export default TeamSection;

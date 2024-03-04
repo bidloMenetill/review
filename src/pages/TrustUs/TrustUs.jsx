@@ -1,20 +1,17 @@
-import React from 'react'
-import TrustUsMain from "../../widgets/TrustUs/TrustUsMain"
-import Preview from "../../widgets/TrustUs/Preview"
-import Musicians from "../../widgets/TrustUs/Musicians"
-import Order from "../../widgets/TrustUs/Order"
-import Header from '../../widgets/Header'
+import { TrustUsMain } from "../../widgets";
+import { Preview } from "../../widgets";
+import { Musicians } from "../../widgets";
+import { Order } from "../../widgets";
 
-const TrustUs = () => {
+export const TrustUs = () => {
   return (
     <div>
-        <Header />
-        <TrustUsMain />
-        <Preview />
-        <Musicians />
-        <Order />
+      <TrustUsMain />
+      <Preview />
+      <Musicians />
+      <Order />
     </div>
-  )
-}
+  );
+};
 
-export default TrustUs
+

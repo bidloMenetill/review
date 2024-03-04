@@ -1,5 +1,3 @@
-import React from "react";
-
 const OrangeButton = (props) => {
   return (
     <button

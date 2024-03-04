@@ -1,5 +1,5 @@
 import bgAboutUs from "../../shared/img/main_page_bg.jpg";
-const AboutUsSection = () => {
+export const AboutUsSection = () => {
   return (
     <section
       className="bg-cover bg-no-repeat -mt-[9px] bg-center h-[625px] "
@@ -10,7 +10,6 @@ const AboutUsSection = () => {
           <h2 className="font-medium text-[170px] text-[#f5f5f5] mr-[40px]">
             О нас
           </h2>
-
           <div className="w-[3px] mt-[65px] h-[190px]  bg-[#555555] "></div>
         </div>
         <div className="mt-[70px]  ml-[40px]">
@@ -31,5 +30,3 @@ const AboutUsSection = () => {
     </section>
   );
 };
-
-export default AboutUsSection;

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "../shared/img/rush.png";
-import Button from "../shared/ui/button/Button";
+import logo from "../../shared/img/rush.png";
+import Button from "../../shared/ui/button/Button";
 
-function Header() {
+export const Header = () => {
   return (
     <header className="bg-gray-700 w-[100vw] h-[100px] bg-opacity-50 flex justify-center">
       <nav className=" w-[1720px]  flex justify-between items-center">
@@ -45,6 +45,4 @@ function Header() {
       </nav>
     </header>
   );
-}
-
-export default Header;
+};

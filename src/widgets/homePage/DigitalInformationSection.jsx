@@ -1,4 +1,4 @@
-const DigitalInformationSection = () => {
+export const DigitalInformationSection = () => {
   return (
     <section className="bg-[#000000] h-[508px] flex justify-center items-center">
       <section className="container mx-auto items-center align-middle  ">
@@ -29,4 +29,4 @@ const DigitalInformationSection = () => {
   );
 };
 
-export default DigitalInformationSection;
+

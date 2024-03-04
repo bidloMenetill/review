@@ -1,9 +1,8 @@
-import React from "react";
-import peopleBg from "../shared/img/main_page_bg.jpg";
+import peopleBg from "../../shared/img/main_page_bg.jpg";
 
-import OrangeButton from "../shared/ui/button/OrangeButton";
+import OrangeButton from "../../shared/ui/button/OrangeButton";
 
-const People = (props) => {
+export const People = (props) => {
   const { br1, br2, br3 } = props;
 
   return (
@@ -64,5 +63,3 @@ const People = (props) => {
     </section>
   );
 };
-
-export default People;
