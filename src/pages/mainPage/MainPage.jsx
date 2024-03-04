@@ -3,6 +3,7 @@ import IntroductionSection from "../../widgets/mainPage/IntroductionSection";
 import AboutUsSection from "../../widgets/mainPage/AboutUsSection";
 import DigitalInformationSection from "../../widgets/mainPage/DigitalInformationSection";
 import TeamSection from "../../widgets/mainPage/TeamSection";
+import RehearsalRoomsSection from "../../widgets/mainPage/RehearsalRoomsSection";
 
 function MainPage() {
   return (
@@ -12,6 +13,7 @@ function MainPage() {
       <AboutUsSection />
       <DigitalInformationSection />
       <TeamSection />
+      <RehearsalRoomsSection />
     </>
   );
 }

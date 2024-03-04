@@ -6,11 +6,11 @@ const People = (props) => {
       style={{ backgroundImage: `url(${peopleBg})` }}
     >
       <section className="container">
-        <h2 className="font-medium text-[170px] pt-[100px] text-[#f5f5f5]">
+        <h2 className="font-medium text-[170px] pt-[90px] text-[#f5f5f5]">
           {props.h2}
         </h2>
-        <ul className="flex gap-x-[20px] mt-[93px]">
-          <li className="border-[1px] border-[solid] border-orange-600 w-[560px] h-[717px] bg-[#000]">
+        <ul className="flex gap-x-[20px] mt-[63px] mb-[90px]">
+          <li className="border-[1px] border-[solid] border-orange-600 w-[566px] h-[720px] bg-[#000]">
             <div className="p-[20px]">
               <img
                 src={props.firstHuman}
