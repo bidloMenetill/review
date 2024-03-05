@@ -1,4 +1,5 @@
 // import about from '../shared/img/about.png'
+
 import rectangle from '../../shared/img/rectangle_61.png';
 
 
