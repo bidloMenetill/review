@@ -1,7 +1,7 @@
 import React from "react";
-import AboutUs from "../../widgets/AboutUs";
-import WhyQRush from "../../widgets/WhyQRush";
-import Team from "../../widgets/Team";
+import AboutUs from "../../widgets/aboutUs/AboutUs";
+import WhyQRush from "../../widgets/whyQRush/WhyQRush";
+import Team from "../../widgets/team/Team";
 
 function About() {
     return(

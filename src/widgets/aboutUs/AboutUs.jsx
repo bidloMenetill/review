@@ -1,7 +1,6 @@
-import React from "react";
 // import about from '../shared/img/about.png'
-import Header from "./Header";
-import rectangle from "../shared/img/rectangle_61.png"
+import Header from "../header/Header";
+import rectangle from "../../shared/img/rectangle_61.png"
 
 function AboutUs() {
     return(

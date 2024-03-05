@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../widgets/Header";
+import Header from "../../widgets/header/Header";
 import IntroductionSection from "../../widgets/mainPage/IntroductionSection";
 import AboutUsSection from "../../widgets/mainPage/AboutUsSection";
 
@@ -13,4 +13,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default MainPage

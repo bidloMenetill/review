@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../shared/img/rush.png'
-import Button from '../shared/ui/button/Button'
+import logo from '../../shared/img/rush.png'
+import Button from '../../shared/ui/button/Button'
 
 
 function Header() {

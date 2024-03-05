@@ -1,6 +1,5 @@
-import React from "react";
 
-function WhyQRush(){
+function WhyQRush() {
     return(
         <div>
             <div className="bg-[url('/src/shared/img/Why-Q-Rush.png')] w-[1920px] h-[802px] py-28">

@@ -1,6 +1,5 @@
-import React from "react";
 
-function Team(){
+function Team() {
     return(
         <div>
             <div className="bg-[url('/src/shared/img/team.png')] w-[1920px] h-[2800px]">
@@ -10,6 +9,4 @@ function Team(){
             </div>
         </div>
     )
-}
-
-export default Team
+}export default Team
