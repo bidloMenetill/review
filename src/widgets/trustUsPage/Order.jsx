@@ -1,4 +1,5 @@
-import CustomButton from "../../shared/ui/button/CustomButton";
+import CustomButton from '../../shared/ui/button/CustomButton';
+
 
 export const Order = () => {
   return (
@@ -18,5 +19,3 @@ export const Order = () => {
     </div>
   );
 };
-
-

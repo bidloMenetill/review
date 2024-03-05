@@ -1,16 +1,12 @@
-import React from "react";
-import AboutUs from "../../widgets/AboutUs";
-import WhyQRush from "../../widgets/WhyQRush";
-import Team from "../../widgets/Team";
+import { AboutUs, WhyQRush, Team } from '../../widgets';
 
-function About() {
-    return(
-        <div>
-            <AboutUs />
-            <WhyQRush />
-            <Team />
-        </div>
-    )
-}
 
-export default About
+export const About = () => {
+  return (
+    <div>
+      <AboutUs />
+      <WhyQRush />
+      <Team />
+    </div>
+  );
+};

@@ -1,5 +1,6 @@
-import lightFon from "../../shared/img/trustUs/lightFon.svg";
-import scriptonit from "../../shared/img/trustUs/scriptonit.svg";
+import lightFon from '../../shared/img/trustUs/lightFon.svg';
+import scriptonit from '../../shared/img/trustUs/scriptonit.svg';
+
 
 export const Musicians = () => {
   return (
@@ -104,5 +105,3 @@ export const Musicians = () => {
     </div>
   );
 };
-
-

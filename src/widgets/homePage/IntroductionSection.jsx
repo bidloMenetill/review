@@ -1,4 +1,6 @@
-import { ChangeBgIntroduction } from "../../features";
+import { ChangeBgIntroduction } from '../../features';
+
+
 export const IntroductionSection = () => {
   return (
     <>
@@ -6,4 +8,3 @@ export const IntroductionSection = () => {
     </>
   );
 };
-

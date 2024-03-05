@@ -1,4 +1,5 @@
-import trustMainBg from "../../shared/img/trustUs/trustMainBg.svg";
+import trustMainBg from '../../shared/img/trustUs/trustMainBg.svg';
+
 
 export const TrustUsMain = () => {
   return (
