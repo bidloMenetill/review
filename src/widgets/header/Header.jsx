@@ -1,30 +1,32 @@
-import { Link } from "react-router-dom";
-import logo from "../../shared/img/rush.png";
-import Button from "../../shared/ui/button/Button";
-import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import logo from '../../shared/img/rush.png';
+import Button from '../../shared/ui/button/Button';
+
+
 const locales = {
-  ru: { title: "Ru" },
-  en: { title: "En" },
-  kg: { title: "Kg" },
+  ru: { title: 'Ru' },
+  en: { title: 'En' },
+  kg: { title: 'Kg' },
 };
 export const Header = () => {
   const { i18n } = useTranslation();
   return (
     <header className="bg-gray-700 w-[100vw] h-[100px] bg-opacity-50 flex justify-center">
       <nav className=" w-[1720px]  flex justify-between items-center">
-        <Link to={"/"}>
+        <Link to={'/'}>
           <img src={logo} alt="Q-RUSH logo" />
         </Link>
 
         <ul className=" flex justify-evenly items-center  text-gray-100 gap-[25px] font-montserrat font-[50px] text-[20px] leading-normal ">
           <li>
-            <a href="">О нас</a>
+            <Link to={'/aboutus'}>О нас</Link>
           </li>
           <li>
             <a href="">Услуги</a>
           </li>
           <li>
-            <Link to={"/trustus"}>Нам доверяют</Link>
+            <Link to={'/trustus'}>Нам доверяют</Link>
           </li>
           <li>
             <a href="">Галерея</a>
@@ -39,16 +41,16 @@ export const Header = () => {
             {Object.keys(locales).map((locale) => (
               <li key={locale}>
                 <button
-                 className={`focus:text-gray-100 hover:text-orange-500 ${i18n.resolvedLanguage === locale ? 'text-white' : 'text-gray-500'}`}
+                  className={`focus:text-gray-100 hover:text-orange-500 ${i18n.resolvedLanguage === locale ? 'text-white' : 'text-gray-500'}`}
 
                   style={{
                     fontWeight:
-                      i18n.resolvedLanguage === locale ? "bold" : "normal",
+                      i18n.resolvedLanguage === locale ? 'bold' : 'normal',
                   }}
                   type="submit"
                   onClick={() => i18n.changeLanguage(locale)}
                 >
-                  {locales[locale].title}
+                  {locales[ locale ].title}
                 </button>
               </li>
             ))}

@@ -1,16 +1,13 @@
-import "../styles/App.css";
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
+import '../styles/App.css';
 
-import { Outlet } from "react-router-dom";
 
-import { Header } from "../../widgets";
-import { Footer } from "../../widgets";
-
-import { Suspense,  } from "react";
-
+import { Header, Footer } from '../../widgets';
 
 
 export const Layout = () => {
-  
+
   return (
     <>
       <Header />

@@ -1,4 +1,6 @@
-import bgAboutUs from "../../shared/img/main_page_bg.jpg";
+import bgAboutUs from '../../shared/img/main_page_bg.jpg';
+
+
 export const AboutUsSection = () => {
   return (
     <section
@@ -15,9 +17,9 @@ export const AboutUsSection = () => {
         <div className="mt-[70px]  ml-[40px]">
           <h3 className="font-medium text-[25px] text-[#F5F5F5] leading-[150%]  [text-decoration-skip-ink:none]">
             <span className="font-medium text-[30px] text-[#DC6441] leading-[150%] underline [text-decoration-skip-ink:none]">
-              {" "}
-              Q-Rush Studio{" "}
-            </span>{" "}
+              {' '}
+              Q-Rush Studio{' '}
+            </span>{' '}
             Музыкальная студия,была основана в 1916 году. <br /> Это уникальное
             место, где каждый артист вне зависимости от жанра может <br />
             воплотить свои творческие идеи без каких-либо ограничений. Здесь вас

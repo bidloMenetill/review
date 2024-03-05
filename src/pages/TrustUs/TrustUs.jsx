@@ -1,7 +1,5 @@
-import { TrustUsMain } from "../../widgets";
-import { Preview } from "../../widgets";
-import { Musicians } from "../../widgets";
-import { Order } from "../../widgets";
+import { TrustUsMain, Preview, Musicians, Order } from '../../widgets';
+
 
 export const TrustUs = () => {
   return (
@@ -13,5 +11,3 @@ export const TrustUs = () => {
     </div>
   );
 };
-
-

@@ -1,5 +1,6 @@
-import trustPreviewBg from "../../shared/img/trustUs/trustPreviewBg.svg";
-import chat from "../../shared/img/trustUs/chat.svg";
+import trustPreviewBg from '../../shared/img/trustUs/trustPreviewBg.svg';
+import chat from '../../shared/img/trustUs/chat.svg';
+
 
 export const Preview = () => {
   return (
