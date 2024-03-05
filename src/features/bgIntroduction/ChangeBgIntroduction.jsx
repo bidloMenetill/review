@@ -1,17 +1,18 @@
-import React, { useEffect, useMemo, useState } from "react";
-import soundFrame from "../shared/img/soundFrame.png";
-import line from "../shared/img/line_in_main.svg";
-import whiteLine from "../shared/img/white_line.svg";
-import arrayLeft from "../shared/img/array_left.svg";
-import arrayRight from "../shared/img/array_right.svg";
+import { useEffect, useMemo, useState } from "react";
+import line from "../../shared/img/line_in_main.svg";
+import whiteLine from "../../shared/img/white_line.svg";
+import arrayLeft from "../../shared/img/array_left.svg";
+import arrayRight from "../../shared/img/array_right.svg";
 
-import bgFirst from "../shared/img/first_main_bg.jpg";
-import bgSecond from "../shared/img/second_main_bg.jpg";
-import bgThird from "../shared/img/third_main_bg.jpg";
-import bgFourth from "../shared/img/forth_main_bg.jpg";
-import bgFifth from "../shared/img/fifth_main_bg.jpg";
+import bgFirst from "../../shared/img/first_main_bg.jpg";
+import bgSecond from "../../shared/img/second_main_bg.jpg";
+import bgThird from "../../shared/img/third_main_bg.jpg";
+import bgFourth from "../../shared/img/forth_main_bg.jpg";
+import bgFifth from "../../shared/img/fifth_main_bg.jpg";
+import { useTranslation } from "react-i18next";
 
-const ChangeBgIntroduction = () => {
+export const ChangeBgIntroduction = () => {
+  const { t } = useTranslation();
   const bgForIntroduction = useMemo(
     () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],
     []
@@ -76,15 +77,10 @@ const ChangeBgIntroduction = () => {
     >
       <section className="w-[1720px] mx-auto relative">
         <h2 className="font-montserrat font-bold text-[50px] text-center  text-[#f5f5f5]">
-          Добро пожаловать в мир звука и творчества!
+          {t("homePage.firstSection.title")}
         </h2>
         <h1 className="mt-[50px] font-montserrat font-medium text-[30px] text-center text-[#f5f5f5]">
-          Откройте для себя искусство звукозаписи с{" "}
-          <span className="font-semibold font-montserrat underline [text-decoration-skip-ink:none] text-[#dc6441]">
-            Q-Rush.
-          </span>{" "}
-          <br />
-          Создайте звук, который будет слышен и запомнится!
+          {t("homePage.firstSection.upperTitle")}
         </h1>
         <button
           className="arrow-left absolute flex justify-center items-center left-[-20px] top-[145px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 "
@@ -100,14 +96,6 @@ const ChangeBgIntroduction = () => {
         >
           <img src={arrayRight} alt="" className="p-[1px]" />
         </button>
-
-        <div className="flex justify-center ">
-          <img
-            src={soundFrame}
-            className="text-center mt-[134px]"
-            alt="soundFrames"
-          />
-        </div>
       </section>
       <div
         className={`mt-[169px] mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container`}
@@ -123,5 +111,3 @@ const ChangeBgIntroduction = () => {
     </section>
   );
 };
-
-export default ChangeBgIntroduction;

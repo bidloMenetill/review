@@ -1,9 +1,8 @@
-import React from "react";
-import bgAboutUs from "../../shared/img/about_us_main_page_bg.jpg";
-const AboutUsSection = () => {
+import bgAboutUs from "../../shared/img/main_page_bg.jpg";
+export const AboutUsSection = () => {
   return (
     <section
-      className="bg-cover bg-no-repeat bg-center h-[525px] "
+      className="bg-cover bg-no-repeat -mt-[9px] bg-center h-[625px] "
       style={{ backgroundImage: `url(${bgAboutUs})` }}
     >
       <section className="container mx-auto flex items-center ">
@@ -11,7 +10,6 @@ const AboutUsSection = () => {
           <h2 className="font-medium text-[170px] text-[#f5f5f5] mr-[40px]">
             О нас
           </h2>
-
           <div className="w-[3px] mt-[65px] h-[190px]  bg-[#555555] "></div>
         </div>
         <div className="mt-[70px]  ml-[40px]">
@@ -32,5 +30,3 @@ const AboutUsSection = () => {
     </section>
   );
 };
-
-export default AboutUsSection;
