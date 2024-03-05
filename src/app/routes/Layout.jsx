@@ -5,7 +5,12 @@ import { Outlet } from "react-router-dom";
 import { Header } from "../../widgets";
 import { Footer } from "../../widgets";
 
+import { Suspense,  } from "react";
+
+
+
 export const Layout = () => {
+  
   return (
     <>
       <Header />
@@ -14,5 +19,12 @@ export const Layout = () => {
       </main>
       <Footer />
     </>
+  );
+};
+export const WrappedLayout = () => {
+  return (
+    <Suspense fallback="...loading">
+      <Layout />
+    </Suspense>
   );
 };

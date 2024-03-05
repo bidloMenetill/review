@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import logo from "../../shared/img/rush.png";
 import Button from "../../shared/ui/button/Button";
-
+import { useTranslation } from "react-i18next";
+const locales = {
+  ru: { title: "Ru" },
+  en: { title: "En" },
+  kg: { title: "Kg" },
+};
 export const Header = () => {
+  const { i18n } = useTranslation();
   return (
     <header className="bg-gray-700 w-[100vw] h-[100px] bg-opacity-50 flex justify-center">
       <nav className=" w-[1720px]  flex justify-between items-center">
@@ -29,17 +35,25 @@ export const Header = () => {
         </ul>
 
         <div className="flex items-center justify-aroundfont-montserrat text-[23px] leading-normal">
-          <div className="flex gap-[16px] mr-[50px]  text-gray-500 ">
-            <button className=" focus:text-gray-100 hover:text-orange-500">
-              RU
-            </button>
-            <button className=" focus:text-gray-100 hover:text-orange-500">
-              EN
-            </button>
-            <button className=" focus:text-gray-100 hover:text-orange-500">
-              KG
-            </button>
-          </div>
+          <ul className="flex gap-[16px] mr-[50px]  text-gray-500 ">
+            {Object.keys(locales).map((locale) => (
+              <li key={locale}>
+                <button
+                 className={`focus:text-gray-100 hover:text-orange-500 ${i18n.resolvedLanguage === locale ? 'text-white' : 'text-gray-500'}`}
+
+                  style={{
+                    fontWeight:
+                      i18n.resolvedLanguage === locale ? "bold" : "normal",
+                  }}
+                  type="submit"
+                  onClick={() => i18n.changeLanguage(locale)}
+                >
+                  {locales[locale].title}
+                </button>
+              </li>
+            ))}
+          </ul>
+
           <Button txt="связаться" />
         </div>
       </nav>
