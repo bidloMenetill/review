@@ -1,5 +1,5 @@
-import { TrustUsMain, Preview, Musicians, Order } from '../../widgets';
-
+import { TrustUsMain, Preview, Musicians} from '../../widgets';
+import {Reserve} from '../../shared';
 
 export const TrustUs = () => {
   return (
@@ -7,7 +7,10 @@ export const TrustUs = () => {
       <TrustUsMain />
       <Preview />
       <Musicians />
-      <Order />
+      <Reserve 
+        h3 = "Попрощайтесь С Плохим Звуком Навсегда"
+        p = "Теперь артисты и музыканты могут звучать профессионально на своей первой сессии."
+      />
     </div>
   );
 };
