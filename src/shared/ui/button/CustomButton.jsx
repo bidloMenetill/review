@@ -8,5 +8,4 @@ const CustomButton = (props) => {
     </button>
   );
 };
-
 export default CustomButton;

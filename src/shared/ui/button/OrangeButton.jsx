@@ -1,4 +1,4 @@
-const OrangeButton = (props) => {
+export const OrangeButton = (props) => {
   return (
     <button
       type="button"
@@ -8,5 +8,3 @@ const OrangeButton = (props) => {
     </button>
   );
 };
-
-export default OrangeButton;
