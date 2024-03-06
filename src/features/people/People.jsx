@@ -1,6 +1,6 @@
 import peopleBg from '../../shared/img/main_page_bg.jpg';
 
-import {OrangeButton} from '../../shared';
+import { OrangeButton } from '../../shared';
 
 
 export const People = (props) => {
