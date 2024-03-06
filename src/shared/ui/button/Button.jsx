@@ -7,4 +7,4 @@ export const Button = (props) => {
       <a href=""></a>
     </button>
   );
-}
+};
