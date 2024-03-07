@@ -23,7 +23,7 @@ export const Header = () => {
             <Link to={'/aboutus'}>О нас</Link>
           </li>
           <li>
-            <a href="">Услуги</a>
+            <Link to={'/services'}>Услуги</Link>
           </li>
           <li>
             <Link to={'/trustus'}>Нам доверяют</Link>
