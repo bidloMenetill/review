@@ -4,8 +4,8 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import lightFon from '../../shared/img/trustUs/lightFon.svg';
-import scriptonit from '../../shared/img/trustUs/scriptonit.svg';
+import lightFon from '../../shared/img/TrustUs/lightFon.svg';
+import scriptonit from '../../shared/img/TrustUs/scriptonit.svg';
 
 
 export const Musicians = () => {
