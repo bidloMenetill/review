@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../../shared/img/rush.png';
-import Button from '../../shared/ui/button/Button';
+import { Button } from '../../shared';
 
 
 const locales = {
