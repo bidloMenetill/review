@@ -4,6 +4,202 @@
         "title": "Welcome to the world of sound and creativity!",
         "upperTitle": "Discover the art of recording with Q-Rush. Create a sound that will be heard and remembered!"
       }
+    },
+    "servicePage": {
+    
+      "firstSection": {
+        "title": "Services",
+        "firstUpperTitle": "Recording Studio",
+        "secondUpperTitle": "Service list",
+        "firstText": "Q-Rush Studio offers a full range of sound recording services using professional equipment and modern technologies. Our studio employs experienced specialists, including talented arrangers, composers, vocalists, sound engineers. We are ready to work with both professional musicians and beginners, as well as with everyone who loves and wants to sing.",
+        "secondText": "Professional sound recording is a list of various services for creating a high-quality audio track.",
+        "thirdText": "Studio vocal recording. The voice is a unique instrument capable of conveying feelings and emotions. We pay special attention to voice recording and try to convey the individual characteristics of the performer. Each vocal part must meet the requirements of the stylistic technique of performance. Studio voice recording includes primary recording, rhythmic and intonation correction, spatial and frequency processing, mixing.",
+        "textListF": "Work with an experienced vocal teacher. This service will help you open up, feel like a real pro, and achieve the ideal sound of your vocal part.",
+        "textListS": "Studio rental. You can rent a recording studio for the required period of time with the possibility of extension.",
+        "textListTh": "Multi-channel recording of instruments, adding digital effects.",
+        "textListFo": "Detailed vocal correction. If you are “out of tune” or simply don't have time for multiple rehearsals, detailed vocal correction using modern digital tools will help hide inaccuracies in performance.",
+        "textListFi": "Creating a backing track, writing an arrangement.",
+        "textListSi": "Mixing vocals and instrumental accompaniment, mixing multitrack.",
+        "textListSe": "One of the most popular and sought-after additional services is recording backing vocals in a recording studio with the help of our talented vocalists."
+      },
+
+      "secondSection": {
+        "title": "Price list for sound recording",
+        "firsTableH": "Studio Services",
+        "secondTableH": "Price",
+        "firstColumn" : {
+          "firsLine": "Vocal recording",
+          "secondLine": "Recording an instrumental part",
+          "thirtLine": "Drum recording",
+          "forthLine": "Recording backing vocals",
+          "fivthLine": "Recording audio clips"
+        },
+        "secondColumn" : {
+          "firsLine": "1000 som/hour, sessions from three hours are available",
+          "secondLine": "1000 som/hour, sessions from three hours are available",
+          "thirtLine": "1000 som/hour, sessions from three hours are available",
+          "forthLine": "from 6,000 som",
+          "fivthLine": "from 5,000 som"
+        },
+        "button": "To order"
+        
+      },
+
+      "thirdSection": {
+        "title": "Our equipment"
+      },
+
+      "forthSection": {
+        "title": "Rehearsal base"
+      },
+
+      "fivthSection": {
+        "title": "Music Courses",
+        "tool": "Guitar",
+        "firstUpperTitle": "The Learning Plan of the Guitar Playing Course",
+        "firstParagraph": {
+          "firstTitle": "The basics of playing the guitar:",
+          "firstText": "Introduction to the guitar: types of instruments, tuning.",
+          "secondtText": "Correct landing and basic principles of playing technique."
+        },
+        "secondParagraph": {
+          "firstTitle": "Chords and transitions:",
+          "firstText": "Learn basic open and barre chords.",
+          "secondtText": "Smooth transitions between chords to create a harmonious sound."
+        },
+        "thirdParagraph": {
+          "firstTitle": "Rhythm and melody:",
+          "firstText": "The development of rhythmic skills through a variety of rhythmic exercises.",
+          "secondtText": "The study of basic melodic patterns and riffs."
+        },
+        "forthParagraph": {
+          "firstTitle": "Music Styles:",
+          "firstText": "An exploration of various musical genres, including rock, blues, and jazz.",
+          "secondtText": "Mastering the characteristic techniques of the game for each style."
+        },
+        "fivthParagraph": {
+          "firstTitle": "Creativity and performances:",
+          "firstText": "Developing the skills to create your own compositions and arrangements.",
+          "secondtText": "Preparation for performances, including work on artistry and professional interaction with the public."
+        },
+        "sixParagraph": {
+          "firstTitle": "Advanced topics and projects:",
+          "firstText": "In-depth study of playing techniques, including complex chords and solo techniques.",
+          "secondtText": "Development and implementation of individual musical projects under the guidance of a teacher."
+        },
+        "button": "Sign up"
+      },
+
+      "sixSection": {
+        "tool": "Drums",
+        "firstUpperTitle": "The Learning Plan of the Course on Playing Percussion Instruments",
+        "firstParagraph": {
+          "firstTitle": "Introduction to Percussion Instruments:",
+          "firstText": "The main components of the drum kit and their functions.",
+          "secondtText": "Proper landing and playing technique: holding sticks, hitting the drums."
+        },
+        "secondParagraph": {
+          "firstTitle": "Development of rhythmic skills:",
+          "firstText": "The study of basic rhythmic figures and exercises for the development of coordination.",
+          "secondtText": "Shock technique training: strength and technical exercises."
+        },
+        "thirdParagraph": {
+          "firstTitle": "Learning percussion instruments:",
+          "firstText": "The basics of playing the bass drum, snare drum, tom-toms and cymbals.",
+          "secondtText": "The technique of playing each instrument: beats, rolls, rolls, etc."
+        },
+        "forthParagraph": {
+          "firstTitle": "Percussion Instrument Styles:",
+          "firstText": "Rock, jazz, funk, Latin American rhythms and other styles.",
+          "secondtText": "Accentuation and dynamics in various styles of music."
+        },
+        "fivthParagraph": {
+          "firstTitle": "Improvisation and solos:",
+          "firstText": "Mastering the basic principles of improvisation on percussion instruments.",
+          "secondtText": "Techniques for creating solos and playing in a group."
+        },
+        "sixParagraph": {
+          "firstTitle": "Creativity and performances:",
+          "firstText": "Creating percussion arrangements for various compositions and styles.",
+          "secondtText": "Preparation for performances: adaptation to the public, stage presentation."
+        },
+        "sevParagraph": {
+          "firstTitle": "Advanced topics and projects:",
+          "firstText": "Development of technical skills: speed, complex rhythms and polyrhythms.",
+          "secondtText": "Individual projects and studio work: recording and arranging percussion parts."
+        },
+        "button": "Sign up"
+      },
+
+      "sevSection": {
+        "tool": "Vocals",
+        "firstUpperTitle": "The Training Plan of the Vocal Course",
+        "firstParagraph": {
+          "firstTitle": "The basics of vocal technique:",
+          "firstText": "Introduction to the anatomy of the vocal apparatus.",
+          "secondtText": "Breathing exercises and proper breathing when singing.",
+          "thirdText": "The basics of voice production and articulation."
+        },
+        "secondParagraph": {
+          "firstTitle": "Voice development:",
+          "firstText": "Exercises to expand the range and improve intonation.",
+          "secondtText": "Voice projection technique and volume control."
+        },
+        "thirdParagraph": {
+          "firstTitle": "Learning vocal styles:",
+          "firstText": "Various musical genres: pop, rock, jazz, classical, etc.",
+          "secondtText": "Analysis and interpretation of song lyrics according to their style."
+        },
+        "forthParagraph": {
+          "firstTitle": "Technique of execution:",
+          "firstText": "Expression and expressiveness in performance.",
+          "secondtText": "Work on phrasing and accents to create a unique sound."
+        },
+        "fivthParagraph": {
+          "firstTitle": "Working with arrangements:",
+          "firstText": "Solo performance and choral songs.",
+          "secondtText": "Arrangement of vocal parts for group performances."
+        },
+        "sixParagraph": {
+          "firstTitle": "Improvisation and stagecraft:",
+          "firstText": "The development of improvisation skills and the creation of vocal melodies.",
+          "secondtText": "Preparation for performances: working with a microphone, interacting with the audience."
+        },
+        "sevParagraph": {
+          "firstTitle": "Advanced topics and projects:",
+          "firstText": "Expansion of technical skills: vibrato, flageolet, break.",
+          "secondtText": "Work on individual projects and recording vocal parts in the studio."
+        },
+        "button": "Sign up"
+      },
+ 
+      "eightSection": {
+        "title": "TUITION AND FEES",
+        "firstUpperTitle": "The tuition fee is the same for each direction in our courses",
+        "firstTabl": {
+          "title": "Basic",
+          "firstText": "8800 som",
+          "index": "2200 s/lesson",
+          "secondText": "4 lessons",
+          "thirdText": "The validity period is 30 days"
+        },
+        "secondTabl": {
+          "title": "Standard",
+          "firstText": "25200 som",
+          "index": "2100 s/lesson",
+          "secondText": "12 lessons",
+          "thirdText": "The validity period is 90 days"
+        },
+        "thirdTabl": {
+          "title": "Premium",
+          "firstText": "48000 som",
+          "index": "2000 s/lesson",
+          "secondText": "24 lessons",
+          "thirdText": "The validity period is 180 days"
+        },
+
+        "button": "Buy"
+      }
     }
   }
   

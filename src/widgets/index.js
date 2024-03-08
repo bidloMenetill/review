@@ -12,3 +12,7 @@ export { AboutUs } from './aboutUs/AboutUs';
 export { Team } from './aboutUs/Team';
 export { WhyQRush } from './aboutUs/WhyQRush';
 export { NewsSection } from './homePage/NewsSection';
+export { Services } from './servicPage/Services';
+export { PriceList } from './servicPage/PriceList';
+export { Equipment } from './servicPage/Equipment';
+export { RehearsalBase } from './servicPage/RehearsalBase';
