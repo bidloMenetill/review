@@ -1,6 +1,6 @@
+import { useTranslation } from 'react-i18next';
 import { TrustUsMain, Preview, Musicians } from '../../widgets';
 import { Reserve } from '../../shared';
-import { useTranslation } from 'react-i18next';
 
 
 export const TrustUs = () => {

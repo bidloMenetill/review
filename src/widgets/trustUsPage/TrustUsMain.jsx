@@ -1,5 +1,6 @@
-import trustMainBg from '../../shared/img/trustUs/trustMainBg.svg';
 import { useTranslation } from 'react-i18next';
+import trustMainBg from '../../shared/img/TrustUs/trustMainBg.svg';
+
 
 export const TrustUsMain = () => {
   const { t } = useTranslation();
