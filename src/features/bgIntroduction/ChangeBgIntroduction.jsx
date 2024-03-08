@@ -78,25 +78,23 @@ export const ChangeBgIntroduction = () => {
 
   return (
     <section
-      className={'pt-[256px] bg-cover   h-[1080px] flex justify-center flex-col bg-center bg-no-repeat bg-animation '}
+      className={'pt-[256px] bg-cover   h-[1080px] w-full flex justify-center flex-col bg-center bg-no-repeat bg-animation '}
       style={{ backgroundImage: `url(${bgForIntroduction[ indexIntroduction ]})` }}
     >
       <section className="w-[1720px] mx-auto relative">
-        <h2 className="font-montserrat font-bold text-[50px] text-center  text-[#f5f5f5]">
+        <h2 className="text-[#F5F5F5] font-[Montserrat] mt-[100px] text-center text-[60px] not-italic font-bold leading-[normal]  ">
           {t('homePage.firstSection.title')}
         </h2>
-        <h1 className="mt-[50px] font-montserrat font-medium text-[30px] text-center text-[#f5f5f5]">
-          {t('homePage.firstSection.upperTitle')}
-        </h1>
+
         <button
-          className="arrow-left absolute flex justify-center items-center left-[-20px] top-[145px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 "
+          className="arrow-left absolute flex justify-center items-center left-[-10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 "
           onClick={() => handleArrowClick('left')}
           disabled={isChangingBg}
         >
           <img src={arrayLeft} alt="" className="p-[8px]" />
         </button>
         <button
-          className="arrow-right absolute flex justify-center items-center right-[-20px] top-[145px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 "
+          className="arrow-right absolute flex justify-center items-center right-[-10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 "
           onClick={() => handleArrowClick('right')}
           disabled={isChangingBg}
         >
@@ -104,7 +102,7 @@ export const ChangeBgIntroduction = () => {
         </button>
       </section>
       <div
-        className={'mt-[299px] mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container'}
+        className={'mt-[549px] mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container'}
       >
         {bgForIntroduction.map((bg, index) => (
           <img
