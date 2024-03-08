@@ -5,7 +5,7 @@ import rectangle from '../../shared/img/rectangle_61.png';
 
 
 export const AboutUs = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div>
       <div className="bg-[url('/src/shared/img/about.png')] h-[974px] w-[1920px]">

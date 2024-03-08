@@ -1,8 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+
 
 export const Team = () => {
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div>
       <div className="bg-[url('/src/shared/img/team.png')] w-[1920px] h-[2800px]">

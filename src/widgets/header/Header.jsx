@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { t } from 'i18next';
 import logo from '../../shared/img/rush.png';
 import { Button } from '../../shared';
 
@@ -20,19 +21,19 @@ export const Header = () => {
 
         <ul className=" flex justify-evenly items-center  text-gray-100 gap-[25px] font-montserrat font-[50px] text-[20px] leading-normal ">
           <li>
-            <Link to={'/aboutus'}>О нас</Link>
+            <Link to={'/aboutus'}>{t('aboutUs.section.link1')}</Link>
           </li>
           <li>
-            <Link to={'/services'}>Услуги</Link>
+            <Link to={'/services'}>{t('aboutUs.section.link2')}</Link>
           </li>
           <li>
-            <Link to={'/trustus'}>Нам доверяют</Link>
+            <Link to={'/trustus'}>{t('aboutUs.section.link3')}</Link>
           </li>
           <li>
-            <a href="">Галерея</a>
+            <Link to={'/gallery'}></Link>{t('aboutUs.section.link4')}
           </li>
           <li>
-            <a href="">Контакты</a>
+            <Link>{t('aboutUs.section.link5')}</Link>
           </li>
         </ul>
 
