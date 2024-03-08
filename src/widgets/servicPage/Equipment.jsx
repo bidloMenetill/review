@@ -53,7 +53,6 @@ export const Equipment = () => {
                         </div>
                     </SwiperSlide>
                 </div>
-
             </Swiper>
 
         </section>
