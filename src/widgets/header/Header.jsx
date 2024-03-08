@@ -10,7 +10,7 @@ const locales = {
   kg: { title: 'Kg' },
 };
 export const Header = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <header className="bg-gray-700 w-[100vw] h-[100px] bg-opacity-50 flex justify-center">
       <nav className=" w-[1720px]  flex justify-between items-center">
@@ -20,19 +20,19 @@ export const Header = () => {
 
         <ul className=" flex justify-evenly items-center  text-gray-100 gap-[25px] font-montserrat font-[50px] text-[20px] leading-normal ">
           <li>
-            <Link to={'/aboutus'}>О нас</Link>
+            <Link to={'/aboutus'}>{t('aboutUs.section.link1')}</Link>
           </li>
           <li>
-            <a href="">Услуги</a>
+            <a href="">{t('aboutUs.section.link2')}</a>
           </li>
           <li>
-            <Link to={'/trustus'}>Нам доверяют</Link>
+            <Link to={'/trustus'}>{t('aboutUs.section.link3')}</Link>
           </li>
           <li>
-            <a href="">Галерея</a>
+            <a href="">{t('aboutUs.section.link4')}</a>
           </li>
           <li>
-            <a href="">Контакты</a>
+            <a href="">{t('aboutUs.section.link5')}</a>
           </li>
         </ul>
 
@@ -56,7 +56,7 @@ export const Header = () => {
             ))}
           </ul>
 
-          <Button txt="связаться" />
+          <Button txt={t('aboutUs.section.link6')} />
         </div>
       </nav>
     </header>

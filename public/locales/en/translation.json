@@ -6,6 +6,14 @@
       }
     },
     "aboutUs": {
+      "section": {
+        "link1": "About Us",
+        "link2": "Services",
+        "link3": "Trust us",
+        "link4": "Gallery",
+        "link5": "Contacts",
+        "link6": "contact"
+      },
       "firstSection": {
         "title": "About Us",
         "upperTitle": "Q-Rush Studio is not just a music studio, it is a historical place where melodies have been heard and hits have been born since 1916. We pride ourselves on giving artists the opportunity to bring their ideas to life without any restrictions. Our team of professionals is ready to help you reach heights in your creativity. At Q-Rush Studio you will find not only cozy studios and inspiring interiors, but also specially created spaces filled with creative energy. Here you can forget about time and just immerse yourself in making music. Our sound designers and audio engineers will provide you with high-quality sound, and our equipped equipment will allow you to turn your wildest musical concepts into reality. It doesn’t matter what genre you prefer or how complex your ideas are - at Q-Rush Studio we are ready to make any musical fantasy come true. Trust your creativity to professionals and feel the magic of music creation in our studio."
@@ -27,6 +35,11 @@
       },
       "thirdSection": {
         "title": "Team"
+      },
+      "fourthSection": {
+        "title": "Exceed expectations and create your legend right here.",
+        "upperTitle": "Exceed expectations and create your legend right here. Reserve your place at Q Rush Studio now by clicking the button below, or contact Vadim on +996 700 763736.",
+        "buttonn": "Reserve"
       }
     }
   }
