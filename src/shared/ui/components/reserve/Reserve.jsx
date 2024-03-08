@@ -1,4 +1,4 @@
-import CustomButton from '../../button/CustomButton';
+import { CustomButton } from '../../button/CustomButton';
 
 
 export const Reserve = (props) => {

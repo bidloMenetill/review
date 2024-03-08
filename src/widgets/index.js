@@ -16,3 +16,7 @@ export { Services } from './servicPage/Services';
 export { PriceList } from './servicPage/PriceList';
 export { Equipment } from './servicPage/Equipment';
 export { RehearsalBase } from './servicPage/RehearsalBase';
+export { GuitarMusicCourses } from './servicPage/GuitarMusicCourses';
+export { DrumsMusicCourses } from './servicPage/DrumsMusicCourses';
+export { VocalMusicCourses } from './servicPage/VocalMusicCourses';
+export { ServiceOrder } from './servicPage/ServiceOrder';

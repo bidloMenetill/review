@@ -1,4 +1,4 @@
-const CustomButton = (props) => {
+export const CustomButton = (props) => {
   return (
     <button
       type="button"
@@ -8,4 +8,3 @@ const CustomButton = (props) => {
     </button>
   );
 };
-export default CustomButton;
