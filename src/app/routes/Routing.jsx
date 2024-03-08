@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { TrustUs, MainPage, Error, About } from '../../pages';
+import { TrustUs, MainPage, Error, About, ServicesPage } from '../../pages';
 import { Layout } from './Layout';
 
 
@@ -8,14 +8,15 @@ export const Routing = () => {
     {
       path: '/aboutus',
       element: <About />,
-    }, {
+    },
+    {
       path: '/trustus',
       element: <TrustUs />,
     },
-    // {
-    //   path: '/services',
-    //   element,
-    // },
+    {
+      path: '/services',
+      element: <ServicesPage />,
+    },
     // {
     //   path: '/news',
     //   element,
