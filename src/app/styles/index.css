@@ -60,7 +60,9 @@
 }
 
 .btn {
-  background-color: #161616;      
+  background-color: #161616;
+  color: #fff;
+
 }
 
 .btn:hover::before,

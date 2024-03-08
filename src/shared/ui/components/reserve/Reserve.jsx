@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import { CustomButton } from '../../button/CustomButton';
 
 
 export const Reserve = (props) => {
+  const { t } = useTranslation();
   return (
     <div className="bg-cover bg-no-repeat bg-center h-[450px] bg-[#F93822]">
       <div className="w-[1720px] h-[450px] mx-auto flex flex-col justify-center items-center">
@@ -12,7 +14,7 @@ export const Reserve = (props) => {
           <p className="text-[rgba(22,_22,_22,_0.80)] text-center font-[Montserrat] text-[25px] not-italic font-semibold leading-[normal] mb-[73px]">
             {props.p}
           </p>
-          <CustomButton txt="Забронировать" />
+          <CustomButton txt={t('trustUsPage.fourthSection.buttonInner')} />
         </div>
       </div>
     </div>

@@ -200,6 +200,26 @@
 
         "button": "Buy"
       }
+    },
+
+    "trustUsPage":{
+      "firstSection":{
+        "title": "They trust us",
+        "upperTitle": "All musicians know that recording studios are sacred spaces. The sacred is literally this: a beautiful place of worship in the center of Bishkek, whose walls and stained glass windows have been reflecting the sounds of prayer and the greatest music ever created for several years."
+      },
+      "secondSection": {
+  
+      },
+      "thirdSection": {
+        "humanName": "Scriptonit",
+        "role": "Musician"
+      },
+      "fourthSection": {
+        "title": "Say Goodbye to Bad Sound Forever",
+        "upperTitle": "Now artists and musicians can sound professional on their first session.",
+        "buttonInner": "Reserve"
+      }
     }
+
   }
   
