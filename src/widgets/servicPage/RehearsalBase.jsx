@@ -1,8 +1,7 @@
-
 export const RehearsalBase = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-}
+  return (
+    <div>
+
+    </div>
+  );
+};
