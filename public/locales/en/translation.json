@@ -4,6 +4,30 @@
         "title": "Welcome to the world of sound and creativity!",
         "upperTitle": "Discover the art of recording with Q-Rush. Create a sound that will be heard and remembered!"
       }
+    },
+    "aboutUs": {
+      "firstSection": {
+        "title": "About Us",
+        "upperTitle": "Q-Rush Studio is not just a music studio, it is a historical place where melodies have been heard and hits have been born since 1916. We pride ourselves on giving artists the opportunity to bring their ideas to life without any restrictions. Our team of professionals is ready to help you reach heights in your creativity. At Q-Rush Studio you will find not only cozy studios and inspiring interiors, but also specially created spaces filled with creative energy. Here you can forget about time and just immerse yourself in making music. Our sound designers and audio engineers will provide you with high-quality sound, and our equipped equipment will allow you to turn your wildest musical concepts into reality. It doesn’t matter what genre you prefer or how complex your ideas are - at Q-Rush Studio we are ready to make any musical fantasy come true. Trust your creativity to professionals and feel the magic of music creation in our studio."
+      },
+      "secondSection": {
+        "title": "Why Q-Rush Studio?",
+        "firstSection": {
+          "title": "Quality",
+          "upperTitle": "Q-Rush Studio gives you access to a team of experienced and dedicated teachers, facilities and equipment that will enable you to achieve results beyond your expectations."
+        },
+        "secondSection": {
+          "title": "Diversity",
+          "upperTitle": "Q-Rush Studio proudly welcomes people from all over the world, from all walks of life and backgrounds. Learn in an environment where differences are celebrated and collaboration is encouraged."
+        },
+        "thirdSection": {
+          "title": "Passion",
+          "upperTitle": "Practice and grow with people who, like you, are invested in their art and creativity. You can rest assured that your passion for audio is shared by the faculty, students, and staff at Q-Rush Studio."
+        }
+      },
+      "thirdSection": {
+        "title": "Team"
+      }
     }
   }
   
