@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import baraban from '../../shared/img/servicesImg/barabany.jpg';
-import { OrangeButton } from '../../shared';
 
 
 export const ServiceOrder = () => {

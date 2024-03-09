@@ -1,8 +1,9 @@
-import rush from "../../shared/img/logofooter.png";
-import instagram from "../../shared/img/footer/instagram.svg";
-import telegram from "../../shared/img/footer/telegram.svg";
-import youTube from "../../shared/img/footer/youtube.svg";
-import whatsapp from "../../shared/img/footer/whatsapp.svg";
+import rush from '../../shared/img/logofooter.png';
+import instagram from '../../shared/img/footer/instagram.svg';
+import telegram from '../../shared/img/footer/telegram.svg';
+import youTube from '../../shared/img/footer/youtube.svg';
+import whatsapp from '../../shared/img/footer/whatsapp.svg';
+
 
 export const Footer = () => {
   return (

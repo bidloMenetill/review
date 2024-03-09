@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';

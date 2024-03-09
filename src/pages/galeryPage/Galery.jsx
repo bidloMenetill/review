@@ -1,5 +1,6 @@
-import { Reserve } from "../../shared";
-import { GaleryMain } from "../../widgets";
+import { Reserve } from '../../shared';
+import { GaleryMain } from '../../widgets';
+
 
 export const Galery = () => {
   return (

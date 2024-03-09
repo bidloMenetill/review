@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 import {
   TrustUs,
   MainPage,
@@ -6,25 +6,26 @@ import {
   About,
   ServicesPage,
   Galery,
-} from "../../pages";
-import { Layout } from "./Layout";
+} from '../../pages';
+import { Layout } from './Layout';
+
 
 export const Routing = () => {
   const routesArr = [
     {
-      path: "/aboutus",
+      path: '/aboutus',
       element: <About />,
     },
     {
-      path: "/trustus",
+      path: '/trustus',
       element: <TrustUs />,
     },
     {
-      path: "/services",
+      path: '/services',
       element: <ServicesPage />,
     },
     {
-      path: "/galery",
+      path: '/galery',
       element: <Galery />,
     },
     // {
