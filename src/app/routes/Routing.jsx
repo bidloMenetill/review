@@ -1,21 +1,31 @@
-import { Route, Routes } from 'react-router-dom';
-import { TrustUs, MainPage, Error, About, ServicesPage } from '../../pages';
-import { Layout } from './Layout';
-
+import { Route, Routes } from "react-router-dom";
+import {
+  TrustUs,
+  MainPage,
+  Error,
+  About,
+  ServicesPage,
+  Galery,
+} from "../../pages";
+import { Layout } from "./Layout";
 
 export const Routing = () => {
   const routesArr = [
     {
-      path: '/aboutus',
+      path: "/aboutus",
       element: <About />,
     },
     {
-      path: '/trustus',
+      path: "/trustus",
       element: <TrustUs />,
     },
     {
-      path: '/services',
+      path: "/services",
       element: <ServicesPage />,
+    },
+    {
+      path: "/galery",
+      element: <Galery />,
     },
     // {
     //   path: '/news',
