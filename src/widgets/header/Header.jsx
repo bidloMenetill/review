@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../../shared/img/rush.png';
-import { Button } from '../../shared';
+import { Button, OrangeButton } from '../../shared';
+import CustomButton from '../../shared/ui/button/CustomButton';
+import HeaderButton from '../../shared/ui/button/HeaderButton';
 
 
 const locales = {
@@ -12,7 +14,7 @@ const locales = {
 export const Header = () => {
   const { i18n } = useTranslation();
   return (
-    <header className="bg-gray-700 w-[100vw] h-[100px] bg-opacity-50 flex justify-center">
+    <header className="bg-black/50   w-[1920px] h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center absolute top-0 backdrop-blur-50">
       <nav className=" w-[1720px]  flex justify-between items-center">
         <Link to={'/'}>
           <img src={logo} alt="Q-RUSH logo" />
@@ -29,7 +31,7 @@ export const Header = () => {
             <Link to={'/trustus'}>Нам доверяют</Link>
           </li>
           <li>
-            <a href="">Галерея</a>
+            <Link to={'/galery'}>Галерея</Link>
           </li>
           <li>
             <a href="">Контакты</a>
@@ -56,7 +58,7 @@ export const Header = () => {
             ))}
           </ul>
 
-          <Button txt="связаться" />
+          <HeaderButton txt="связаться" />
         </div>
       </nav>
     </header>

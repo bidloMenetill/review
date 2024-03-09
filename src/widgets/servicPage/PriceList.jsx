@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import OrangeButton from "../../shared/ui/button/OrangeButton";
+import {OrangeButton} from "../../shared/ui/button/OrangeButton";
 
 export const PriceList = () => {
 

@@ -15,3 +15,4 @@ export { Services } from "./servicPage/Services";
 export { PriceList } from "./servicPage/PriceList";
 export { Equipment } from './servicPage/Equipment';
 export { RehearsalBase } from './servicPage/RehearsalBase';
+export { GaleryMain } from './galeryMain/GaleryMain';
