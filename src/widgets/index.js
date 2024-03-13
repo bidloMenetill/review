@@ -21,3 +21,5 @@ export { GuitarMusicCourses } from './servicPage/GuitarMusicCourses';
 export { DrumsMusicCourses } from './servicPage/DrumsMusicCourses';
 export { VocalMusicCourses } from './servicPage/VocalMusicCourses';
 export { ServiceOrder } from './servicPage/ServiceOrder';
+export { GallerySection } from './homePage/GallerySection';
+export { VideoSection } from './homePage/VideoSection';

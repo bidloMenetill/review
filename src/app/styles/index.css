@@ -6,13 +6,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: #000000;
+  position: relative
+ 
+}
 @layer components {
   .container {
     @apply max-w-[1720px]  mx-auto font-montserrat;
   }
   .bg-animation {
     @apply [transition:background-image_1s_ease-in-out];
+  }
+  .ulContainer {
+    @apply hidden
+     
+  }
+  .ulContinerOpen {
+    @apply block
+     
+  }
+  .asideContainer {
+    @apply fixed bottom-[110px] right-[125px] bg-[#F93822]   cursor-pointer z-50  rounded-[766.667px]  
+  }
+  .liNavOrange{
+    @apply mb-[10px] mt-[7px]
+  }
+  .aNavOrange {
+    @apply flex justify-center items-center p-[10px]  
   }
 }
 

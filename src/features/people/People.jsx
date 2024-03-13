@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import { OrangeButton } from '../../shared';
+import arrayButton from '../../shared/img/link.svg';
 
 
 export const People = (props) => {
@@ -13,6 +15,7 @@ export const People = (props) => {
         <h2 className="text-[#F5F5F5] font-[Montserrat] text-[100px] not-italic font-medium pt-[100px] leading-[normal]">
           {props.h2}
         </h2>
+        <div className='flex justify-end'><Link className='!flex justify-normal items-center' to={`${props.to}`}><button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal]'>смотреть все</button> <img src={arrayButton} className='ml-[10px]' alt="" /></Link></div>
         <ul className="flex gap-x-[20px] mt-[63px] mb-[90px]">
           <li className="border-[1px] border-[solid] rounded-[30px] border-[1px] border-[solid] border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-[566px] h-[720px]">
             <div className="p-[20px]">

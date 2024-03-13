@@ -4,6 +4,7 @@ import '../styles/App.css';
 
 
 import { Header, Footer } from '../../widgets';
+import { NavigationOrange } from '../../features';
 
 
 export const Layout = () => {
@@ -12,6 +13,7 @@ export const Layout = () => {
     <>
       <Header />
       <main>
+        <NavigationOrange/>
         <Outlet />
       </main>
       <Footer />
