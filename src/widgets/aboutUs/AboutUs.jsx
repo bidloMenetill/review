@@ -1,7 +1,7 @@
 // import about from '../shared/img/about.png'
 
 import { useTranslation } from 'react-i18next';
-import rectangle from '../../shared/img/about_1.png';
+// import rectangle from '../../shared/img/about_1.png';
 // import { Swiper, SwiperSlide } from 'swiper/bundle';
 // import 'swiper/css/bundle' 
 
@@ -10,7 +10,7 @@ export const AboutUs = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className="bg-[url('/src/shared/img/about1.png')] h-[974px] w-[1920px]">
+      <div className="bg-[url('/src/shared/img/about1.png')] h-[960px] w-[1920px]">
 
         <div className="flex justify-center items-center">
           <div className="py-40 flex flex-row gap-[76px] w-[1719px] items-center">
@@ -20,9 +20,6 @@ export const AboutUs = () => {
                 {t('aboutUs.firstSection.upperTitle')}
               </p>
             </div>
-            {/* <div>
-              <img src={rectangle} alt="rectangle" />
-            </div> */}
           </div>
         </div>
       </div>
