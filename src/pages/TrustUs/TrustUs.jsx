@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { TrustUsMain, Preview, Musicians } from '../../widgets';
 import { Reserve } from '../../shared';
 
-
 export const TrustUs = () => {
   const { t } = useTranslation();
   return (
@@ -11,8 +10,8 @@ export const TrustUs = () => {
       <Preview />
       <Musicians />
       <Reserve
-        h3 = {t('trustUsPage.fourthSection.title')}
-        p = {t('trustUsPage.fourthSection.upperTitle')}
+        h3={t('trustUsPage.fourthSection.title')}
+        p={t('trustUsPage.fourthSection.upperTitle')}
       />
     </div>
   );
