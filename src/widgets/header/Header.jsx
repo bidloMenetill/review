@@ -5,7 +5,6 @@ import logo from '../../shared/img/rush.png';
 
 import HeaderButton from '../../shared/ui/button/HeaderButton';
 
-
 const locales = {
   ru: { title: 'Ru' },
   en: { title: 'En' },
@@ -14,13 +13,13 @@ const locales = {
 export const Header = () => {
   const { i18n } = useTranslation();
   return (
-    <header className="bg-black/50   w-[1920px] h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center absolute top-0 backdrop-blur-50">
-      <nav className=" w-[1720px]  flex justify-between items-center">
+    <header className='bg-black/50   w-[1920px] h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center absolute top-0 backdrop-blur-50'>
+      <nav className=' w-[1720px]  flex justify-between items-center'>
         <Link to={'/'}>
-          <img src={logo} alt="Q-RUSH logo" />
+          <img src={logo} alt='Q-RUSH logo' />
         </Link>
 
-        <ul className=" flex justify-evenly items-center  text-gray-100 gap-[25px] font-montserrat font-[50px] text-[20px] leading-normal ">
+        <ul className=' flex justify-evenly items-center  text-gray-100 gap-[25px] font-montserrat font-[50px] text-[20px] leading-normal '>
           <li>
             <Link to={'/aboutus'}>{t('aboutUs.section.link1')}</Link>
           </li>
@@ -38,9 +37,9 @@ export const Header = () => {
           </li>
         </ul>
 
-        <div className="flex items-center justify-aroundfont-montserrat text-[23px] leading-normal">
-          <ul className="flex gap-[16px] mr-[50px]  text-gray-500 ">
-            {Object.keys(locales).map((locale) => (
+        <div className='flex items-center justify-aroundfont-montserrat text-[23px] leading-normal'>
+          <ul className='flex gap-[16px] mr-[50px]  text-gray-500 '>
+            {Object.keys(locales).map(locale => (
               <li key={locale}>
                 <button
                   className={`focus:text-gray-100 hover:text-orange-500 ${
@@ -52,16 +51,16 @@ export const Header = () => {
                     fontWeight:
                       i18n.resolvedLanguage === locale ? 'bold' : 'normal',
                   }}
-                  type="submit"
+                  type='submit'
                   onClick={() => i18n.changeLanguage(locale)}
                 >
-                  {locales[ locale ].title}
+                  {locales[locale].title}
                 </button>
               </li>
             ))}
           </ul>
 
-          <HeaderButton txt="связаться" />
+          <HeaderButton txt='связаться' />
         </div>
       </nav>
     </header>
