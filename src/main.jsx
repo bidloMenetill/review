@@ -5,7 +5,6 @@ import './app/styles/index.css';
 
 import { Routing } from './app/routes/Routing';
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routing />

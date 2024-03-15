@@ -10,7 +10,6 @@ import {
 } from '../../pages';
 import { Layout } from './Layout';
 
-
 export const Routing = () => {
   const routesArr = [
     {
@@ -43,17 +42,16 @@ export const Routing = () => {
       path: '/shop',
       element: <ShopPage />,
     },
-    
   ];
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path='/' element={<Layout />}>
         <Route index element={<MainPage />} />
         {routesArr?.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />
         ))}
       </Route>
-      <Route path="*" element={<Error />} />
+      <Route path='*' element={<Error />} />
     </Routes>
   );
 };

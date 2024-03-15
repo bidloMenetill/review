@@ -10,10 +10,9 @@ export const TrustUs = () => {
       <Preview />
       {/* <Musicians /> */}
       <Reserve
-        h3 = {t('trustUsPage.fourthSection.title')}
-        p = {t('trustUsPage.fourthSection.upperTitle')}
+        h3={t('trustUsPage.fourthSection.title')}
+        p={t('trustUsPage.fourthSection.upperTitle')}
       />
-
     </div>
   );
 };
