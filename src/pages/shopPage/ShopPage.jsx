@@ -1,5 +1,5 @@
 import React from 'react';
-import { QrushShop } from '../../widgets/shop/QrushShop';
+import { QrushShop } from '../../entities/shop/QrushShop';
 import { Reserve } from '../../shared';
 
 export const ShopPage = () => {
