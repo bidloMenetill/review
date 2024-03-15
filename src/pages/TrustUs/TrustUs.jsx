@@ -8,7 +8,7 @@ export const TrustUs = () => {
     <div>
       <TrustUsMain />
       <Preview />
-      <Musicians />
+      {/* <Musicians /> */}
       <Reserve
         h3={t('trustUsPage.fourthSection.title')}
         p={t('trustUsPage.fourthSection.upperTitle')}
