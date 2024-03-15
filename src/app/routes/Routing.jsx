@@ -6,6 +6,7 @@ import {
   About,
   ServicesPage,
   Galery,
+  Faq,
 } from '../../pages';
 import { Layout } from './Layout';
 
@@ -27,6 +28,10 @@ export const Routing = () => {
     {
       path: '/galery',
       element: <Galery />,
+    },
+    {
+      path: '/faq',
+      element: <Faq />,
     },
     // {
     //   path: '/news',
