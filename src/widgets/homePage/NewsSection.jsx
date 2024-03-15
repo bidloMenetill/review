@@ -24,14 +24,14 @@ export const NewsSection = () => {
         className='container flex justify-center  items-center gap-x-3'
         modules={[Autoplay, Navigation, Mousewheel]}
         autoplay={{
-          delay: 700,
+          delay: 600,
           disableOnInteraction: false,
           reverseDirection: false,
         }}
-        spaceBetween={12}
-        speed={2000}
+        spaceBetween={15}
+        speed={1700}
         slidesPerView={3}
-        initialSlide={2}
+        initialSlide={1.2}
         centeredSlides
         navigation={false}
       >

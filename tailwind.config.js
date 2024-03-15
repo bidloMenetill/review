@@ -8,6 +8,7 @@ export default {
         'about-us': "url('/src/shared/img/about.png')",
         rectangle: "url('/src/shared/img/rectangle_61.png')",
         'why-q-rush': "url('/src/shared/img/Why-Q-Rush.png')",
+        aboutUs: "url('src/shared/img/aboutUs.png)",
       },
       height: {
         974: '974px',
