@@ -6,6 +6,7 @@ import {
   About,
   ServicesPage,
   Galery,
+  ShopPage,
   Faq,
 } from '../../pages';
 import { Layout } from './Layout';
@@ -41,6 +42,11 @@ export const Routing = () => {
     //   path: '/contacts',
     //   element,
     // },
+
+    {
+      path: '/shop',
+      element: <ShopPage />,
+    },
   ];
   return (
     <Routes>

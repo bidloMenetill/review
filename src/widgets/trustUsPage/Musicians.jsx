@@ -5,8 +5,8 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import lightFon from '../../shared/img/TrustUs/lightFon.svg';
-import scriptonit from '../../shared/img/TrustUs/scriptonit.svg';
+import lightFon from '../../shared/img/TrustUs/lightFon.jpg';
+import scriptonit from '../../shared/img/TrustUs/scriptonit.png';
 
 export const Musicians = () => {
   const { t } = useTranslation();
