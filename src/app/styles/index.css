@@ -39,31 +39,28 @@ body{
 
 @layer components{
   .cont{
-    @apply max-w-[1300px] mx-[auto] ease-in duration-300;
+    @apply max-w-[1300px] mx-[auto] transition-all;
   }
   .contAfter{
-    @apply w-[100%] border-solid border-[1px] border-[#ffffff] bg-[#F93822] text-[20px] pt-[18px] pb-[48px] pl-[47px] mb-[17px] rounded-[30px] font-[600] ease-in duration-300 cursor-pointer;
+    @apply w-[100%] border-solid border-[1px] border-[#ffffff] bg-[#F93822] text-[20px] pt-[8px] pb-[28px] pl-[47px] mb-[17px] rounded-[30px] font-[600] transition-all cursor-pointer;
   }
   .contBefor{
-    @apply w-[100%] border-solid border-[1px] border-[#ffffff] bg-[#F93822] text-[20px] pt-[8px] pb-[14px] pl-[47px] mb-[17px] rounded-[30px] font-[600] ease-in duration-300 cursor-pointer;
+    @apply w-[100%] border-solid border-[1px] border-[#ffffff] bg-[#F93822] text-[20px] pt-[8px] pb-[14px] pl-[47px] mb-[17px] rounded-[30px] font-[600] transition-all cursor-pointer;
   }
   .subcontainerAfter{
-    @apply flex justify-between items-center h-[44px] pr-[35px] mb-[40px] ease-in duration-300;
+    @apply flex justify-between items-center h-[44px] pr-[35px] mb-[15px] transition-all;
   }
   .subcontainerBefore{
-    @apply flex justify-between items-center h-[44px] pr-[35px] mb-[0px] ease-in duration-300;
+    @apply flex justify-between items-center h-[44px] pr-[35px] transition-all;
   }
   .textAfter{
     @apply text-[#000000];
   }
-  .textBefore{
-    @apply text-[#000000] hidden ease-in duration-300;
-  }
   .imgAfte{
-    @apply w-[20px] h-[20px] rotate-[-180deg] ease-in duration-300;
+    @apply w-[20px] h-[20px] rotate-[-90deg] transition-all;
   }
   .imgBefore{
-    @apply w-[20px] h-[20px] rotate-0 ease-in duration-300;
+    @apply w-[20px] h-[20px] rotate-0 transition-all;
   }
   
 }

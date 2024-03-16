@@ -24,4 +24,4 @@ export { ServiceOrder } from './servicPage/ServiceOrder';
 export { GallerySection } from './homePage/GallerySection';
 export { VideoSection } from './homePage/VideoSection';
 export { FAQ } from './faqPage/FAQ';
-export {Form} from './faqPage/Form';
+export { Form } from './faqPage/Form';
