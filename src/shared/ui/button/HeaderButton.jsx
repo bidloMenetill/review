@@ -2,9 +2,9 @@ const HeaderButton = (props) => {
   return (
     <button
       type="button"
-      className="px-[24px]  py-[10px] w-[200px] h-[60px] bg-[#DC6441] font-normal text-[25px] text-[#25100a]"
+      className="ml-[56px] w-[200px] h-[60px] bg-orange-600 font-normal text-[20px] rounded-full text-[white] text-center justify-center"
     >
-      {props.txt}
+      {props.title}
     </button>
   );
 };
