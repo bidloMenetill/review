@@ -13,7 +13,7 @@ const locales = {
 export const Header = () => {
   const { i18n } = useTranslation();
   return (
-    <header className="bg-black/50   w-[1920px] h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center  top-0 backdrop-blur-50 sticky">
+    <header className="bg-black/50   w-[1920px] h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center sticky top-0 backdrop-blur-50 sticky">
       <nav className=" w-[1720px]  flex justify-between items-center">
         <Link to={"/"}>
           <img src={logo} alt="Q-RUSH logo" />
