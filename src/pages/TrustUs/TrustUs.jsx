@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { TrustUsMain, Preview, Musicians } from '../../widgets';
+import { TrustUsMain, Preview } from '../../widgets';
 import { Reserve } from '../../shared';
 
 export const TrustUs = () => {
@@ -8,7 +8,6 @@ export const TrustUs = () => {
     <div>
       <TrustUsMain />
       <Preview />
-      {/* <Musicians /> */}
       <Reserve
         h3={t('trustUsPage.fourthSection.title')}
         p={t('trustUsPage.fourthSection.upperTitle')}
