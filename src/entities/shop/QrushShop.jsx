@@ -1,5 +1,5 @@
 import React from 'react';
-import previewBg from '../../shared/img/trustUs/trustPreviewBg.jpg';
+import previewBg from '../../shared/img/TrustUs/trustPreviewBg.jpg';
 import shopFirstImg from '../../shared/img/shop/shopFirstImg.jpg';
 import imageGrid from '../../shared/img/shop/imageGrid.png';
 import { useMediaQuery } from '../../shared';
