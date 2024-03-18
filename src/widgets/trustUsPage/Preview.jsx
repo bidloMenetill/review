@@ -1,11 +1,11 @@
-import lightFon from '../../shared/img/trustUs/lightFon.jpg';
-import bakr from '../../shared/img/trustUs/bakr.png';
-import ulukmanapo from '../../shared/img/trustUs/ulukmanapo.png';
-import arsen from '../../shared/img/trustUs/arsen.png';
-import volkodav from '../../shared/img/trustUs/volkodav.png';
-import lsp from '../../shared/img/trustUs/lsp.png';
-import pavel from '../../shared/img/trustUs/pavel.png';
-import zere from '../../shared/img/trustUs/zere.png';
+import lightFon from '../../shared/img/TrustUs/lightFon.jpg';
+import bakr from '../../shared/img/TrustUs/bakr.png';
+import ulukmanapo from '../../shared/img/TrustUs/ulukmanapo.png';
+import arsen from '../../shared/img/TrustUs/arsen.png';
+import volkodav from '../../shared/img/TrustUs/volkodav.png';
+import lsp from '../../shared/img/TrustUs/lsp.png';
+import pavel from '../../shared/img/TrustUs/pavel.png';
+import zere from '../../shared/img/TrustUs/zere.png';
 import { useMediaQuery } from '../../shared';
 
 export const Preview = () => {
