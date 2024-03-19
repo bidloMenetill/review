@@ -1,13 +1,10 @@
-// import MobileBg from '../../shared/img/aboutMobile/frame_104.png';
 import rectangle_54 from '../../shared/img/aboutMobile/rectangle_54.png';
 
 export const AboutUsMobile = () => {
   return (
     <div>
       <div className='mobileWrapper'>
-        mobile
         <p className='mobileP'>
-          {/* <img src={MobileBg} alt='mobileBg' /> */}
           <h2 className='mobileH2'>О нас</h2>
           <p className='mobileTextP'>
             Q-Rush Studio - это не просто музыкальная студия, это историческое
@@ -97,6 +94,19 @@ export const AboutUsMobile = () => {
                 и сотрудники Q-Rush Studio.
               </p>
             </div>
+          </div>
+        </section>
+        <section>
+          <div className='aMobile4'>
+            <h3 className='aMobileH3'>
+              Превзойдите ожидания и создайте свою легенду прямо здесь.
+            </h3>
+            <p className='aMobileP'>
+              Превзойдите ожидания и создайте свою легенду прямо здесь.
+              Забронируйте свое место в Q Rush Studio прямо сейчас, нажав на
+              кнопку ниже, или свяжитесь с Вадимом по номеру +996 700 763736.
+            </p>
+            <button className='aMobileButton'>Забронировать</button>
           </div>
         </section>
       </div>
