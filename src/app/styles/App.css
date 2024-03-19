@@ -1,7 +1,22 @@
 .about{
     padding-top: 6%;
 }
-
+.about_bg{
+    width: 1920px;
+}
+.about_us_bg{
+    width: 1920px;
+    color: bisque;
+}
+.about_us_bg2{
+    /* background-color: #383838; */
+    color: #F5F5F5;
+    max-width: 375px;
+    /* max-height: 410px; */
+    /* background-image: url(../../shared/img/aboutMobile/frame_104.png);
+    background-size: auto;
+    padding: 8px; */
+}
 .team{
     color: #f5f5f5;
     font-family: Montserrat;
@@ -10,29 +25,160 @@
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
-    width: 1382px;
+    max-width: 1382px;
 }
 .team_text{
     padding-top: 60px;
+}
+/* .team_blocks{
+    display: flex;
+    height: 1800px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+} */
+.teamBlock{
+    min-width: 1920px;
+    color: rgb(173, 17, 139);
+}
+.teamBlock2{
+    width: 1024px;
+    color: rgb(51, 51, 7);
 }
 .block2{
     display: flex;
     flex-direction: column;
     gap: 100px;
+    max-width: 1719px;
 }
 /* .teamBlocks{
     display: flex;
     align-content: space-between;
 } */
 .team_blocks2{
-    height: 762px;
+    max-height: 762px;
+    padding: 160px 0;
 }
 .team_block{
-    width: 1719px;
+    max-width: 1719px;
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 .photo{
-    width: 400px;
+    max-width: 400px;
+}
+.newsWrapper{
+    max-width: 1920px;
+    /* width: 100%; */
+    margin: auto;
+    background-color: #020202;
+    display: flex;
+    justify-content: center;
+    color: #ababab;
+}
+.newsWrapper2{
+    max-width: 1024px;
+    margin: auto;
+    background-color: #020202;
+    display: flex;
+    justify-content: center;
+}
+.newsBlock{
+    /* width: 1719px; */
+    width: 90%;
+    padding-top: 180px;
+}
+.newsBlocks{
+    display: flex;
+    gap: 30px;
+}
+.newsH2{
+    font-family: Montserrat;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 122px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5F5F5;
+}
+.newsP{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #f5f5f5;
+}
+.newsSection1{
+    max-width: 560px;
+    font-weight: 600;
+    padding: 40px 0 0;
+}
+.newsSectionMedia{
+    max-width: 298px;
+    padding: 25px 0 0;
+    color: red;
+}
+.newsSection2{
+    padding: 40px 0;
+}
+.newsSections{
+    background-color: #ababab;
+    border-radius: 30px;
+}
+.news_p{
+    font-size: 25px;
+    padding: 120px 10px;
+    text-align: center;
+}
+.mobileWrapper{
+    width: 375px;
+    /* background-color: #383838; */
+    color: #F5F5F5;
+}
+.mobileP{
+    color: #f5f5f5;
+    max-width: 375px;
+    max-height: 410px;
+    background-image: url(../../shared/img/aboutMobile/frame_104.png);
+    background-size: auto;
+    padding: 8px;
+}
+.mobileTextP, .mobileH2{
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+.section2{
+    width: 375px;
+    height: 1081px;
+    background-image: url(../../shared/img/aboutMobile/frame_161_1.png);
+    background-size: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+.mobileSection{
+    max-width: 170px;
+}
+.mobileH3{
+    color: #DC6441;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sectionP{
+    font-size: 12px;
+}
+.section3{
+    max-width: 377px;   
+    max-height: 653px;
+    background-image: url(../../shared/img/aboutMobile/Why_Q_Rush_2.png);
+    background-size: auto;
+}
+.mobileSection3{
+    padding: 15px;
+    text-align: center;
 }

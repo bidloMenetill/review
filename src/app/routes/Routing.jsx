@@ -8,6 +8,7 @@ import {
   Galery,
   ShopPage,
   Faq,
+  NewsPage,
 } from '../../pages';
 import { Layout } from './Layout';
 
@@ -33,10 +34,10 @@ export const Routing = () => {
       path: '/faq',
       element: <Faq />,
     },
-    // {
-    //   path: '/news',
-    //   element,
-    // },
+    {
+      path: '/news',
+      element: <NewsPage />,
+    },
 
     // {
     //   path: '/contacts',

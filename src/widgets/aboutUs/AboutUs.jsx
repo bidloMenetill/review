@@ -1,15 +1,20 @@
-// import about from '../shared/img/about.png'
-
 import { useTranslation } from 'react-i18next';
-// import rectangle from '../../shared/img/about_1.png';
-// import { Swiper, SwiperSlide } from 'swiper/bundle';
-// import 'swiper/css/bundle'
+import { useMediaQuery } from '../../shared';
 
 export const AboutUs = () => {
   const { t } = useTranslation();
+  const isWideScreen = useMediaQuery(
+    '(min-width: 1025px) and (max-width: 1920px)'
+  );
   return (
-    <div>
-      <div className="bg-[url('/src/shared/img/about1.png')] h-[960px] w-[1920px]">
+    <div
+      className={
+        isWideScreen
+          ? 'about_us_bg'
+          : 'about_us_bg2 bg-[url("/src/shared/img/aboutMobile/frame_104.png")]'
+      }
+    >
+      <div className="about_us_bg bg-[url('/src/shared/img/about1.png')] h-[960px] w-[1920px]">
         <div className='about flex justify-center items-center'>
           <div className='py-40 flex flex-row gap-[76px] w-[1719px] items-center'>
             <div className='w-[1255px] flex flex-col gap-6'>

@@ -258,5 +258,11 @@
         "buttonn": "Reserve"
       }
     
+    },
+  "newsBlock": {
+    "firstSection": {
+      "title": "News",
+      "upperTitle": "Here we publish studio news and articles"
     }
+  }
 }

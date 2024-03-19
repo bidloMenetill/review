@@ -1,11 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import photo from '../../shared/img/bg_video_gallery.jpg';
+import { useMediaQuery } from '../../shared';
+import { AboutUsMobile } from '../aboutUsMobile/AboutUsMobile';
 
 export const Team = () => {
   const { t } = useTranslation();
+  // const isWideScreen = useMediaQuery(
+  //   '(min-width: 1025px) and (max-width: 1920px)'
+  // );
+  const isMobileScreen = useMediaQuery(
+    '(min-width: 1024px) and (max-width: 1920px)'
+  );
   return (
-    <div>
-      <div className='w-[1920px] h-[2800px]'>
+    <div className={isMobileScreen ? 'teamBlock' : 'teamBlock2'}>
+      <div className='teamBlock w-[1920px] h-[2800px]'>
         <div className='block2 w-[1719px] mx-auto'>
           <h2 className='team_text text-[#F5F5F5] font-medium text-8xl leading-[122px]'>
             {t('aboutUs.thirdSection.title')}
@@ -19,7 +27,7 @@ export const Team = () => {
           <div className='team_blocks'>
             <div className='team_blocks2'>
               <p className='team team_block'>
-                <img src={photo} alt='photo' className='photo' />
+                <img src={photo} alt='photos' className='photo' />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem, rerum perspiciatis. Fuga quae ullam numquam ducimus
                 vel libero voluptates, sint debitis voluptatem ratione sunt
@@ -38,7 +46,7 @@ export const Team = () => {
             </div>
             <div className='team_blocks2'>
               <p className='team team_block'>
-                <img src={photo} alt='photo' className='photo' />
+                <img src={photo} alt='photos' className='photo' />
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
                 neque quas, pariatur natus ipsa reiciendis amet doloremque ab
                 repellendus cum sint voluptate earum aut dolorem odio ut,
@@ -57,7 +65,7 @@ export const Team = () => {
             </div>
             <div className='team_blocks2'>
               <p className='team team_block'>
-                <img src={photo} alt='photo' className='photo' />
+                <img src={photo} alt='photos' className='photo' />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem, rerum perspiciatis. Fuga quae ullam numquam ducimus
                 vel libero voluptates, sint debitis voluptatem ratione sunt
