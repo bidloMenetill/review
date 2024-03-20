@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Reserve } from '../../shared';
-import { AboutUs, WhyQRush, Team, Header, Footer } from '../../widgets';
-import aboutUs from '../../shared/img/aboutUs.png';
+import { AboutUs, WhyQRush, Team } from '../../widgets';
 
 export const About = () => {
   const { t } = useTranslation();

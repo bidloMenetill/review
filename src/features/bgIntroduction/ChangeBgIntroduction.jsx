@@ -78,19 +78,19 @@ export const ChangeBgIntroduction = () => {
       }}
     >
       <section className='w-[100%] max-w-[1720px] mx-auto relative'>
-        <h2 className='text-[#F5F5F5] font-[Montserrat] mt-[100px] text-center text-[60px] not-italic font-bold leading-[normal]  '>
+        <h2 className='text-[#F5F5F5] font-[Montserrat] mt-[100px] text-center text-[41px] xl:text-[60px] lg:text-[53px] not-italic font-bold leading-[normal]  '>
           {t('homePage.firstSection.title')}
         </h2>
 
         <button
-          className='arrow-left absolute flex justify-center items-center left-[-10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 '
+          className='arrow-left absolute flex justify-center items-center left-[10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 '
           onClick={() => handleArrowClick('left')}
           disabled={isChangingBg}
         >
           <img src={arrayLeft} alt='' className='p-[8px]' />
         </button>
         <button
-          className='arrow-right absolute flex justify-center items-center right-[-10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 '
+          className='arrow-right absolute flex justify-center items-center right-[10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 '
           onClick={() => handleArrowClick('right')}
           disabled={isChangingBg}
         >
@@ -99,7 +99,7 @@ export const ChangeBgIntroduction = () => {
       </section>
       <div
         className={
-          'mt-[549px] mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container'
+          'pt-[500px] lg:pt-[549px] mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container'
         }
       >
         {bgForIntroduction.map((bg, index) => (

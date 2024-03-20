@@ -1,5 +1,5 @@
 export { AboutUsSection } from './homePage/AboutUsSection';
-export { DigitalInformationSection } from './homePage/DigitalInformationSection';
+
 export { IntroductionSection } from './homePage/IntroductionSection';
 export { ServicesSection } from './homePage/ServicesSection';
 export { TrustUsSection } from './homePage/TrustUsSection';
