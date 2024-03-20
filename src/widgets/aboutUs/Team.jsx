@@ -16,12 +16,12 @@ export const Team = () => {
             просто выполняем свою работу, мы отдаемся ей с преданностью и
             энтузиазмом
           </p>
-          <div className='flex flex-col flex-wrap gap-y-36 max-h-[1800px] content-around'>
+          <div className='flex flex-col flex-wrap gap-y-36'>
             <div className='pt-40 flex gap-8'>
               <img
                 src={photo}
                 alt='photos'
-                className='w-[22%] max-w-screen-xl'
+                className='w-[22%] h-[22%] max-w-screen-xl'
               />
               <p className='team text-2xl font-medium text-left leading-10 w-11/12 text-slate-100 font-sans'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -44,7 +44,7 @@ export const Team = () => {
               <img
                 src={photo}
                 alt='photos'
-                className='w-[22%] max-w-screen-xl'
+                className='w-[22%] h-[22%] max-w-screen-xl'
               />
               <p className='team text-2xl font-medium text-left leading-10 w-11/12 text-slate-100 font-sans'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -67,7 +67,7 @@ export const Team = () => {
               <img
                 src={photo}
                 alt='photos'
-                className='w-[22%] max-w-screen-xl'
+                className='w-[22%] h-[22%] max-w-screen-xl'
               />
               <p className='team text-2xl font-medium text-left leading-10 w-11/12 text-slate-100 font-sans'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

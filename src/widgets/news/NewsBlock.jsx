@@ -12,24 +12,50 @@ export const NewsBlock = () => {
   return (
     // <div className='newsWrapper'>
     <div>
-      <div className={isWideScreen ? 'newsWrapper' : 'newsWrapper2'}>
-        <div className='newsBlock'>
+      <div
+        className={
+          isWideScreen
+            ? 'w-full m-auto bg-zinc-900 flex justify-center text-slate-100'
+            : 'max-w-screen-lg m-auto flex justify-center text-slate-100'
+        }
+      >
+        <div className='newsBlock w-11/12 pt-44 '>
           <div>
-            <h2 className={isWideScreen ? 'newsH2' : 'newsH2_2'}>
+            <h2
+              className={
+                isWideScreen
+                  ? 'newsH2 text-slate-100 text-8xl font-semibold leading-normal'
+                  : 'newsH2_2 text-slate-100 text-7xl font-medium leading-snug'
+              }
+            >
               {t('newsBlock.firstSection.title')}
             </h2>
-            <p className={isWideScreen ? 'newsP' : 'newsP_2'}>
+            <p
+              className={
+                isWideScreen
+                  ? 'newsP text-3xl font-medium'
+                  : 'newsP_2 text-xl font-normal'
+              }
+            >
               {t('newsBlock.firstSection.upperTitle')}
             </p>
           </div>
-          <div className='newsBlocks'>
-            <div className={isWideScreen ? 'newsSection1' : 'newsSectionMedia'}>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+          <div className='newsBlocks flex gap-8'>
+            <div
+              className={
+                isWideScreen
+                  ? 'newsSection1 max-w-xl font-semibold pt-10'
+                  : 'newsSectionMedia max-w-72 font-medium py-6'
+              }
+            >
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     В студии звукозаписи прошел мастер-класс от известного
@@ -38,12 +64,14 @@ export const NewsBlock = () => {
                   </p>
                 </div>
               </div>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle2} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     Легендарная студия звукозаписи объявила о планах открытия
@@ -53,12 +81,14 @@ export const NewsBlock = () => {
                   </p>
                 </div>
               </div>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle3} alt='newsPhoto2' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     Студия звукозаписи запустила проект по поддержке молодых
@@ -69,13 +99,15 @@ export const NewsBlock = () => {
                 </div>
               </div>
             </div>
-            <div className='newsSection1'>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+            <div className='newsSection1 max-w-xl font-semibold pt-10'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle2} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     Легендарная студия звукозаписи объявила о планах открытия
@@ -85,12 +117,14 @@ export const NewsBlock = () => {
                   </p>
                 </div>
               </div>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle3} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     Студия звукозаписи запустила проект по поддержке молодых
@@ -100,12 +134,14 @@ export const NewsBlock = () => {
                   </p>
                 </div>
               </div>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     В студии звукозаписи прошел мастер-класс от известного
@@ -115,13 +151,15 @@ export const NewsBlock = () => {
                 </div>
               </div>
             </div>
-            <div className='newsSection1'>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+            <div className='newsSection1 max-w-xl font-semibold pt-10'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle3} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     Студия звукозаписи запустила проект по поддержке молодых
@@ -131,12 +169,14 @@ export const NewsBlock = () => {
                   </p>
                 </div>
               </div>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     В студии звукозаписи прошел мастер-класс от известного
@@ -145,12 +185,14 @@ export const NewsBlock = () => {
                   </p>
                 </div>
               </div>
-              <div className='newsSection2'>
-                <div className='newsSections'>
+              <div className='newsSection2 pt-10'>
+                <div className='newsSections bg-slate-400 rounded-3xl'>
                   <img src={Rectangle2} alt='newsPhoto' />
                   <p
                     className={
-                      isWideScreen ? 'newsP news_p' : 'newsP_2 news_p_2'
+                      isWideScreen
+                        ? 'text-3xl font-medium news_p text-2xl py-28 px-2.5 text-center'
+                        : 'text-xl font-normal news_p_2 text-xl text-center py-20 px-2.5'
                     }
                   >
                     Легендарная студия звукозаписи объявила о планах открытия

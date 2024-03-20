@@ -1,105 +1,18 @@
 
-.newsWrapper{
-    width: 1920px;
-    /* width: 100%; */
-    margin: auto;
-    background-color: #020202;
-    display: flex;
-    justify-content: center;
-    color: #ababab;
-}
-.newsWrapper2{
-    width: 1024px;
-    margin: auto;
-    background-color: #020202;
-    display: flex;
-    justify-content: center;
-}
-.newsBlock{
-    /* width: 1719px; */
-    width: 90%;
-    padding-top: 180px;
-}
-.newsBlocks{
-    display: flex;
-    gap: 30px;
-}
-.newsH2{
-    font-family: Montserrat;
-    font-size: 100px;
-    font-weight: 600;
-    line-height: 122px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #F5F5F5;
-}
-.newsH2_2{
-    font-family: Montserrat;
-    font-size: 70px;
-    font-weight: 500;
-    line-height: 100px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #F5F5F5;
-}
-.newsP{
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 37px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #f5f5f5;
-}
-.newsP_2{
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #f5f5f5;
-}
-.newsSection1{
-    max-width: 560px;
-    font-weight: 600;
-    padding: 40px 0 0;
-}
-.newsSectionMedia{
-    max-width: 298px;
-    padding: 25px 0 0;
-}
-.newsSection2{
-    padding: 40px 0;
-}
-.newsSections{
-    background-color: #ababab;
-    border-radius: 30px;
-}
-.news_p{
-    font-size: 25px;
-    padding: 120px 10px;
-    text-align: center;
-}
-.news_p_2{
-    font-size: 20px;
-    padding: 80px 10px;
-    text-align: center;
-}
-.mobileWrapper{
+/* .mobileWrapper{
     width: 375px;
     background-color: #383838;
     color: #F5F5F5;
     margin: 0 auto;
-}
-.mobileP{
+} */
+/* .mobileP{
     color: #f5f5f5;
     max-width: 375px;
     max-height: 410px;
     background-image: url(../../shared/img/aboutMobile/frame_104.png);
     background-size: auto;
     padding: 8px;
-}
+} */
 .mobileTextP, .mobileH2{
     text-align: center;
     padding: 8px;

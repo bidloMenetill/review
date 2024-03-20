@@ -3,8 +3,8 @@ import rectangle_54 from '../../shared/img/aboutMobile/rectangle_54.png';
 export const AboutUsMobile = () => {
   return (
     <div>
-      <div className='mobileWrapper'>
-        <p className='mobileP'>
+      <div className='mobileWrapper max-w-sm bg-slate-900 text-slate-300 mx-auto'>
+        <p className='mobileP text-slate-200 max-w-sm max-h-96 bg-[url("/src/shared/img/aboutMobile/frame_104.png")] bg-auto p-2'>
           <h2 className='mobileH2'>О нас</h2>
           <p className='mobileTextP'>
             Q-Rush Studio - это не просто музыкальная студия, это историческое

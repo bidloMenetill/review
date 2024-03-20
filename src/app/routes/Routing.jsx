@@ -15,7 +15,7 @@ import { useMediaQuery } from '../../shared';
 import { Layout } from './Layout';
 
 export const Routing = () => {
-  const isMobile = useMediaQuery('(min-width: 378px) and (max-width: 1920px)');
+  const isMobile = useMediaQuery('(min-width: 385px) and (max-width: 1920px)');
   const routesArr = [
     {
       path: '/aboutus',
