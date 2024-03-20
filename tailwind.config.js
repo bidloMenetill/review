@@ -22,6 +22,7 @@ export default {
         974: '974px',
         314: '314px',
         122: '122px',
+        1800: '1800px',
       },
       fontSize: { 122: '122px' },
       maxWidth: {

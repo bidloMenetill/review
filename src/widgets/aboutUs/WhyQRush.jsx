@@ -4,8 +4,8 @@ export const WhyQRush = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className="bg-[url('/src/shared/img/Why-Q-Rush-1.png')] w-[1920px] h-[802px] py-28">
-        <div className='w-[1719px] mx-auto'>
+      <div className="bg-[url('/src/shared/img/Why-Q-Rush-1.png')] w-full h-[802px] py-28">
+        <div className='w-11/12 mx-auto'>
           <h3 className='text-[#F5F5F5] text-center text-5xl leading-[61px] font-medium'>
             {t('aboutUs.secondSection.title')}
           </h3>
