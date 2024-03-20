@@ -1,13 +1,40 @@
-export const FormQuestion = () => {
-  return (
-    <div className='w-[1720px] h-[425px] mx-[auto] mb-[292px]'>
-      <h1 className='text-[50px] text-center pb-[90px]'>Задайте свой вопрос</h1>
+import { useMediaQuery } from '../../shared';
 
-      <div className='flex justify-between max-w-[1300px] mx-[auto] gap-[20px]'>
-        <div className='w-[50%]'>
+export const FormQuestion = () => {
+  const isWideScreen = useMediaQuery(
+    '(min-width: 1024px) and (max-width: 1480px)'
+  );
+  const isMobileScreen = useMediaQuery(
+    '(min-width: 768px) and (max-width: 1024px)'
+  );
+  const isIphoneScreen = useMediaQuery(
+    '(min-width: 430px) and (max-width: 768px)'
+  );
+  return (
+    <div
+      className={`${isWideScreen ? 'max-w-[1024px]' : isMobileScreen ? 'max-w-[768px]' : isIphoneScreen ? 'max-w-[430px]' : ''} h-[425px] mx-[auto] mb-[292px]`}
+    >
+      <h1
+        className={`${isWideScreen ? 'text-[30px]' : isMobileScreen ? 'text-[24px]' : isIphoneScreen ? 'text-[18px]' : 'text-[50px]'} text-center pb-[90px]`}
+      >
+        Задайте свой вопрос
+      </h1>
+
+      <div
+        className={`${
+          isWideScreen
+            ? 'max-w-[900px] flex justify-between'
+            : isMobileScreen
+              ? 'max-w-[640px] flex justify-between'
+              : isIphoneScreen
+                ? 'max-w-[360px] justify-normal'
+                : 'max-w-[1300px] flex justify-between'
+        }  mx-[auto] gap-[20px]`}
+      >
+        <div className={`${isIphoneScreen ? 'w-[100%]' : 'w-[50%]'}`}>
           <div>
             <input
-              className='w-[100%] mb-[27px] py-[18px] pl-[30px] rounded-[30px] outline-none bg-[#F93822] placeholder:text-[#FFFFFF]'
+              className='w-[100%] mb-[27px] py-[18px] pl-[30px] rounded-[30px] outline-none border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900/[.30] placeholder:text-[#FFFFFF] !important'
               type='text'
               name='name'
               placeholder='Имя'
@@ -16,9 +43,19 @@ export const FormQuestion = () => {
 
           <div>
             <input
-              className='w-[100%] mb-[61px] py-[18px] pl-[30px] rounded-[30px] outline-none bg-[#F93822] placeholder:text-[#FFFFFF]'
+              className='w-[100%] mb-[61px] py-[18px] pl-[30px] rounded-[30px] outline-none border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900/[.30] placeholder:text-[#FFFFFF] !important'
               type='text'
               placeholder='Номер whatsapp'
+            />
+          </div>
+        </div>
+        <div className={`${isIphoneScreen ? 'w-[100%]' : 'w-[50%]'}`}>
+          <div>
+            <textarea
+              className='w-[100%] mb-[47px] pb-[5px] px-[30px] rounded-[30px] outline-none border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900/[.30] placeholder:text-[#FFFFFF] overflow-hidden'
+              type='text'
+              placeholder='Текст'
+              rows={6}
             />
           </div>
 
@@ -27,7 +64,7 @@ export const FormQuestion = () => {
               <div className='w-full flex gap-2'>
                 <input
                   name='check'
-                  className='peer relative appearance-none shrink-0 w-[20px] h-[20px] border-solid border-[3px] rounded-[3px] border-[#F93822] bg-[#fff] cheked:border-[#F93822] '
+                  className='peer relative appearance-none shrink-0 w-[20px] h-[20px] border-solid border-[3px] rounded-[31px] border-[#E2DED3] bg-[#8E8E8E] cheked:border-[#F93822] checked:bg-[#E2DED3] checked:border-[#F93822] transition-all duration-300'
                   type='checkbox'
                 />
 
@@ -47,28 +84,21 @@ export const FormQuestion = () => {
               </div>
             </div>
             <div>
-              <p>
-                Я согласен(-на) с условиями Политики <br /> Конфиденциальности{' '}
+              <p className={`${isIphoneScreen ? 'text-[12px]' : ''}`}>
+                Я согласен(-на) с условиями Политики <br /> Конфиденциальности
               </p>
             </div>
           </div>
-        </div>
-        <div className='w-[50%]'>
-          <div>
-            <input
-              className='w-[100%] mb-[47px] pt-[10px] pb-[114px] pl-[30px] rounded-[30px] outline-none bg-[#F93822] placeholder:text-[#FFFFFF]'
-              type='text'
-              placeholder='Текст'
-            />
-          </div>
 
-          <div className='text-right'>
+          <div
+            className={`${isIphoneScreen ? 'text-center' : 'text-left'} mt-[30px]`}
+          >
             <button
               type='submit'
               className='bg-[#F93822] rounded-[30px] py-[20px] px-[100px]'
             >
               Отправить
-            </button>{' '}
+            </button>
           </div>
         </div>
       </div>
