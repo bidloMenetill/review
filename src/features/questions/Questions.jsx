@@ -4,9 +4,11 @@ import arrow from '../../shared/img/Frame.png';
 export const Questions = ({ title, text, description, flag, setFlag }) => {
   return (
     <div className='cont'>
-      <div className={flag === title ? 'contAfter' : 'contBefor'}>
+      <div
+        onClick={() => setFlag(title)}
+        className={flag === title ? 'contAfter' : 'contBefor'}
+      >
         <div
-          onClick={() => setFlag(title)}
           className={
             flag === title ? 'subcontainerAfter' : 'subcontainerBefore'
           }

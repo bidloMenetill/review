@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { useMediaQuery } from '../../shared';
+import { Modal } from './Modal';
 
 export const FormQuestion = () => {
+  const [open, setOpen] = useState(false);
   const isWideScreen = useMediaQuery(
     '(min-width: 1024px) and (max-width: 1480px)'
   );
@@ -10,17 +13,21 @@ export const FormQuestion = () => {
   const isIphoneScreen = useMediaQuery(
     '(min-width: 430px) and (max-width: 768px)'
   );
+  const onHandleSubmit = e => {
+    e.preventDefault();
+  };
   return (
     <div
       className={`${isWideScreen ? 'max-w-[1024px]' : isMobileScreen ? 'max-w-[768px]' : isIphoneScreen ? 'max-w-[430px]' : ''} h-[425px] mx-[auto] mb-[292px]`}
     >
-      <h1
+      <h2
         className={`${isWideScreen ? 'text-[30px]' : isMobileScreen ? 'text-[24px]' : isIphoneScreen ? 'text-[18px]' : 'text-[50px]'} text-center pb-[90px]`}
       >
         Задайте свой вопрос
-      </h1>
+      </h2>
 
-      <div
+      <form
+        onSubmit={onHandleSubmit}
         className={`${
           isWideScreen
             ? 'max-w-[900px] flex justify-between'
@@ -83,11 +90,11 @@ export const FormQuestion = () => {
                 </svg>
               </div>
             </div>
-            <div>
+            <label>
               <p className={`${isIphoneScreen ? 'text-[12px]' : ''}`}>
                 Я согласен(-на) с условиями Политики <br /> Конфиденциальности
               </p>
-            </div>
+            </label>
           </div>
 
           <div
@@ -95,13 +102,15 @@ export const FormQuestion = () => {
           >
             <button
               type='submit'
+              onClick={() => setOpen(true)}
               className='bg-[#F93822] rounded-[30px] py-[20px] px-[100px]'
             >
               Отправить
             </button>
           </div>
         </div>
-      </div>
+      </form>
+      <Modal openModal={open} setOpenModal={setOpen} />
     </div>
   );
 };

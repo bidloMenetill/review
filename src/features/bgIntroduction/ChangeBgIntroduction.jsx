@@ -71,13 +71,13 @@ export const ChangeBgIntroduction = () => {
   return (
     <section
       className={
-        'pt-[256px] bg-cover   h-[1080px] w-full flex justify-center flex-col bg-center bg-no-repeat bg-animation '
+        'pt-[256px] bg-cover   h-[100vh] w-full flex justify-center flex-col bg-center bg-no-repeat bg-animation '
       }
       style={{
         backgroundImage: `url(${bgForIntroduction[indexIntroduction]})`,
       }}
     >
-      <section className='w-[1720px] mx-auto relative'>
+      <section className='w-[100%] max-w-[1720px] mx-auto relative'>
         <h2 className='text-[#F5F5F5] font-[Montserrat] mt-[100px] text-center text-[60px] not-italic font-bold leading-[normal]  '>
           {t('homePage.firstSection.title')}
         </h2>

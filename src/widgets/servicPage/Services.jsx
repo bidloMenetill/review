@@ -1,54 +1,84 @@
-import { useTranslation } from 'react-i18next';
-import rectangle from '../../shared/img/servicesImg/Rectangle_53.jpg';
+import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import firstBg from '../../shared/img/servicesImg/firstFon.png';
+import secondBg from '../../shared/img/servicesImg/Rectangle_53.jpg';
+import thirdBg from '../../shared/img/servicesImg/secondFon.png';
+import fourthBg from '../../shared/img/servicesImg/thirdFon.png';
 
 export const Services = () => {
-  const { t } = useTranslation();
+  const [showText, setShowText] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        setShowText(true);
+        if (scrollPosition > 650) {
+          setShowText(false);
+        }
+      } else {
+        setShowText(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section className='w-[1720px] h-[283px] mx-auto text-[#f5f5f5]'>
-      <h2 className='py-[50px] text-[100px] font-medium'>
-        {t('servicePage.firstSection.title')}
-      </h2>
-
-      <div className='flex gap-[100px]'>
-        <div className='w-[573px] h-[650px]'>
+    <div className='relative z-200 w-full h-[1080px]'>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        loop={true}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        allowTouchMove={false}
+        modules={[Autoplay]}
+        className='!transition-all'
+      >
+        <SwiperSlide className='!transition-all'>
+          <div
+            className='w-[full] h-[1080px] bg-cover bg-no-repeat bg-center'
+            style={{ backgroundImage: `url(${firstBg})` }}
+          ></div>
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all'>
+          <div
+            className='w-[full] h-[1080px] bg-cover bg-no-repeat bg-center'
+            style={{ backgroundImage: `url(${secondBg})` }}
+          ></div>
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all'>
           <img
-            className='w-[100%] h-[100%] object-cover'
-            src={rectangle}
-            alt='sevice'
+            className='w-full h-[1080px] object-cover'
+            src={thirdBg}
+            alt=''
           />
-        </div>
-        <div className='mx-auto w-[1047px]'>
-          <h2 className='pt-[48px] pb-[20px] text-center text-[#DC6441] text-[30px] font-[500]'>
-            {t('servicePage.firstSection.firstUpperTitle')}
-          </h2>
-          <p className='text-[#F5F5F5] text-[20px]'>
-            {t('servicePage.firstSection.firstText')}
-          </p>
-
-          <h2 className='pt-[48px] pb-[20px] text-center text-[#DC6441] text-[30px] font-[500]'>
-            {t('servicePage.firstSection.secondUpperTitle')}
-          </h2>
-          <p className='text-[20px]'>
-            {t('servicePage.firstSection.secondText')}
-          </p>
-          <p className='text-[20px]'>
-            {t('servicePage.firstSection.thirdText')}
-          </p>
-        </div>
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all'>
+          <img
+            className='w-full h-[1080px] object-cover'
+            src={fourthBg}
+            alt=''
+          />
+        </SwiperSlide>
+      </Swiper>
+      <div className='absolute w-full top-[50%] z-[1] shadow-indigo-500/40'>
+        <h2 className='text-[50px] mx-[90px]'>Выберите свою программу</h2>
+        <hr className='mx-[90px] ' />
+        <h2
+          className={`${showText ? 'opacity-1 ml-[90px]' : 'opacity-0'} text-[100px] ease-out duration-300`}
+        >
+          Услуги
+        </h2>
       </div>
-
-      <div className='pl-[30px] pt-[30px]'>
-        <ul className='list-disc'>
-          <li>{t('servicePage.firstSection.textListF')}</li>
-          <li>{t('servicePage.firstSection.textListS')}</li>
-          <li>{t('servicePage.firstSection.textListTh')}</li>
-          <li>{t('servicePage.firstSection.textListFo')}</li>
-          <li>{t('servicePage.firstSection.textListFi')}</li>
-          <li>{t('servicePage.firstSection.textListSi')}</li>
-          <li>{t('servicePage.firstSection.textListSe')}</li>
-        </ul>
-      </div>
-    </section>
+    </div>
   );
 };

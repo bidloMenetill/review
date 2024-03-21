@@ -13,15 +13,12 @@ import bgService from '../../shared/img/forth_main_bg.jpg';
 export const ServicesPage = () => {
   return (
     <>
-      <section
-        className='bg-cover bg-no-repeat -mt-[0px] bg-center h-[3500px] font-montserrat'
-        style={{ backgroundImage: `url(${bgService})` }}
-      >
+      <section className='w-full h-[1080px] mx-auto text-[#f5f5f5] font-montserrat'>
         <Services />
-        <PriceList />
-        <Equipment />
-        <RehearsalBase />
       </section>
+      <PriceList />
+      <Equipment />
+      <RehearsalBase />
 
       <GuitarMusicCourses />
 

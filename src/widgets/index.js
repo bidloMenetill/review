@@ -6,7 +6,6 @@ export { TrustUsSection } from './homePage/TrustUsSection';
 export { Footer } from './footer/Footer';
 export { Header } from './header/Header';
 export { TrustUsMain } from './TrustUsPage/TrustUsMain';
-export { Musicians } from './TrustUsPage/Musicians';
 export { Preview } from './TrustUsPage/Preview';
 export { AboutUs } from './aboutUs/AboutUs';
 export { Team } from './aboutUs/Team';
