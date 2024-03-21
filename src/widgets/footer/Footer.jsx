@@ -6,7 +6,7 @@ import whatsapp from '../../shared/img/footer/whatsapp.svg';
 
 export const Footer = () => {
   return (
-    <footer className='w-[1920px] h-[982px] '>
+    <footer className='w-full h-[982px] '>
       <div className='h-[704px]  bg-black pt-[50px] pb-[50px] pr-[100px] pl-[100px]'>
         <img className='w-[415px] h-[100px] mb-[50px]' src={rush} alt='log' />
         <div className='text-white flex justify-around  font-montserrat text-[25px] ml-[50px]'>
