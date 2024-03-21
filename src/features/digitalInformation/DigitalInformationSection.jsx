@@ -24,8 +24,6 @@ export const DigitalInformationSection = () => {
         <div className='flex  justify-center  mt-[60px]'>
           <div className='flex flex-col'>
             <CountUp
-              start={0}
-              end={1500}
               duration={2.5}
               delay={0}
               separator=''
@@ -46,8 +44,6 @@ export const DigitalInformationSection = () => {
           </div>
           <div className='flex flex-col ml-[80px]'>
             <CountUp
-              start={0}
-              end={3000}
               duration={2.5}
               delay={0}
               separator=''
@@ -68,8 +64,6 @@ export const DigitalInformationSection = () => {
           </div>
           <div className='flex flex-col ml-[80px]'>
             <CountUp
-              start={0}
-              end={1000}
               duration={2.5}
               delay={0}
               separator=''

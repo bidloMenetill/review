@@ -42,7 +42,7 @@ export const Routing = () => {
       element: <NewsPage />,
     },
 
-    // {
+    // { FIX ME
     //   path: '/contacts',
     //   element,
     // },
