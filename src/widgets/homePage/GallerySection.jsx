@@ -8,6 +8,9 @@ import sixthGalleryImg from '../../shared/img/sixth_gallery_home_page.png';
 import arrayButton from '../../shared/img/link.svg';
 
 export const GallerySection = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section>
       <section className='container'>
@@ -15,7 +18,11 @@ export const GallerySection = () => {
           Галерея
         </h2>
         <div className='flex justify-end mb-[30px]'>
-          <Link className='!flex justify-normal items-center' to='/gallery'>
+          <Link
+            className='flex justify-normal items-center'
+            to='/galery'
+            onClick={scrollToTop}
+          >
             <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal] transition-colors duration-300 hover:text-[#F93822]'>
               смотреть все
             </button>{' '}

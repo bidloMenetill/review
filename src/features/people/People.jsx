@@ -20,6 +20,9 @@ export const People = props => {
   const isWideScreen = useMediaQuery(
     '(min-width: 1024px) and (max-width: 1480px)'
   );
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section
       className='h-[1174px]  bg-cover bg-no-repeat bg-center'
@@ -30,7 +33,11 @@ export const People = props => {
           {h2}
         </h2>
         <div className='flex justify-end'>
-          <Link className='!flex justify-normal items-center' to={`${to}`}>
+          <Link
+            className='flex justify-normal items-center'
+            to={to}
+            onClick={scrollToTop}
+          >
             <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal] transition-colors duration-300 hover:text-[#F93822]'>
               смотреть все
             </button>{' '}
