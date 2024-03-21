@@ -5,7 +5,7 @@ export const Team = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className='teamBlock w-full h-[2800px]'>
+      <div className='teamBlock w-1920px h-[2800px]'>
         <div className='block2 flex flex-col content-around gap-y-24 w-11/12 mx-auto'>
           <h2 className='team_text pt-16 text-[#F5F5F5] font-medium text-8xl leading-[122px]'>
             {t('aboutUs.thirdSection.title')}
@@ -69,7 +69,7 @@ export const Team = () => {
                 alt='photos'
                 className='w-[22%] h-[22%] max-w-screen-xl'
               />
-              <p className='team text-2xl font-medium text-left leading-10 w-11/12 text-slate-100 font-sans'>
+              <p className='team text-2xl font-medium text-left leading-10 w-1025px text-slate-100 font-sans'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem, rerum perspiciatis. Fuga quae ullam numquam ducimus
                 vel libero voluptates, sint debitis voluptatem ratione sunt
