@@ -8,14 +8,18 @@ import {
   Galery,
   ShopPage,
   Faq,
+  NewsPage,
+  AboutMobile,
 } from '../../pages';
+import { useMediaQuery } from '../../shared';
 import { Layout } from './Layout';
 
 export const Routing = () => {
+  const isMobile = useMediaQuery('(min-width: 385px) and (max-width: 1920px)');
   const routesArr = [
     {
       path: '/aboutus',
-      element: <About />,
+      element: isMobile ? <About /> : <AboutMobile />,
     },
     {
       path: '/trustus',
@@ -33,10 +37,10 @@ export const Routing = () => {
       path: '/faq',
       element: <Faq />,
     },
-    // {
-    //   path: '/news',
-    //   element,
-    // },
+    {
+      path: '/news',
+      element: <NewsPage />,
+    },
 
     // {
     //   path: '/contacts',
