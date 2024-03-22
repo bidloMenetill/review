@@ -3,10 +3,23 @@ import instagram from '../../shared/img/footer/instagram.svg';
 import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
 import whatsapp from '../../shared/img/footer/whatsapp.svg';
+import { useMediaQuery } from '../../shared';
 
 export const Footer = () => {
+  const isLaptopScreen = useMediaQuery(
+    '(min-width: 1024px) and (max-width:1440px)'
+  );
+  const isTabletScreen = useMediaQuery(
+    '(min-width:768px) and (max-width: 1024px)'
+  );
+  const isMobileScreen = useMediaQuery(
+    '(min-width:430px) and (max-width:768px)'
+  );
+
   return (
-    <footer className='w-[1920px] h-[982px] '>
+    <footer
+      className={`${isLaptopScreen ? 'max-w-[1440px] ' : isTabletScreen ? 'max-w-[1024px] ' : isMobileScreen ? 'max-w-[768px] ' : ''}  w-[1920px] h-[982px] `}
+    >
       <div className='h-[704px]  bg-black pt-[50px] pb-[50px] pr-[100px] pl-[100px]'>
         <img className='w-[415px] h-[100px] mb-[50px]' src={rush} alt='log' />
         <div className='text-white flex justify-around  font-montserrat text-[20px] ml-[50px]'>
@@ -25,7 +38,7 @@ export const Footer = () => {
             <li className='  w-[397px] font-bold text-[25px]  pb-[32px] text-orange-600'>
               <a href=''>Новости</a>
             </li>
-          
+
             <li className='pb-[32px]'>
               <a href=''>Часто задаваемые вопросы</a>
             </li>
@@ -58,8 +71,10 @@ export const Footer = () => {
               <a href=''>Адрес: Чынгыза Айтматова 1а (школа Билимкана)</a>
             </li>
             <li className='pb-[32px]'>
-              <a href=''>Посмотри подробную инструкцию 
-как до нас добраться  <span className='text-orange-500 text-[30px]'>→</span></a>
+              <a href=''>
+                Посмотри подробную инструкцию как до нас добраться{' '}
+                <span className='text-orange-500 text-[30px]'>→</span>
+              </a>
             </li>
             <li className='pb-[32px]'>
               <a href=''>Телефон: +996 700 763736</a>
