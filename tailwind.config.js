@@ -4,6 +4,12 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        sm: '576px',
+        md: '768px',
+        lg: '1300px',
+        xl: '1720px',
+      },
       fontFamily: { montserrat: ['Montserrat'] },
       backgroundImage: {
         'about-us': "url('/src/shared/img/about.png')",

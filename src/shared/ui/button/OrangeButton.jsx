@@ -2,7 +2,7 @@ export const OrangeButton = props => {
   return (
     <button
       type='button'
-      className='px-[24px] ml-[88px] py-[10px] w-[330px] h-[50px] bg-[#DC6441] font-normal text-[25px] text-[#25100a]'
+      className='px-[31px] transition-all duration-300 text-center rounded-[20px] lg:px-[65px] py-[7px] bg-[#F93822] font-normal text-[25px] text-[#F5F5F5] hover:opacity-80'
     >
       {props.txt}
     </button>

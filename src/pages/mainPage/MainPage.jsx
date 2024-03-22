@@ -19,7 +19,7 @@ export const MainPage = () => {
       <NewsSection />
       <TrustUsSection />
       <section
-        className='bg-center bg-no-repeat bg-cover'
+        className='bg-center w-full bg-no-repeat bg-cover'
         style={{ backgroundImage: `url(${bgForVideoAndGallery})` }}
       >
         <GallerySection />
