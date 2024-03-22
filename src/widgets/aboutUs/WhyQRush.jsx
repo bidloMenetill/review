@@ -9,7 +9,7 @@ export const WhyQRush = () => {
           <h3 className='text-[#F5F5F5] text-center text-5xl leading-[61px] font-medium'>
             {t('aboutUs.secondSection.title')}
           </h3>
-          <div className='flex py-32 gap-2'>
+          <div className='flex py-32 gap-2 w-[1720px]'>
             <div className='text-center'>
               <h4 className='text-[#DC6441] text-3xl font-bold'>
                 {t('aboutUs.secondSection.firstSection.title')}

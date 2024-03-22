@@ -4,7 +4,7 @@ export const AboutUs = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className='bg-[url("/src/shared/img/about1.png")] h-[960px] w-1920px'>
+      <div className='bg-[url("/src/shared/img/about1.png")] h-[960px] w-[1920px]'>
         <div className='about pt-16 flex justify-center items-center'>
           <div className='py-40 flex flex-row gap-[76px] w-11/12 items-center'>
             <div className='w-8/12 flex flex-col gap-6'>
