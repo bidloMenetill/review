@@ -4,33 +4,33 @@ export const WhyQRush = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className="bg-[url('/src/shared/img/Why-Q-Rush-1.png')] w-1920px h-[802px] py-28">
+      <div className="bg-[url('/src/shared/img/Why-Q-Rush-1.png')] lg:min-w-[1300px] xl:min-w-[1720px] min-h-[802px] py-28">
         <div className='w-11/12 mx-auto'>
-          <h3 className='text-[#F5F5F5] text-center text-5xl leading-[61px] font-medium'>
+          <h3 className='text-[#F5F5F5] text-center xl:text-5xl xl:leading-[61px] xl:font-medium lg:font-normal lg:text-4xl'>
             {t('aboutUs.secondSection.title')}
           </h3>
-          <div className='flex py-32 gap-2 w-[1720px]'>
+          <div className='flex py-32 gap-2 max-w-[1720px]'>
             <div className='text-center'>
-              <h4 className='text-[#DC6441] text-3xl font-bold'>
+              <h4 className='text-[#DC6441] xl:text-3xl font-bold lg:text-2xl'>
                 {t('aboutUs.secondSection.firstSection.title')}
               </h4>
-              <p className='text-[#F5F5F5] text-xl leading-10 font-medium'>
+              <p className='text-[#F5F5F5] xl:text-xl lg:text-lg leading-10 font-medium'>
                 {t('aboutUs.secondSection.firstSection.upperTitle')}
               </p>
             </div>
             <div className='text-center'>
-              <h4 className='text-[#DC6441] text-3xl font-bold'>
+              <h4 className='text-[#DC6441] xl:text-3xl font-bold lg:text-2xl'>
                 {t('aboutUs.secondSection.secondSection.title')}
               </h4>
-              <p className='text-[#F5F5F5] text-xl leading-10 font-medium'>
+              <p className='text-[#F5F5F5] xl:text-xl lg:text-lg leading-10 font-medium'>
                 {t('aboutUs.secondSection.secondSection.upperTitle')}
               </p>
             </div>
             <div className='text-center'>
-              <h4 className='text-[#DC6441] text-3xl font-bold'>
+              <h4 className='text-[#DC6441] xl:text-3xl font-bold lg:text-2xl'>
                 {t('aboutUs.secondSection.thirdSection.title')}
               </h4>
-              <p className='text-[#F5F5F5] text-xl leading-10 font-medium'>
+              <p className='text-[#F5F5F5] xl:text-xl lg:text-lg leading-10 font-medium'>
                 {t('aboutUs.secondSection.thirdSection.upperTitle')}
               </p>
             </div>

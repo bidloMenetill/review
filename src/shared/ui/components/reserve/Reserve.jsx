@@ -18,7 +18,7 @@ export const Reserve = props => {
 
   return props.customButton ? (
     <div
-      className='bg-cover bg-no-repeat bg-center h-[450px] bg-[#F93822]'
+      className='bg-cover bg-no-repeat bg-center min-h-[450px] bg-[#F93822]'
       style={{ backgroundImage: `url(${reserveBg})` }}
     >
       <div
@@ -43,7 +43,7 @@ export const Reserve = props => {
     </div>
   ) : (
     <div
-      className='bg-cover bg-no-repeat bg-center h-[450px] bg-[#F93822]'
+      className='bg-cover bg-no-repeat bg-center min-h-[450px] bg-[#F93822]'
       style={{ backgroundImage: `url(${reserveBg})` }}
     >
       <div

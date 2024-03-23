@@ -1,22 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import photo from '../../shared/img/bg_video_gallery.jpg';
-import { useMediaQuery } from '../../shared';
 
 export const Team = () => {
   const { t } = useTranslation();
-  const isNotebook = useMediaQuery(
-    '(min-width: 386px) and (max-width: 1720px)'
-  );
   return (
     <div>
-      <div className={isNotebook ? 'w-[1720px]' : 'w-1920px h-[2800px]'}>
+      <div className='xl:min-w-[1300px] xl:min-w-[1920px] max-h-[2800px]'>
         <div className='flex flex-col gap-y-24 w-11/12 mx-auto'>
           <h2
-            className={
-              isNotebook
-                ? 'font-normal text-7xl text-[#F5F5F5] pt-14 leading-[100px]'
-                : 'pt-16 text-[#F5F5F5] font-medium text-8xl leading-[122px]'
-            }
+            className='text-7xl lg:font-normal lg:text-7xl text-[#F5F5F5] lg:pt-14 lg:leading-[100px]
+                xl:pt-16 xl:font-medium xl:text-8xl xl:leading-[122px]'
           >
             {t('aboutUs.thirdSection.title')}
           </h2>
@@ -26,16 +19,8 @@ export const Team = () => {
             просто выполняем свою работу, мы отдаемся ей с преданностью и
             энтузиазмом
           </p>
-          <div
-            className={
-              isNotebook
-                ? 'flex flex-col flex-wrap gap-y-20 pb-6'
-                : 'flex flex-col flex-wrap gap-y-36'
-            }
-          >
-            <div
-              className={isNotebook ? 'pt-36 flex gap-7' : 'pt-40 flex gap-8'}
-            >
+          <div className='flex flex-col flex-wrap gap-y-36 lg:gap-y-20 lg:pb-6 xl:gap-y-36'>
+            <div className='lg:pt-36 flex lg:gap-7 xl:pt-40 xl:gap-8'>
               <img
                 src={photo}
                 alt='photos'
@@ -58,9 +43,7 @@ export const Team = () => {
                 quisquam.
               </p>
             </div>
-            <div
-              className={isNotebook ? 'pt-36 flex gap-7' : 'pt-40 flex gap-8'}
-            >
+            <div className='lg:pt-36 flex lg:gap-7 xl:pt-40 xl:gap-8'>
               <img
                 src={photo}
                 alt='photos'
@@ -83,9 +66,7 @@ export const Team = () => {
                 numquam!
               </p>
             </div>
-            <div
-              className={isNotebook ? 'pt-36 flex gap-7' : 'pt-40 flex gap-8'}
-            >
+            <div className='lg:pt-36 flex lg:gap-7 xl:pt-40 xl:gap-8 pb-40'>
               <img
                 src={photo}
                 alt='photos'
