@@ -28,7 +28,7 @@ export const Header = () => {
     <header
       className={` ${isLaptopScreen ? 'max-w-[1440px] ' : isTabletScreen ? 'max-w-[1024px] ' : isMobileScreen ? 'max-w-[768px] ' : ''} max-w-full h-[100px] bg-black/50 backdrop-opacity-10 backdrop-invert flex items-center justify-center  top-0 backdrop-blur-50 sticky`}
     >
-      <nav className='min-w-[88%]  flex justify-between items-center'>
+      <nav className=' w-[1720px]  flex justify-between items-center'>
         <Link to={'/'}>
           <img src={logo} alt='Q-RUSH logo' />
         </Link>

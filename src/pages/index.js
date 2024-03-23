@@ -6,3 +6,5 @@ export { About } from './about/About';
 export { ServicesPage } from './servicesPage/ServicesPage';
 export { ShopPage } from './shopPage/ShopPage';
 export { Faq } from './faq/Faq';
+export { NewsPage } from './newsPage/NewsPage';
+export { AboutMobile } from './aboutMobile/AboutMobile';
