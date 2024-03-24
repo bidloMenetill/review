@@ -1,14 +1,14 @@
 import {
-  DrumsMusicCourses,
-  Equipment,
-  GuitarMusicCourses,
-  PriceList,
-  RehearsalBase,
+  RehearsalCost,
+  Welcome,
   ServiceOrder,
   Services,
-  VocalMusicCourses,
+  SoundRecording,
+  RehearsalSecondCost,
+  RehearsalThirdCost,
+  MusicCours,
+  SecondMusicCours,
 } from '../../widgets';
-import bgService from '../../shared/img/forth_main_bg.jpg';
 
 export const ServicesPage = () => {
   return (
@@ -16,22 +16,13 @@ export const ServicesPage = () => {
       <section className='w-full h-[1080px] mx-auto text-[#f5f5f5] font-montserrat'>
         <Services />
       </section>
-      <PriceList />
-      <Equipment />
-      <RehearsalBase />
-
-      <GuitarMusicCourses />
-
-      <section
-        className='relative bg-cover bg-no-repeat -mt-[0px] bg-center h-[1725px] font-montserrat'
-        style={{ backgroundImage: `url(${bgService})` }}
-      >
-        <div className='w-[100%] h-[100%] absolute inset-0 bg-black opacity-80'></div>
-        <div className='w-[100%] h-[100%] absolute mx-[auto]'>
-          <DrumsMusicCourses />
-          <VocalMusicCourses />
-        </div>
-      </section>
+      <Welcome />
+      <SoundRecording />
+      <RehearsalCost />
+      <RehearsalSecondCost />
+      <RehearsalThirdCost />
+      <MusicCours />
+      <SecondMusicCours />
 
       <ServiceOrder />
     </>

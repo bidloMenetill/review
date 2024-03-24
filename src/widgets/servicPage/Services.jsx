@@ -27,7 +27,7 @@ export const Services = () => {
   }, []);
 
   return (
-    <div className='relative z-200 w-full h-[1080px]'>
+    <div className='relative w-full ease-out duration-300'>
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
@@ -41,40 +41,44 @@ export const Services = () => {
         }}
         allowTouchMove={false}
         modules={[Autoplay]}
-        className='!transition-all'
+        className='!transition-all ease-out duration-300'
       >
-        <SwiperSlide className='!transition-all'>
-          <div
-            className='w-[full] h-[1080px] bg-cover bg-no-repeat bg-center'
-            style={{ backgroundImage: `url(${firstBg})` }}
-          ></div>
-        </SwiperSlide>
-        <SwiperSlide className='!transition-all'>
-          <div
-            className='w-[full] h-[1080px] bg-cover bg-no-repeat bg-center'
-            style={{ backgroundImage: `url(${secondBg})` }}
-          ></div>
-        </SwiperSlide>
-        <SwiperSlide className='!transition-all'>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
           <img
-            className='w-full h-[1080px] object-cover'
-            src={thirdBg}
-            alt=''
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={firstBg}
+            alt='firstBg'
           />
         </SwiperSlide>
-        <SwiperSlide className='!transition-all'>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
           <img
-            className='w-full h-[1080px] object-cover'
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={secondBg}
+            alt='secondBg'
+          />
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
+          <img
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={thirdBg}
+            alt='thirdBg'
+          />
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
+          <img
+            className='w-full h-[1080px] object-cover ease-in duration-300'
             src={fourthBg}
-            alt=''
+            alt='fourthBg'
           />
         </SwiperSlide>
       </Swiper>
-      <div className='absolute w-full top-[50%] z-[1] shadow-indigo-500/40'>
-        <h2 className='text-[50px] mx-[90px]'>Выберите свою программу</h2>
-        <hr className='mx-[90px] ' />
+      <div className='absolute w-full top-[55%] z-[1]'>
+        <h2 className='text-[24px] mb-[20px] mx-[90px] xl:text-[50px] lg:text-[40px]'>
+          Выберите свою программу
+        </h2>
+        <hr className='mx-[90px] shadow-[0px_0px_600px_240px_#000000]' />
         <h2
-          className={`${showText ? 'opacity-1 ml-[90px]' : 'opacity-0'} text-[100px] ease-out duration-300`}
+          className={`${showText ? 'opacity-1 ml-[90px]' : 'opacity-0'} text-[60px] ease-out duration-300 xl:text-[100px] lg:text-[80px]`}
         >
           Услуги
         </h2>

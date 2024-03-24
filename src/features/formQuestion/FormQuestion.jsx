@@ -1,44 +1,22 @@
 import { useState } from 'react';
-import { useMediaQuery } from '../../shared';
 import { Modal } from './Modal';
 
 export const FormQuestion = () => {
   const [open, setOpen] = useState(false);
-  const isWideScreen = useMediaQuery(
-    '(min-width: 1024px) and (max-width: 1480px)'
-  );
-  const isMobileScreen = useMediaQuery(
-    '(min-width: 768px) and (max-width: 1024px)'
-  );
-  const isIphoneScreen = useMediaQuery(
-    '(min-width: 430px) and (max-width: 768px)'
-  );
   const onHandleSubmit = e => {
     e.preventDefault();
   };
   return (
-    <div
-      className={`${isWideScreen ? 'max-w-[1024px]' : isMobileScreen ? 'max-w-[768px]' : isIphoneScreen ? 'max-w-[430px]' : ''} h-[425px] mx-[auto] mb-[292px]`}
-    >
-      <h2
-        className={`${isWideScreen ? 'text-[30px]' : isMobileScreen ? 'text-[24px]' : isIphoneScreen ? 'text-[18px]' : 'text-[50px]'} text-center pb-[90px]`}
-      >
+    <div className='max-w-[600px] mx-[auto] pb-[150px] xl:max-w-[1300px] lg:max-w-[900px]'>
+      <h2 className='text-center text-[30px] pb-[50px] xl:text-[50px] lg:text-[30px]'>
         Задайте свой вопрос
       </h2>
 
       <form
         onSubmit={onHandleSubmit}
-        className={`${
-          isWideScreen
-            ? 'max-w-[900px] flex justify-between'
-            : isMobileScreen
-              ? 'max-w-[640px] flex justify-between'
-              : isIphoneScreen
-                ? 'max-w-[360px] justify-normal'
-                : 'max-w-[1300px] flex justify-between'
-        }  mx-[auto] gap-[20px]`}
+        className='mx-[auto] gap-[20px] xl:flex xl:justify-between xl:max-w-[1300px] lg:max-w-[900px]  lg:flex lg:justify-between'
       >
-        <div className={`${isIphoneScreen ? 'w-[100%]' : 'w-[50%]'}`}>
+        <div className='w-[50%] sm:w-[100%]'>
           <div>
             <input
               className='w-[100%] mb-[27px] py-[18px] pl-[30px] rounded-[30px] outline-none border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900/[.30] placeholder:text-[#FFFFFF] !important'
@@ -56,7 +34,7 @@ export const FormQuestion = () => {
             />
           </div>
         </div>
-        <div className={`${isIphoneScreen ? 'w-[100%]' : 'w-[50%]'}`}>
+        <div className='w-[50%] sm:w-[100%]'>
           <div>
             <textarea
               className='w-[100%] mb-[47px] pb-[5px] px-[30px] rounded-[30px] outline-none border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900/[.30] placeholder:text-[#FFFFFF] overflow-hidden'
@@ -70,8 +48,9 @@ export const FormQuestion = () => {
             <div>
               <div className='w-full flex gap-2'>
                 <input
+                  id='checkbox'
                   name='check'
-                  className='peer relative appearance-none shrink-0 w-[20px] h-[20px] border-solid border-[3px] rounded-[31px] border-[#E2DED3] bg-[#8E8E8E] cheked:border-[#F93822] checked:bg-[#E2DED3] checked:border-[#F93822] transition-all duration-300'
+                  className='peer relative appearance-none shrink-0 w-[20px] h-[20px] border-solid border-[3px] rounded-[31px] border-[#E2DED3] bg-[#8E8E8E] cheked:border-[#F93822] checked:bg-[#E2DED3] checked:border-[#F93822] transition-all duration-300 cursor-pointer'
                   type='checkbox'
                 />
 
@@ -90,16 +69,14 @@ export const FormQuestion = () => {
                 </svg>
               </div>
             </div>
-            <label>
-              <p className={`${isIphoneScreen ? 'text-[12px]' : ''}`}>
+            <label for='checkbox' className='cursor-pointer'>
+              <p className='xl:text-[14px] md:text-[12px]'>
                 Я согласен(-на) с условиями Политики <br /> Конфиденциальности
               </p>
             </label>
           </div>
 
-          <div
-            className={`${isIphoneScreen ? 'text-center' : 'text-left'} mt-[30px]`}
-          >
+          <div className='mt-[30px] sm:text-center'>
             <button
               type='submit'
               onClick={() => setOpen(true)}
