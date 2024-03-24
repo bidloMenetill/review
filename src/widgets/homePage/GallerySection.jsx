@@ -29,7 +29,7 @@ export const GallerySection = () => {
             <img src={arrayButton} className='ml-[10px]' alt='' />
           </Link>
         </div>
-        <section className='grid grid-rows-[180px_200px_180px] xl:grid-rows-[224px_229px_224px] grid-column gap-4'>
+        <section className='grid grid-rows-[33.14%_30.73%_33.14%] lg:grid-rows-[34.14%_31.73%_34.14%]  grid-column gap-4'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             {' '}
             <img
