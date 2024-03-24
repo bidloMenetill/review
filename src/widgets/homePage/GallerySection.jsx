@@ -13,8 +13,8 @@ export const GallerySection = () => {
   };
   return (
     <section>
-      <section className='container'>
-        <h2 className='text-[#F5F5F5] pt-[100px] mb-[66px] font-[Montserrat] text-[100px] not-italic font-medium leading-[normal]'>
+      <section className='max-w-[90%] xl:container mx-auto '>
+        <h2 className='text-[#F5F5F5] pt-[100px] mb-[66px] font-[Montserrat] text-[80px] lg:text-[100px] not-italic font-medium leading-[normal]'>
           Галерея
         </h2>
         <div className='flex justify-end mb-[30px]'>
@@ -25,7 +25,7 @@ export const GallerySection = () => {
             <img src={arrayButton} className='ml-[10px]' alt='' />
           </Link>
         </div>
-        <section className='grid grid-rows-[224px_229px_224px] grid-column gap-4'>
+        <section className='grid grid-rows-[180px_200px_180px] xl:grid-rows-[224px_229px_224px] grid-column gap-4'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             {' '}
             <img
