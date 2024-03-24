@@ -17,9 +17,7 @@ export { GaleryMain } from './galeryMain/GaleryMain';
 export { ImageSection } from './galeryMain/imageSection';
 export { ThirdVideoSection } from './galeryMain/ThirdVideoSection';
 export { VideoSlider } from './galeryMain/VideoSlider';
-export { GuitarMusicCourses } from './servicPage/GuitarMusicCourses';
-export { DrumsMusicCourses } from './servicPage/DrumsMusicCourses';
-export { VocalMusicCourses } from './servicPage/VocalMusicCourses';
+
 export { ServiceOrder } from './servicPage/ServiceOrder';
 export { GallerySection } from './homePage/GallerySection';
 export { VideoSection } from './homePage/VideoSection';
