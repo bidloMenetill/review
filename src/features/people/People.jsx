@@ -60,7 +60,7 @@ export const People = props => {
             </div>
           </li>
 
-          <li className='border-[1px] border-[solid] rounded-[30px] border-[1px] border-[solid] border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-full  h-full'>
+          <li className='border-[1px] border-[solid] rounded-[30px]  border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-full  h-full'>
             <div className='p-[20px] flex justify-center items-center flex-col'>
               <img
                 src={secondHuman}
@@ -74,7 +74,7 @@ export const People = props => {
               {!br2 && <OrangeButton key='button2' txt={'Подробнее'} />}
             </div>
           </li>
-          <li className='border-[1px] border-[solid] rounded-[30px] border-[1px] border-[solid] border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-full h-full'>
+          <li className='border-[1px] border-[solid] rounded-[30px]  border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-full h-full'>
             <div className='p-[20px]  flex flex-col justify-center items-center '>
               <img
                 src={thirdHuman}
