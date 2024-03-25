@@ -17,7 +17,6 @@ export const ChangeBgIntroduction = () => {
     () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],
     []
   );
-
   const [indexIntroduction, setIndexIntroduction] = useState(0);
   const [isChangingBg, setIsChangingBg] = useState(false);
   const [timeoutId, setTimeoutId] = useState(null);
@@ -71,45 +70,48 @@ export const ChangeBgIntroduction = () => {
   return (
     <section
       className={
-        'pt-[256px] bg-cover   h-[100vh] w-full flex justify-center flex-col bg-center bg-no-repeat bg-animation '
+        ' bg-cover   h-[100vh] w-full flex justify-center flex-col bg-center bg-no-repeat bg-animation '
       }
       style={{
         backgroundImage: `url(${bgForIntroduction[indexIntroduction]})`,
       }}
     >
-      <section className='w-[100%] max-w-[1720px] mx-auto relative'>
-        <h2 className='text-[#F5F5F5] font-[Montserrat] mt-[100px] text-center text-[41px] xl:text-[60px] lg:text-[53px] not-italic font-bold leading-[normal]  '>
-          {t('homePage.firstSection.title')}
-        </h2>
-
-        <button
-          className='arrow-left absolute flex justify-center items-center left-[10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 '
-          onClick={() => handleArrowClick('left')}
-          disabled={isChangingBg}
-        >
-          <img src={arrayLeft} alt='' className='p-[8px]' />
-        </button>
-        <button
-          className='arrow-right absolute flex justify-center items-center right-[10px] top-[275px] rounded-[40px] w-[60px] h-[60px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 '
-          onClick={() => handleArrowClick('right')}
-          disabled={isChangingBg}
-        >
-          <img src={arrayRight} alt='' className='p-[1px]' />
-        </button>
+      <section className='relative'>
+        <section className='w-[100%] max-w-[1720px] mx-auto relative'>
+          <div className='flex justify-center items-end'>
+            <h2 className='text-[#F5F5F5] font-[Montserrat]  mb-[150px] lg:mb-[10px] text-center text-[41px] xl:text-[60px] lg:text-[42px] not-italic font-bold leading-[normal]  '>
+              {t('homePage.firstSection.title')}
+            </h2>
+          </div>
+          <button
+            className='arrow-left absolute flex justify-center items-center left-[60px] xl:left-[10px] lg:left-[60px] top-[200px] xl:top-[190px] lg:top-[140px]  rounded-[40px] w-[55px] h-[55px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,_255,_255,_0.5)] cursor-pointer transform hover:scale-110 '
+            onClick={() => handleArrowClick('left')}
+            disabled={isChangingBg}
+          >
+            <img src={arrayLeft} alt='' className='p-[8px]' />
+          </button>
+          <button
+            className='arrow-right absolute flex justify-center items-center right-[60px] xl:right-[10px] lg:right-[60px] top-[200px] xl:top-[190px] lg:top-[140px] rounded-[40px] w-[55px]  h-[55px] backdrop-filter backdrop-blur-2xl bg-[rgba(255,255,255,0.5)] cursor-pointer transform hover:scale-110 '
+            onClick={() => handleArrowClick('right')}
+            disabled={isChangingBg}
+          >
+            <img src={arrayRight} alt='' className='p-[1px]' />
+          </button>
+          <div
+            className={
+              'absolute -bottom-[200px] xl:-bottom-[440px] lg:-bottom-[330px] left-0  mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container'
+            }
+          >
+            {bgForIntroduction.map((bg, index) => (
+              <img
+                key={bg}
+                src={indexIntroduction === index ? whiteLine : line}
+                alt='line'
+              />
+            ))}
+          </div>
+        </section>
       </section>
-      <div
-        className={
-          'pt-[500px] lg:pt-[549px] mb-[71px] pl-[96px] gap-x-[12px] flex mx-0 container'
-        }
-      >
-        {bgForIntroduction.map((bg, index) => (
-          <img
-            key={bg}
-            src={indexIntroduction === index ? whiteLine : line}
-            alt='line'
-          />
-        ))}
-      </div>
     </section>
   );
 };

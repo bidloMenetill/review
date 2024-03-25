@@ -27,7 +27,7 @@ body{
      
   }
   .asideContainer {
-    @apply fixed bottom-[110px] right-[125px] bg-[#F93822] cursor-pointer z-50  rounded-[766.667px]  
+    @apply fixed bottom-20 xl:bottom-[110px] right-7 xl:right-[125px] bg-[#F93822]   cursor-pointer z-50  rounded-[766.667px]  
   }
   .liNavOrange{
     @apply mb-[10px] mt-[7px]
