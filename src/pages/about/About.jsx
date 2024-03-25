@@ -6,7 +6,7 @@ export const About = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className='bg-no-repeat bg-[url("src/shared/img/aboutUs.png")] max-w-[1920px] xl:min-w-[1720px] flex flex-col mx-auto'>
+      <div className='bg-no-repeat bg-[url("src/shared/img/aboutUs.png")] max-w-[1920px] xl:min-w-[1720px] lg:min-w-[1300px] flex flex-col mx-auto'>
         <AboutUs />
         <WhyQRush />
         <Team />
