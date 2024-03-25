@@ -20,16 +20,15 @@ export const MusicCours = () => {
         </p>
       </div>
 
-      <div className='pl-[100px]'>
+      <div className='max-w-[1800px] mx-[auto]'>
         <Swiper
-          spaceBetween={200}
+          spaceBetween={0}
           slidesPerView={3.4}
           pagination={{ clickable: true }}
-          className='mySwiper'
         >
           <div className='flex justify-center text-white'>
             <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
+              <div className='w-[100%] h-[40%]'>
                 <img
                   className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
                   src={rectangle51}
