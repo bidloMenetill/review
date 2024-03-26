@@ -71,7 +71,7 @@ export const ShopCards = () => {
   return (
     <ul className='max-w-[1920px] mx-auto mb-[100px] font-[montserrat] text-[#E2DED3]'>
       {shopCard.map(card => (
-        <div>
+        <div key={card.id}>
           {card.id % 2 === 0 ? (
             <li
               className='max-w-[89.3%] xl:max-w-[1715px] ml-[130px] xl:ml-[245px] lg:ml-[170px] flex justify-between mt-[100px] text-[#E2DED3] gap-x-[30px] items-center '
@@ -81,7 +81,7 @@ export const ShopCards = () => {
                 <h2 className='font-bold text-[#E2DED3] text-[30px] lg:text-[40px] xl:text-[50px]'>
                   {card.instrumentName}
                 </h2>
-                <ul className='text-[24px] lg:text-[27px] xl:text-[30px] font-medium  mt-[30px]'>
+                <ul className='text-[22px] lg:text-[27px] xl:text-[30px] font-medium  mt-[30px]'>
                   <li>{card.length}</li>
                   <li>{card.diameter}</li>
                   <li>{card.tree}</li>
