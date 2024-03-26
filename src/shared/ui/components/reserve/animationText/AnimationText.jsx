@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-const AnimationText = () => {
+export const AnimationText = ({ qrushImg }) => {
   const marqueeVariants = {
     animate: {
-      x: [0, window.innerWidth], // Двигаем текст от 0 до полной ширины экрана
+      x: [0, window.innerWidth],
       transition: {
         x: {
-          repeat: Infinity, // Бесконечное повторение
-          duration: 8, // Продолжительность анимации в секундах
-          ease: 'linear', // Линейное изменение скорости анимации
+          repeat: Infinity,
+          duration: 8,
+          ease: 'linear',
         },
       },
     },
@@ -20,10 +20,8 @@ const AnimationText = () => {
         variants={marqueeVariants}
         animate='animate'
       >
-        Q-rush project
+        <img src={qrushImg} alt='qrushImg' />
       </motion.div>
     </div>
   );
 };
-
-export default AnimationText;

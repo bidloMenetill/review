@@ -6,7 +6,6 @@ import volkodav from '../../shared/img/TrustUs/volkodav.png';
 import lsp from '../../shared/img/TrustUs/lsp.png';
 import pavel from '../../shared/img/TrustUs/pavel.png';
 import zere from '../../shared/img/TrustUs/zere.png';
-import { useMediaQuery } from '../../shared';
 
 export const Preview = () => {
   const celebrities = [
@@ -60,46 +59,25 @@ export const Preview = () => {
       role: `Запись спектакля "Мен Кайдамын"`,
     },
   ];
-
-  const isWideScreen1 = useMediaQuery(
-    '(min-width: 1620px) and (max-width:1820px)'
-  );
-  const isWideScreen2 = useMediaQuery(
-    '(min-width: 1320px) and (max-width:1620px)'
-  );
-  const isWideScreen3 = useMediaQuery(
-    '(min-width: 1024px) and (max-width:1320px)'
-  );
-
   return (
-    <div
-      className={`bg-cover bg-no-repeat bg-center  bg-[#000] ${isWideScreen1 ? 'h-[2612px]' : isWideScreen2 ? 'h-[2212px]' : isWideScreen3 ? 'h-[1912px]' : 'h-[2812px]'}`}
-    >
-      <ul
-        className={`container flex flex-wrap text-[#f5f5f5] gap-x-[20px] gap-y-[100px] ${isWideScreen1 ? 'w-[1420px]' : isWideScreen2 ? 'w-[1220px]' : isWideScreen3 ? 'w-[920px]' : ''}`}
-      >
+    <div className='bg-cover bg-no-repeat bg-center  bg-[#000] h-[2000px] lg:h-[2812px]'>
+      <ul className='max-w-[90%] xl:container mx-auto flex justify-evenly flex-wrap text-[#f5f5f5] gap-x-[20px] gap-y-[100px]  '>
         {celebrities.map((celeb, index) => (
           <li
-            className={`bg-cover bg-no-repeat bg-center flex justify-center  ${isWideScreen1 ? 'w-[460px] h-[560px] rounded-[30px]' : isWideScreen2 ? 'w-[390px] h-[490px] rounded-[20px]' : isWideScreen3 ? 'w-[290px] h-[395px] rounded-[10px]' : ' w-[560px] h-[660px] rounded-[30px]'}`}
+            className='w-[288px] h-[430px] xl:w-[560px] xl:h-[660px] lg:w-[376px] lg:h-[540px] flex justify-center rounded-[20px] lg:rounded-[30px]'
             style={{ backgroundImage: `url(${celeb.background})` }}
             key={celeb.id}
           >
             <img
-              className={`mt-[20px] ${isWideScreen1 ? 'w-[420px] h-[393px]' : isWideScreen2 ? 'w-[320px] h-[293px] rounded-[20px]' : isWideScreen3 ? 'w-[220px] h-[193px] rounded-[10px]' : 'w-[520px] h-[493px] rounded-[30px]'}`}
+              className='w-[266px] h-[293px] mx-auto xl:w-[520px] xl:h-[493px] lg:w-[356px] lg:h-[393px] rounded-[10px] lg:rounded-[30px] mt-[20px]'
               src={celeb.img}
               alt='celebImg'
             />
-            <div
-              className={`h-[91px] absolute text-center text-[30px] font-bold  ${isWideScreen1 ? 'w-[281px] mt-[433px]' : isWideScreen2 ? 'w-[181px] mt-[333px]' : isWideScreen3 ? 'w-[131px] mt-[233px]' : 'w-[381px] mt-[533px]'}`}
-            >
-              <h4
-                className={`font-bold font-montserrat ${isWideScreen1 ? 'text-[28px]' : isWideScreen2 ? 'text-[25px]' : isWideScreen3 ? 'text-[22px]' : 'text-[30px]'}`}
-              >
+            <div className='w-[281px] lg:w-[381px] absolute text-center font-bold mt-[333px] xl:mt-[533px] lg:mt-[433px]'>
+              <h4 className='font-bold font-montserrat text-[24px] lg:text-[27px] xl:text-[30px]'>
                 {celeb.name}
               </h4>
-              <p
-                className={`font-bold font-montserrat ${isWideScreen1 ? 'w-[280px] text-[20px]' : isWideScreen2 ? 'w-[180px] text-[19px]' : isWideScreen3 ? 'w-[130px] text-[18px]' : 'w-[380px] text-[20px]'}`}
-              >
+              <p className='lg:w-[370px] text-[18px] lg:text-[20px] font-bold font-montserrat '>
                 {celeb.role}
               </p>
             </div>
