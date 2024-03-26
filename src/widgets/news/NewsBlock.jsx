@@ -1,18 +1,18 @@
 // import Rectangle_142 from '../../shared/img/news2/Rectangle_142.png';
 // import Rectangle_141 from '../../shared/img/news2/Rectangle_141.png';
 
-export const NewsBlock = () => {
-  return (
-    <div>
-      <div className='max-w-[1920px] border-blue-950 border-solid border-2'>
-        <div className='bg-[url("/src/shared/img/news2/Rectangle_142.png")] max-w-[1081.5px] max-h-[960px]'>
-          <h1>Новости </h1>
-        </div>
-        <div className='bg-[url("/src/shared/img/news2/Rectangle_141.png")] max-w-[950px] max-h-[960px]'></div>
-      </div>
-    </div>
-  );
-};
+// export const NewsBlock = () => {
+//   return (
+//     <div>
+//       <div className='max-w-[1920px] border-blue-950 border-solid border-2'>
+//         <div className='bg-[url("/src/shared/img/news2/Rectangle_142.png")] max-w-[1081.5px] max-h-[960px]'>
+//           <h1>Новости </h1>
+//         </div>
+//         <div className='bg-[url("/src/shared/img/news2/Rectangle_141.png")] max-w-[950px] max-h-[960px]'></div>
+//       </div>
+//     </div>
+//   );
+// };
 
 // import { useTranslation } from 'react-i18next';
 // import Rectangle from '../../shared/img/news/rectangle_108.png';

@@ -19,36 +19,39 @@ import unnamed_3 from '../../shared/img/news2/unnamed_3.png';
 
 export const NewsBlock2 = () => {
   return (
-    <div className='flex box-border m-0 p-0 flex-col'>
-      <div className='flex'>
-        <div className='bg-[url("/src/shared/img/news2/Rectangle_142.png")] w-[1081.5px] h-[960px] bg-no-repeat'>
+    <div className='flex box-border m-0 p-0 flex-col mx-[auto] w-[1920px]'>
+      <div className='flex xl:min-w-[1720px] lg:min-w-[1300px] bg-contain'>
+        <div className='bg-[url("/src/shared/img/news2/Rectangle_142.png")] bg-contain w-[1081.5px] h-[960px] bg-no-repeat'>
           <div>
-            <h1 className='text-[#E2DED3] font-medium text-[170px] pt-[30%] px-[12%]'>
+            <h1 className='text-[#E2DED3] font-medium xl:text-[11em] pt-[30%] px-[12%] lg:text-[8em] text-[8em]'>
               Новости
             </h1>
-            <p className='text-[#E2DED3] font-medium text-[50px] pl-[12%]'>
+            <p className='text-[#E2DED3] font-medium text-[2em] xl:text-[3em] lg:text-[2em] pl-[12%]'>
               {' '}
               Здесь мы публикуем новости и статьи студии
             </p>
           </div>
         </div>
-        <div className='bg-[url("/src/shared/img/news2/Rectangle_141.png")] w-[950px] h-[960px] bg-no-repeat'>
+        <div className='bg-[url("/src/shared/img/news2/Rectangle_141.png")] bg-contain max-w-[950px] h-[960px] bg-no-repeat'>
           <div>
-            <p className='text-[#E2DED3] font-medium text-[25px] pt-[75%]'>
+            <p className='text-[#E2DED3] font-medium text-[25px] pt-[75%] pl-[12%]'>
               Викрам Рузахунов, Нурак Омурбеков, Денис Бурдаков Запись
               музыкального видео
             </p>
           </div>
         </div>
+        {/* <div className='absolute bottom-[-280px]'>
+          <img src={Rectangle_137} alt='Rectangle_137' />
+        </div> */}
       </div>
-      <section className='h-[676px] flex mt-[10%]'>
-        <div className='w-[520px] h-[676px]'>
-          <p className='text-[#E2DED3] font-medium text-[25px] text-center py-[51%] px-[10%] bg-[#F93822]'>
+      <section className='min-h-[676px] flex mt-[10%]'>
+        <div className='max-w-[520px] min-h-[676px]'>
+          <p className='text-[#E2DED3] font-medium text-[25px] text-center py-[51%] px-[10%] bg-[#F93822] min-h-[676px]'>
             Всем привет, фоточки прилетели!) ищите себя на фото с QrushFest.
             Ссылка в шапке профиля 
           </p>
         </div>
-        <div className='w-[1403px] flex overflow-x-hidden gap-[6%]'>
+        <div className='max-w-[1403px] flex overflow-x-hidden gap-[6%]'>
           <img src={Rectangle_143} alt='Rectangle_143' />
           <img src={Rectangle_144} alt='Rectangle_144' />
           <img src={Rectangle_145} alt='Rectangle_145' />
@@ -60,11 +63,11 @@ export const NewsBlock2 = () => {
           <img src={Rectangle_151} alt='Rectangle_151' />
         </div>
       </section>
-      <section className='flex mt-[10%] text-center text-[#F93822] w-[1920px]'>
+      <section className='flex mt-[10%] text-center text-[#F93822] max-w-[1920px]'>
         <div>
           <img src={Rectangle_148_1} alt='Rectangle_148(1)' />
         </div>
-        <div className='bg-[#F93822] w-[678px] h-[860px] py-[10%] px-[2%] flex flex-col gap-[10%]'>
+        <div className='bg-[#F93822] max-w-[678px] min-h-[860px] py-[10%] px-[2%] flex flex-col gap-[10%]'>
           <h2 className='text-[#E2DED3] font-semibold text-[50px]'>Бишкек</h2>
           <p className='text-[#B4B4B4] font-semibold text-[30px]'>16 ДЕКАБРЯ</p>
           <p className='text-[#E2DED3] font-medium text-[30px]'>
@@ -79,7 +82,7 @@ export const NewsBlock2 = () => {
           </p>
         </div>
       </section>
-      <section className='mt-[10%] flex w-[1920px]'>
+      <section className='mt-[10%] flex max-w-[1920px]'>
         <div>
           <img src={r_22} alt='r_22' />
         </div>
@@ -87,19 +90,19 @@ export const NewsBlock2 = () => {
           <img src={r_23} alt='r_23' />
         </div>
       </section>
-      <section className='mt-[10%] flex flex-col bg-[url("/src/shared/img/news2/FAQ_2.png")] w-[1920px] h-[676px]'>
+      <section className='mt-[10%] flex flex-col bg-[url("/src/shared/img/news2/FAQ_2.png")] max-w-[1920px] min-h-[960px]'>
         <div>
-          <h2 className='text-[#E2DED3] font-medium text-[30px] text-center'>
+          <h2 className='text-[#E2DED3] font-medium text-[30px] text-center pt-[2%]'>
             3 ПОЛЕЗНЫХ ПРИЛОЖЕНИЯ ДЛЯ БАРАБАНЩИКОВ
           </h2>
         </div>
-        <div className='flex gap-[2%] mx-[auto] w-[1720px] mt-[3%]'>
-          <div className=' flex flex-col gap-[5%] content-around w-[560px] h-[676px]'>
-            <div className='flex gap-[1%]'>
-              <div>
+        <div className='flex gap-[2%] mx-[auto] max-w-[1720px] mt-[3%]'>
+          <div className='flex flex-col gap-[5%] content-around max-w-[560px] min-h-[676px] border-[#E2DED3] border-solid border rounded-3xl py-[4%] bg-[#000000]'>
+            <div className='flex gap-[3%] pl-[4%] bg-[#1E1E1E] rounded-2xl max-w-[541px] py-[2%]'>
+              <div className='w-[130px]'>
                 <img src={unnamed} alt='unnamed' />
               </div>
-              <div className='flex flex-col'>
+              <div className='flex flex-col gap-[10%]'>
                 <div>
                   <h3 className='text-[#E2DED3] font-bold text-[20px]'>
                     Score Creator: compose music
@@ -112,8 +115,8 @@ export const NewsBlock2 = () => {
                   </p>
                 </div>
                 <div className='flex gap-[2%]'>
-                  <div className='bg-[#F93822] px-[10%] py-[2%] rounded-[30%]'>
-                    <button className='p-[5%]'>GET</button>
+                  <div className='bg-[#F93822] rounded-[20px]'>
+                    <button className='min-w-[100px] min-h-[40px]'>GET</button>
                   </div>
                   <div>
                     <p className='text-[#F5F5F5] font-regular text-[14px]'>
@@ -126,7 +129,7 @@ export const NewsBlock2 = () => {
                 </div>
               </div>
             </div>
-            <div className='text-center'>
+            <div className='text-center px-[3%]'>
               <h2 className='text-[#E2DED3] font-medium text-[30px]'>
                 Score Creator -это приложение для создания нотных партитур и
                 композиций
@@ -146,12 +149,12 @@ export const NewsBlock2 = () => {
               </div>
             </div>
           </div>
-          <div className=' flex flex-col gap-[5%] content-around w-[560px] h-[676px]'>
-            <div className='flex gap-[1%]'>
-              <div>
+          <div className='flex flex-col gap-[5%] content-around max-w-[560px] min-h-[676px] border-[#E2DED3] border-solid border rounded-3xl py-[4%] bg-[#000000]'>
+            <div className='flex gap-[3%] pl-[4%] bg-[#1E1E1E] rounded-2xl max-w-[541px] py-[2%]'>
+              <div className='w-[130px]'>
                 <img src={unnamed_2} alt='unnamed 2' />
               </div>
-              <div className='flex flex-col'>
+              <div className='flex flex-col gap-[8%]'>
                 <div>
                   <h3 className='text-[#E2DED3] font-bold text-[20px]'>
                     The Metronome by Soundbrenner
@@ -164,8 +167,8 @@ export const NewsBlock2 = () => {
                   </p>
                 </div>
                 <div className='flex gap-[2%]'>
-                  <div className='bg-[#F93822] px-[10%] py-[2%] rounded-[30%]'>
-                    <button className='p-[5%]'>GET</button>
+                  <div className='bg-[#F93822] rounded-[20px]'>
+                    <button className='min-w-[100px] min-h-[40px]'>GET</button>
                   </div>
                   <div>
                     <p className='text-[#F5F5F5] font-regular text-[14px]'>
@@ -178,7 +181,7 @@ export const NewsBlock2 = () => {
                 </div>
               </div>
             </div>
-            <div className='text-center'>
+            <div className='text-center px-[3%]'>
               <h2 className='text-[#E2DED3] font-medium text-[30px]'>
                 Одной из хороших сторон приложения является его простота.
               </h2>
@@ -196,12 +199,12 @@ export const NewsBlock2 = () => {
               </div>
             </div>
           </div>
-          <div className=' flex flex-col gap-[5%] content-around w-[560px] h-[676px]'>
-            <div className='flex gap-[2%]'>
-              <div>
+          <div className='flex flex-col gap-[5%] content-around max-w-[560px] min-h-[676px] border-[#E2DED3] border-solid border rounded-3xl py-[4%] bg-[#000000]'>
+            <div className='flex gap-[3%] pl-[4%] bg-[#1E1E1E] rounded-2xl max-w-[541px] py-[2%]'>
+              <div className='w-[130px]'>
                 <img src={unnamed_3} alt='unnamed_3' />
               </div>
-              <div className='flex flex-col'>
+              <div className='flex flex-col gap-[10%]'>
                 <div>
                   <h3 className='text-[#E2DED3] font-bold text-[20px]'>
                     EarMaster 7
@@ -210,9 +213,9 @@ export const NewsBlock2 = () => {
                     Ear Training and Music Theory
                   </p>
                 </div>
-                <div className='flex gap-[2%]'>
-                  <div className='bg-[#F93822] px-[10%] py-[2%] rounded-[30%]'>
-                    <button className='p-[5%]'>GET</button>
+                <div className='flex gap-[4%]'>
+                  <div className='bg-[#F93822] rounded-[20px]'>
+                    <button className='min-w-[100px] min-h-[40px]'>GET</button>
                   </div>
                   <div>
                     <p className='text-[#F5F5F5] font-regular text-[14px]'>
@@ -225,7 +228,7 @@ export const NewsBlock2 = () => {
                 </div>
               </div>
             </div>
-            <div className='text-center'>
+            <div className='text-center px-[3%]'>
               <h2 className='text-[#E2DED3] font-medium text-[30px]'>
                 EarMaster 7 помогает улучшить музыкальное слуховое восприятие
                 через тренировки и упражнения.
