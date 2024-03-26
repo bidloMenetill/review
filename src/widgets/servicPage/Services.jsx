@@ -1,54 +1,88 @@
-import { useTranslation } from 'react-i18next';
-import rectangle from '../../shared/img/servicesImg/Rectangle_53.jpg';
+import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import firstBg from '../../shared/img/servicesImg/firstFon.png';
+import secondBg from '../../shared/img/servicesImg/Rectangle_53.jpg';
+import thirdBg from '../../shared/img/servicesImg/secondFon.png';
+import fourthBg from '../../shared/img/servicesImg/thirdFon.png';
 
 export const Services = () => {
-  const { t } = useTranslation();
+  const [showText, setShowText] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 50) {
+        setShowText(true);
+        if (scrollPosition > 650) {
+          setShowText(false);
+        }
+      } else {
+        setShowText(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section className='w-[1720px] h-[283px] mx-auto text-[#f5f5f5]'>
-      <h2 className='py-[50px] text-[100px] font-medium'>
-        {t('servicePage.firstSection.title')}
-      </h2>
-
-      <div className='flex gap-[100px]'>
-        <div className='w-[573px] h-[650px]'>
+    <div className='relative w-full ease-out duration-300'>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        loop={true}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        allowTouchMove={false}
+        modules={[Autoplay]}
+        className='!transition-all ease-out duration-300'
+      >
+        <SwiperSlide className='!transition-all ease-out duration-300'>
           <img
-            className='w-[100%] h-[100%] object-cover'
-            src={rectangle}
-            alt='sevice'
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={firstBg}
+            alt='firstBg'
           />
-        </div>
-        <div className='mx-auto w-[1047px]'>
-          <h2 className='pt-[48px] pb-[20px] text-center text-[#DC6441] text-[30px] font-[500]'>
-            {t('servicePage.firstSection.firstUpperTitle')}
-          </h2>
-          <p className='text-[#F5F5F5] text-[20px]'>
-            {t('servicePage.firstSection.firstText')}
-          </p>
-
-          <h2 className='pt-[48px] pb-[20px] text-center text-[#DC6441] text-[30px] font-[500]'>
-            {t('servicePage.firstSection.secondUpperTitle')}
-          </h2>
-          <p className='text-[20px]'>
-            {t('servicePage.firstSection.secondText')}
-          </p>
-          <p className='text-[20px]'>
-            {t('servicePage.firstSection.thirdText')}
-          </p>
-        </div>
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
+          <img
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={secondBg}
+            alt='secondBg'
+          />
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
+          <img
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={thirdBg}
+            alt='thirdBg'
+          />
+        </SwiperSlide>
+        <SwiperSlide className='!transition-all ease-out duration-300'>
+          <img
+            className='w-full h-[1080px] object-cover ease-in duration-300'
+            src={fourthBg}
+            alt='fourthBg'
+          />
+        </SwiperSlide>
+      </Swiper>
+      <div className='absolute w-full top-[55%] z-[1]'>
+        <h2 className='text-[24px] mb-[20px] mx-[90px] xl:text-[50px] lg:text-[40px]'>
+          Выберите свою программу
+        </h2>
+        <hr className='mx-[90px] shadow-[0px_0px_600px_240px_#000000]' />
+        <h2
+          className={`${showText ? 'opacity-1 ml-[90px]' : 'opacity-0'} text-[60px] ease-out duration-300 xl:text-[100px] lg:text-[80px]`}
+        >
+          Услуги
+        </h2>
       </div>
-
-      <div className='pl-[30px] pt-[30px]'>
-        <ul className='list-disc'>
-          <li>{t('servicePage.firstSection.textListF')}</li>
-          <li>{t('servicePage.firstSection.textListS')}</li>
-          <li>{t('servicePage.firstSection.textListTh')}</li>
-          <li>{t('servicePage.firstSection.textListFo')}</li>
-          <li>{t('servicePage.firstSection.textListFi')}</li>
-          <li>{t('servicePage.firstSection.textListSi')}</li>
-          <li>{t('servicePage.firstSection.textListSe')}</li>
-        </ul>
-      </div>
-    </section>
+    </div>
   );
 };
