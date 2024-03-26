@@ -1,5 +1,4 @@
 export { AboutUsSection } from './homePage/AboutUsSection';
-
 export { IntroductionSection } from './homePage/IntroductionSection';
 export { ServicesSection } from './homePage/ServicesSection';
 export { TrustUsSection } from './homePage/TrustUsSection';
@@ -12,18 +11,21 @@ export { Team } from './aboutUs/Team';
 export { WhyQRush } from './aboutUs/WhyQRush';
 export { NewsSection } from './homePage/NewsSection';
 export { Services } from './servicPage/Services';
-export { PriceList } from './servicPage/PriceList';
-export { Equipment } from './servicPage/Equipment';
-export { RehearsalBase } from './servicPage/RehearsalBase';
+export { Welcome } from './servicPage/Welcome';
+export { RehearsalCost } from './servicPage/RehearsalCost';
 export { GaleryMain } from './galeryMain/GaleryMain';
-export { ImageSection} from './galeryMain/imageSection';
+export { ImageSection } from './galeryMain/imageSection';
 export { ThirdVideoSection } from './galeryMain/ThirdVideoSection';
-export {VideoSlider } from './galeryMain/VideoSlider';
-export { GuitarMusicCourses } from './servicPage/GuitarMusicCourses';
-export { DrumsMusicCourses } from './servicPage/DrumsMusicCourses';
-export { VocalMusicCourses } from './servicPage/VocalMusicCourses';
+export { VideoSlider } from './galeryMain/VideoSlider';
+
 export { ServiceOrder } from './servicPage/ServiceOrder';
 export { GallerySection } from './homePage/GallerySection';
 export { VideoSection } from './homePage/VideoSection';
 export { FAQ } from './faqPage/FAQ';
 export { Form } from './faqPage/Form';
+export { ErrorPage } from './errorPage/ErrorPage';
+export { SoundRecording } from './servicPage/SoundRecording';
+export { RehearsalSecondCost } from './servicPage/RehearsalSecondCost';
+export { RehearsalThirdCost } from './servicPage/RehearsalThirdCost';
+export { MusicCours } from './servicPage/MusicCours';
+export { SecondMusicCours } from './servicPage/SecondMusicCours';

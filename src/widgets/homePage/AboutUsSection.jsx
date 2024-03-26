@@ -7,7 +7,7 @@ export const AboutUsSection = () => {
       className='bg-cover bg-no-repeat -mt-[9px] bg-center h-auto '
       style={{ backgroundImage: `url(${bgAboutUs})` }}
     >
-      <section className='container mx-auto flex justify-center items-center '>
+      <section className='max-w-[90%] xl:container mx-auto flex justify-center items-center '>
         <div className='flex flex-col pt-[100px]'>
           <h3 className='font-[Montserrat] text-[#F5F5F5] max-w-[1176px] lg:max-w-[1356px] text-center text-[30px] not-italic font-medium leading-[normal]'>
             Q-Rush Studio музыкальная студия в центре Бишкека, была основана в

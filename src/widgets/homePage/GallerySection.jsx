@@ -13,19 +13,23 @@ export const GallerySection = () => {
   };
   return (
     <section>
-      <section className='container'>
-        <h2 className='text-[#F5F5F5] pt-[100px] mb-[66px] font-[Montserrat] text-[100px] not-italic font-medium leading-[normal]'>
+      <section className='max-w-[90%] xl:container mx-auto '>
+        <h2 className='text-[#F5F5F5] pt-[100px] mb-[66px] font-[Montserrat] text-[80px] lg:text-[100px] not-italic font-medium leading-[normal]'>
           Галерея
         </h2>
         <div className='flex justify-end mb-[30px]'>
-          <Link className='!flex justify-normal items-center' to='/gallery'>
+          <Link
+            onClick={scrollToTop}
+            className='!flex justify-normal items-center'
+            to='/galery'
+          >
             <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal]'>
               смотреть все
             </button>{' '}
             <img src={arrayButton} className='ml-[10px]' alt='' />
           </Link>
         </div>
-        <section className='grid grid-rows-[224px_229px_224px] grid-column gap-4'>
+        <section className='grid grid-rows-[33.14%_30.73%_33.14%] lg:grid-rows-[34.14%_31.73%_34.14%]  grid-column gap-4'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             {' '}
             <img

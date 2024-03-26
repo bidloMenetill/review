@@ -18,10 +18,9 @@ export const Footer = () => {
 
   return (
     <footer
-      className={`${isLaptopScreen ? 'max-w-[1440px] ' : isTabletScreen ? 'max-w-[1024px] ' : isMobileScreen ? 'max-w-[768px] ' : ''}  w-[1920px] h-[982px] `}
+      className={`${isLaptopScreen ? 'max-w-[1440px] ' : isTabletScreen ? 'max-w-[1024px] ' : isMobileScreen ? 'max-w-[768px] ' : ''}  max-w-full h-[982px] `}
     >
-      <div className='h-[704px]  bg-black pt-[50px] pb-[50px] pr-[100px] pl-[100px]'>
-        <img className='w-[415px] h-[100px] mb-[50px]' src={rush} alt='log' />
+      <div className='h-[704px]  bg-black pt-[50px] pb-[50px] '>
         <div className='text-white flex justify-around  font-montserrat text-[20px] ml-[50px]'>
           <ul>
             <li className=' w-[397px] font-bold text-[25px] pb-[32px] text-orange-600'>
