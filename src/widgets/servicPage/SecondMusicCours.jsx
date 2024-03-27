@@ -8,6 +8,13 @@ import rectangle55 from '../../shared/img/Rectangle_71.png';
 import rectangle56 from '../../shared/img/servicesImg/Rectangle_57.png';
 
 export const SecondMusicCours = () => {
+  const arrayImg = [
+    { id: 0, img: rectangle51 },
+    { id: 1, img: rectangle54 },
+    { id: 2, img: rectangle55 },
+    { id: 3, img: rectangle56 },
+    { id: 4, img: rectangle56 },
+  ];
   return (
     <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
       <div className='text-center'>
@@ -19,68 +26,28 @@ export const SecondMusicCours = () => {
         </p>
       </div>
 
-      <div className='pl-[100px]'>
+      <div className='max-w-[900px] mx-auto xl:max-w-[1820px] lg:max-w-[1320px]'>
         <Swiper
-          spaceBetween={200}
-          slidesPerView={3.4}
+          spaceBetween={0}
+          slidesPerView={3.1}
           pagination={{ clickable: true }}
           className='mySwiper'
         >
           <div className='flex justify-center text-white'>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle51}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle54}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle55}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle56}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle56}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle56}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
+            {arrayImg &&
+              arrayImg.map(el => {
+                return (
+                  <SwiperSlide key={el.id}>
+                    <div className='max-w-[280px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
+                      <img
+                        className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
+                        src={el.img}
+                        alt='rectangle'
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
           </div>
         </Swiper>
       </div>

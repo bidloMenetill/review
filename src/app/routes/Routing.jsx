@@ -7,7 +7,7 @@ import {
   ServicesPage,
   Galery,
   ShopPage,
-  Faq,
+  FaqPage,
   NewsPage,
   AboutMobile,
 } from '../../pages';
@@ -35,7 +35,7 @@ export const Routing = () => {
     },
     {
       path: '/faq',
-      element: <Faq />,
+      element: <FaqPage />,
     },
     {
       path: '/news',

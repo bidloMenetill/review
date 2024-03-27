@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { Modal } from './Modal';
+import { Modal } from '../modalWindow/Modal';
 
-export const FormQuestion = () => {
+export const FeedbackForm = () => {
   const [open, setOpen] = useState(false);
   const onHandleSubmit = e => {
     e.preventDefault();
   };
   return (
-    <div className='max-w-[600px] mx-[auto] pb-[150px] xl:max-w-[1300px] lg:max-w-[900px]'>
+    <section className='max-w-[600px] mx-[auto] pb-[150px] xl:max-w-[1300px] lg:max-w-[900px] text-[#FFFFFF]'>
       <h2 className='text-center text-[30px] pb-[50px] xl:text-[50px] lg:text-[30px]'>
         Задайте свой вопрос
       </h2>
@@ -88,6 +88,6 @@ export const FormQuestion = () => {
         </div>
       </form>
       <Modal openModal={open} setOpenModal={setOpen} />
-    </div>
+    </section>
   );
 };

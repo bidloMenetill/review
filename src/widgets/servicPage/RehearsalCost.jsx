@@ -7,6 +7,78 @@ import rectangle54 from '../../shared/img/servicesImg/Rectangle_58.png';
 import rectangle55 from '../../shared/img/servicesImg/Rectangle_59.png';
 
 export const RehearsalCost = () => {
+  const arrayImg = [
+    { id: 0, img: rectangle51 },
+    { id: 1, img: rectangle54 },
+    { id: 2, img: rectangle55 },
+    { id: 3, img: rectangle51 },
+    { id: 4, img: rectangle51 },
+  ];
+  const arrayEquipment = [
+    {
+      id: 0,
+      title: 'Гитарные усилители (на выбор)',
+      firstDescription: '- Peavey bandit 112 (2шт)',
+      secondDescription: '- Marshall MG100DFX',
+      type: [
+        '- Peavey bandit 112 (2шт)',
+        '- Marshall MG100DFX',
+        '- Marshall Haze 40',
+        '- Black Heart bh15-112',
+      ],
+    },
+    {
+      id: 1,
+      title: 'Гитары (на выбор)',
+      type: [
+        '- Peavey bandit 112 (2шт)',
+        '- Marshall MG100DFX',
+        '- Marshall Haze 40',
+        '- Black Heart bh15-112',
+      ],
+    },
+    {
+      id: 2,
+      title: 'Микрофоны (на выбор)',
+      type: [
+        '- Shure SM57 (2 шт)',
+        '- AKG D5',
+        '- Shure SM 58',
+        '- tBone sm58',
+        '- Lane (2 шт.)',
+      ],
+    },
+    {
+      id: 3,
+      title: 'Пульт',
+      type: ['- Yamaha MG 166cx'],
+    },
+    {
+      id: 4,
+      title: 'Усилители',
+      type: ['- Crown xls 2500', '- Crown CDi 1000'],
+    },
+    {
+      id: 5,
+      title: 'Басовый усилитель',
+      type: ['- Ampeg BA 115'],
+    },
+    {
+      id: 6,
+      title: 'Цифровое Фортепиано',
+      type: ['- Yamaha Grand dgx 630'],
+    },
+    {
+      id: 7,
+      title: 'Акуст система',
+      type: ['- Alto elvis 15.2xl', '- Сабы Electrovoice'],
+    },
+    {
+      id: 8,
+      title: 'Триггер для бочки',
+      type: ['- TrigMic 2 Laser Pick'],
+    },
+  ];
   return (
     <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
       <div className='text-center'>
@@ -19,68 +91,28 @@ export const RehearsalCost = () => {
         </p>
       </div>
 
-      <div className='pl-[100px]'>
+      <div className='max-w-[900px] mx-auto xl:max-w-[1820px] lg:max-w-[1320px]'>
         <Swiper
-          spaceBetween={200}
-          slidesPerView={3.4}
+          spaceBetween={0}
+          slidesPerView={3.1}
           pagination={{ clickable: true }}
           className='mySwiper'
         >
           <div className='flex justify-center text-white'>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle51}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle54}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle55}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle51}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle51}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='w-[560px] h-[320px]'>
-                <img
-                  className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                  src={rectangle51}
-                  alt='rectangle'
-                />
-              </div>
-            </SwiperSlide>
+            {arrayImg &&
+              arrayImg.map(el => {
+                return (
+                  <SwiperSlide key={el.id}>
+                    <div className='max-w-[280px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
+                      <img
+                        className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
+                        src={el.img}
+                        alt='rectangle'
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
           </div>
         </Swiper>
       </div>
@@ -94,8 +126,23 @@ export const RehearsalCost = () => {
           Список оборудования
         </h3>
         <div className='max-w-[1170px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1570px] lg:max-w-[1270px]'>
-          <div className='w-[490px]'>
-            <p className='mb-[16px]'>Гитарные усилители (на выбор)</p>
+          {/* <div className='w-[490px]'> */}
+          {arrayEquipment &&
+            arrayEquipment.map(el => {
+              return (
+                <ul key={el.id} className='mb-[32px] w-[28%]'>
+                  <p className='mb-[16px]'>{el.title}</p>
+                  {el.type.map((type, indx) => {
+                    return (
+                      <p key={indx} className='text-[#B4B4B4]'>
+                        {type}
+                      </p>
+                    );
+                  })}
+                </ul>
+              );
+            })}
+          {/* <p className='mb-[16px]'>Гитарные усилители (на выбор)</p>
             <ul className='mb-[32px] text-[#B4B4B4]'>
               <li> - Peavey bandit 112 (2шт)</li>
               <li> - Marshall MG100DFX</li>
@@ -149,7 +196,7 @@ export const RehearsalCost = () => {
             <ul className='text-[#B4B4B4]'>
               <li> - TrigMic 2 Laser Pick</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <button
           type='submit'
