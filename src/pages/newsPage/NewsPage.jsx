@@ -1,11 +1,12 @@
-// import { NewsBlock } from '../../widgets/news/NewsBlock';
-import { NewsBlock2 } from '../../widgets/news/NewsBlock2';
+// import { NewsBlock } from '../../widgets/newsSection/NewsSection';
+// import { NewsBlock2 } from '../../widgets/news/NewsBlock2';
+import { NewsSection } from '../../widgets/newsSection/NewsSection';
 
 export const NewsPage = () => {
   return (
     <div>
-      {/* <NewsBlock /> */}
-      <NewsBlock2 />
+      <NewsSection />
+      {/* <NewsBlock2 /> */}
     </div>
   );
 };

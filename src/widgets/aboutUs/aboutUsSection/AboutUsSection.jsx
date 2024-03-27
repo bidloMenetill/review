@@ -4,7 +4,7 @@ export const AboutUs = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className='bg-[url("/src/shared/img/about1.png")] font-normal text-7xl text-[#F5F5F5] pt-14 max-w-[1720px] leading-[100px] max-w-[1920px] xl:min-h-[960px] xl:min-w-[1720px] lg:min-w-[1300px]'>
+      <div className='bg-[url("/src/shared/img/about/about1.png")] font-normal text-7xl text-[#F5F5F5] pt-14 max-w-[1720px] leading-[100px] max-w-[1920px] xl:min-h-[960px] xl:min-w-[1720px] lg:min-w-[1300px]'>
         <div className='about pt-16 flex justify-center items-center'>
           <div className='py-40 flex flex-row gap-[76px] w-11/12 items-center'>
             <div className='w-8/12 flex flex-col gap-6'>

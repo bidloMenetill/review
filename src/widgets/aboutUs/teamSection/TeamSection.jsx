@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import photo from '../../shared/img/bg_video_gallery.jpg';
+import photo from '../../../shared/img/bg_video_gallery.jpg';
 
 export const Team = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
       <div className='xl:min-w-[1300px] xl:min-w-[1920px] max-h-[2800px]'>
         <div className='flex flex-col gap-y-24 w-11/12 mx-auto'>
           <h2
@@ -92,6 +92,6 @@ export const Team = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

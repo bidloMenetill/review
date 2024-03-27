@@ -17,7 +17,7 @@ import GooglePlay from '../../shared/img/news2/GooglePlay.png';
 import unnamed_2 from '../../shared/img/news2/unnamed 2.png';
 import unnamed_3 from '../../shared/img/news2/unnamed_3.png';
 
-export const NewsBlock2 = () => {
+export const NewsSection = () => {
   return (
     <div className='flex box-border m-0 p-0 flex-col mx-[auto] w-[1920px]'>
       <div className='flex xl:min-w-[1720px] lg:min-w-[1300px] bg-contain'>
@@ -40,9 +40,6 @@ export const NewsBlock2 = () => {
             </p>
           </div>
         </div>
-        {/* <div className='absolute bottom-[-280px]'>
-          <img src={Rectangle_137} alt='Rectangle_137' />
-        </div> */}
       </div>
       <section className='min-h-[676px] flex mt-[10%]'>
         <div className='max-w-[520px] min-h-[676px]'>
