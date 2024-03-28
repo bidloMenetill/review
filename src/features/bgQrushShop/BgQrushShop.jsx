@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import blueGuitar from '../../shared/img/shop/blueGuitar.png';
 import drumStickBg from '../../shared/img/shop/drumSticksBg.jpg';
 import qrushShop from '../../shared/img/shop/qrushShop.png';
-import { AnimationText } from '../../shared';
+import { AnimationTitle } from '../../shared';
 import blackGuitar from '../../shared/img/shop/blackGuitar.png';
 import secondDrumStickBg from '../../shared/img/shop/secondDrumStickBg.png';
 import promark from '../../shared/img/shop/promark.png';
@@ -52,7 +52,7 @@ export const BgQrushShop = () => {
           }}
         />
         <div className='flex justify-center items-center absolute '>
-          <AnimationText qrushImg={qrushShop} />
+          <AnimationTitle qrushImg={qrushShop} />
         </div>
         <div
           className='w-[50%] h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-animation'

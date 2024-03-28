@@ -14,12 +14,12 @@ export const NavigationOrange = () => {
 
   return (
     <>
-      <aside className='asideContainer'>
-        <ul className={isAsideOpen ? 'ulContainerOpen' : 'ulContainer'}>
-          <li className='liNavOrange'>
+      <aside className='fixed bottom-20 xl:bottom-[110px] right-7 xl:right-[125px] bg-[#F93822]   cursor-pointer z-50  rounded-[766.667px]'>
+        <ul className={isAsideOpen ? 'block' : 'hidden'}>
+          <li className='mb-[10px] mt-[7px]'>
             <a
               href='https://wa.me/ваш номер'
-              className='aNavOrange'
+              className='flex justify-center items-center p-[10px]'
               target='_blank'
               rel='noreferrer'
             >
@@ -27,20 +27,20 @@ export const NavigationOrange = () => {
               <img src={telegramOrange} alt='' />{' '}
             </a>
           </li>
-          <li className='liNavOrange'>
+          <li className='mb-[10px] mt-[7px]'>
             <a
               href='https://t.me/ваш id'
-              className='aNavOrange'
+              className='flex justify-center items-center p-[10px]'
               target='_blank'
               rel='noreferrer'
             >
               <img src={whatsappOrange} alt='' />
             </a>
           </li>
-          <li className='liNavOrange'>
+          <li className='mb-[10px] mt-[7px]'>
             <a
               href='https://t.me/ваш id'
-              className='aNavOrange'
+              className='flex justify-center items-center p-[10px]'
               target='_blank'
               rel='noreferrer'
             >

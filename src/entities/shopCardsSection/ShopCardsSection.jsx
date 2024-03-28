@@ -1,4 +1,4 @@
-import { BuyButton, useMediaQuery } from '../../shared';
+import { Button } from '../../shared';
 import drumStick2 from '../../shared/img/shop/drumStick2.png';
 import drumStick1 from '../../shared/img/shop/drumStick1.png';
 import drumStick3 from '../../shared/img/shop/drumStick3.png';
@@ -114,7 +114,7 @@ export const ShopCardsSection = () => {
                   <p className='font-semibold mt-[20px] text-[26px] lg:text-[27px] xl:text-[30px]'>
                     Цена: {card.price}
                   </p>
-                  <BuyButton />
+                  <Button className='buyButton' />
                 </div>
               </div>
             </li>

@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import {
   TrustUsPage,
-  MainPage,
-  Error,
+  HomePage,
+  ErrorPage,
   About,
   ServicesPage,
   Galery,
   ShopPage,
-  Faq,
+  FaqPage,
   NewsPage,
   AboutMobile,
 } from '../../pages';
@@ -35,7 +35,7 @@ export const Routing = () => {
     },
     {
       path: '/faq',
-      element: <Faq />,
+      element: <FaqPage />,
     },
     {
       path: '/news',
@@ -55,12 +55,12 @@ export const Routing = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<MainPage />} />
+        <Route index element={<HomePage />} />
         {routesArr?.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />
         ))}
       </Route>
-      <Route path='*' element={<Error />} />
+      <Route path='*' element={<ErrorPage />} />
     </Routes>
   );
 };
