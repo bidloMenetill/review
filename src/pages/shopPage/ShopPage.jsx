@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { QrushShop } from '../../entities/shop/QrushShop';
+import { QrushShopSections } from '../../widgets';
 
 export const ShopPage = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <QrushShop />
+      <QrushShopSections />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import { Button } from '../../shared';
-import drumStick1 from '../../shared/img/shop/drumStick1.png';
 import drumStick2 from '../../shared/img/shop/drumStick2.png';
+import drumStick1 from '../../shared/img/shop/drumStick1.png';
 import drumStick3 from '../../shared/img/shop/drumStick3.png';
 import drumStick4 from '../../shared/img/shop/drumStick4.png';
 import drumStick5 from '../../shared/img/shop/drumStick5.png';
 
-export const ShopCards = () => {
+export const ShopCardsSection = () => {
   const shopCard = [
     {
       id: 1,
@@ -68,55 +68,33 @@ export const ShopCards = () => {
     },
   ];
 
+  const properties = [
+    'length',
+    'diameter',
+    'tree',
+    'weight',
+    'versatility',
+    'furnish',
+    'acornTip',
+    'cone',
+    'amount',
+    'material',
+    'different_thickness',
+  ];
   return (
-    <ul className='max-w-[1920px] mx-auto mb-[100px] font-[montserrat] text-[#E2DED3]'>
-      {shopCard.map(card => (
-        <div key={card.id}>
-          {card.id % 2 === 0 ? (
+    <section>
+      <ul className='max-w-[1920px] mx-auto mb-[100px] font-montserrat text-[#E2DED3]'>
+        {shopCard?.map(card => (
+          <div
+            className='relative h-[550px] lg:h-[680px] xl:h-[860px] mt-[100px]'
+            key={card.id}
+          >
             <li
-              className='max-w-[89.3%] xl:max-w-[1715px] ml-[130px] xl:ml-[245px] lg:ml-[170px] flex justify-between mt-[100px] text-[#E2DED3] gap-x-[30px] items-center '
-              key={card.id}
-            >
-              <div className='w-[405px] xl:w-[705px] lg:w-[555px]'>
-                <h2 className='font-bold text-[#E2DED3] text-[30px] lg:text-[40px] xl:text-[50px]'>
-                  {card.instrumentName}
-                </h2>
-                <ul className='text-[22px] lg:text-[27px] xl:text-[30px] font-medium  mt-[30px]'>
-                  <li>{card.length}</li>
-                  <li>{card.diameter}</li>
-                  <li>{card.tree}</li>
-                  <li>{card.weight}</li>
-                  <li>{card.versatility}</li>
-                  <li>{card.furnish}</li>
-                  <li>{card.acornTip}</li>
-                  <li>{card.cone}</li>
-                  <li>{card.amount}</li>
-                  <li>{card.material}</li>
-                  <li>{card.different_thickness}</li>
-                </ul>
-                <div className='w-[434px] lg:w-[555px] xl:w-[674px] flex justify-around items-center mt-[10px] lg:mt-[30px] xl:mt-[50px] '>
-                  <p className='font-semibold mt-[20px] text-[26px] lg:text-[30px]'>
-                    Цена: {card.price}
-                  </p>
-                  <Button className='buyButton' />
-                </div>
-              </div>
-              <div>
-                <img
-                  className='w-[500px] h-[550px] xl:w-[805px] xl:h-[860px] lg:w-[680px] lg:h-[710px]'
-                  src={card.img}
-                  alt='cardImg'
-                />
-              </div>
-            </li>
-          ) : (
-            <li
-              className='max-w-[87.24%] xl:w-[1675px] left-0 flex justify-between mt-[100px] gap-x-[30px] items-center '
-              key={card.id}
+              className={`max-w-[87.24%] xl:w-[1675px] flex justify-between gap-x-[85px] absolute items-center ${card.id % 2 === 0 ? 'max-w-[89.3%] flex-row-reverse right-0' : ''}`}
             >
               <div>
                 <img
-                  className='w-[500px] h-[550px] xl:w-[805px] xl:h-[860px] lg:w-[680px] lg:h-[710px]'
+                  className='w-[500px] h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[680px] lg:h-[660px]'
                   src={card.img}
                   alt='cardImg'
                 />
@@ -126,29 +104,23 @@ export const ShopCards = () => {
                   {card.instrumentName}
                 </h2>
                 <ul className='text-[24px] lg:text-[27px] xl:text-[30px] font-medium  mt-[30px]'>
-                  <li>{card.length}</li>
-                  <li>{card.diameter}</li>
-                  <li>{card.tree}</li>
-                  <li>{card.weight}</li>
-                  <li>{card.versatility}</li>
-                  <li>{card.furnish}</li>
-                  <li>{card.acornTip}</li>
-                  <li>{card.cone}</li>
-                  <li>{card.amount}</li>
-                  <li>{card.material}</li>
-                  <li>{card.different_thickness}</li>
+                  {properties.map(property => (
+                    <li key={property}>
+                      <p>{card[property]}</p>
+                    </li>
+                  ))}
                 </ul>
-                <div className='w-[434px] lg:w-[555px] xl:w-[674px] flex justify-around items-center mt-[10px] lg:mt-[30px] xl:mt-[50px]'>
-                  <p className='font-semibold mt-[20px] text-[26px] lg:text-[30px]'>
+                <div className='w-[434px] lg:w-[555px] xl:w-[674px] flex justify-around items-center mt-[10px] lg:mt-[30px] xl:mt-[50px] gap-x-[3px]'>
+                  <p className='font-semibold mt-[20px] text-[26px] lg:text-[27px] xl:text-[30px]'>
                     Цена: {card.price}
                   </p>
                   <Button className='buyButton' />
                 </div>
               </div>
             </li>
-          )}
-        </div>
-      ))}
-    </ul>
+          </div>
+        ))}
+      </ul>
+    </section>
   );
 };
