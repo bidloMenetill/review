@@ -1,11 +1,19 @@
-// import { NewsBlock } from '../../widgets/newsSection/NewsSection';
-// import { NewsBlock2 } from '../../widgets/news/NewsBlock2';
-import { NewsSection } from '../../widgets/newsSection/NewsSection';
+import {
+  ApplicationSection,
+  EventSection,
+  FiestSection,
+  IntroductionNewsSection,
+  SendUpSection,
+} from '../../widgets';
 
 export const NewsPage = () => {
   return (
-    <div>
-      <NewsSection />
-    </div>
+    <section className='flex box-border m-0 p-0 flex-col mx-[auto] w-[1920px]'>
+      <IntroductionNewsSection />
+      <FiestSection />
+      <EventSection />
+      <SendUpSection />
+      <ApplicationSection />
+    </section>
   );
 };
