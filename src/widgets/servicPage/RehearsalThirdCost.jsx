@@ -14,6 +14,102 @@ export const RehearsalThirdCost = () => {
     { id: 3, img: rectangle51 },
     { id: 4, img: rectangle51 },
   ];
+  const firstArrayEquipment = [
+    {
+      id: 0,
+      title: 'Гитарные усилители (на выбор)',
+      firstDescription: '- Peavey bandit 112 (2шт)',
+      secondDescription: '- Marshall MG100DFX',
+      thirdDescription: '- Marshall Haze 40',
+      fourthDescription: ' Black Heart bh15-112',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+    {
+      id: 1,
+      title: 'Гитары (на выбор)',
+      firstDescription: '- Yamaha BB 5 string',
+      secondDescription: '- Washburn bass 5 string',
+      thirdDescription: '- ESP ec256 (форма LesPaul)',
+      fourthDescription: '- Ibanez RG',
+      fifthDescription: '- Vintage (реплика Gibson SG)',
+      sixthDescription: '- Простая китайская Акустика',
+    },
+  ];
+  const secondArrayEquipment = [
+    {
+      id: 0,
+      title: 'Микрофоны (на выбор)',
+      firstDescription: '- Shure SM57 (2 шт)',
+      secondDescription: '- AKG D5',
+      thirdDescription: '- Shure SM 58',
+      fourthDescription: '- tBone sm58',
+      fifthDescription: '- Lane (2 шт.)',
+      sixthDescription: '',
+    },
+    {
+      id: 1,
+      title: 'Пульт',
+      firstDescription: '- Yamaha MG 166cx',
+      secondDescription: '',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+    {
+      id: 2,
+      title: 'Усилители',
+      firstDescription: '- Crown xls 2500',
+      secondDescription: '- Crown CDi 1000',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+  ];
+  const thirdArrayEquipment = [
+    {
+      id: 0,
+      title: 'Басовый усилитель',
+      firstDescription: '- Ampeg BA 115',
+      secondDescription: '',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+    {
+      id: 1,
+      title: 'Цифровое Фортепиано',
+      firstDescription: '- Yamaha Grand dgx 630',
+      secondDescription: '',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+    {
+      id: 2,
+      title: 'Акуст система',
+      firstDescription: '- Alto elvis 15.2xl',
+      secondDescription: '- Сабы Electrovoice',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+    {
+      id: 3,
+      title: 'Триггер для бочки',
+      firstDescription: '- TrigMic 2 Laser Pick',
+      secondDescription: '',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+  ];
   return (
     <section className='w-full mx-auto mb-[154px] font-montserrat text-[#E2DED3]'>
       <div className='text-center'>
@@ -29,22 +125,21 @@ export const RehearsalThirdCost = () => {
           pagination={{ clickable: true }}
           className='mySwiper'
         >
-          <div className='flex justify-center text-white'>
-            {arrayImg &&
-              arrayImg.map(el => {
-                return (
-                  <SwiperSlide key={el.id}>
-                    <div className='max-w-[280px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
-                      <img
-                        className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                        src={el.img}
-                        alt='rectangle'
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-          </div>
+          <section className='flex justify-center text-white'>
+            {arrayImg?.map(el => {
+              return (
+                <SwiperSlide key={el.id}>
+                  <div className='max-w-[280px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
+                    <img
+                      className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
+                      src={el.img}
+                      alt='rectangle'
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </section>
         </Swiper>
       </div>
       <div className='w-full mx-auto mt-[100px] text-center'>
@@ -57,62 +152,93 @@ export const RehearsalThirdCost = () => {
           Список оборудования
         </h3>
         <div className='max-w-[1170px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1570px] lg:max-w-[1270px]'>
-          <div className='w-[490px]'>
-            <p className='mb-[16px]'>Гитарные усилители (на выбор)</p>
-            <ul className='mb-[32px] text-[#B4B4B4]'>
-              <li> - Peavey bandit 112 (2шт)</li>
-              <li> - Marshall MG100DFX</li>
-              <li> - Marshall Haze 40</li>
-              <li> - Black Heart bh15-112</li>
-            </ul>
-            <p className='mb-[16px]'>Гитары (на выбор)</p>
-            <ul className='text-[#B4B4B4]'>
-              <li> - Yamaha BB 5 string</li>
-              <li> - Washburn bass 5 string</li>
-              <li> - ESP ec256 (форма LesPaul)</li>
-              <li> - Ibanez RG</li>
-              <li> - Vintage (реплика Gibson SG)</li>
-              <li> - Простая китайская Акустика</li>
-            </ul>
-          </div>
-          <div className='w-[390px]'>
-            <p className='mb-[16px]'>Микрофоны (на выбор)</p>
-            <ul className='text-[#B4B4B4] mb-[15px]'>
-              <li> - Shure SM57 (2 шт)</li>
-              <li> - AKG D5</li>
-              <li> - Shure SM 58</li>
-              <li> - tBone sm58</li>
-              <li> - Lane (2 шт.)</li>
-            </ul>
-            <p className='mb-[16px]'>Пульт</p>
-            <ul className='text-[#B4B4B4] mb-[15px]'>
-              <li> - Yamaha MG 166cx</li>
-            </ul>
-            <p className='mb-[16px]'>Усилители</p>
-            <ul className='text-[#B4B4B4]'>
-              <li> - Crown xls 2500</li>
-              <li> - Crown CDi 1000</li>
-            </ul>
-          </div>
-          <div className='w-[400px]'>
-            <p className='mb-[16px]'>Басовый усилитель</p>
-            <ul className='text-[#B4B4B4] mb-[15px]'>
-              <li> - Ampeg BA 115</li>
-            </ul>
-            <p className='mb-[16px]'>Цифровое Фортепиано</p>
-            <ul className='text-[#B4B4B4] mb-[15px]'>
-              <li> - Yamaha Grand dgx 630</li>
-            </ul>
-            <p className='mb-[16px]'>Акуст система</p>
-            <ul className='text-[#B4B4B4] mb-[15px]'>
-              <li> - Alto elvis 15.2xl</li>
-              <li> - Сабы Electrovoice</li>
-            </ul>
-            <p className='mb-[16px]'>Триггер для бочки</p>
-            <ul className='text-[#B4B4B4]'>
-              <li> - TrigMic 2 Laser Pick</li>
-            </ul>
-          </div>
+          <section className='w-[36%]'>
+            {firstArrayEquipment?.map(el => {
+              return (
+                <ul key={el.id} className='mb-[32px] text-[#B4B4B4]'>
+                  <li>
+                    <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
+                  </li>
+                  <li>
+                    <p>{el.firstDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.secondDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.thirdDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fourthDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fifthDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.sixthDescription}</p>
+                  </li>
+                </ul>
+              );
+            })}
+          </section>
+          <section className='w-[28%]'>
+            {secondArrayEquipment?.map(el => {
+              return (
+                <ul key={el.id} className='mb-[32px] text-[#B4B4B4]'>
+                  <li>
+                    <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
+                  </li>
+                  <li>
+                    <p>{el.firstDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.secondDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.thirdDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fourthDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fifthDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.sixthDescription}</p>
+                  </li>
+                </ul>
+              );
+            })}
+          </section>
+          <section className='w-[28%]'>
+            {thirdArrayEquipment?.map(el => {
+              return (
+                <ul key={el.id} className='mb-[32px] text-[#B4B4B4]'>
+                  <li>
+                    <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
+                  </li>
+                  <li>
+                    <p>{el.firstDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.secondDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.thirdDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fourthDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fifthDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.sixthDescription}</p>
+                  </li>
+                </ul>
+              );
+            })}
+          </section>
         </div>
         <button
           type='submit'

@@ -15,6 +15,29 @@ export const SecondMusicCours = () => {
     { id: 3, img: rectangle56 },
     { id: 4, img: rectangle56 },
   ];
+  const firstArrayEquipment = [
+    {
+      id: 0,
+      title: 'Индивидуальные занятия',
+      firstDescription: '- 4 занятия в месяц - 4400 сом',
+      secondDescription:
+        '- 8 занятий в месяц - 8000 сом + бонус 2 часа самостоятельных репетиций',
+      thirdDescription:
+        '- 12 занятий в месяц - 12000 сом + бонус 4 часа самостоятельных репетиций',
+      fourthDescription: '- 1100 сом - 1 занятие',
+    },
+  ];
+  const secondArrayEquipment = [
+    {
+      id: 0,
+      title: 'Групповые занятия (2-4 чел)',
+      firstDescription: '- 8 занятий в месяц 4000 сом',
+      secondDescription: '- При оплате 3 месяцев скидка 3000 сом',
+      thirdDescription: ' 21000 сом + 10 часов репетиций',
+      spanWord: '24000',
+      fourthDescription: 'Адрес: Чынгыза Айтматова 1а (Билимкана)',
+    },
+  ];
   return (
     <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
       <div className='text-center'>
@@ -33,22 +56,21 @@ export const SecondMusicCours = () => {
           pagination={{ clickable: true }}
           className='mySwiper'
         >
-          <div className='flex justify-center text-white'>
-            {arrayImg &&
-              arrayImg.map(el => {
-                return (
-                  <SwiperSlide key={el.id}>
-                    <div className='max-w-[280px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
-                      <img
-                        className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                        src={el.img}
-                        alt='rectangle'
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-          </div>
+          <section className='flex justify-center text-white'>
+            {arrayImg?.map(el => {
+              return (
+                <SwiperSlide key={el.id}>
+                  <div className='max-w-[280px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
+                    <img
+                      className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
+                      src={el.img}
+                      alt='rectangle'
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </section>
         </Swiper>
       </div>
       <div className='w-full mx-auto mt-[100px] text-center'>
@@ -61,30 +83,55 @@ export const SecondMusicCours = () => {
           Список оборудования
         </h3>
         <div className='max-w-[970px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1400px] lg:max-w-[1000px]'>
-          <div className='w-[597px]'>
-            <p className='mb-[16px]'>Индивидуальные занятия</p>
-            <ul className='mb-[32px] text-[#B4B4B4]'>
-              <li className='mb-[16px]'>8 занятий в месяц - 6000 сом</li>
-              <li className='mb-[16px]'>4 занятия в месяц - 3000 сом</li>
-              <li className='mb-[16px]'>
-                - 12 занятий в месяц - 12000 сом + бонус 4 часа самостоятельных
-                репетиций
-              </li>
-              <li className='mb-[16px]'>- 1100 сом - 1 занятие</li>
-            </ul>
-          </div>
-          <div className='w-[564px]'>
-            <p className='mb-[16px]'>Групповые занятия (2-4 чел)</p>
-            <ul className='text-[#E2DED3] mb-[15px]'>
-              <li className='text-[#B4B4B4]'>
-                - 8 занятий в месяц 4008 занятий в месяц
-              </li>
-              <li className='mb-[38px] text-[#B4B4B4]'>- 4000 сом</li>
-              <li className='underline'>
-                Адрес: Бейшена Егимбаева, 145 (Билимкана Бишкек)
-              </li>
-            </ul>
-          </div>
+          <section className='w-[45%]'>
+            {firstArrayEquipment?.map(el => {
+              return (
+                <ul key={el.id} className='mb-[32px] text-[#B4B4B4]'>
+                  <li>
+                    <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
+                  </li>
+                  <li>
+                    <p>{el.firstDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.secondDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.thirdDescription}</p>
+                  </li>
+                  <li>
+                    <p>{el.fourthDescription}</p>
+                  </li>
+                </ul>
+              );
+            })}
+          </section>
+          <section className='w-[35%]'>
+            {secondArrayEquipment?.map(el => {
+              return (
+                <ul key={el.id} className='mb-[32px] text-[#E2DED3]'>
+                  <li>
+                    <p className='mb-[16px]'>{el.title}</p>
+                  </li>
+                  <li className='mb-[38px] text-[#B4B4B4]'>
+                    <p>{el.firstDescription}</p>
+                  </li>
+                  <li className='text-[]'>
+                    <p>{el.secondDescription}</p>
+                  </li>
+                  <li className='mb-[15px]'>
+                    <p>
+                      - <span className='line-through'>{el.spanWord}</span>
+                      {el.thirdDescription}
+                    </p>
+                  </li>
+                  <li>
+                    <p>{el.fourthDescription}</p>
+                  </li>
+                </ul>
+              );
+            })}
+          </section>
         </div>
       </div>
     </section>
