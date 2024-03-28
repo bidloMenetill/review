@@ -1,4 +1,4 @@
-import { CustomButton, useMediaQuery } from '../../shared';
+import { Button, useMediaQuery } from '../../shared';
 
 export const ErrorPage = () => {
   const isWideScreen = useMediaQuery(
@@ -30,7 +30,7 @@ export const ErrorPage = () => {
         </p>
       </div>
       <div className='text-center'>
-        <CustomButton txt={'На главную'} />
+        <Button className='customButton' txt={'На главную'} />
       </div>
     </div>
   );

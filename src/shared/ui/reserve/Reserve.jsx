@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { CustomButton } from '../../button/CustomButton';
-import reserveBg from '../../../img/reserve/reserve.jpg';
+import reserveBg from '../../img/reserve/reserve.jpg';
+import { Button } from '../button/Button';
 
 export const Reserve = props => {
   const { t } = useTranslation();
@@ -18,7 +18,10 @@ export const Reserve = props => {
           <p className='font-semibold mt-[30px] mx-auto leading-[normal] w-[800px] lg:w-[1208px] text-[22px] lg:text-[25px]'>
             {props.p}
           </p>
-          <CustomButton txt={t('trustUsPage.fourthSection.buttonInner')} />
+          <Button
+            className='customButton'
+            txt={t('trustUsPage.fourthSection.buttonInner')}
+          />
         </div>
       </div>
     </div>

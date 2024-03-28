@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 import logo from '../../shared/img/rush.png';
-
-import HeaderButton from '../../shared/ui/button/HeaderButton';
+import { Button } from '../../shared';
 
 const locales = {
   ru: { title: 'Ru' },
@@ -60,7 +59,7 @@ export const Header = () => {
             ))}
           </ul>
 
-          <HeaderButton txt='связаться' />
+          <Button className='headerButton' txt='связаться' />
         </div>
       </nav>
     </header>

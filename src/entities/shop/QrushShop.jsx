@@ -2,7 +2,7 @@ import React from 'react';
 import blueGuitar from '../../shared/img/shop/blueGuitar.png';
 import drumStickBg from '../../shared/img/shop/drumSticksBg.jpg';
 import qrushShop from '../../shared/img/shop/qrushShop.png';
-import { AnimationText } from '../../shared';
+import { AnimationTitle } from '../../shared';
 import { ShopCards } from './ShopCards';
 
 export const QrushShop = () => {
@@ -18,7 +18,7 @@ export const QrushShop = () => {
           }}
         ></div>
         <div className='flex justify-center items-center absolute '>
-          <AnimationText qrushImg={qrushShop} />
+          <AnimationTitle qrushImg={qrushShop} />
         </div>
         <div
           className='w-[50%] h-[620px] lg:h-[800px] xl:h-[960px]'

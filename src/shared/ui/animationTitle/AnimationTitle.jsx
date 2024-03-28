@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-export const AnimationText = ({ qrushImg }) => {
+export const AnimationTitle = ({ qrushImg }) => {
   const marqueeVariants = {
     animate: {
       x: [0, window.innerWidth],

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { OrangeButton } from '../../shared';
+import { Button } from '../../shared';
 import arrayButton from '../../shared/img/link.svg';
 
 export const People = props => {
@@ -71,7 +71,11 @@ export const People = props => {
                   {human.newLine ? `${human.newLine}` : null}
                 </p>
                 {!human.newLine && (
-                  <OrangeButton key={`button${index}`} txt={'Подробнее'} />
+                  <Button
+                    className='orangeButton'
+                    key={`button${index}`}
+                    txt={'Подробнее'}
+                  />
                 )}
               </div>
             </li>
