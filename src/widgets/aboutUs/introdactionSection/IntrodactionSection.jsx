@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-export const AboutUs = () => {
+export const IntrodactionSection = () => {
   const { t } = useTranslation();
   return (
     <div>

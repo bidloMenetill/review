@@ -1,6 +1,75 @@
 import rectangle_54 from '../../shared/img/aboutMobile/rectangle_54.png';
 
 export const AboutUsMobile = () => {
+  const mobileSection = [
+    {
+      id: 1,
+      img: rectangle_54,
+      text_h3: `Александр Симонов`,
+      text_p: `Преподаватель/запись/микширование живого звука Сертифицированный
+              AVID (ProTools)`,
+    },
+    {
+      id: 2,
+      img: rectangle_54,
+      text_h3: `Александр Симонов`,
+      text_p: `Преподаватель/запись/микширование живого звука Сертифицированный
+              AVID (ProTools)`,
+    },
+    {
+      id: 3,
+      img: rectangle_54,
+      text_h3: `Александр Симонов`,
+      text_p: `Преподаватель/запись/микширование живого звука Сертифицированный
+              AVID (ProTools)`,
+    },
+    {
+      id: 4,
+      img: rectangle_54,
+      text_h3: `Александр Симонов`,
+      text_p: `Преподаватель/запись/микширование живого звука Сертифицированный
+              AVID (ProTools)`,
+    },
+    {
+      id: 5,
+      img: rectangle_54,
+      text_h3: `Александр Симонов`,
+      text_p: `Преподаватель/запись/микширование живого звука Сертифицированный
+              AVID (ProTools)`,
+    },
+    {
+      id: 6,
+      img: rectangle_54,
+      text_h3: `Александр Симонов`,
+      text_p: `Преподаватель/запись/микширование живого звука Сертифицированный
+              AVID (ProTools)`,
+    },
+  ];
+  const mSecondSection = [
+    {
+      id: 1,
+      text_h3: `Качество`,
+      text_p: `Q-Rush Studio дает вам доступ к команде опытных и преданных своему
+              делу преподавателей, помещениям и оборудованию, которые позволят
+              вам достичь результатов, превосходящих ваши ожидания.`,
+    },
+    {
+      id: 2,
+      text_h3: `Разнообразие`,
+      text_p: `Q-Rush Studio с гордостью принимает людей со всего мира,
+              представителей всех слоев общества и разного
+              происхождения. Учитесь в среде, где отмечаются различия и
+              поощряется сотрудничество.`,
+    },
+    {
+      id: 3,
+      text_h3: `Страсть`,
+      text_p: `Практикуйтесь и развивайтесь вместе с людьми, которые, как и вы,
+              инвестируют в свое искусство и творчество. Вы можете быть уверены:
+              вашу страсть к звуку разделяют преподаватели, студенты и
+              сотрудники Q-Rush Studio.`,
+    },
+  ];
   return (
     <div>
       <div className='mobileWrapper w-96 bg-slate-900 text-slate-300 mx-auto'>
@@ -20,92 +89,25 @@ export const AboutUsMobile = () => {
           </p>
         </p>
         <section className='section2 w-96 h-[1081px] bg-[url("/src/shared/img/aboutMobile/frame_161_1.png")] flex flex-wrap justify-center gap-2'>
-          <div className='mobileSection w-[170px]'>
-            <img src={rectangle_54} alt='rectangle_54' />
-            <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
-              Александр Симонов
-            </h3>
-            <p className='mobileTextP sectionP text-xs'>
-              Преподаватель/запись/микширование живого звука Сертифицированный
-              AVID (ProTools)
-            </p>
-          </div>
-          <div className='mobileSection w-[170px]'>
-            <img src={rectangle_54} alt='rectangle_54' />
-            <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
-              Александр Симонов
-            </h3>
-            <p className='mobileTextP sectionP text-xs'>
-              Преподаватель/запись/микширование живого звука Сертифицированный
-              AVID (ProTools)
-            </p>
-          </div>
-          <div className='mobileSection w-[170px]'>
-            <img src={rectangle_54} alt='rectangle_54' />
-            <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
-              Александр Симонов
-            </h3>
-            <p className='mobileTextP sectionP text-xs'>
-              Преподаватель/запись/микширование живого звука Сертифицированный
-              AVID (ProTools)
-            </p>
-          </div>
-          <div className='mobileSection w-[170px]'>
-            <img src={rectangle_54} alt='rectangle_54' />
-            <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
-              Александр Симонов
-            </h3>
-            <p className='mobileTextP sectionP text-xs'>
-              Преподаватель/запись/микширование живого звука Сертифицированный
-              AVID (ProTools)
-            </p>
-          </div>
-          <div className='mobileSection w-[170px]'>
-            <img src={rectangle_54} alt='rectangle_54' />
-            <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
-              Александр Симонов
-            </h3>
-            <p className='mobileTextP sectionP text-xs'>
-              Преподаватель/запись/микширование живого звука Сертифицированный
-              AVID (ProTools)
-            </p>
-          </div>
-          <div className='mobileSection w-[170px]'>
-            <img src={rectangle_54} alt='rectangle_54' />
-            <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
-              Александр Симонов
-            </h3>
-            <p className='mobileTextP sectionP text-xs'>
-              Преподаватель/запись/микширование живого звука Сертифицированный
-              AVID (ProTools)
-            </p>
-          </div>
+          {mobileSection.map((mobile, index) => (
+            <div className='mobileSection w-[170px]'>
+              <img src={mobile.img} alt='rectangle_54' />
+              <h3 className='mobileH3 text-#DC6441 text-sm font-bold'>
+                {mobile.text_h3}
+              </h3>
+              <p className='mobileTextP sectionP text-xs'>{mobile.text_p}</p>
+            </div>
+          ))}
         </section>
         <section className='section3 w-[377px] h-[653px] bg-[url("src/shared/img/aboutMobile/Why_Q_Rush_2.png")]'>
-          <div>
-            <div className='mobileSection3 p-4 text-center'>
-              <h2 className='mobileH2'>Почему Q-Rush Studio?</h2>
-              <h3>Качество</h3>
-              <p>
-                Q-Rush Studio дает вам доступ к команде опытных и преданных
-                своему делу преподавателей, помещениям и оборудованию, которые
-                позволят вам достичь результатов, превосходящих ваши ожидания.
-              </p>
-              <h3>Разнообразие</h3>
-              <p>
-                Q-Rush Studio с гордостью принимает людей со всего мира,
-                представителей всех слоев общества и разного
-                происхождения. Учитесь в среде, где отмечаются различия и
-                поощряется сотрудничество.
-              </p>
-              <h3>Страсть</h3>
-              <p>
-                Практикуйтесь и развивайтесь вместе с людьми, которые, как и вы,
-                инвестируют в свое искусство и творчество. Вы можете быть
-                уверены: вашу страсть к звуку разделяют преподаватели, студенты
-                и сотрудники Q-Rush Studio.
-              </p>
-            </div>
+          <div className='mobileSection3 p-4 text-center'>
+            <h2 className='mobileH2'>Почему Q-Rush Studio?</h2>
+            {mSecondSection.map((mSecond, index) => (
+              <>
+                <h3>{mSecond.text_h3}</h3>
+                <p>{mSecond.text_p}</p>
+              </>
+            ))}
           </div>
         </section>
         <section>

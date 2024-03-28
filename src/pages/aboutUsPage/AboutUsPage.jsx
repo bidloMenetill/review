@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { Reserve } from '../../shared';
-import { AboutUs, WhyQRush, Team } from '../../widgets';
+import { IntrodactionSection, WhyQRush, Team } from '../../widgets';
 
-export const About = () => {
+export const AboutUsPage = () => {
   const { t } = useTranslation();
   return (
     <div>
       <div className='bg-no-repeat bg-[url("src/shared/img/about/aboutUs.png")] max-w-[1920px] xl:min-w-[1720px] lg:min-w-[1300px] flex flex-col mx-auto'>
-        <AboutUs />
+        <IntrodactionSection />
         <WhyQRush />
         <Team />
         <Reserve

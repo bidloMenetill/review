@@ -6,7 +6,6 @@ export const NewsPage = () => {
   return (
     <div>
       <NewsSection />
-      {/* <NewsBlock2 /> */}
     </div>
   );
 };

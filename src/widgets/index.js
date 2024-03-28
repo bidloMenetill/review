@@ -7,7 +7,7 @@ export { Footer } from './footer/Footer';
 export { Header } from './header/Header';
 export { TrustUsMain } from './trustUsPage/TrustUsMain';
 export { Preview } from './trustUsPage/Preview';
-export { AboutUs } from './aboutUs/aboutUsSection/AboutUsSection';
+export { IntrodactionSection } from './aboutUs/introdactionSection/IntrodactionSection';
 export { Team } from './aboutUs/teamSection/TeamSection';
 export { WhyQRush } from './aboutUs/whyQRushSection/WhyQRushSection';
 export { NewsSection } from './homePage/NewsSection';

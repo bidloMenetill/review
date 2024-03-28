@@ -3,23 +3,20 @@ import {
   TrustUs,
   MainPage,
   Error,
-  About,
+  AboutUsPage,
   ServicesPage,
   Galery,
   ShopPage,
   Faq,
   NewsPage,
-  AboutMobile,
 } from '../../pages';
-import { useMediaQuery } from '../../shared';
 import { Layout } from './Layout';
 
 export const Routing = () => {
-  const isMobile = useMediaQuery('(min-width: 385px)');
   const routesArr = [
     {
       path: '/aboutus',
-      element: isMobile ? <About /> : <AboutMobile />,
+      element: <AboutUsPage />,
     },
     {
       path: '/trustus',
