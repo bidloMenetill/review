@@ -7,20 +7,13 @@ import { NavigationOrange } from '../../features';
 
 export const Layout = () => {
   return (
-    <>
+    <Suspense fallback='...loading'>
       <Header />
       <main>
         <NavigationOrange />
         <Outlet />
       </main>
       <Footer />
-    </>
-  );
-};
-export const WrappedLayout = () => {
-  return (
-    <Suspense fallback='...loading'>
-      <Layout />
     </Suspense>
   );
 };

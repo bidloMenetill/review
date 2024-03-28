@@ -1,3 +1,4 @@
+import { Button } from '../../../shared';
 import studioRecording from '../../../shared/img/first_gallery_home_page.png';
 
 export const SoundRecordingSection = () => {
@@ -39,12 +40,7 @@ export const SoundRecordingSection = () => {
             );
           })}
         <div className='w-full text-center'>
-          <button
-            type='submit'
-            className='bg-[#F93822] rounded-[30px] py-[20px] px-[100px] mt-[56px]'
-          >
-            Отправить
-          </button>
+          <Button className='orangeButton' txt={'Отправить'} />
         </div>
       </div>
     </section>

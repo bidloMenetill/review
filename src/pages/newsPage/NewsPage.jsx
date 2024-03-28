@@ -1,9 +1,9 @@
-import { NewsBlock } from '../../widgets/news/NewsBlock';
+import { NewsBlock } from '../../widgets/newsBlock/NewsSection';
 
 export const NewsPage = () => {
   return (
-    <div>
+    <>
       <NewsBlock />
-    </div>
+    </>
   );
 };

@@ -1,4 +1,4 @@
-export { MainPage } from './mainPage/MainPage';
+export { HomePage } from './homePage/HomePage';
 export { Galery } from './galeryPage/Galery';
 export { TrustUs } from './TrustUs/TrustUs';
 export { ErrorPage } from './errorPage/ErrorPage';

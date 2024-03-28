@@ -15,7 +15,7 @@ export const WelcomeSection = () => {
         alt='shadowBg'
       />
       <div className='absolute mx-auto w-full'>
-        <p className='text-center max-w-[600px] mx-auto pt-[145px] text-[18px] font-[350] text-[#E2DED3] xl:max-w-[1500px] xl:text-[30px] lg:max-w-[1000px] lg:pt-[120px] lg:text-[24px]'>
+        <p className='text-center max-w-[600px] mx-auto pt-[145px] text-[18px] font-[350] text-[#E2DED3] xl:max-w-[1500px] xl:text-[30px] lg:max-w-[1000px] lg:pt-[120px] lg:text-[24px] tablet:max-w-[800px] tablet:text-[22px]'>
           Добро пожаловать в наш музыкальный центр, где объединены студия
           звукозаписи, репетиционная база и музыкальные курсы! Здесь вы найдете
           все необходимое для творчества и развития вашего музыкального

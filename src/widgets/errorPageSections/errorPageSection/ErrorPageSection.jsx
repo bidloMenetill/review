@@ -1,4 +1,4 @@
-import { CustomButton } from '../../../shared';
+import { Button } from '../../../shared';
 import bgError from '../../../shared/img/imageError.png';
 
 export const ErrorPageSection = () => {
@@ -19,8 +19,8 @@ export const ErrorPageSection = () => {
             страница не существует или была удалена.
           </p>
         </div>
-        <div className='text-center'>
-          <CustomButton txt={'На главную'} />
+        <div className='text-center mt-[49px]'>
+          <Button className='orangeButton' txt={'На главную'} />
         </div>
       </div>
     </section>

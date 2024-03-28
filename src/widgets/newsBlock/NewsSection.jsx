@@ -10,9 +10,8 @@ export const NewsBlock = () => {
     '(min-width: 1024px) and (max-width: 1920px)'
   );
   return (
-    // <div className='newsWrapper'>
-    <div>
-      <div
+    <>
+      <section
         className={
           isWideScreen
             ? 'w-full m-auto bg-zinc-900 flex justify-center text-slate-100'
@@ -205,7 +204,7 @@ export const NewsBlock = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };

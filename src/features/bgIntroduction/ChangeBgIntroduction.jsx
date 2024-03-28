@@ -70,7 +70,7 @@ export const ChangeBgIntroduction = () => {
   return (
     <section
       className={
-        ' bg-cover   h-[100vh] w-full flex justify-center flex-col bg-center bg-no-repeat bg-animation '
+        ' bg-cover   h-[100vh] w-full flex justify-center flex-col bg-center bg-no-repeat [transition:background-image_1s_ease-in-out] '
       }
       style={{
         backgroundImage: `url(${bgForIntroduction[indexIntroduction]})`,

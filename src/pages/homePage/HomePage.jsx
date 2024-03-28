@@ -2,30 +2,31 @@ import React from 'react';
 
 import { Reserve } from '../../shared';
 import {
-  IntroductionSection,
-  AboutUsSection,
-  ServicesSection,
-  NewsSection,
-  TrustUsSection,
-  VideoSection,
+  IntroductionSectionHomePage,
+  AboutUsSectionHomePage,
+  ServicesSectionHomePage,
+  NewsSectionHomePage,
+  TrustUsSectionHomePage,
+  VideoSectionHomePage,
+  GallerySectionHomePage,
 } from '../../widgets';
-import { GallerySection } from '../../widgets/homePage/GallerySection';
+
 import bgForVideoAndGallery from '../../shared/img/bg_video_gallery.jpg';
 
-export const MainPage = () => {
+export const HomePage = () => {
   return (
     <>
-      <IntroductionSection />
-      <AboutUsSection />
-      <ServicesSection />
-      <NewsSection />
-      <TrustUsSection />
+      <IntroductionSectionHomePage />
+      <AboutUsSectionHomePage />
+      <ServicesSectionHomePage />
+      <NewsSectionHomePage />
+      <TrustUsSectionHomePage />
       <section
         className='bg-center w-full bg-no-repeat bg-cover'
         style={{ backgroundImage: `url(${bgForVideoAndGallery})` }}
       >
-        <GallerySection />
-        <VideoSection />
+        <GallerySectionHomePage />
+        <VideoSectionHomePage />
         <Reserve
           h3='Превзойдите ожидания и создайте свою легенду прямо здесь.'
           p='Превзойдите ожидания и создайте свою легенду прямо здесь. Забронируйте свое место в Q Rush Studio прямо сейчас, нажав на кнопку ниже, или свяжитесь с Вадимом по номеру +996 700 763736.'
