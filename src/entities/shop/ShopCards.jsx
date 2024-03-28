@@ -1,184 +1,153 @@
-import darkFon from '../../shared/img/shop/darkFon.png';
-import guitar from '../../shared/img/shop/guitar.png';
 import { BuyButton, useMediaQuery } from '../../shared';
+import drumStick1 from '../../shared/img/shop/drumStick1.png';
+import drumStick2 from '../../shared/img/shop/drumStick2.png';
+import drumStick3 from '../../shared/img/shop/drumStick3.png';
+import drumStick4 from '../../shared/img/shop/drumStick4.png';
+import drumStick5 from '../../shared/img/shop/drumStick5.png';
 
 export const ShopCards = () => {
   const shopCard = [
     {
       id: 1,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
+      img: drumStick1,
+      instrumentName: 'Барабанные палочки Wincent/ Серия 5B',
+      length: 'Длина: 406 мм / 16 дюймов',
+      diameter: 'Диаметр: 15 мм / 0,591″',
+      tree: 'Дерево: Гикори',
+      versatility: 'Уникальная восковая защита',
+      acornTip: 'AcornTip: Насыщенный звук тарелок.',
+      cone: 'Стандартный конус: тяжелая передняя часть. Хороший удар',
+      price: '1000сом',
     },
     {
       id: 2,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
+      img: drumStick2,
+      instrumentName: 'Барабанные палочки ProMark Forward 5B',
+      length: 'Длина: 406,4 мм / 16 дюймов',
+      diameter: 'Диаметр: 15 мм / 0,590 дюймов',
+      tree: 'Дерево: Гикори',
+      versatility: 'Форма кончика: Овальная',
+      furnish: 'Отделка : Лак',
+      acornTip: 'AcornTip: Насыщенный звук тарелок.',
+      cone: 'Конус: Короткий .Хороший удар',
+      price: '1300сом',
     },
     {
       id: 3,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
+      img: drumStick3,
+      instrumentName: 'Барабанные палочки Wincent Dynabeat 5B',
+      length: 'Длина: 406 мм / 16 дюймов',
+      diameter: 'Диаметр: 15 мм / 0,591 дюймов',
+      tree: 'Дерево: Гикори',
+      versatility: 'Уникальная восковая защита',
+      acornTip: 'AcornTip: Насыщенный звук тарелок.',
+      cone: 'Стандартный конус: тяжелая передняя часть. Хороший удар',
+      price: '800сом',
     },
     {
       id: 4,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
+      img: drumStick4,
+      instrumentName: 'Барабанные палочки Millenium 7A',
+      length: 'Длина: 393 мм',
+      diameter: 'Диаметр: 14,0 мм ',
+      tree: 'Дерево: Клен',
+      weight: 'Вес: 37,5 г',
+      versatility: 'Уникальная восковая защита',
+      acornTip: 'AcornTip: Насыщенный звук тарелок.',
+      price: '500сом',
     },
     {
       id: 5,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 6,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 7,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 8,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 9,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 10,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 11,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 12,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 13,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 14,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 15,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
-    },
-    {
-      id: 16,
-      background: darkFon,
-      instrumentName: 'Электроакустическая гитара',
-      model: 'Crafter HT-100CE',
-      price: '23000сом',
-      instrument: guitar,
+      img: drumStick5,
+      instrumentName: 'Нейлоновый комплект медиаторов, смешанный Harley Benton',
+      amount: 'C 12 шт',
+      material: 'Материал: Нейлон',
+      different_thickness:
+        'Разная толщина:  2 шт. 0,46 мм, 0,71 мм, 0,81 мм, 0,96 мм, 1,2 мм, 1,5 мм.',
+      price: '50сом/шт',
     },
   ];
 
-  const isWideScreen1 = useMediaQuery(
-    '(min-width: 1620px) and (max-width:1820px)'
-  );
-  const isWideScreen2 = useMediaQuery(
-    '(min-width: 1320px) and (max-width:1620px)'
-  );
-  const isWideScreen3 = useMediaQuery(
-    '(min-width: 1024px) and (max-width:1320px)'
-  );
-
   return (
-    <ul
-      className={`container flex flex-wrap text-[#f5f5f5] gap-x-[20px] ${isWideScreen1 ? 'w-[1520px]' : isWideScreen2 ? 'w-[1220px]' : isWideScreen3 ? 'w-[920px]' : ''}`}
-    >
-      {shopCard.map((card, index) => (
-        <li
-          className={`text-center bg-[#000] border-[1px] border-white mt-[100px] ${isWideScreen1 ? 'w-[365px] h-[298px] rounded-[30px]' : isWideScreen2 ? 'w-[290px] h-[298px] rounded-[20px]' : isWideScreen3 ? 'w-[290px] h-[288px] rounded-[10px]' : 'w-[415px] h-[298px] rounded-[30px]'}`}
-          key={card.id}
-        >
-          <div className='text-[20px] font-medium mt-[30px]'>
-            {card.instrumentName}
-          </div>
-          <div
-            className={`h-[196px] flex justify-center items-center justify-around ${isWideScreen1 ? 'w-[323px] mt-[19px]' : isWideScreen2 ? 'w-[243px] mt-[10px]' : isWideScreen3 ? 'w-[243px] ' : 'w-[413px] mt-[19px]'}`}
-          >
-            <div className='flex flex-col items-center'>
-              <p
-                className={`h-[30px]  font-medium ${isWideScreen1 ? 'w-[200px] text-[25px]' : isWideScreen2 ? 'w-[180px] text-[23px]' : isWideScreen3 ? 'w-[160px] text-[21px]' : 'w-[214px] text-[25px]'}`}
-              >
-                {card.model}
-              </p>
-              <p
-                className={`text-[20px] font-medium text-[#ACACAC] mt-[10px] ${isWideScreen1 ? 'mt-[50px]' : isWideScreen2 ? 'mt-[40px]' : isWideScreen3 ? 'mt-[30px]' : 'mt-[10px]'}`}
-              >
-                {card.price}
-              </p>
-              <BuyButton />
-            </div>
-            <img
-              className={`${isWideScreen1 ? 'w-[114px] h-[175px]' : isWideScreen2 ? 'w-[104px] h-[155px]' : isWideScreen3 ? 'w-[84px] h-[135px]' : 'w-[124px] h-[195px]'}`}
-              src={card.instrument}
-              alt='instrument'
-            />
-          </div>
-        </li>
+    <ul className='max-w-[1920px] mx-auto mb-[100px] font-[montserrat] text-[#E2DED3]'>
+      {shopCard.map(card => (
+        <div key={card.id}>
+          {card.id % 2 === 0 ? (
+            <li
+              className='max-w-[89.3%] xl:max-w-[1715px] ml-[130px] xl:ml-[245px] lg:ml-[170px] flex justify-between mt-[100px] text-[#E2DED3] gap-x-[30px] items-center '
+              key={card.id}
+            >
+              <div className='w-[405px] xl:w-[705px] lg:w-[555px]'>
+                <h2 className='font-bold text-[#E2DED3] text-[30px] lg:text-[40px] xl:text-[50px]'>
+                  {card.instrumentName}
+                </h2>
+                <ul className='text-[22px] lg:text-[27px] xl:text-[30px] font-medium  mt-[30px]'>
+                  <li>{card.length}</li>
+                  <li>{card.diameter}</li>
+                  <li>{card.tree}</li>
+                  <li>{card.weight}</li>
+                  <li>{card.versatility}</li>
+                  <li>{card.furnish}</li>
+                  <li>{card.acornTip}</li>
+                  <li>{card.cone}</li>
+                  <li>{card.amount}</li>
+                  <li>{card.material}</li>
+                  <li>{card.different_thickness}</li>
+                </ul>
+                <div className='w-[434px] lg:w-[555px] xl:w-[674px] flex justify-around items-center mt-[10px] lg:mt-[30px] xl:mt-[50px] '>
+                  <p className='font-semibold mt-[20px] text-[26px] lg:text-[30px]'>
+                    Цена: {card.price}
+                  </p>
+                  <BuyButton />
+                </div>
+              </div>
+              <div>
+                <img
+                  className='w-[500px] h-[550px] xl:w-[805px] xl:h-[860px] lg:w-[680px] lg:h-[710px]'
+                  src={card.img}
+                  alt='cardImg'
+                />
+              </div>
+            </li>
+          ) : (
+            <li
+              className='max-w-[87.24%] xl:w-[1675px] left-0 flex justify-between mt-[100px] gap-x-[30px] items-center '
+              key={card.id}
+            >
+              <div>
+                <img
+                  className='w-[500px] h-[550px] xl:w-[805px] xl:h-[860px] lg:w-[680px] lg:h-[710px]'
+                  src={card.img}
+                  alt='cardImg'
+                />
+              </div>
+              <div className='w-[405px] xl:w-[705px] lg:w-[555px]'>
+                <h2 className='font-bold text-[#E2DED3] text-[30px] lg:text-[40px] xl:text-[50px]'>
+                  {card.instrumentName}
+                </h2>
+                <ul className='text-[24px] lg:text-[27px] xl:text-[30px] font-medium  mt-[30px]'>
+                  <li>{card.length}</li>
+                  <li>{card.diameter}</li>
+                  <li>{card.tree}</li>
+                  <li>{card.weight}</li>
+                  <li>{card.versatility}</li>
+                  <li>{card.furnish}</li>
+                  <li>{card.acornTip}</li>
+                  <li>{card.cone}</li>
+                  <li>{card.amount}</li>
+                  <li>{card.material}</li>
+                  <li>{card.different_thickness}</li>
+                </ul>
+                <div className='w-[434px] lg:w-[555px] xl:w-[674px] flex justify-around items-center mt-[10px] lg:mt-[30px] xl:mt-[50px]'>
+                  <p className='font-semibold mt-[20px] text-[26px] lg:text-[30px]'>
+                    Цена: {card.price}
+                  </p>
+                  <BuyButton />
+                </div>
+              </div>
+            </li>
+          )}
+        </div>
       ))}
     </ul>
   );
