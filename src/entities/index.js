@@ -1,2 +1,1 @@
-export { QrushShop } from './shop/QrushShop';
-export { ShopCards } from './shop/QrushShop';
+export { ShopCardsSection } from './shopCardsSection/ShopCardsSection';

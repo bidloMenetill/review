@@ -1,4 +1,4 @@
-import { Reserve } from '../../shared';
+import { AdvertisingSection } from '../../shared';
 import { GaleryMain } from '../../widgets';
 
 export const Galery = () => {
@@ -6,7 +6,7 @@ export const Galery = () => {
     <>
       <section className="bg-[url('/src/shared/img/galery.jpg')] bg-cover bg-no-repeat bg-center">
         <GaleryMain />
-        <Reserve />
+        <AdvertisingSection />
       </section>
     </>
   );
