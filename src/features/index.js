@@ -4,3 +4,4 @@ export { NavigationOrange } from './navigationOrange/NavigationOrange';
 export { Questions } from './questions/Questions';
 export { FormQuestion } from './formQuestion/FormQuestion';
 export { DigitalInformationSection } from './digitalInformation/DigitalInformationSection';
+export { BgQrushShop } from './bgQrushShop/BgQrushShop';

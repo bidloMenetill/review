@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 export const AnimationText = ({ qrushImg }) => {
   const marqueeVariants = {
     animate: {
-      x: [0, window.innerWidth],
+      x: [window.innerWidth, 0],
       transition: {
         x: {
           repeat: Infinity,

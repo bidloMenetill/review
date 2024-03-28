@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Reserve } from '../../shared';
+import { AdvertisingSection } from '../../shared';
 import {
   IntroductionSection,
   AboutUsSection,
@@ -26,9 +26,9 @@ export const MainPage = () => {
       >
         <GallerySection />
         <VideoSection />
-        <Reserve
-          h3='Превзойдите ожидания и создайте свою легенду прямо здесь.'
-          p='Превзойдите ожидания и создайте свою легенду прямо здесь. Забронируйте свое место в Q Rush Studio прямо сейчас, нажав на кнопку ниже, или свяжитесь с Вадимом по номеру +996 700 763736.'
+        <AdvertisingSection
+          title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
+          description='Звонки/WhatsApp +996 700 76 37 36'
         />
       </section>
     </>
