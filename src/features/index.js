@@ -1,6 +1,7 @@
 export { People } from './people/People';
 export { ChangeBgIntroduction } from './changeBgIntroduction/ChangeBgIntroduction';
 export { NavigationOrange } from './navigationOrange/NavigationOrange';
-export { Questions } from './questions/Questions';
-export { FormQuestion } from './formQuestion/FormQuestion';
+export { AccordionItems } from './accordionItems/AccordionItems';
+export { FormFeedback } from './formFeedback/FormFeedback';
 export { DigitalInformationSection } from './digitalInformation/DigitalInformationSection';
+export { Modal } from './modalWindow/Modal';

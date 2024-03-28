@@ -2,12 +2,12 @@ import { Route, Routes } from 'react-router-dom';
 import {
   TrustUs,
   HomePage,
-  Error,
+  ErrorPage,
   About,
   ServicesPage,
   Galery,
   ShopPage,
-  Faq,
+  FaqPage,
   NewsPage,
   AboutMobile,
 } from '../../pages';
@@ -35,7 +35,7 @@ export const Routing = () => {
     },
     {
       path: '/faq',
-      element: <Faq />,
+      element: <FaqPage />,
     },
     {
       path: '/news',
@@ -60,7 +60,7 @@ export const Routing = () => {
           <Route key={index} path={item.path} element={item.element} />
         ))}
       </Route>
-      <Route path='*' element={<Error />} />
+      <Route path='*' element={<ErrorPage />} />
     </Routes>
   );
 };
