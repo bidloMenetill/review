@@ -3,6 +3,7 @@ export const AnimationText = ({ qrushImg }) => {
   const marqueeVariants = {
     animate: {
       x: [0, window.innerWidth],
+
       transition: {
         x: {
           repeat: Infinity,

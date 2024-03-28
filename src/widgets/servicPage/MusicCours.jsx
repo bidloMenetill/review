@@ -9,7 +9,7 @@ import rectangle56 from '../../shared/img/servicesImg/Rectangle_57.png';
 
 export const MusicCours = () => {
   return (
-    <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
+    <section className='w-full max-w-[90%] xl:w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
       <div className='text-center'>
         <h3 className='text-[50px] font-[500] mb-[25px]'>МУЗЫКАЛЬНЫЕ КУРСЫ</h3>
         <p className='text-[25px] font-[500] pb-[25px] text-[#B4B4B4]'>
@@ -100,8 +100,10 @@ export const MusicCours = () => {
             <ul className='mb-[32px] text-[#B4B4B4]'>
               <li>- 4 занятия в месяц - 4400 сом</li>
               <li>
-                - 8 занятий в месяц - 8000 сом + бонус 2 часа самостоятельных
-                репетиций
+                <p>
+                  - 8 занятий в месяц - 8000 сом + бонус 2 часа самостоятельных
+                  репетиций
+                </p>
               </li>
               <li>
                 - 12 занятий в месяц - 12000 сом + бонус 4 часа самостоятельных

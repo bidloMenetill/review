@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import firstGalleryImg from '../../shared/img/first_gallery_home_page.png';
-import secondGalleryImg from '../../shared/img/second_gallery_home_page.png';
-import thirdGalleryImg from '../../shared/img/third_gallery_home_page.png';
-import fourthGalleryImg from '../../shared/img/fourth_gallery_home_page.png';
-import fifthGalleryImg from '../../shared/img/fifth_gallery_home_page.png';
-import sixthGalleryImg from '../../shared/img/sixth_gallery_home_page.png';
-import arrayButton from '../../shared/img/link.svg';
+import firstGalleryImg from '../../../shared/img/first_gallery_home_page.png';
+import secondGalleryImg from '../../../shared/img/second_gallery_home_page.png';
+import thirdGalleryImg from '../../../shared/img/third_gallery_home_page.png';
+import fourthGalleryImg from '../../../shared/img/fourth_gallery_home_page.png';
+import fifthGalleryImg from '../../../shared/img/fifth_gallery_home_page.png';
+import sixthGalleryImg from '../../../shared/img/sixth_gallery_home_page.png';
+import arrayButton from '../../../shared/img/link.svg';
 
-export const GallerySection = () => {
+export const GallerySectionHomePage = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };

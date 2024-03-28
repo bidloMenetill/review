@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import {
   TrustUs,
-  MainPage,
+  HomePage,
   Error,
   About,
   ServicesPage,
@@ -55,7 +55,7 @@ export const Routing = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<MainPage />} />
+        <Route index element={<HomePage />} />
         {routesArr?.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />
         ))}

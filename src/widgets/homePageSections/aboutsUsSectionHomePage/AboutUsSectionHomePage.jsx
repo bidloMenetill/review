@@ -1,7 +1,7 @@
-import bgAboutUs from '../../shared/img/main_page_bg.jpg';
-import { DigitalInformationSection } from '../../features';
+import bgAboutUs from '../../../shared/img/main_page_bg.jpg';
+import { DigitalInformationSection } from '../../../features';
 
-export const AboutUsSection = () => {
+export const AboutUsSectionHomePage = () => {
   return (
     <section
       className='bg-cover bg-no-repeat -mt-[9px] bg-center h-auto '

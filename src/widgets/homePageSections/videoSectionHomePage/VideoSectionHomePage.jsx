@@ -1,7 +1,7 @@
 import React from 'react';
-import arrayButton from '../../shared/img/link.svg';
+import arrayButton from '../../../shared/img/link.svg';
 
-export const VideoSection = () => {
+export const VideoSectionHomePage = () => {
   return (
     <section className='pb-[70px] xl:pb-[150px]'>
       <section className='mx-auto max-w-[90%] xl:container'>

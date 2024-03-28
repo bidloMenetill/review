@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import photo from '../../shared/img/bg_video_gallery.jpg';
+import photo from '../../../shared/img/bg_video_gallery.jpg';
 
-export const Team = () => {
+export const TeamSection = () => {
   const { t } = useTranslation();
   return (
     <div>

@@ -4,24 +4,28 @@ import arrayButton from '../../shared/img/link.svg';
 
 export const People = props => {
   const {
-    br1,
-    br2,
-    br3,
-    h2,
-    p1,
-    p2,
-    p3,
-    to,
-    thirdHuman,
-    firstHuman,
-    secondHuman,
-    bg,
+    firstDescription,
+    secondDescription,
+    thirdDescription,
+    title,
+    firstSubTitle,
+    secondSubTitle,
+    thirdSubTitle,
+    linkAddress,
+    thirdImg,
+    firstImg,
+    secondImg,
+    background,
   } = props;
 
   const humansArr = [
-    { newLine: br1, description: p1, img: firstHuman },
-    { newLine: br2, description: p2, img: secondHuman },
-    { newLine: br3, description: p3, img: thirdHuman },
+    { newLine: firstDescription, description: firstSubTitle, img: firstImg },
+    {
+      newLine: secondDescription,
+      description: secondSubTitle,
+      img: secondImg,
+    },
+    { newLine: thirdDescription, description: thirdSubTitle, img: thirdImg },
   ];
 
   const scrollToTop = () => {
@@ -31,16 +35,16 @@ export const People = props => {
   return (
     <section
       className='h-[700px] xl:h-[1174px] lg:h-[900px] bg-cover bg-no-repeat bg-center'
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${background})` }}
     >
       <section className='mx-auto max-w-[90%] xl:container'>
         <h2 className='text-[#F5F5F5] font-[Montserrat] text-[80px] lg:text-[100px] not-italic font-medium pt-[60px] xl:pt-[100px] leading-[normal]'>
-          {h2}
+          {title}
         </h2>
         <div className='flex justify-end'>
           <Link
             className='flex justify-normal items-center'
-            to={to}
+            to={linkAddress}
             onClick={scrollToTop}
           >
             <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal] transition-colors duration-300 hover:text-[#F93822]'>
