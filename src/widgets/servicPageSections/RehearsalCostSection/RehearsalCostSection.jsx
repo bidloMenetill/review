@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import rectangle51 from '../../shared/img/servicesImg/Rectangle_57.png';
-import rectangle54 from '../../shared/img/servicesImg/Rectangle_58.png';
-import rectangle55 from '../../shared/img/servicesImg/Rectangle_59.png';
+import rectangle51 from '../../../shared/img/servicesImg/Rectangle_57.png';
+import rectangle54 from '../../../shared/img/servicesImg/Rectangle_58.png';
+import rectangle55 from '../../../shared/img/servicesImg/Rectangle_59.png';
 
-export const RehearsalThirdCost = () => {
+export const RehearsalCostSection = () => {
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -111,10 +111,14 @@ export const RehearsalThirdCost = () => {
     },
   ];
   return (
-    <section className='w-full mx-auto mb-[154px] font-montserrat text-[#E2DED3]'>
+    <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
       <div className='text-center'>
+        <h3 className='text-[50px] font-[500] mb-[25px]'>РЕПЕТИЦИОННАЯ БАЗА</h3>
+        <p className='text-[25px] font-[500] pb-[25px] text-[#B4B4B4]'>
+          К вашим услугам есть 3 комнаты для репетиций
+        </p>
         <p className='text-[35px] font-[500] pb-[38px]'>
-          Третья комната (13 м<sup className='text-[24px]'>2</sup>)
+          Первая комната (33 м<sup className='text-[24px]'>2</sup>)
         </p>
       </div>
 
@@ -144,10 +148,10 @@ export const RehearsalThirdCost = () => {
       </div>
       <div className='w-full mx-auto mt-[100px] text-center'>
         <p className='text-[25px] font-[500]'>
-          Стоимость групповой 2 часовой репетиции - 400 сом\чел <br />
-          Индивидуальные репетиции - 250\час
+          Стоимость групповой 2 часовой репетиции - 400 сом\чел Индивидуальные
+          <br />
+          репетиции - 250\час
         </p>
-
         <h3 className='mt-[38px] mb-[32px] text-[30px] font-[600] text-center'>
           Список оборудования
         </h3>

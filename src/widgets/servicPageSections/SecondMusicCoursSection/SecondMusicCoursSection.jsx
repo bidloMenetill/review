@@ -2,12 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import rectangle51 from '../../shared/img/rectangle_70.jpg';
-import rectangle54 from '../../shared/img/fifth_gallery_home_page.png';
-import rectangle55 from '../../shared/img/Rectangle_71.png';
-import rectangle56 from '../../shared/img/servicesImg/Rectangle_57.png';
+import rectangle51 from '../../../shared/img/rectangle_70.jpg';
+import rectangle54 from '../../../shared/img/fifth_gallery_home_page.png';
+import rectangle55 from '../../../shared/img/Rectangle_71.png';
+import rectangle56 from '../../../shared/img/servicesImg/Rectangle_57.png';
 
-export const SecondMusicCours = () => {
+export const SecondMusicCoursSection = () => {
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -82,7 +82,7 @@ export const SecondMusicCours = () => {
         <h3 className='mt-[38px] mb-[32px] text-[30px] font-[600] text-center'>
           Список оборудования
         </h3>
-        <div className='max-w-[970px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1400px] lg:max-w-[1000px]'>
+        <div className='max-w-[1170px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1570px] lg:max-w-[1270px]'>
           <section className='w-[45%]'>
             {firstArrayEquipment?.map(el => {
               return (

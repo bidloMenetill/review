@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal } from '../modalWindow/Modal';
 
-export const FeedbackForm = () => {
+export const FormFeedback = () => {
   const [open, setOpen] = useState(false);
   const onHandleSubmit = e => {
     e.preventDefault();

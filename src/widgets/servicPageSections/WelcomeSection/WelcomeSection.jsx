@@ -1,7 +1,7 @@
-import firstBg from '../../shared/img/servicesImg/serviceFonSecond.jpg';
-import shadowBg from '../../shared/img/main_page_bg.jpg';
+import firstBg from '../../../shared/img/servicesImg/serviceFonSecond.jpg';
+import shadowBg from '../../../shared/img/main_page_bg.jpg';
 
-export const Welcome = () => {
+export const WelcomeSection = () => {
   return (
     <section className='relative w-full h-[450px] mx-auto text-[#f5f5f5] font-montserrat'>
       <img

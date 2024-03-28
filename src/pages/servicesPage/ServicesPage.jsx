@@ -1,28 +1,28 @@
 import {
-  RehearsalCost,
-  Welcome,
-  ServiceOrder,
-  Services,
-  SoundRecording,
-  RehearsalSecondCost,
-  RehearsalThirdCost,
-  MusicCours,
-  SecondMusicCours,
+  RehearsalCostSection,
+  WelcomeSection,
+  ServiceOrderSection,
+  ServiceSection,
+  SoundRecordingSection,
+  RehearsalSecondCostSection,
+  RehearsalThirdCostSection,
+  MusicCoursSection,
+  SecondMusicCoursSection,
 } from '../../widgets';
 
 export const ServicesPage = () => {
   return (
     <>
-      <Services />
-      <Welcome />
-      <SoundRecording />
-      <RehearsalCost />
-      <RehearsalSecondCost />
-      <RehearsalThirdCost />
-      <MusicCours />
-      <SecondMusicCours />
+      <ServiceSection />
+      <WelcomeSection />
+      <SoundRecordingSection />
+      <RehearsalCostSection />
+      <RehearsalSecondCostSection />
+      <RehearsalThirdCostSection />
+      <MusicCoursSection />
+      <SecondMusicCoursSection />
 
-      <ServiceOrder />
+      <ServiceOrderSection />
     </>
   );
 };

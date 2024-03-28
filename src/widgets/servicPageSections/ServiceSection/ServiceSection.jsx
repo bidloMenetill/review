@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import firstBg from '../../shared/img/servicesImg/firstFon.png';
-import secondBg from '../../shared/img/servicesImg/Rectangle_53.jpg';
-import thirdBg from '../../shared/img/servicesImg/secondFon.png';
-import fourthBg from '../../shared/img/servicesImg/thirdFon.png';
+import firstBg from '../../../shared/img/servicesImg/firstFon.png';
+import secondBg from '../../../shared/img/servicesImg/Rectangle_53.jpg';
+import thirdBg from '../../../shared/img/servicesImg/secondFon.png';
+import fourthBg from '../../../shared/img/servicesImg/thirdFon.png';
 
-export const Services = () => {
+export const ServiceSection = () => {
   const [showText, setShowText] = useState(false);
   useEffect(() => {
     const handleScroll = () => {

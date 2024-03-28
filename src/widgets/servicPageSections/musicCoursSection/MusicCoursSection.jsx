@@ -2,12 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import rectangle51 from '../../shared/img/rectangle_70.jpg';
-import rectangle54 from '../../shared/img/fifth_gallery_home_page.png';
-import rectangle55 from '../../shared/img/Rectangle_71.png';
-import rectangle56 from '../../shared/img/servicesImg/Rectangle_57.png';
+import rectangle51 from '../../../shared/img/rectangle_70.jpg';
+import rectangle54 from '../../../shared/img/fifth_gallery_home_page.png';
+import rectangle55 from '../../../shared/img/Rectangle_71.png';
+import rectangle56 from '../../../shared/img/servicesImg/Rectangle_57.png';
 
-export const MusicCours = () => {
+export const MusicCoursSection = () => {
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },

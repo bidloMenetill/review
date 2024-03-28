@@ -1,4 +1,4 @@
-export const ServiceOrder = () => {
+export const ServiceOrderSection = () => {
   return (
     <section className='h-[300px] w-full mx-auto bg-gradient-to-t from-[#160503] from-0% via-black to-[#160503] text-center'>
       <div className='py-[89px] text-center'>

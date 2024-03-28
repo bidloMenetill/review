@@ -1,6 +1,6 @@
-import studioRecording from '../../shared/img/first_gallery_home_page.png';
+import studioRecording from '../../../shared/img/first_gallery_home_page.png';
 
-export const SoundRecording = () => {
+export const SoundRecordingSection = () => {
   const arrayContent = [
     { id: 0, text: 'ЗАПИСЬ ВОКАЛА' },
     { id: 1, text: 'СОЗДАНИЕ МУЗЫКИ И АРАНЖИРОВОК' },

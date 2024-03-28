@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AccordionItems } from '../../features';
+import { AccordionItems } from '../../../features';
 
 export const AccordionSection = () => {
   const [flag, setFlag] = useState('');
@@ -58,23 +58,22 @@ export const AccordionSection = () => {
   return (
     <section className='text-[#FFFFFF] mt-[100px]'>
       <div className='max-w-[600px] mx-[auto] mb-[120px] xl:max-w-[1300px] lg:max-w-[900px] lg:mb-[230px]'>
-        <h1 className='text-center pb-[90px] text-[30px] xl:text-[50px] lg:text-[24px]'>
+        <h2 className='text-center pb-[90px] text-[30px] xl:text-[50px] lg:text-[24px]'>
           Часто задаваемые вопросы
-        </h1>
-        {arr &&
-          arr.map(el => {
-            return (
-              <div key={el.id}>
-                <AccordionItems
-                  title={el.title}
-                  text={el.text}
-                  description={el.description}
-                  flag={flag}
-                  setFlag={setFlag}
-                />
-              </div>
-            );
-          })}
+        </h2>
+        {arr?.map(el => {
+          return (
+            <div key={el.id}>
+              <AccordionItems
+                title={el.title}
+                text={el.text}
+                description={el.description}
+                flag={flag}
+                setFlag={setFlag}
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import rectangle51 from '../../shared/img/servicesImg/Rectangle_57.png';
-import rectangle54 from '../../shared/img/servicesImg/Rectangle_58.png';
-import rectangle55 from '../../shared/img/servicesImg/Rectangle_59.png';
+import rectangle51 from '../../../shared/img/servicesImg/Rectangle_57.png';
+import rectangle54 from '../../../shared/img/servicesImg/Rectangle_58.png';
+import rectangle55 from '../../../shared/img/servicesImg/Rectangle_59.png';
 
-export const RehearsalSecondCost = () => {
+export const RehearsalThirdCostSection = () => {
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -114,7 +114,7 @@ export const RehearsalSecondCost = () => {
     <section className='w-full mx-auto mb-[154px] font-montserrat text-[#E2DED3]'>
       <div className='text-center'>
         <p className='text-[35px] font-[500] pb-[38px]'>
-          Вторая комната (22 м<sup className='text-[24px]'>2</sup>)
+          Третья комната (13 м<sup className='text-[24px]'>2</sup>)
         </p>
       </div>
 
