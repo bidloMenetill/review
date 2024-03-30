@@ -8,8 +8,8 @@ export const AccordionItems = ({ title, text, description, flag, setFlag }) => {
         onClick={() => setFlag(title)}
         className={
           flag === title
-            ? 'w-full border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900 text-[14px] pt-[8px] pb-[28px] mb-[17px] rounded-[30px] font-[600] transition-all cursor-pointer'
-            : 'w-full border-solid border-[0.5px] border-[#6d6d6d] bg-neutral-900/[.30] text-[14px] pt-[8px] pb-[14px] mb-[17px] rounded-[30px] font-[600] transition-all cursor-pointer'
+            ? 'w-full border-solid rounded-[10px] border-[0.5px] bg-transparent border-[#fff] sm:border-[#6d6d6d] sm:bg-neutral-900 text-[14px] pt-[8px] pb-[28px] mb-[17px] sm:rounded-[30px] font-[600] transition-all cursor-pointer'
+            : 'w-full border-solid border-[0.5px] border-[#fff] bg-transparent sm:border-[#6d6d6d] sm:bg-neutral-900/[.30] text-[14px] pt-[8px] pb-[14px] mb-[17px] rounded-[10px] sm:rounded-[30px] font-[600] transition-all cursor-pointer'
         }
       >
         <div
@@ -19,7 +19,7 @@ export const AccordionItems = ({ title, text, description, flag, setFlag }) => {
               : 'w-[95%] flex justify-between items-center h-[44px] transition-all text-[16px] mx-auto xl:text-[20px] lg:text-[18px]'
           }
         >
-          {text}
+          <div className='w-[80%] sm:w-[100%]'>{text}</div>
           <img
             className={
               flag === title
