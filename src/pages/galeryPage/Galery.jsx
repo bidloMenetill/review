@@ -1,4 +1,4 @@
-import { Reserve } from '../../shared';
+import { AdvertisingSection } from '../../shared';
 import {
   GaleryMain,
   ImageSection,
@@ -10,13 +10,13 @@ import {
 export const Galery = () => {
   return (
     <>
-      <section className=''>
+      <section>
         <GaleryMain />
         <ImageSection />
         <SecondSection />
         <ThirdVideoSection />
         <VideoSlider />
-        <Reserve
+        <AdvertisingSection
           h3='Превзойдите ожидания и создайте свою легенду прямо здесь.'
           p='Превзойдите ожидания и создайте свою легенду прямо здесь. Забронируйте свое место в Q Rush Studio прямо сейчас, нажав на кнопку ниже, или свяжитесь с Вадимом по номеру +996 700 763736.'
         />

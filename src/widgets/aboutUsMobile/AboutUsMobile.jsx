@@ -2,7 +2,7 @@ import rectangle_54 from '../../shared/img/aboutMobile/rectangle_54.png';
 
 export const AboutUsMobile = () => {
   return (
-    <div>
+    <>
       <div className='mobileWrapper w-96 bg-slate-900 text-slate-300 mx-auto'>
         <p className='mobileP text-slate-200 w-96 max-h-96 bg-[url("/src/shared/img/aboutMobile/frame_104.png")] bg-auto p-2'>
           <h2 className='mobileH2 text-center text-sm p-2'>О нас</h2>
@@ -124,6 +124,6 @@ export const AboutUsMobile = () => {
           </div>
         </section>
       </div>
-    </div>
+    </>
   );
 };

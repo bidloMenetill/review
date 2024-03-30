@@ -6,7 +6,7 @@ export const GaleryMain = () => {
       className=' h-[960px]  bg-cover bg-no-repeat bg-center'
       style={{ backgroundImage: `url(${backImg})` }}
     >
-      <div className=' container h-[100%] mx-auto text-[#f5f5f5] font-montserrat flex flex-col items-start justify-center font-medium xl:text-[25px] lg:text-[20px]'>
+      <div className=' container h-[100%] mx-auto text-[#f5f5f5] font-montserrat flex flex-col items-start justify-center font-medium xl:text-[25px] text-[15px] lg:text-[20px]'>
         <h2 className='text-[100px] font-medium  mb-[25px]'>Галерея</h2>
         <div className=''>
           <span className=' mt-[25px]  '>
