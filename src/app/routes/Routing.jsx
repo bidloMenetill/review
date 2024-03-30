@@ -30,7 +30,7 @@ export const Routing = () => {
       element: <ServicesPage />,
     },
     {
-      path: '/galery',
+      path: '/gallery',
       element: <Galery />,
     },
     {

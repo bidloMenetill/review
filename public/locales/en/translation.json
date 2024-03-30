@@ -10,12 +10,34 @@
     "headerLink": {
       "linkTitle1": "About Us",
       "linkTitle2": "Services",
-      "linkTitle4": "News",
-      "linkTitle3": "Trust us",
+      "linkTitle3": "News",
+      "linkTitle4": "Trust us",
       "linkTitle5": "Gallery",
       "linkTitle6": "Contacts"
     },
     "headerButton": "Contact us"
+  },
+  "footer": {
+    "aboutUs":{
+      "link1":"Trust us",
+      "link2":"Gallery"
+    },
+    "news":{
+      "link1":"Часто задаваемые вопросы",
+      "link2":"Информация о Партнерах"
+    },
+    "services":{
+    "link1":"Repitition base",
+    "link2":"Audio Studios",
+    "link3":"Musical Courses",
+    "link4":"shop"
+    },
+    "contacts":{
+      "link1":"Adres: Chingiza Aytmatova 1а (Bilimkana School)",
+      "link2":"Посмотри подробную инструкцию как до нас добраться                                    ",
+      "link3":"phone number: +996 700 763736",
+      "link4":"Email: qrushstudio.music@gmail.com"
+    }
   },
 
   "servicePage": {

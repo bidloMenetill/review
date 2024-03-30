@@ -2,6 +2,7 @@ import { Reserve } from '../../shared';
 import {
   GaleryMain,
   ImageSection,
+  SecondSection,
   ThirdVideoSection,
   VideoSlider,
 } from '../../widgets';
@@ -12,8 +13,7 @@ export const Galery = () => {
       <section className=''>
         <GaleryMain />
         <ImageSection />
-        <ImageSection />
-        <ImageSection />
+        <SecondSection />
         <ThirdVideoSection />
         <VideoSlider />
         <Reserve
