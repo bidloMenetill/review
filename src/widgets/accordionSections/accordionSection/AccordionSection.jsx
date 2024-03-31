@@ -56,9 +56,9 @@ export const AccordionSection = () => {
   ];
 
   return (
-    <section className='text-[#FFFFFF] mt-[100px]'>
-      <div className='max-w-[600px] mx-[auto] mb-[120px] xl:max-w-[1300px] lg:max-w-[900px] lg:mb-[230px]'>
-        <h2 className='text-center pb-[90px] text-[30px] xl:text-[50px] lg:text-[24px]'>
+    <section className='text-[#FFFFFF] mx-[20px] mt-[12px] sm:mt-[100px]'>
+      <div className='max-w-[600px] mx-[auto] mb-[50px] sm:mb-[120px] xl:max-w-[1300px] lg:max-w-[900px] lg:mb-[230px]'>
+        <h2 className='text-left w-[195px] pb-[23px] text-[20px] sm:w-full sm:text-center sm:pb-[90px] sm:text-[24px] xl:text-[50px] lg:text-[40px] '>
           Часто задаваемые вопросы
         </h2>
         {arr?.map(el => {
