@@ -21,7 +21,6 @@ export const ServicesPage = () => {
       <RehearsalThirdCostSection />
       <MusicCoursSection />
       <SecondMusicCoursSection />
-
       <ServiceOrderSection />
     </>
   );

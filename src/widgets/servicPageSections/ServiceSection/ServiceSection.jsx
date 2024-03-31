@@ -7,6 +7,7 @@ import thirdBg from '../../../shared/img/servicesImg/secondFon.png';
 import fourthBg from '../../../shared/img/servicesImg/thirdFon.png';
 
 export const ServiceSection = () => {
+  // FIX ME: bugs with move title
   const [showText, setShowText] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -50,21 +51,18 @@ export const ServiceSection = () => {
           modules={[Autoplay]}
           className='!transition-all ease-out duration-300'
         >
-          {arrayImg &&
-            arrayImg.map(el => {
-              return (
-                <SwiperSlide
-                  key={el.id}
-                  className='!transition-all ease-out duration-300'
-                >
-                  <img
-                    className='w-full h-[1080px] object-cover ease-in duration-300'
-                    src={el.img}
-                    alt='firstBg'
-                  />
-                </SwiperSlide>
-              );
-            })}
+          {arrayImg.map(el => (
+            <SwiperSlide
+              key={el.id}
+              className='!transition-all ease-out duration-300'
+            >
+              <img
+                className='w-full h-[1080px] object-cover ease-in duration-300'
+                src={el.img}
+                alt='firstBg'
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
         <div className='absolute w-full top-[55%] z-[1]'>
           <h2 className='text-[24px] mb-[20px] mx-[90px] xl:text-[50px] lg:text-[40px]'>

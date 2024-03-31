@@ -8,6 +8,7 @@ import rectangle55 from '../../../shared/img/servicesImg/Rectangle_59.png';
 import { Button } from '../../../shared';
 
 export const RehearsalSecondCostSection = () => {
+  // FIX ME: fix more arr
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },

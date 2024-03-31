@@ -15,11 +15,11 @@ import { Layout } from './Layout';
 export const Routing = () => {
   const routesArr = [
     {
-      path: '/aboutus',
+      path: '/about-us',
       element: <AboutUsPage />,
     },
     {
-      path: '/trustus',
+      path: '/trust-us',
       element: <TrustUsPage />,
     },
     {

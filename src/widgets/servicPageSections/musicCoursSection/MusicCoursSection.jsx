@@ -8,6 +8,7 @@ import rectangle55 from '../../../shared/img/Rectangle_71.png';
 import rectangle56 from '../../../shared/img/servicesImg/Rectangle_57.png';
 
 export const MusicCoursSection = () => {
+  // FIX ME: fix more arr
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -15,7 +16,7 @@ export const MusicCoursSection = () => {
     { id: 3, img: rectangle56 },
     { id: 4, img: rectangle56 },
   ];
-  const firstArrayEquipment = [
+  const arrayEquipment = [
     {
       id: 0,
       title: 'Индивидуальные занятия',
@@ -26,8 +27,6 @@ export const MusicCoursSection = () => {
         '- 12 занятий в месяц - 12000 сом + бонус 4 часа самостоятельных репетиций',
       fourthDescription: '- 1100 сом - 1 занятие',
     },
-  ];
-  const secondArrayEquipment = [
     {
       id: 0,
       title: 'Групповые занятия (2-4 чел)',
@@ -38,6 +37,7 @@ export const MusicCoursSection = () => {
       fourthDescription: 'Адрес: Чынгыза Айтматова 1а (Билимкана)',
     },
   ];
+
   return (
     <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[154px]'>
       <div className='text-center'>
@@ -84,12 +84,12 @@ export const MusicCoursSection = () => {
           Список оборудования
         </h3>
         <div className='max-w-[1170px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1570px] lg:max-w-[1270px]'>
-          <section className='w-[45%]'>
-            {firstArrayEquipment?.map(el => {
+          <section className='w-[100%] flex items-center justify-between'>
+            {arrayEquipment?.map(el => {
               return (
                 <ul
                   key={el.id}
-                  className='mb-[32px] text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
+                  className='mb-[32px] max-w-[50%] text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
                 >
                   <li>
                     <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
@@ -102,35 +102,6 @@ export const MusicCoursSection = () => {
                   </li>
                   <li>
                     <p>{el.thirdDescription}</p>
-                  </li>
-                  <li>
-                    <p>{el.fourthDescription}</p>
-                  </li>
-                </ul>
-              );
-            })}
-          </section>
-          <section className='w-[35%]'>
-            {secondArrayEquipment?.map(el => {
-              return (
-                <ul
-                  key={el.id}
-                  className='mb-[32px] text-[18px] text-[#E2DED3] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
-                >
-                  <li>
-                    <p className='mb-[16px]'>{el.title}</p>
-                  </li>
-                  <li className='mb-[38px] text-[#B4B4B4]'>
-                    <p>{el.firstDescription}</p>
-                  </li>
-                  <li className='text-[]'>
-                    <p>{el.secondDescription}</p>
-                  </li>
-                  <li className='mb-[15px]'>
-                    <p>
-                      - <span className='line-through'>{el.spanWord}</span>
-                      {el.thirdDescription}
-                    </p>
                   </li>
                   <li>
                     <p>{el.fourthDescription}</p>

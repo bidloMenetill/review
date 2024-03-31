@@ -3,6 +3,7 @@ import { Button } from '../../shared';
 import arrayButton from '../../shared/img/link.svg';
 
 export const People = props => {
+  // FIX ME: декомомпозиция на компоненты
   const {
     firstDescription,
     secondDescription,

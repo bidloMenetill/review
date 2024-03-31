@@ -6,6 +6,7 @@ export const EventSection = () => {
       <div>
         <img src={Rectangle_148_1} alt='Rectangle_148(1)' />
       </div>
+      {/* FIX ME: SEO optimizations */}
       <div className='bg-[#F93822] max-w-[678px] xl:min-h-[730px] tablet:h-[419px] py-[10%] tablet:py-[3%] px-[2%] flex flex-col gap-[10%]'>
         <h2 className='text-[#E2DED3] font-semibold text-[50px] tablet:text-[30px]'>
           Бишкек

@@ -9,9 +9,9 @@ export const ErrorPageSection = () => {
     >
       <div className='max-w-[500px] mx-auto pt-[318px] xl:max-w-[840px] lg:max-w-[640px]'>
         <div>
-          <h4 className='text-[120px] text-[#F93822] text-center font-[700] xl:text-[150px] lg:text-[130px]'>
+          <h1 className='text-[120px] text-[#F93822] text-center font-[700] xl:text-[150px] lg:text-[130px]'>
             404
-          </h4>
+          </h1>
         </div>
         <div>
           <p className='text-[16px] text-[#fff] text-center font-[500] xl:text-[26px] lg:text-[20px]'>
@@ -20,6 +20,7 @@ export const ErrorPageSection = () => {
           </p>
         </div>
         <div className='text-center mt-[49px]'>
+          {/* FIX ME: children */}
           <Button className='orangeButton' txt={'На главную'} />
         </div>
       </div>

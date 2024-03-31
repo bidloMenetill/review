@@ -40,7 +40,7 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
           </div>
           <div>
             <iframe
@@ -50,7 +50,7 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
           </div>
           <div className=''>
             <iframe
@@ -60,7 +60,7 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
           </div>
           <div>
             <iframe
@@ -70,7 +70,7 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </section>
       </section>
