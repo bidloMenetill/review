@@ -21,11 +21,11 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle2'),
     },
     {
-      route: '/news',
+      route: '/trustus',
       link: t('header.headerLink.linkTitle3'),
     },
     {
-      route: '/trustus',
+      route: '/news',
       link: t('header.headerLink.linkTitle4'),
     },
     {

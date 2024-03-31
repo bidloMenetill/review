@@ -287,5 +287,11 @@
       "upperTitle": "Exceed expectations and create your legend right here. Reserve your place at Q Rush Studio now by clicking the button below, or contact Vadim on +996 700 763736.",
       "buttonn": "Reserve"
     }
+  },
+    "newsBlock": {
+    "firstSection": {
+      "title": "News",
+      "upperTitle": "Here we publish studio news and articles"
+    }
   }
 }
