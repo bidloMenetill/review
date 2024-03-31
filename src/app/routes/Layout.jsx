@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import '../styles/App.css';
 
 import { Header, Footer } from '../../widgets';
 import { NavigationOrange } from '../../features';

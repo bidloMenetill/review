@@ -41,7 +41,7 @@ export const DigitalInformationSection = () => {
         <h4 className='text-[#F5F5F5] font-[Montserrat] text-[50px] not-italic font-medium leading-[normal]'>
           За все время
         </h4>
-        <div className='flex gap-x-[60px] xl:gap-x-[100px] lg:gap-x-[80px]  items-center justify-center  mt-[60px]'>
+        <section className='flex gap-x-[30px] xl:gap-x-[110px] lg:gap-x-[70px]  items-center justify-center  mt-[60px]'>
           <div className='inline-flex flex-col'>
             <CountUp
               duration={2.5}
@@ -50,17 +50,18 @@ export const DigitalInformationSection = () => {
               redraw={true}
               start={hasAppeared ? null : 0}
               end={hasAppeared ? 1500 : 0}
+              suffix='+'
             >
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] px-[40px]  text-[88px] lg:text-[100px] not-italic font-semibold leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-[80px] text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-[50px]  text-[#F93822]'
                 >
                   1500
                 </h5>
               )}
             </CountUp>
-            <p className='text-center text-[#F5F5F5]  font-[Montserrat] text-[23px]  lg:text-[30px]   mt-[30px] not-italic font-medium leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[23px]  xl:[27px] lg:text-[25px]   mt-[30px] not-italic font-medium leading-[34px]'>
               Записей проведено
             </p>
           </div>
@@ -69,6 +70,7 @@ export const DigitalInformationSection = () => {
               duration={2.5}
               delay={0}
               separator=''
+              suffix='+'
               redraw={true}
               start={hasAppeared ? null : 0}
               end={hasAppeared ? 3000 : 0}
@@ -76,13 +78,13 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] px-[40px]   text-[88px] lg:text-[100px] not-italic font-semibold leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-center  text-[80px] xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-[50px]  text-[#F93822]'
                 >
                   3000
                 </h5>
               )}
             </CountUp>
-            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[23px]  lg:text-[30px]  mt-[30px] not-italic font-medium leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[23px]  xl:[27px] lg:text-[25px] mt-[30px] not-italic font-medium leading-[34px]'>
               Репетиций проведено
             </p>
           </div>
@@ -94,22 +96,23 @@ export const DigitalInformationSection = () => {
               redraw={true}
               start={hasAppeared ? null : 0}
               end={hasAppeared ? 1000 : 0}
+              suffix='+'
             >
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] px-[40px]  text-[88px] lg:text-[100px] not-italic font-semibold leading-[50px]  text-[#F93822] '
+                  className='font-[Montserrat] text-center   text-[80px] xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-[50px]  text-[#F93822] '
                 >
                   1000
                 </h5>
               )}
             </CountUp>
 
-            <p className='text-center text-[#F5F5F5]  font-[Montserrat] text-[23px]  lg:text-[30px]   mt-[30px] not-italic font-medium leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]  font-[Montserrat] text-[25px]  xl:[27px] lg:text-[28px]   mt-[30px] not-italic font-medium leading-[34px]'>
               Уроков проведено
             </p>
           </div>
-        </div>
+        </section>
       </section>
     </section>
   );
