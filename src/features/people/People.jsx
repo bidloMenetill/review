@@ -57,7 +57,7 @@ export const People = props => {
           {humansArr.map((human, index) => (
             <li
               key={index}
-              className='border-[1px] border-[solid] rounded-[30px] border-[1px] border-[solid] border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-full h-full'
+              className=' rounded-[30px] border-[1px] border-[solid] border-[#F5F5F5] bg-[rgba(0,_0,_0,_0.70)] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] w-full h-full'
             >
               <div className='p-[20px] flex justify-center items-center flex-col'>
                 <img
