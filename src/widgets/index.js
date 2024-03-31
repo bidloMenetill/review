@@ -25,6 +25,10 @@ export { RehearsalThirdCostSection } from './servicPageSections/RehearsalThirdCo
 export { MusicCoursSection } from './servicPageSections/musicCoursSection/MusicCoursSection';
 export { SecondMusicCoursSection } from './servicPageSections/SecondMusicCoursSection/SecondMusicCoursSection';
 export { QrushShopSections } from './qrushShopSections/QrushShopSections';
+export { ImageSection } from './galeryMain/imageSection';
+export { ThirdVideoSection } from './galeryMain/ThirdVideoSection';
+export { VideoSlider } from './galeryMain/VideoSlider';
+export { SecondSection } from './galeryMain/SecondSection';
 export { IntroductionNewsSection } from './newsPageSections/introductionSectionNewsPage/IntroductionSectionNewsPage';
 export { FiestSection } from './newsPageSections/feastSectionNewsPage/FeastSectionNewsPage';
 export { EventSection } from './newsPageSections/eventSectionNewsPage/EventSectionNewsPage';
