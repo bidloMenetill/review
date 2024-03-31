@@ -39,7 +39,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className='   h-[100px] bg-black/50 backdrop-opacity-10 backdrop-invert flex items-center justify-center  top-0 backdrop-blur-50 sticky bg-cover bg-no-repeat bg-center'>
+    <header className=' z-10  h-[100px] bg-black/50 backdrop-opacity-10 backdrop-invert flex items-center justify-center  top-0 backdrop-blur-50 sticky bg-cover bg-no-repeat bg-center'>
       <nav className=' mx-auto flex justify-between items-center container '>
         <Link to={'/'} className='mr-[4vw]'>
           <img
