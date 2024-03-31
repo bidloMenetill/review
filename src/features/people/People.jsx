@@ -53,7 +53,7 @@ export const People = props => {
             <img src={arrayButton} className='ml-[10px]' alt='' />
           </Link>
         </div>
-        <ul className='flex gap-x-[20px] mt-[63px] mb-[90px]'>
+        <ul className='flex gap-x-[20px] mt-[30px] xl:mt-[63px] lg:mt-[43px] mb-[90px]'>
           {humansArr.map((human, index) => (
             <li
               key={index}
@@ -67,7 +67,7 @@ export const People = props => {
                 />
                 <p className='font-bold text-[24px] lg:text-[30px] mb-[5px] text-center mt-[20px] text-[#fff]'>
                   {human.description}
-                  {human.newLine && <br />}{' '}
+                  {human.newLine && <br />}
                   {human.newLine ? `${human.newLine}` : null}
                 </p>
                 {!human.newLine && (
