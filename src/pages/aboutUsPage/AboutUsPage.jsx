@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Reserve } from '../../shared';
+import { AdvertisingSection } from '../../shared';
 import { WhyQRush, Team, IntrodactionSectionAboutUs } from '../../widgets';
 
 export const AboutUsPage = () => {
@@ -9,9 +9,9 @@ export const AboutUsPage = () => {
       <IntrodactionSectionAboutUs />
       <WhyQRush />
       <Team />
-      <Reserve
-        h3={t('aboutUs.fourthSection.title')}
-        p={t('aboutUs.fourthSection.upperTitle')}
+      <AdvertisingSection
+        title={t('aboutUs.fourthSection.title')}
+        description={t('aboutUs.fourthSection.upperTitle')}
       />
     </section>
   );

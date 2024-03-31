@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import {
-  TrustUs,
-  MainPage,
-  Error,
+  TrustUsPage,
+  HomePage,
+  ErrorPage,
   AboutUsPage,
   ServicesPage,
   Galery,
   ShopPage,
-  Faq,
+  FaqPage,
   NewsPage,
 } from '../../pages';
 import { Layout } from './Layout';
@@ -20,7 +20,7 @@ export const Routing = () => {
     },
     {
       path: '/trustus',
-      element: <TrustUs />,
+      element: <TrustUsPage />,
     },
     {
       path: '/services',
@@ -32,7 +32,7 @@ export const Routing = () => {
     },
     {
       path: '/faq',
-      element: <Faq />,
+      element: <FaqPage />,
     },
     {
       path: '/news',
@@ -52,12 +52,12 @@ export const Routing = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<MainPage />} />
+        <Route index element={<HomePage />} />
         {routesArr?.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />
         ))}
       </Route>
-      <Route path='*' element={<Error />} />
+      <Route path='*' element={<ErrorPage />} />
     </Routes>
   );
 };

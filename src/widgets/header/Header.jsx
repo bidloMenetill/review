@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 import logo from '../../shared/img/rush.png';
-
-import HeaderButton from '../../shared/ui/button/HeaderButton';
+import { Button } from '../../shared';
 
 const locales = {
   ru: { title: 'Ru' },
@@ -13,7 +12,7 @@ const locales = {
 export const Header = () => {
   const { i18n } = useTranslation();
   return (
-    <header className='bg-black/50   w-full h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center absolute top-0 backdrop-blur-50'>
+    <header className='bg-black/50   w-full h-[100px] backdrop-opacity-10 backdrop-invert flex items-center justify-center absolute z-10 top-0 backdrop-blur-50'>
       <nav className=' w-[1720px]  flex justify-between items-center'>
         <Link to={'/'}>
           <img src={logo} alt='Q-RUSH logo' />
@@ -60,7 +59,7 @@ export const Header = () => {
             ))}
           </ul>
 
-          <HeaderButton txt='связаться' />
+          <Button className='headerButton' txt='связаться' />
         </div>
       </nav>
     </header>
