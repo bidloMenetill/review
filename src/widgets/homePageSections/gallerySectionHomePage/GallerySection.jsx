@@ -19,11 +19,11 @@ export const GallerySectionHomePage = () => {
         </h2>
         <div className='flex justify-end mb-[30px]'>
           <Link
-            className='flex justify-normal items-center'
-            to='/galery'
             onClick={scrollToTop}
+            className='!flex justify-normal items-center'
+            to='/galery'
           >
-            <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal] transition-colors duration-300 hover:text-[#F93822]'>
+            <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal]'>
               смотреть все
             </button>{' '}
             <img src={arrayButton} className='ml-[10px]' alt='' />
@@ -35,7 +35,7 @@ export const GallerySectionHomePage = () => {
             <img
               src={firstGalleryImg}
               alt='first_gallery_image'
-              className='w-full h-full xl:w-full h-auto '
+              className='w-full h-auto'
             />
           </div>
           <div className='row-start-3 row-end-4 col-start-1 col-end-2'>
@@ -43,7 +43,7 @@ export const GallerySectionHomePage = () => {
             <img
               src={secondGalleryImg}
               alt='second_gallery_image'
-              className='w-full h-full xl:w-full h-auto'
+              className='w-auto h-auto'
             />
           </div>
           <div className='row-start-3 row-end-4 col-start-2 col-end-3'>
@@ -51,22 +51,22 @@ export const GallerySectionHomePage = () => {
             <img
               src={thirdGalleryImg}
               alt='third_gallery_image'
-              className='w-full h-full xl:w-full h-auto'
+              className='w-auto h-auto'
             />
           </div>
-          <div className='col-start-3 col-end-4 row-start-1 row-end-2'>
+          <div className='col-start-3 col-end-4 row-start-1 row-end-3'>
             <img
               src={fourthGalleryImg}
               alt='fourth_gallery_image'
-              className='w-full h-full xl:w-full h-auto'
+              className='w-auto h-auto'
             />
           </div>
-          <div className='col-start-4 col-end-5 row-start-1 row-end-2'>
+          <div className='col-start-4 col-end-5 row-start-1 row-end-3'>
             {' '}
             <img
               src={fifthGalleryImg}
               alt='fifth_gallery_image'
-              className='w-full h-full xl:w-full h-auto'
+              className='w-auto h-auto'
             />
           </div>
           <div className='col-start-3 col-end-5 row-start-2 row-end-4'>
@@ -74,7 +74,7 @@ export const GallerySectionHomePage = () => {
             <img
               src={sixthGalleryImg}
               alt='sixth_gallery_image'
-              className='w-full h-full xl:w-full h-auto'
+              className='w-auto h-auto '
             />
           </div>
         </section>

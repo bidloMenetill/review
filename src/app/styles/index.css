@@ -26,7 +26,7 @@ body{
   @apply h-[50px] text-[#F5F5F5] text-center btn font-medium font-montserrat rounded-[30px] mt-[50px]
 }
 .headerButton {
-  @apply px-[24px]  py-[10px] w-[200px] h-[60px] bg-[#DC6441] font-normal text-[25px] text-[#25100a]
+  @apply px-[24px]  py-[10px] w-[200px] h-[60px] bg-[#F93822] font-normal  text-[20px] rounded-full ml-[20px] text-[white] font-montserrat font-medium 
 }
 }
 

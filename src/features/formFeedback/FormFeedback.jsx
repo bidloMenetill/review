@@ -60,17 +60,17 @@ export const FormFeedback = () => {
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
-                  stroke-width='1.5'
+                  strokeWidth='1.5'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                     d='m4.5 12.75 6 6 9-13.5'
                   />
                 </svg>
               </div>
             </div>
-            <label for='checkbox' className='cursor-pointer'>
+            <label htmlFor='checkbox' className='cursor-pointer'>
               <p className='text-[14px] font-[600] xl:text-[14px] md:text-[12px]'>
                 Я согласен(-на) с условиями Политики <br /> Конфиденциальности
               </p>

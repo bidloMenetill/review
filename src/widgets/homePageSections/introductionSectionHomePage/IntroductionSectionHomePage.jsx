@@ -1,9 +1,9 @@
-import { ChangeBgIntroduction } from '../../../features';
+import { BgIntroduction } from '../../../features';
 
 export const IntroductionSectionHomePage = () => {
   return (
     <>
-      <ChangeBgIntroduction />
+      <BgIntroduction />
     </>
   );
 };

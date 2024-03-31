@@ -5,9 +5,9 @@ export { ServicesSectionHomePage } from './homePageSections/servicesSectionHomeP
 export { TrustUsSectionHomePage } from './homePageSections/trustUsSectionHomePage/TrustUsSectionHomePage';
 export { Footer } from './footer/Footer';
 export { Header } from './header/Header';
-export { TrustUsMain } from './TrustUsPage/TrustUsMain';
-export { Preview } from './TrustUsPage/Preview';
 export { AboutUsSection } from './aboutUs/aboutUsSection/AboutUsSection';
+export { MainSectionTrustUs } from './trustUsPageSections/mainSectionTrustUs/MainSectionTrustUs';
+export { PreviewSectionTrustUs } from './trustUsPageSections/previewSectionTrustUs/PreviewSectionTrustUs';
 export { WhyQRush } from './aboutUs/WhyQRush';
 export { NewsSectionHomePage } from './homePageSections/newsSectionHomePage/NewsSectionHomePage';
 export { ServiceSection } from './servicPageSections/ServiceSection/ServiceSection';
@@ -24,3 +24,8 @@ export { RehearsalSecondCostSection } from './servicPageSections/RehearsalSecond
 export { RehearsalThirdCostSection } from './servicPageSections/RehearsalThirdCostSection/RehearsalThirdCostSection';
 export { MusicCoursSection } from './servicPageSections/musicCoursSection/MusicCoursSection';
 export { SecondMusicCoursSection } from './servicPageSections/SecondMusicCoursSection/SecondMusicCoursSection';
+export { QrushShopSections } from './qrushShopSections/QrushShopSections';
+export { ImageSection } from './galeryMain/imageSection';
+export { ThirdVideoSection } from './galeryMain/ThirdVideoSection';
+export { VideoSlider } from './galeryMain/VideoSlider';
+export { SecondSection } from './galeryMain/SecondSection';

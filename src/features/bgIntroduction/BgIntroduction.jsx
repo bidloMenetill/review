@@ -11,7 +11,7 @@ import bgThird from '../../shared/img/third_main_bg.jpg';
 import bgFourth from '../../shared/img/forth_main_bg.jpg';
 import bgFifth from '../../shared/img/fifth_main_bg.jpg';
 
-export const ChangeBgIntroduction = () => {
+export const BgIntroduction = () => {
   const { t } = useTranslation();
   const bgForIntroduction = useMemo(
     () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],

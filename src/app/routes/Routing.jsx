@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import {
-  TrustUs,
+  TrustUsPage,
   HomePage,
   ErrorPage,
   About,
@@ -23,14 +23,14 @@ export const Routing = () => {
     },
     {
       path: '/trustus',
-      element: <TrustUs />,
+      element: <TrustUsPage />,
     },
     {
       path: '/services',
       element: <ServicesPage />,
     },
     {
-      path: '/galery',
+      path: '/gallery',
       element: <Galery />,
     },
     {
