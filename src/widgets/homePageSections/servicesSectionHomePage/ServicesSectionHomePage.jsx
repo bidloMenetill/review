@@ -5,6 +5,7 @@ import thirdStudio from '../../../shared/img/third_studio_main_page.jpg';
 import servicesBg from '../../../shared/img/bg_services_home_page.jpg';
 
 export const ServicesSectionHomePage = () => {
+  // FIX ME: описал в компоненте
   const StudioData = {
     background: servicesBg,
     linkAddress: '/services',

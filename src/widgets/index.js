@@ -12,7 +12,7 @@ export { WelcomeSection } from './servicPageSections/WelcomeSection/WelcomeSecti
 export { RehearsalCostSection } from './servicPageSections/RehearsalCostSection/RehearsalCostSection';
 export { Team } from './aboutUsPageSections/teamSection/TeamSection';
 export { IntrodactionSectionAboutUs } from './aboutUsPageSections/introdactionSectionAboutUs/IntrodactionSectionAboutUs';
-export { WhyQRush } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
+export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
 export { GaleryMain } from './galeryMain/GaleryMain';
 export { GallerySectionHomePage } from './homePageSections/gallerySectionHomePage/GallerySection';
 export { VideoSectionHomePage } from './homePageSections/videoSectionHomePage/VideoSectionHomePage';

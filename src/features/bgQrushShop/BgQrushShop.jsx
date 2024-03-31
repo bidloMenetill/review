@@ -9,6 +9,7 @@ import promark from '../../shared/img/shop/promark.png';
 import heartFire from '../../shared/img/shop/heartFire.png';
 
 export const BgQrushShop = () => {
+  // FIX ME: change css style
   const bgForQrushShop = useMemo(
     () => [blueGuitar, promark, secondDrumStickBg],
     []
@@ -17,16 +18,18 @@ export const BgQrushShop = () => {
     () => [drumStickBg, blackGuitar, heartFire],
     []
   );
-  const [indexQrushShop, setQrushShop] = useState(0);
-  const [isChangingBg, setIsChangingBg] = useState(false);
-  const [timeoutId, setTimeoutId] = useState(null);
-  const [intervalActive, setIntervalActive] = useState(true);
+  const [indexQrushShop, setIndexQrushShop] = useState(0);
+  const isChangingBg = false;
+  const timeoutId = null;
+  const intervalActive = true;
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isChangingBg && intervalActive) {
-        setQrushShop(prevIndex => (prevIndex + 1) % bgForQrushShop.length);
-        setQrushShop(prevIndex => (prevIndex + 1) % bgForQrushShop2.length);
+        setIndexQrushShop(prevIndex => (prevIndex + 1) % bgForQrushShop.length);
+        setIndexQrushShop(
+          prevIndex => (prevIndex + 1) % bgForQrushShop2.length
+        );
       }
     }, 4000);
 

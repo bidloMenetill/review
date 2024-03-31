@@ -5,6 +5,7 @@ import unnamed_2 from '../../../shared/img/news2/unnamed 2.png';
 import unnamed_3 from '../../../shared/img/news2/unnamed_3.png';
 
 export const ApplicationSection = () => {
+  // FIX ME: thinks
   const applications = [
     {
       id: 1,

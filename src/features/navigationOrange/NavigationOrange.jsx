@@ -8,10 +8,6 @@ import instagramOrange from '../../shared/img/instagram_nav.svg';
 export const NavigationOrange = () => {
   const [isAsideOpen, setIsAsideOpen] = useState(false);
 
-  const toggleAside = () => {
-    setIsAsideOpen(!isAsideOpen);
-  };
-
   return (
     <>
       <aside className='fixed bottom-20 xl:bottom-[110px] right-7 xl:right-[125px] bg-[#F93822]   cursor-pointer z-50  rounded-[766.667px]'>
@@ -50,7 +46,7 @@ export const NavigationOrange = () => {
         </ul>
         <motion.button
           className='flex border-[#F93822] p-[10px]  border-solid border-[5px] justify-center items-center rounded-[766.667px] bg-[#F93822]'
-          onClick={toggleAside}
+          onClick={() => setIsAsideOpen(!isAsideOpen)}
           whileHover={{ scale: 1.1 }}
           animate={{ rotate: isAsideOpen ? 90 : 0 }}
           transition={{ duration: 0.5 }}

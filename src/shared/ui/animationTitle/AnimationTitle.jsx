@@ -14,6 +14,7 @@ export const AnimationTitle = ({ qrushImg }) => {
     },
   };
 
+  // FIX ME: used with css
   return (
     <div className='overflow-hidden whitespace-nowrap'>
       <motion.div

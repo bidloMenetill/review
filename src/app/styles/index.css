@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './classes.css';
+@import '../../shared/style/classes.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,104 +13,4 @@
 body{
   background-color: #000000;
   position: relative
- 
-}
-@layer components {
-  .container {
-    @apply mx-auto font-montserrat;
-  }
-
-.buyButton {
-  @apply mt-[21px] rounded-[40px] bg-[#f93822] w-[200px] lg:w-[300px] xl:w-[344px] h-[50px] lg:h-[70px]
-}
-.orangeButton {
-  @apply px-[31px] transition-all duration-300 text-center rounded-[20px] lg:px-[65px] py-[7px] bg-[#F93822] font-normal text-[25px] text-[#F5F5F5] hover:opacity-80
-}
-.customButton {
-  @apply h-[50px] text-[#F5F5F5] text-center btn font-medium font-montserrat rounded-[30px] mt-[50px]
-}
-.headerButton {
-  @apply px-[24px]  py-[10px] w-[200px] h-[60px] bg-[#F93822] font-normal  text-[20px] rounded-full ml-[20px] text-[white] font-montserrat font-medium 
-}
-}
-
-
-
-@media (min-width: 1720px) {
-  .contAfter{
-    @apply text-[14px] pr-[20px] w-full;
-  }
-
-  .contBefor{
-    @apply text-[14px] w-full;
-  }
-
-  .subcontainerAfter{
-    @apply text-[18px] flex justify-between items-center;
-  }
-
-  .subcontainerBefore{
-    @apply text-[18px] flex justify-between items-center;
-  } 
-}
-
-@media (min-width: 1300px) {
-  .contAfter{
-    @apply text-[14px] pr-[20px];
-  }
-
-  .contBefor{
-    @apply text-[14px];
-  }
-
-  .subcontainerAfter{
-    @apply text-[18px] flex justify-between items-center;
-  }
-
-  .subcontainerBefore{
-    @apply text-[18px] flex justify-between items-center;
-  } 
-}
-
-
-.btn {
-  background-color: #161616;
-  color: #fff;
-
-}
-
-.btn:hover::before,
-.btn:hover::before {
-  color: #161616;
-  animation: none;
-  transform: none;
-  transition: none;      
-}
-
-.btn::after {
-  background: #161616;
-  transition: none;
-  color: white;
-  animation: none;
-  transform: none;      
-}
-
-@media (min-width: 1620px) {
-  .customClass{
-    width: 1620px;
-  }
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
--webkit-text-fill-color: #FFFFFF;
--webkit-box-shadow: 0 0 0px 1000px #1314142a inset;
-transition: background-color 5000s ease-in-out 0s;
 }
