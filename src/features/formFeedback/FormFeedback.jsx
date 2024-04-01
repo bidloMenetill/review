@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal } from '../modalWindow/Modal';
+import { ModalWindow } from '../modalWindow/ModalWindow';
 import { Button } from '../../shared';
 
 export const FormFeedback = () => {
@@ -78,11 +78,13 @@ export const FormFeedback = () => {
           </div>
 
           <div className='mt-[30px] text-right sm:text-center'>
-            <Button variant='orangeButton'> Отправить</Button>
+            <Button onClick={() => setOpen(true)} variant='orangeButton'>
+              Отправить
+            </Button>
           </div>
         </div>
       </form>
-      <Modal openModal={open} setOpenModal={setOpen} />
+      <ModalWindow openModal={open} setOpenModal={setOpen} />
     </section>
   );
 };

@@ -24,11 +24,11 @@ export const MusicCoursSection = () => {
       secondDescription:
         '- 8 занятий в месяц - 8000 сом + бонус 2 часа самостоятельных репетиций',
       thirdDescription:
-        '- 12 занятий в месяц - 12000 сом + бонус 4 часа самостоятельных репетиций',
+        '12 занятий в месяц - 12000 сом + бонус 4 часа самостоятельных репетиций',
       fourthDescription: '- 1100 сом - 1 занятие',
     },
     {
-      id: 0,
+      id: 1,
       title: 'Групповые занятия (2-4 чел)',
       firstDescription: '- 8 занятий в месяц 4000 сом',
       secondDescription: '- При оплате 3 месяцев скидка 3000 сом',
@@ -59,19 +59,17 @@ export const MusicCoursSection = () => {
           pagination={{ clickable: true }}
         >
           <div className='flex justify-center text-white'>
-            {arrayImg?.map(el => {
-              return (
-                <SwiperSlide key={el.id}>
-                  <div className='max-w-[370px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
-                    <img
-                      className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
-                      src={el.img}
-                      alt='rectangle'
-                    />
-                  </div>
-                </SwiperSlide>
-              );
-            })}
+            {arrayImg?.map(el => (
+              <SwiperSlide key={el.id}>
+                <div className='max-w-[370px] h-[200px] xl:max-w-[560px] xl:h-[320px] lg:max-w-[410px] lg:h-[260px]'>
+                  <img
+                    className='w-[100%] h-[100%] object-cover border-solid border-[1px] rounded-[16px] border-[#E2DED3]'
+                    src={el.img}
+                    alt='rectangle'
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </div>
         </Swiper>
       </div>
@@ -83,32 +81,33 @@ export const MusicCoursSection = () => {
         <h3 className='mt-[38px] mb-[32px] text-[20px] font-[600] text-center xl:text-[30px] lg:text-[25px] tablet:text-[22px]'>
           Список оборудования
         </h3>
-        <div className='max-w-[1170px] mx-auto flex justify-between text-left text-[25px] xl:max-w-[1570px] lg:max-w-[1270px]'>
+        <div className='max-w-[1170px] mx-auto text-left text-[25px] xl:max-w-[1570px] lg:max-w-[1270px]'>
           <section className='w-[100%] flex items-center justify-between'>
-            {arrayEquipment?.map(el => {
-              return (
-                <ul
-                  key={el.id}
-                  className='mb-[32px] max-w-[50%] text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
-                >
-                  <li>
-                    <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
-                  </li>
-                  <li>
-                    <p>{el.firstDescription}</p>
-                  </li>
-                  <li>
-                    <p>{el.secondDescription}</p>
-                  </li>
-                  <li>
-                    <p>{el.thirdDescription}</p>
-                  </li>
-                  <li>
-                    <p>{el.fourthDescription}</p>
-                  </li>
-                </ul>
-              );
-            })}
+            {arrayEquipment?.map(el => (
+              <ul
+                key={el.id}
+                className='mb-[32px] max-w-[50%] text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
+              >
+                <li>
+                  <p className='mb-[16px] text-[#E2DED3]'>{el.title}</p>
+                </li>
+                <li>
+                  <p>{el.firstDescription}</p>
+                </li>
+                <li>
+                  <p>{el.secondDescription}</p>
+                </li>
+                <li>
+                  <p>
+                    - <span className='line-through'>{el.spanWord}</span>
+                    {el.thirdDescription}
+                  </p>
+                </li>
+                <li>
+                  <p>{el.fourthDescription}</p>
+                </li>
+              </ul>
+            ))}
           </section>
         </div>
       </div>

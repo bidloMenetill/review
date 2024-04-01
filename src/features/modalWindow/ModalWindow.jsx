@@ -1,4 +1,4 @@
-export const Modal = ({ openModal, setOpenModal }) => {
+export const ModalWindow = ({ openModal, setOpenModal }) => {
   return (
     <div
       onClick={() => setOpenModal(false)}

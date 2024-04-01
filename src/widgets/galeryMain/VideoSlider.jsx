@@ -32,7 +32,7 @@ export const VideoSlider = () => {
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowfullscreen
+              // allowfullscreen
             ></iframe>
           </SwiperSlide>
           <SwiperSlide className='bg-cover bg-no-repeat  !flex justify-center items-center flex-col rounded-[30px] !w-[705px] !h-[350px]'>
@@ -44,7 +44,7 @@ export const VideoSlider = () => {
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowfullscreen
+              // allowfullscreen
             ></iframe>
           </SwiperSlide>
           <SwiperSlide className='bg-cover bg-no-repeat  !flex justify-center items-center rounded-[30px] !w-[705px] !h-[350px]'>
@@ -56,7 +56,7 @@ export const VideoSlider = () => {
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowfullscreen
+              // allowfullscreen
             ></iframe>
           </SwiperSlide>
         </div>
