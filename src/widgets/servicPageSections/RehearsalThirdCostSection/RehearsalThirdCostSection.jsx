@@ -250,7 +250,7 @@ export const RehearsalThirdCostSection = () => {
             })}
           </section>
         </div>
-        <Button className='orangeButton' txt={'Отправить'} />
+        <Button variant='orangeButton'>Отправить</Button>
       </div>
     </section>
   );

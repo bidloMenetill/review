@@ -1,20 +1,19 @@
 import { motion } from 'framer-motion';
-export const AnimationTitle = ({ qrushImg }) => {
+
+export const AnimationTitle = ({ value }) => {
   const marqueeVariants = {
     animate: {
-      x: [0, window.innerWidth],
-
+      x: ['100%', '-100%'],
       transition: {
         x: {
           repeat: Infinity,
-          duration: 8,
+          duration: 4,
           ease: 'linear',
         },
       },
     },
   };
 
-  // FIX ME: used with css
   return (
     <div className='overflow-hidden whitespace-nowrap'>
       <motion.div
@@ -22,7 +21,9 @@ export const AnimationTitle = ({ qrushImg }) => {
         variants={marqueeVariants}
         animate='animate'
       >
-        <img src={qrushImg} alt='qrushImg' />
+        <h1>
+          <img src={value} alt='title' />
+        </h1>
       </motion.div>
     </div>
   );

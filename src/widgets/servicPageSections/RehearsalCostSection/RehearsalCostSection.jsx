@@ -256,7 +256,7 @@ export const RehearsalCostSection = () => {
             })}
           </section>
         </div>
-        <Button className='orangeButton' txt={'Отправить'} />
+        <Button variant='orangeButton'>Отправить</Button>
       </div>
     </section>
   );

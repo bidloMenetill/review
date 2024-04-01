@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './classes.css';
-@import '../../shared/style/classes.css';
+@import '../../shared/styles/classes.css';
 
 * {
   margin: 0;

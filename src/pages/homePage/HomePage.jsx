@@ -22,7 +22,6 @@ export const HomePage = () => {
         <NewsSectionHomePage />
         <TrustUsSectionHomePage />
       </section>
-      {/* FIX ME: used section */}
       <section
         className='bg-center w-full bg-no-repeat bg-cover'
         style={{ backgroundImage: `url(${bgForVideoAndGallery})` }}

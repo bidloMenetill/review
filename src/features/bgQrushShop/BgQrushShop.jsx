@@ -55,7 +55,7 @@ export const BgQrushShop = () => {
           }}
         />
         <div className='flex justify-center items-center absolute '>
-          <AnimationTitle qrushImg={qrushShop} />
+          <AnimationTitle value={qrushShop} />
         </div>
         <div
           className='w-[50%] h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-animation'

@@ -13,7 +13,7 @@ export const Header = () => {
   const { i18n } = useTranslation();
   const headerLinks = [
     {
-      route: '/aboutus',
+      route: '/about-us',
       link: t('header.headerLink.linkTitle1'),
     },
     {
@@ -21,7 +21,7 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle2'),
     },
     {
-      route: '/trustus',
+      route: '/trust-us',
       link: t('header.headerLink.linkTitle3'),
     },
     {
@@ -80,12 +80,7 @@ export const Header = () => {
               </li>
             ))}
           </ul>
-          <Button
-            className={
-              'headerButton  xl:w-[200px] xl:h-[60px] xl:text-[20px] xl:px-[24px]  xl:ml-[20px] w-[120px] lg:w-[160px] h-[40px] lg:h-[50px] text-[14px] lg:text-[16px] ml-[12px] lg:ml-[15px]  px-[16px] lg:px-[20px]'
-            }
-            txt={t('header.headerButton')}
-          />
+          <Button variant={'headerButton'}> {t('header.headerButton')}</Button>
         </div>
       </nav>
     </header>

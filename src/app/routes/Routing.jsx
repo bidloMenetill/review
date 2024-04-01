@@ -38,12 +38,6 @@ export const Routing = () => {
       path: '/news',
       element: <NewsPage />,
     },
-
-    // { FIX ME
-    //   path: '/contacts',
-    //   element,
-    // },
-
     {
       path: '/shop',
       element: <ShopPage />,

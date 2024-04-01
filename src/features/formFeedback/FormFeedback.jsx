@@ -78,7 +78,7 @@ export const FormFeedback = () => {
           </div>
 
           <div className='mt-[30px] text-right sm:text-center'>
-            <Button className='orangeButton' txt={'Отправить'} />
+            <Button variant='orangeButton'> Отправить</Button>
           </div>
         </div>
       </form>
