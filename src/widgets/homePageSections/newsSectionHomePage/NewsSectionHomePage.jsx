@@ -58,6 +58,7 @@ export const NewsSectionHomePage = () => {
           <ul className='mt-[65px] flex'>
             {cards.map((item, index) => (
               <SwiperSlide
+                key={index}
                 style={{ backgroundImage: `url(${item.bgImage})` }}
                 className='bg-cover bg-no-repeat flex justify-center items-center flex-col rounded-[30px]  border-[1px] border-[solid] border-[#F5F5F5] !w-[600px] xl:!w-[860px] lg:!w-[700px] !h-[370px] xl:!h-[450px]'
               >

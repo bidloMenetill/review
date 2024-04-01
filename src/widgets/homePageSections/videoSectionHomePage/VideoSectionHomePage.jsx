@@ -20,7 +20,7 @@ export const VideoSectionHomePage = () => {
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
+              // allowFullScreen
             ></iframe>
           </div>
 
@@ -31,7 +31,7 @@ export const VideoSectionHomePage = () => {
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
+              // allowFullScreen
             />
           </div>
           <div className='col-start-4 col-end-5 row-start-1 row-end-2'>
@@ -41,7 +41,7 @@ export const VideoSectionHomePage = () => {
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
+              // allowFullScreen
             />
           </div>
           <div className='col-start-3 col-end-4 row-start-2 row-end-3'>
@@ -51,7 +51,7 @@ export const VideoSectionHomePage = () => {
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
+              // allowFullScreen
             />
           </div>
           <div className='col-start-4 col-end-5  row-start-2 row-end-3'>
@@ -61,7 +61,7 @@ export const VideoSectionHomePage = () => {
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
+              // allowFullScreen
             />
           </div>
         </section>
