@@ -1,5 +1,6 @@
 import React from 'react';
-import arrayButton from '../../../shared/img/link.svg';
+
+import ViewAllLink from '../../../shared/ui/viewAllLink/ViewAllLink';
 
 export const VideoSectionHomePage = () => {
   return (
@@ -9,18 +10,9 @@ export const VideoSectionHomePage = () => {
           Видео
         </h2>
         <div className='flex justify-end mb-[30px]'>
-          <a
-            href='#'
-            className='!flex justify-normal items-center'
-            target='_blank'
-          >
-            <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal] transition-colors duration-300 hover:text-[#F93822]'>
-              смотреть все
-            </button>{' '}
-            <img src={arrayButton} className='ml-[10px]' alt='' />
-          </a>
+          <ViewAllLink linkAddress={'gallery'} />
         </div>
-        <section className='grid grid-rows-[170px_140px] xl:grid-rows-[200px_230px] grid-cols-4 gap-5'>
+        <section className='grid grid-rows-[165px_165px] xl:grid-rows-[225px_225px] grid-cols-4 gap-5'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             <iframe
               className='w-full h-full'
@@ -40,19 +32,9 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
           </div>
-          <div>
-            <iframe
-              className='w-full h-full xl:w-[415px] h-[225px]  mt-[10px]'
-              src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
-              title='YouTube video player'
-              frameBorder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className=''>
+          <div className='col-start-4 col-end-5 row-start-1 row-end-2'>
             <iframe
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
@@ -60,9 +42,9 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
           </div>
-          <div>
+          <div className='col-start-3 col-end-4 row-start-2 row-end-3'>
             <iframe
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
@@ -70,7 +52,17 @@ export const VideoSectionHomePage = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen
-            ></iframe>
+            />
+          </div>
+          <div className='col-start-4 col-end-5  row-start-2 row-end-3'>
+            <iframe
+              className='w-full h-full'
+              src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
+              title='YouTube video player'
+              frameBorder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+            />
           </div>
         </section>
       </section>

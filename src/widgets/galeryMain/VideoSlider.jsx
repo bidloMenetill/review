@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
 import 'swiper/css';
 
+// FIX ME: add section
 export const VideoSlider = () => {
   return (
     <section className=' w-full h-[705px]  mt-[20px] mb-[-200px]'>

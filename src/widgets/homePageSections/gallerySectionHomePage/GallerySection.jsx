@@ -1,16 +1,13 @@
-import { Link } from 'react-router-dom';
 import firstGalleryImg from '../../../shared/img/first_gallery_home_page.png';
 import secondGalleryImg from '../../../shared/img/second_gallery_home_page.png';
 import thirdGalleryImg from '../../../shared/img/third_gallery_home_page.png';
 import fourthGalleryImg from '../../../shared/img/fourth_gallery_home_page.png';
 import fifthGalleryImg from '../../../shared/img/fifth_gallery_home_page.png';
 import sixthGalleryImg from '../../../shared/img/sixth_gallery_home_page.png';
-import arrayButton from '../../../shared/img/link.svg';
+
+import ViewAllLink from '../../../shared/ui/viewAllLink/ViewAllLink';
 
 export const GallerySectionHomePage = () => {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
   return (
     <section>
       <section className='max-w-[90%] xl:container mx-auto '>
@@ -18,16 +15,7 @@ export const GallerySectionHomePage = () => {
           Галерея
         </h2>
         <div className='flex justify-end mb-[30px]'>
-          <Link
-            onClick={scrollToTop}
-            className='!flex justify-normal items-center'
-            to='/galery'
-          >
-            <button className='font-[Montserrat] text-[30px] not-italic text-#F5F5F5 font-medium leading-[normal]'>
-              смотреть все
-            </button>{' '}
-            <img src={arrayButton} className='ml-[10px]' alt='' />
-          </Link>
+          <ViewAllLink linkAddress={'gallery'} />
         </div>
         <section className='grid grid-rows-[33.14%_30.73%_33.14%] lg:grid-rows-[34.14%_31.73%_34.14%]  grid-column gap-4'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>

@@ -1,0 +1,74 @@
+@layer components {
+  .container {
+    @apply mx-auto font-montserrat;
+  }
+  .buyButton {
+  @apply 
+}
+.orangeButton {
+  @apply 
+}
+.customButton {
+  @apply 
+}
+.headerButton {
+  @apply    
+}
+}
+
+@media (min-width: 1720px) {
+  .contAfter{
+    @apply text-[14px] pr-[20px] w-full;
+  }
+
+  .contBefor{
+    @apply text-[14px] w-full;
+  }
+
+  .subcontainerAfter{
+    @apply text-[18px] flex justify-between items-center;
+  }
+
+  .subcontainerBefore{
+    @apply text-[18px] flex justify-between items-center;
+  } 
+}
+
+@media (min-width: 1300px) {
+  .contAfter{
+    @apply text-[14px] pr-[20px];
+  }
+
+  .contBefor{
+    @apply text-[14px];
+  }
+
+  .subcontainerAfter{
+    @apply text-[18px] flex justify-between items-center;
+  }
+
+  .subcontainerBefore{
+    @apply text-[18px] flex justify-between items-center;
+  } 
+}
+
+
+@media (min-width: 1620px) {
+  .customClass{
+    width: 1620px;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-text-fill-color: #FFFFFF;
+-webkit-box-shadow: 0 0 0px 1000px #1314142a inset;
+transition: background-color 5000s ease-in-out 0s;
+}

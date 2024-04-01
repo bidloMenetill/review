@@ -15,11 +15,11 @@ import { Layout } from './Layout';
 export const Routing = () => {
   const routesArr = [
     {
-      path: '/aboutus',
+      path: '/about-us',
       element: <AboutUsPage />,
     },
     {
-      path: '/trustus',
+      path: '/trust-us',
       element: <TrustUsPage />,
     },
     {
@@ -38,12 +38,6 @@ export const Routing = () => {
       path: '/news',
       element: <NewsPage />,
     },
-
-    // { FIX ME
-    //   path: '/contacts',
-    //   element,
-    // },
-
     {
       path: '/shop',
       element: <ShopPage />,

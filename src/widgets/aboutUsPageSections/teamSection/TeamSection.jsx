@@ -7,7 +7,7 @@ export const Team = () => {
     {
       id: 1,
       img: photo,
-      p_text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem, rerum perspiciatis. Fuga quae ullam numquam ducimus
                 vel libero voluptates, sint debitis voluptatem ratione sunt
                 iste? Doloribus natus voluptas perferendis voluptate, expedita,
@@ -25,7 +25,7 @@ export const Team = () => {
     {
       id: 2,
       img: photo,
-      p_text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+      text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
                 neque quas, pariatur natus ipsa reiciendis amet doloremque ab
                 repellendus cum sint voluptate earum aut dolorem odio ut,
                 recusandae eveniet cupiditate iure iusto? Fugiat, beatae fuga.
@@ -42,7 +42,7 @@ export const Team = () => {
     {
       id: 3,
       img: photo,
-      p_text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem, rerum perspiciatis. Fuga quae ullam numquam ducimus
                 vel libero voluptates, sint debitis voluptatem ratione sunt
                 iste? Doloribus natus voluptas perferendis voluptate, expedita,
@@ -82,7 +82,7 @@ export const Team = () => {
                   alt='photos'
                 />
                 <p className='text-2xl font-medium text-left h-[400px] overflow-auto leading-10 text-slate-100 font-sans'>
-                  {item.p_text}
+                  {item.text}
                 </p>
               </li>
             ))}

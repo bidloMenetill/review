@@ -79,6 +79,7 @@ export const PreviewSectionTrustUs = () => {
     <section>
       <div className='bg-cover bg-no-repeat bg-center  bg-[#000] '>
         <ul className='max-w-[90%] xl:container mx-auto flex justify-evenly flex-wrap text-[#f5f5f5] gap-x-[20px] gap-y-[100px] mb-[500px] '>
+          {/* FIX ME: вынести в entities */}
           {celebrities?.map(celeb => (
             <li
               className='w-[288px] h-[430px] xl:w-[560px] xl:h-[660px] lg:w-[376px] lg:h-[540px] flex justify-center rounded-[20px] lg:rounded-[30px]'

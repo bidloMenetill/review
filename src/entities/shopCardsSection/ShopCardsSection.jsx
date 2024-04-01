@@ -114,7 +114,7 @@ export const ShopCardsSection = () => {
                   <p className='font-semibold mt-[20px] text-[26px] lg:text-[27px] xl:text-[30px]'>
                     Цена: {card.price}
                   </p>
-                  <Button className='buyButton' />
+                  <Button variant='buyButton' />
                 </div>
               </div>
             </li>

@@ -1,14 +1,11 @@
-import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
-import rush from '../../shared/img/logofooter.png';
 import instagram from '../../shared/img/footer/instagram.svg';
 import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
 import whatsapp from '../../shared/img/footer/whatsapp.svg';
-import { useMediaQuery } from '../../shared';
-import GeeksPro from './GeeksPro';
+import { GeeksPro } from './GeeksPro';
+
 export const Footer = () => {
-  const { i18n } = useTranslation();
   const footerLinks = [
     {
       aboutUs: [
@@ -142,10 +139,10 @@ export const Footer = () => {
           </ul>
         </div>
         <div className='flex-row flex justify-center gap-[100px] mt-[10vh]'>
-          <img src={telegram} alt='' />
-          <img src={instagram} alt='' />
-          <img src={youTube} alt='' />
-          <img src={whatsapp} alt='' />
+          <img src={telegram} alt='telegram' />
+          <img src={instagram} alt='instagram' />
+          <img src={youTube} alt='youTube' />
+          <img src={whatsapp} alt='whatsapp' />
         </div>
       </div>
       <GeeksPro />

@@ -3,6 +3,7 @@ export { IntroductionSectionHomePage } from './homePageSections/introductionSect
 export { ServicesSectionHomePage } from './homePageSections/servicesSectionHomePage/ServicesSectionHomePage';
 export { TrustUsSectionHomePage } from './homePageSections/trustUsSectionHomePage/TrustUsSectionHomePage';
 export { Footer } from './footer/Footer';
+export { GeeksPro } from './footer/GeeksPro';
 export { Header } from './header/Header';
 export { MainSectionTrustUs } from './trustUsPageSections/mainSectionTrustUs/MainSectionTrustUs';
 export { PreviewSectionTrustUs } from './trustUsPageSections/previewSectionTrustUs/PreviewSectionTrustUs';
@@ -12,7 +13,7 @@ export { WelcomeSection } from './servicPageSections/WelcomeSection/WelcomeSecti
 export { RehearsalCostSection } from './servicPageSections/RehearsalCostSection/RehearsalCostSection';
 export { Team } from './aboutUsPageSections/teamSection/TeamSection';
 export { IntrodactionSectionAboutUs } from './aboutUsPageSections/introdactionSectionAboutUs/IntrodactionSectionAboutUs';
-export { WhyQRush } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
+export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
 export { GaleryMain } from './galeryMain/GaleryMain';
 export { GallerySectionHomePage } from './homePageSections/gallerySectionHomePage/GallerySection';
 export { VideoSectionHomePage } from './homePageSections/videoSectionHomePage/VideoSectionHomePage';

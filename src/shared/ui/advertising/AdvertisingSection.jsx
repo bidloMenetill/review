@@ -1,9 +1,7 @@
-import { useTranslation } from 'react-i18next';
 import reserveBg from '../../img/reserve/reserve.jpg';
 
+// FIX ME: rename
 export const AdvertisingSection = props => {
-  const { t } = useTranslation();
-
   return (
     <section>
       <div

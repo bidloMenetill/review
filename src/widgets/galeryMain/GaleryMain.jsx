@@ -1,9 +1,9 @@
 import backImg from '../../shared/img/galleryPage/first.jpg';
-
+// FIX ME: add section
 export const GaleryMain = () => {
   return (
-    <div
-      className=' h-[960px]  bg-cover bg-no-repeat bg-center'
+    <section
+      className='h-[960px] bg-cover bg-no-repeat bg-center'
       style={{ backgroundImage: `url(${backImg})` }}
     >
       <div className=' container h-[100%] mx-auto text-[#f5f5f5] font-montserrat flex flex-col items-start justify-center font-medium xl:text-[25px] text-[15px] lg:text-[20px]'>
@@ -19,6 +19,6 @@ export const GaleryMain = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
