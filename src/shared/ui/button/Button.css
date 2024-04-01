@@ -1,6 +1,6 @@
 
 .buyButton {
-  @apply mt-[21px] rounded-[40px] bg-[#f93822] w-[200px] lg:w-[300px] xl:w-[344px] h-[50px] lg:h-[70px]
+  @apply mt-[21px] py-[5px] px-[27px] rounded-[23px] tablet:rounded-[40px] bg-[#f93822] w-[100px] tablet:w-[200px] lg:w-[300px] xl:w-[344px] h-[35px] tablet:h-[50px] lg:h-[70px] font-montserrat font-semibold text-[12px] tablet:text-[20px] lg:text-[22px] xl:text-[25px]
 }
 .orangeButton {
   @apply px-[31px] transition-all duration-300 text-center rounded-[20px] lg:px-[65px] py-[7px] bg-[#F93822] font-normal text-[25px] text-[#F5F5F5] hover:opacity-80

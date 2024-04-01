@@ -1,4 +1,4 @@
 export { Button } from './ui/button/Button';
-export { AdvertisingSection } from './ui/advertising/AdvertisingSection';
+export { Advertising } from './ui/advertising/Advertising';
 export { useMediaQuery } from './hooks/useMediaQuery';
 export { AnimationTitle } from './ui/animationTitle/AnimationTitle';

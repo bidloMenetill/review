@@ -46,22 +46,20 @@ export const BgQrushShop = () => {
   ]);
 
   return (
-    <section>
-      <div className='max-w-[1920px] mx-auto flex items-center bg-[#000] '>
-        <div
-          className='w-[50%] h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation'
-          style={{
-            backgroundImage: `url(${bgForQrushShop[indexQrushShop]})`,
-          }}
-        />
-        <div className='flex justify-center items-center absolute '>
-          <AnimationTitle qrushImg={qrushShop} />
-        </div>
-        <div
-          className='w-[50%] h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-animation'
-          style={{ backgroundImage: `url(${bgForQrushShop2[indexQrushShop]})` }}
-        />
+    <section className='max-w-[1920px] mx-auto flex items-center bg-[#000] '>
+      <div
+        className='w-[50%] h-[200px] tablet:h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation'
+        style={{
+          backgroundImage: `url(${bgForQrushShop[indexQrushShop]})`,
+        }}
+      />
+      <div className='flex justify-center items-center absolute '>
+        <AnimationTitle qrushImg={qrushShop} />
       </div>
+      <div
+        className='w-[50%] h-[200px] tablet:h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-animation'
+        style={{ backgroundImage: `url(${bgForQrushShop2[indexQrushShop]})` }}
+      />
     </section>
   );
 };
