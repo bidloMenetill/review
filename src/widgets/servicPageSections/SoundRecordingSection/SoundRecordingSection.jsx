@@ -27,18 +27,17 @@ export const SoundRecordingSection = () => {
 
       <div className='w-[705px] mx-auto text-[#fff] xl:absolute xl:left-[100px] xl:z-10 xl:top-[175px] lg:absolute lg:left-[100px] lg:top-[175px] lg:z-10'>
         <h3 className='text-[50px] font-[500] mb-[24px]'>СТУДИЯ ЗВУКОЗАПИСИ</h3>
-        {arrayContent &&
-          arrayContent.map(el => {
-            return (
-              <ul key={el.id}>
-                <li>
-                  <p className='text-[30px] font-[400] text-[#B4B4B4] mb-[24px]'>
-                    {el.text}
-                  </p>
-                </li>
-              </ul>
-            );
-          })}
+        {arrayContent?.map(el => {
+          return (
+            <ul key={el.id}>
+              <li>
+                <p className='text-[30px] font-[400] text-[#B4B4B4] mb-[24px]'>
+                  {el.text}
+                </p>
+              </li>
+            </ul>
+          );
+        })}
         <div className='w-full text-center'>
           <Button className='orangeButton' txt={'Отправить'} />
         </div>
