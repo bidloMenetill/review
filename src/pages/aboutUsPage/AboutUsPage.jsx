@@ -9,7 +9,7 @@ import {
 export const AboutUsPage = () => {
   const { t } = useTranslation();
   return (
-    <section className='bg-no-repeat bg-about-us max-w-[1920px] xl:min-w-[1720px] lg:min-w-[1300px] flex flex-col mx-auto'>
+    <section className='bg-no-repeat bg-[aboutUs] max-w-[1920px] flex flex-col mx-auto'>
       <IntrodactionSectionAboutUs />
       <WhyQRushSection />
       <Team />

@@ -56,7 +56,7 @@ export const Team = () => {
   ];
   return (
     <>
-      <section className='sm:min-w-[576px] md:min-w-[768px] lg:min-w-[1300px] xl:min-w-[1920px] min-h-[2000px]'>
+      <section className='flex min-h-[2000px]'>
         <div className='w-11/12 sm:w-11/12 md:w-11/12 lg:w-11/12 xl:w-11/12 flex flex-col gap-y-24 mx-auto'>
           <h2
             className='text-7xl lg:font-normal lg:text-7xl text-[#F5F5F5] lg:pt-14 lg:leading-[100px]
