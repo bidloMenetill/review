@@ -17,6 +17,9 @@ export default {
         'why-q-rush': "url('/src/shared/img/Why-Q-Rush.png')",
         'about-us': "url('src/shared/img/about/aboutUs.png')",
       },
+      container: {
+        '@apply mx-auto font-montserrat max-w-[1720px]': '',
+      },
       height: {
         974: '974px',
         314: '314px',

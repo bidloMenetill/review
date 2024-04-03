@@ -17,13 +17,13 @@ export const GallerySectionHomePage = () => {
         <div className='flex justify-end mb-[30px]'>
           <ViewAllLink linkAddress={'gallery'} />
         </div>
-        <section className='grid grid-rows-[33.14%_30.73%_33.14%] lg:grid-rows-[34.14%_31.73%_34.14%]  grid-column gap-4'>
+        <section className='grid grid-rows-[33.14%_31.20%_33.14%]   grid-column gap-4'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             {' '}
             <img
               src={firstGalleryImg}
               alt='first_gallery_image'
-              className='w-full h-auto'
+              className='w-auto h-auto'
             />
           </div>
           <div className='row-start-3 row-end-4 col-start-1 col-end-2'>
