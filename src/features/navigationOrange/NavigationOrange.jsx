@@ -10,7 +10,7 @@ export const NavigationOrange = () => {
 
   return (
     <>
-      <aside className='fixed bottom-20 xl:bottom-[110px] right-7 xl:right-[125px] bg-[#F93822]   cursor-pointer z-50  rounded-[766.667px]'>
+      <aside className='fixed bottom-[7vh] xl:bottom-[7vh] right-7 xl:right-[125px] bg-[#F93822]   cursor-pointer z-50  rounded-[766.667px]'>
         <ul className={isAsideOpen ? 'block' : 'hidden'}>
           <li className='mb-[10px] mt-[7px]'>
             <a

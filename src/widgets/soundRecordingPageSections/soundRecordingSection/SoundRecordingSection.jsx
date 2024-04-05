@@ -27,7 +27,11 @@ export const SoundRecordingSection = () => {
         />
       </div>
       <div className='absolute w-[900px] top-[-10px] left-[2000px] lg:left-[210px] mx-auto'>
-        <img className='h-full object-cover w-full' src={vector} alt='vector' />
+        <img
+          className='h-[960px] object-cover w-full'
+          src={vector}
+          alt='vector'
+        />
       </div>
 
       <div className='mx-[20px] sm:w-[700px] text-[#fff] xl:absolute xl:left-[100px] xl:z-[2] xl:top-[175px] lg:absolute lg:left-[100px] lg:top-[175px] lg:z-10'>
