@@ -47,7 +47,7 @@ export const NewsSectionHomePage = () => {
       className='bg-cover bg-no-repeat w-full h-[700px] xl:h-[907px] lg:h-[800px]  bg-center '
       style={{ backgroundImage: `url(${bgNews})` }}
     >
-      <div className='mx-auto max-w-[90%] xl:container pt-[100px] pb-[66px]'>
+      <div className='mx-auto max-w-[90%] xl:container pt-[100px] sm:pt-[100px] pb-[66px]'>
         <h2 className='text-[#F5F5F5] font-[Montserrat]  text-[80px] lg:text-[100px] not-italic font-medium leading-[normal]'>
           Новости
         </h2>

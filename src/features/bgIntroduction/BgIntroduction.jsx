@@ -129,7 +129,7 @@ export const BgIntroduction = () => {
         </button>
         <div
           className={
-            'absolute -bottom-[50px] sm:-bottom-[200px] xl:-bottom-[440px] lg:-bottom-[240px] left-0   mb-[71px] pl-[20px] sm:pl-[96px] gap-x-[12px] flex mx-0 container'
+            'absolute -bottom-[7vh]  lg:-bottom-[34vh] left-0   mb-[71px] pl-[20px] sm:pl-[96px] gap-x-[12px] flex mx-0 container'
           }
         >
           {bgForIntroduction.map((bg, index) => (

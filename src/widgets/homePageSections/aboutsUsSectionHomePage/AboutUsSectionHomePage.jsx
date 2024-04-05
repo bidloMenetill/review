@@ -8,7 +8,7 @@ export const AboutUsSectionHomePage = () => {
       style={{ backgroundImage: `url(${bgAboutUs})` }}
     >
       <section className='px-4 sm:px-none max-w-[90%] xl:container mx-auto flex justify-center items-center '>
-        <div className='flex flex-col items-center pt-[100px]'>
+        <div className='flex flex-col items-center pt-[5%] sm:pt-[100px]'>
           <h3 className='font-[Montserrat] text-[#F5F5F5]  max-w-[341px]   sm:max-w-[1176px] lg:max-w-[1356px] text-center  text-[12px] sm:text-[30px] not-italic font-medium leading-[normal]'>
             <span className='text-[#F93822] sm:text-[#F5F5F5]'>
               Q-Rush Studio

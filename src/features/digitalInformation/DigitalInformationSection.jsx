@@ -33,15 +33,15 @@ export const DigitalInformationSection = () => {
   }, [delayedHandleScroll, timeoutId]);
 
   return (
-    <section className='pt-[70px] pb-[126px] xl:pt-[126px] flex justify-center items-center'>
+    <section className='pt-[28px] sm:pt-[70px] pb-[16px] sm:pb-[126px] xl:pt-[126px] flex justify-center items-center'>
       <section
         ref={ref}
         className='max-w-[90%] xl:container mx-auto flex justify-center flex-col items-center align-middle'
       >
-        <h4 className='text-[#F5F5F5] font-[Montserrat] text-[50px] not-italic font-medium leading-[normal]'>
+        <h4 className='text-[#F5F5F5] font-[Montserrat] text-[26px] sm:text-[50px] not-italic font-medium leading-[normal]'>
           За все время
         </h4>
-        <section className='flex gap-x-[30px] xl:gap-x-[110px] lg:gap-x-[70px]  items-center justify-center  mt-[60px]'>
+        <section className='flex flex-wrap justify-between sm:justify-start sm:flex-nowrap gap-x-[30px] xl:gap-x-[110px] lg:gap-x-[70px]  items-center   mt-[25px] sm:mt-[60px]'>
           <div className='inline-flex flex-col'>
             <CountUp
               duration={2.5}
@@ -55,13 +55,13 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] text-[80px] text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-[20px] sm:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
                 >
                   1500
                 </h5>
               )}
             </CountUp>
-            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[23px]  xl:[27px] lg:text-[25px]   mt-[30px] not-italic font-medium leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[23px]  xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
               Записей проведено
             </p>
           </div>
@@ -78,17 +78,17 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] text-center  text-[80px] xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-[20px] sm:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
                 >
                   3000
                 </h5>
               )}
             </CountUp>
-            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[23px]  xl:[27px] lg:text-[25px] mt-[30px] not-italic font-medium leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[23px]  xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
               Репетиций проведено
             </p>
           </div>
-          <div className='inline-flex flex-col '>
+          <div className='inline-flex flex-col mx-auto sm:mx-0 mt-[20px] sm:mt-0'>
             <CountUp
               duration={2.5}
               delay={0}
@@ -101,14 +101,14 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] text-center   text-[80px] xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-[50px]  text-[#F93822] '
+                  className='font-[Montserrat] text-[20px] sm:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
                 >
                   1000
                 </h5>
               )}
             </CountUp>
 
-            <p className='text-center text-[#F5F5F5]  font-[Montserrat] text-[25px]  xl:[27px] lg:text-[28px]   mt-[30px] not-italic font-medium leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[23px]  xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
               Уроков проведено
             </p>
           </div>
