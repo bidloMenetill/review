@@ -36,15 +36,12 @@ export const MusicCoursFirstSection = () => {
   ];
   return (
     <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[69px] md:mb-[154px]'>
-      <div className='mx-[20px] sm:text-center'>
-        <h3 className='text-[24px] font-[600] mb-[10px] text-[#FFFFFF] sm:text-[30px] sm:font-[500] md:mb-[25px] xl:text-[50px] lg:text-[40px] tablet:text-[35px]'>
-          МУЗЫКАЛЬНЫЕ КУРСЫ
-        </h3>
-        <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] text-[#FFFFFF] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
-          У нас вы можете найти курсы Гитары, Барабанов, Битмейкинга
-        </p>
+      <div className='mx-[20px] sm:text-center sm:mt-[100px]'>
         <p className='text-[18px] font-[500] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
           1 филиал (Район Азия Молл)
+        </p>
+        <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] text-[#FFFFFF] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
+          У нас вы можете найти курсы Гитары, Барабанов, Битмейкинга
         </p>
       </div>
 
