@@ -10,11 +10,11 @@ export const MainSectionTrustUs = () => {
       style={{ backgroundImage: `url(${trustMainBg})` }}
     >
       <div className='max-w-[90%] mx-auto xl:container text-[#f5f5f5] font-montserrat'>
-        <div className='w-[329px] tablet:w-[877px] xl:w-[1077px] lg:w-[977px] h-[328px] absolute mt-[70px] tablet:mt-[336px]'>
-          <h2 className='font-bold tablet:font-medium text-[24px] tablet:text-[60px] xl:text-[100px] lg:text-[80px]'>
+        <div className=' max-w-[90%] mx-auto tablet:w-[877px] xl:w-[1077px] lg:w-[977px] h-[328px] absolute mt-[70px] tablet:mt-[336px]'>
+          <h2 className='font-bold tablet:font-medium text-[24px] sm:text-[30px] tablet:text-[60px] xl:text-[100px] lg:text-[80px]'>
             {t('trustUsPage.firstSection.title')}
           </h2>
-          <p className='font-medium mt-[25px] tablet:mt-[50px] text-[14px] tablet:text-[20px] xl:text-[25px] lg:text-[22px]'>
+          <p className='font-medium mt-[25px] tablet:mt-[50px] text-[14px] sm:text-[16px] leading-[150%] tablet:text-[20px] xl:text-[25px] lg:text-[22px]'>
             {t('trustUsPage.firstSection.upperTitle')}
           </p>
         </div>

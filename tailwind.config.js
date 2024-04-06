@@ -13,7 +13,6 @@ export default {
       },
       fontFamily: { montserrat: ['Montserrat'] },
       backgroundImage: {
-        //FIX ME: Use this
         rectangle: "url('/src/shared/img/rectangle_61.png')",
         'why-q-rush': "url('/src/shared/img/Why-Q-Rush.png')",
         'about-us': "url('src/shared/img/about/aboutUs.png')",

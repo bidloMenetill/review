@@ -1,13 +1,13 @@
-import { People } from '../../../features';
+import { SectionGroup } from '../../../features';
 import firstSinger from '../../../shared/img/ylykmanapo.png';
 import secondSinger from '../../../shared/img/bakr.png';
 import thirdSinger from '../../../shared/img/arsen_bakirovich.png';
 import bgTrustUs from '../../../shared/img/forth_main_bg.jpg';
 
 export const TrustUsSectionHomePage = () => {
-  const peopleData = {
+  const singersData = {
     background: bgTrustUs,
-    linkAddress: '/trustus',
+    linkAddress: '/trust-us',
     title: 'Нам доверяют',
     firstImg: firstSinger,
     secondImg: secondSinger,
@@ -22,7 +22,7 @@ export const TrustUsSectionHomePage = () => {
 
   return (
     <>
-      <People {...peopleData} />
+      <SectionGroup {...singersData} />
     </>
   );
 };

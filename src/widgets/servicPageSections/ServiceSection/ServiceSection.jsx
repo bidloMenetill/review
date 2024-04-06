@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import firstBg from '../../../shared/img/servicesImg/firstFon.png';
@@ -7,26 +8,6 @@ import thirdBg from '../../../shared/img/servicesImg/secondFon.png';
 import fourthBg from '../../../shared/img/servicesImg/thirdFon.png';
 
 export const ServiceSection = () => {
-  // FIX ME: bugs with move title
-  const [showText, setShowText] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 50) {
-        setShowText(true);
-        if (scrollPosition > 650) {
-          setShowText(false);
-        }
-      } else {
-        setShowText(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   const arrayImg = [
     { id: 0, img: firstBg },
     { id: 1, img: secondBg },
@@ -69,11 +50,18 @@ export const ServiceSection = () => {
             Выберите свою программу
           </h2>
           <hr className='mx-[90px] shadow-[0px_0px_600px_240px_#000000]' />
-          <h2
-            className={`${showText ? 'opacity-1 ml-[90px]' : 'opacity-0'} text-[60px] ease-out duration-300 xl:text-[100px] lg:text-[80px]`}
+          <motion.h2
+            initial={{ opacity: 0, marginLeft: -90 }}
+            whileInView={{
+              opacity: 1,
+              marginLeft: 90,
+              transition: { delay: 0.5 },
+            }}
+            viewport={{ amount: 0.2 }}
+            className='text-[60px] xl:text-[100px] lg:text-[80px]'
           >
             Услуги
-          </h2>
+          </motion.h2>
         </div>
       </div>
     </section>

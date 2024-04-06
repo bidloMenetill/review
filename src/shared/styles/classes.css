@@ -2,6 +2,18 @@
   .container {
     @apply mx-auto font-montserrat;
   }
+  .buyButton {
+  @apply 
+}
+.orangeButton {
+  @apply 
+}
+.customButton {
+  @apply 
+}
+.headerButton {
+  @apply    
+}
 }
 
 @media (min-width: 1720px) {
@@ -39,6 +51,7 @@
     @apply text-[18px] flex justify-between items-center;
   } 
 }
+
 
 @media (min-width: 1620px) {
   .customClass{

@@ -21,7 +21,7 @@ export const ErrorPageSection = () => {
         </div>
         <div className='text-center mt-[49px]'>
           {/* FIX ME: children */}
-          <Button className='orangeButton' txt={'На главную'} />
+          <Button variant='orangeButton'>На главную</Button>
         </div>
       </div>
     </section>

@@ -37,7 +37,7 @@ export const SoundRecordingSection = () => {
           </ul>
         ))}
         <div className='w-full text-center'>
-          <Button className='orangeButton' txt={'Отправить'} />
+          <Button variant='orangeButton'>Отправить</Button>
         </div>
       </div>
     </section>
