@@ -9,7 +9,6 @@ import promark from '../../shared/img/shop/promark.png';
 import heartFire from '../../shared/img/shop/heartFire.png';
 
 export const BgQrushShop = () => {
-  // FIX ME: change css style
   const bgForQrushShop = useMemo(
     () => [blueGuitar, promark, secondDrumStickBg],
     []
@@ -49,7 +48,7 @@ export const BgQrushShop = () => {
     <section>
       <div className='max-w-[1920px] mx-auto flex items-center bg-[#000] '>
         <div
-          className='w-[50%] h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation'
+          className='w-[50%] min-h-[200px] tablet:h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation'
           style={{
             backgroundImage: `url(${bgForQrushShop[indexQrushShop]})`,
           }}
@@ -58,7 +57,7 @@ export const BgQrushShop = () => {
           <AnimationTitle value={qrushShop} />
         </div>
         <div
-          className='w-[50%] h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-animation'
+          className='w-[50%] min-h-[200px] tablet:h-[620px] bg-cover bg-center lg:h-[800px] xl:h-[960px] bg-animation'
           style={{ backgroundImage: `url(${bgForQrushShop2[indexQrushShop]})` }}
         />
       </div>

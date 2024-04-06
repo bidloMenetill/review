@@ -1,7 +1,7 @@
 export { HomePage } from './homePage/HomePage';
 export { Galery } from './galeryPage/Galery';
 export { ErrorPage } from './errorPage/ErrorPage';
-export { TrustUsPage } from './TrustUs/TrustUsPage';
+export { TrustUsPage } from './TrustUsPage/TrustUsPage';
 export { AboutUsPage } from './aboutUsPage/AboutUsPage';
 export { ServicesPage } from './servicesPage/ServicesPage';
 export { ShopPage } from './shopPage/ShopPage';
