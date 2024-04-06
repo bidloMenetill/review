@@ -8,7 +8,7 @@ export const ServicesSectionHomePage = () => {
   const studioData = {
     background: servicesBg,
     linkAddress: '/services',
-    title: 'Наши Услуги',
+    title: 'Услуги',
     firstImg: firstStudio,
     secondImg: secondStudio,
     thirdImg: thirdStudio,

@@ -1,4 +1,10 @@
-export const Button = ({ children, variant, onClick, type = 'button' }) => {
+export const Button = ({
+  children,
+  variant,
+  onClick,
+  type = 'button',
+  className,
+}) => {
   const styles = {
     buyButton:
       'mt-[21px] rounded-[40px] bg-[#f93822] w-[100px] h-[35px] tablet:w-[200px] lg:w-[250px] xl:w-[344px] tablet:h-[50px] lg:h-[70px] font-montserrat font-semibold text-[12px] tablet:text-[20px] lg:text-[22px] xl:text-[25px]',
@@ -11,10 +17,12 @@ export const Button = ({ children, variant, onClick, type = 'button' }) => {
     viewAllButton: 'viewAllButton',
   };
 
-  const className = variant && styles[variant] ? styles[variant] : 'default';
+  const classNames = [variant && styles[variant], className];
+
+  const combinedClassName = classNames.filter(Boolean).join(' ');
 
   return (
-    <button type={type} className={`${className}`} onClick={onClick}>
+    <button type={type} className={combinedClassName} onClick={onClick}>
       {children}
     </button>
   );

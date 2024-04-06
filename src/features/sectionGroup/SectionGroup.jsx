@@ -1,4 +1,5 @@
 import { Button, CardSectionGroup } from '../../shared';
+
 import ViewAllLink from '../../shared/ui/viewAllLink/ViewAllLink';
 
 export const SectionGroup = props => {
@@ -33,7 +34,7 @@ export const SectionGroup = props => {
 
   return (
     <section
-      className='h-[700px] xl:h-[1174px] lg:h-[900px] bg-cover bg-no-repeat bg-center'
+      className='h-[736px] xl:h-[1174px]  lg:h-[900px] bg-cover bg-no-repeat bg-center'
       style={{ backgroundImage: `url(${background})` }}
     >
       <section className='mx-auto max-w-[90%] xl:container'>
@@ -43,7 +44,7 @@ export const SectionGroup = props => {
         <div className='flex justify-end'>
           <ViewAllLink linkAddress={linkAddress} />
         </div>
-        <ul className='flex gap-x-[20px] mt-[30px] xl:mt-[63px] lg:mt-[43px] mb-[90px]'>
+        <ul className='block sm:flex gap-x-[20px] mt-[30px] xl:mt-[63px] lg:mt-[43px] mb-[90px]'>
           {dataArr?.map((item, index) => (
             <CardSectionGroup item={item} key={index} />
           ))}
