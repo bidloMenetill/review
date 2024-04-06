@@ -99,9 +99,9 @@ export const BgIntroduction = () => {
             <path
               d='M15.75 4.5L8.25 12L15.75 19.5'
               stroke='black'
-              stroke-width='1.5'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeWidth='1.5'
+              strokeLinecap='round'
+              strokeLinejoin='round'
             />
           </svg>
         </button>
@@ -121,9 +121,9 @@ export const BgIntroduction = () => {
             <path
               d='M1.25 1.5L8.75 9L1.25 16.5'
               stroke='black'
-              stroke-width='1.5'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeWidth='1.5'
+              strokeLinecap='round'
+              strokeLinejoin='round'
             />
           </svg>
         </button>

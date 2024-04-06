@@ -9,7 +9,7 @@ export const ThirdVideoSection = () => {
             height='700'
             src='https://www.youtube.com/embed/JHIAYrd4zoA?si=JPPlcYuZKmXntKIA'
             title='YouTube video player'
-            frameborder='0'
+            // frameborder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             // allowFullScreen
           ></iframe>
