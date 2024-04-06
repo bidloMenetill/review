@@ -18,7 +18,7 @@ export const VideoSectionHomePage = () => {
               className='w-full h-full'
               src='https://www.youtube.com/embed/sgFsJuVcm18?si=RfOrOjLdPGVbfuRe&amp;start=2'
               title='YouTube video player'
-              frameBorder='0'
+              // frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowFullScreen
             ></iframe>
@@ -29,7 +29,7 @@ export const VideoSectionHomePage = () => {
               className='w-full h-full '
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
-              frameBorder='0'
+              // frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowFullScreen
             />
@@ -39,7 +39,7 @@ export const VideoSectionHomePage = () => {
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
-              frameBorder='0'
+              // frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowFullScreen
             />
@@ -49,7 +49,7 @@ export const VideoSectionHomePage = () => {
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
-              frameBorder='0'
+              // frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowFullScreen
             />
@@ -59,7 +59,7 @@ export const VideoSectionHomePage = () => {
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
-              frameBorder='0'
+              // frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowFullScreen
             />

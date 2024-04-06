@@ -7,3 +7,6 @@ export { ServicesPage } from './servicesPage/ServicesPage';
 export { ShopPage } from './shopPage/ShopPage';
 export { FaqPage } from './faqPage/FaqPage';
 export { NewsPage } from './newsPage/NewsPage';
+export { SoundRecordingPage } from './soundRecordingPage/SoundRecordingPage';
+export { RehearsalCostPage } from './rehearsalCostPage/RehearsalCostPage';
+export { MusicCoursPage } from './musicCoursPage/MusicCoursPage';
