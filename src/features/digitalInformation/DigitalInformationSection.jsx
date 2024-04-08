@@ -36,7 +36,7 @@ export const DigitalInformationSection = () => {
     <section className='pt-[28px] sm:pt-[70px] pb-[16px] sm:pb-[126px] xl:pt-[126px] flex justify-center items-center'>
       <section
         ref={ref}
-        className='max-w-[90%] xl:container mx-auto flex justify-center flex-col items-center align-middle'
+        className='px-[16px] sm:px-0 max-w-full sm:max-w-[90%] xl:container mx-auto flex justify-center flex-col items-center align-middle'
       >
         <h4 className='text-[#F5F5F5] font-[Montserrat] text-[26px] sm:text-[50px] not-italic font-medium leading-[normal]'>
           За все время

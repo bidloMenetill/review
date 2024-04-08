@@ -16,7 +16,8 @@ export { IntrodactionSectionAboutUs } from './aboutUsPageSections/introdactionSe
 export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
 export { GaleryMain } from './galeryMain/GaleryMain';
 export { GallerySectionHomePage } from './homePageSections/gallerySectionHomePage/GallerySectionHomePage';
-export { VideoSectionHomePage } from './homePageSections/videoSectionHomePage/VideoSectionHomePage';
+export { VideoSectionHomePage } from './homePageSections/videoSectionsHomePage/videoSectionHomePage/VideoSectionHomePage';
+export { VideoSectionHomePageMobile } from './homePageSections/videoSectionsHomePage/videoSectionHomePageMobile/VideoSectionHomePageMobile';
 export { ServiceOrderSection } from './servicPageSections/ServiceOrderSection/ServiceOrderSection';
 export { AccordionSection } from './accordionSections/accordionSection/AccordionSection';
 export { ErrorPageSection } from './errorPageSections/errorPageSection/ErrorPageSection';
