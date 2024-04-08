@@ -123,36 +123,6 @@ export const RehearsalCostFirstSection = () => {
       fifthDescription: '',
       sixthDescription: '',
     },
-    {
-      id: 10,
-      title: 'Триггер для бочки',
-      firstDescription: '- TrigMic 2 Laser Pick',
-      secondDescription: '',
-      thirdDescription: '',
-      fourthDescription: '',
-      fifthDescription: '',
-      sixthDescription: '',
-    },
-    {
-      id: 9,
-      title: 'Триггер для бочки',
-      firstDescription: '- TrigMic 2 Laser Pick',
-      secondDescription: '',
-      thirdDescription: '',
-      fourthDescription: '',
-      fifthDescription: '',
-      sixthDescription: '',
-    },
-    {
-      id: 10,
-      title: 'Триггер для бочки',
-      firstDescription: '- TrigMic 2 Laser Pick',
-      secondDescription: '',
-      thirdDescription: '',
-      fourthDescription: '',
-      fifthDescription: '',
-      sixthDescription: '',
-    },
   ];
   const arrayEquipment = [
     [
@@ -298,19 +268,36 @@ export const RehearsalCostFirstSection = () => {
             )}
           </section>
         </div> */}
-        <div className='w-[1570px] mx-auto grid grid-cols-3 gap-4'>
+        <section className=' md:w-[500px] lg:w-[1170px] xl:w-[1570px] md:mx-auto md:grid md:grid-cols-3 md:gap-x-[200px]'>
           {arr?.map(el => (
-            <ul key={el.id} className='text-left'>
-              <li className='mb-[10px] mt-[10px] text-[#fff]'>{el.title}</li>
-              <li>{el.firstDescription}</li>
-              <li>{el.secondDescription}</li>
-              <li>{el.thirdDescription}</li>
-              <li>{el.fourthDescription}</li>
-              <li>{el.fifthDescription}</li>
-              <li>{el.sixthDescription}</li>
+            <ul
+              key={el.id}
+              className='text-[18px] text-left text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
+            >
+              <li>
+                <p className='mb-[16px] mt-[16px] text-[#E2DED3]'>{el.title}</p>
+              </li>
+              <li>
+                <p>{el.firstDescription}</p>
+              </li>
+              <li>
+                <p>{el.secondDescription}</p>
+              </li>
+              <li>
+                <p>{el.thirdDescription}</p>
+              </li>
+              <li>
+                <p>{el.fourthDescription}</p>
+              </li>
+              <li>
+                <p>{el.fifthDescription}</p>
+              </li>
+              <li>
+                <p>{el.sixthDescription}</p>
+              </li>
             </ul>
           ))}
-        </div>
+        </section>
         {mobileScreen && openList === false ? (
           <p
             className='underline text-[#F93822] text-[14px] underline-offset-4 mb-[20px]'
