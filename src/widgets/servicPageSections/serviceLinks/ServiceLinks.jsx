@@ -1,0 +1,69 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import serviceBg from '../../../shared/img/servicesImg/About.png';
+import rectangl from '../../../shared/img/servicesImg/Rectangle_53.jpg';
+import rectangl2 from '../../../shared/img/third_studio_main_page.jpg';
+import rectangl3 from '../../../shared/img/first_studio_main_page.jpg';
+import { Button } from '../../../shared';
+
+export const ServiceLinks = () => {
+  return (
+    <section className='relative w-full h-[490px] lg:h-[2500px] text-[#F5F5F5]'>
+      <img
+        className='absolute z-[-1] w-full h-[100%] object-cover'
+        src={serviceBg}
+        alt='Задний-фон'
+      />
+      <div className='mx-auto pt-[20px] w-[335px] xl:pt-[100px] xl:w-[1720px] lg:w-[1200px]'>
+        <h2 className='text-[20px] mb-[20px] xl:text-[100px] xl:mb-[100px] lg:text-[90px]'>
+          Услуги
+        </h2>
+        <div className='w-full h-[120px] lg:h-[500px] xl:h-[600px] bg-[rgba(0,0,0,0.60)] border-[1px] border-solid border-[#7a7a7a] rounded-[6px] lg:rounded-[30px] flex justify-between px-[10px] py-[12px] mb-[10px] lg:px-[60px] lg:py-[58px] lg:mb-[70px]'>
+          <img
+            className='w-[175px] h-[95px] rounded-[6px] xl:w-[900px] lg:w-[700px] lg:h-[390px] xl:h-[490px] object-cover border-[1px] border-solid border-[#7a7a7a] lg:rounded-[30px]'
+            src={rectangl}
+            alt='rectangl'
+          />
+          <div className='mx-[auto] text-center my-[13px] lg:my-[50px] xl:my-[78px]'>
+            <h2 className='text-[14px] mb-[20px] lg:text-[40px] xl:text-[64px] lg:font-[700] lg:w-[350px] xl:w-[450px] lg:mb-[80px]'>
+              Студия Звукозаписи
+            </h2>
+            <Button variant='serviceButton'>
+              <Link to={'/sound-recording'}>Подробнее</Link>
+            </Button>
+          </div>
+        </div>
+        <div className='w-full h-[120px] lg:h-[600px] bg-[rgba(0,0,0,0.60)] border-[1px] border-solid border-[#7a7a7a] rounded-[6px] lg:rounded-[30px] flex justify-between px-[10px] py-[12px] mb-[10px] lg:px-[60px] lg:py-[58px] lg:mb-[70px]'>
+          <div className='mx-[auto] text-center my-[13px] lg:my-[50px] xl:my-[78px]'>
+            <h2 className='text-[14px] mb-[20px] lg:text-[40px] xl:text-[64px] lg:font-[700] lg:w-[350px] xl:w-[450px] lg:mb-[80px]'>
+              Музыкальные Курсы
+            </h2>
+            <Button variant='serviceButton'>
+              <Link to={'/music-cours'}>Подробнее</Link>
+            </Button>
+          </div>
+          <img
+            className='w-[175px] h-[95px] rounded-[6px] xl:w-[900px] lg:w-[700px] lg:h-[390px] xl:h-[490px] object-cover border-[1px] border-solid border-[#7a7a7a] lg:rounded-[30px]'
+            src={rectangl2}
+            alt='rectangl'
+          />
+        </div>
+        <div className='w-full h-[120px] lg:h-[600px] bg-[rgba(0,0,0,0.60)] border-[1px] border-solid border-[#7a7a7a] rounded-[6px] lg:rounded-[30px] flex justify-between px-[10px] py-[12px] mb-[10px] lg:px-[60px] lg:py-[58px] lg:mb-[70px]'>
+          <img
+            className='w-[175px] h-[95px] rounded-[6px] xl:w-[900px] lg:w-[700px] lg:h-[390px] xl:h-[490px] object-cover border-[1px] border-solid border-[#7a7a7a] lg:rounded-[30px]'
+            src={rectangl3}
+            alt='rectangl'
+          />
+          <div className='mx-[auto] text-center my-[13px] lg:my-[50px] xl:my-[78px]'>
+            <h2 className='text-[14px] mb-[20px] lg:text-[40px] xl:text-[64px] lg:font-[700] lg:w-[350px] xl:w-[450px] lg:mb-[80px]'>
+              Репетиционная База
+            </h2>
+            <Button variant='serviceButton'>
+              <Link to={'/rehearsal-cost'}> Подробнее</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
