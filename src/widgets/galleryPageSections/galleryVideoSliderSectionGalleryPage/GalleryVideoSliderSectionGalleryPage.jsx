@@ -30,7 +30,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
               height='350'
               src='https://www.youtube.com/embed/vCHn86AS0pQ?si=390DQJroE4M7ybf_'
               title='YouTube video player'
-              frameborder='0'
+              // frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowfullscreen
             ></iframe>
@@ -42,7 +42,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
               height='350'
               src='https://www.youtube.com/embed/vCHn86AS0pQ?si=390DQJroE4M7ybf_'
               title='YouTube video player'
-              frameborder='0'
+              // frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowfullscreen
             ></iframe>
@@ -54,7 +54,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
               height='350'
               src='https://www.youtube.com/embed/vCHn86AS0pQ?si=390DQJroE4M7ybf_'
               title='YouTube video player'
-              frameborder='0'
+              // frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               // allowfullscreen
             ></iframe>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AdvertisingSection } from '../../shared';
+import { Advertising, useMediaQuery } from '../../shared';
 import {
   AboutUsSectionHomePage,
   ServicesSectionHomePage,
@@ -9,10 +9,12 @@ import {
   VideoSectionHomePage,
   GallerySectionHomePage,
   IntroductionSectionHomePage,
+  VideoSectionHomePageMobile,
 } from '../../widgets';
 import bgForVideoAndGallery from '../../shared/img/bg_video_gallery.jpg';
 
 export const HomePage = () => {
+  const isMobile = useMediaQuery('(max-width: 576px)');
   return (
     <>
       <section>
@@ -27,8 +29,9 @@ export const HomePage = () => {
         style={{ backgroundImage: `url(${bgForVideoAndGallery})` }}
       >
         <GallerySectionHomePage />
-        <VideoSectionHomePage />
-        <AdvertisingSection
+        {isMobile ? <VideoSectionHomePageMobile /> : <VideoSectionHomePage />}
+
+        <Advertising
           title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
           description='Звонки/WhatsApp +996 700 76 37 36'
         />

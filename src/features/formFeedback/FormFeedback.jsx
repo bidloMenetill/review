@@ -41,7 +41,7 @@ export const FormFeedback = () => {
               className='w-[100%] sm:mb-[47px] py-[15px] px-[30px] rounded-[10px] sm:rounded-[30px] outline-none border-solid border-[0.5px] border-[#fff] sm:border-[#6d6d6d] bg-transparent sm:bg-neutral-900/[.30] placeholder:text-[#FFFFFF] overflow-hidden'
               type='text'
               placeholder='Текст'
-              rows={6}
+              rows={5}
             />
           </div>
 

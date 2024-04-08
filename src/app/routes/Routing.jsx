@@ -9,6 +9,9 @@ import {
   ShopPage,
   FaqPage,
   NewsPage,
+  RehearsalCostPage,
+  SoundRecordingPage,
+  MusicCoursPage,
 } from '../../pages';
 import { Layout } from './Layout';
 
@@ -41,6 +44,18 @@ export const Routing = () => {
     {
       path: '/shop',
       element: <ShopPage />,
+    },
+    {
+      path: '/sound-recording',
+      element: <SoundRecordingPage />,
+    },
+    {
+      path: '/rehearsal-cost',
+      element: <RehearsalCostPage />,
+    },
+    {
+      path: '/music-cours',
+      element: <MusicCoursPage />,
     },
   ];
   return (
