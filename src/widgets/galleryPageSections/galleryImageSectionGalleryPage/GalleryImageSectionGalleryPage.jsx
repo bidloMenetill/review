@@ -1,11 +1,11 @@
-import firstGalleryImg from '../../shared/img/first_gallery_home_page.png';
-import secondGalleryImg from '../../shared/img/second_gallery_home_page.png';
-import thirdGalleryImg from '../../shared/img/third_gallery_home_page.png';
-import fourthGalleryImg from '../../shared/img/fourth_gallery_home_page.png';
-import fifthGalleryImg from '../../shared/img/fifth_gallery_home_page.png';
-import sixthGalleryImg from '../../shared/img/sixth_gallery_home_page.png';
+import firstGalleryImg from '../../../shared/img/first_gallery_home_page.png';
+import secondGalleryImg from '../../../shared/img/second_gallery_home_page.png';
+import thirdGalleryImg from '../../../shared/img/third_gallery_home_page.png';
+import fourthGalleryImg from '../../../shared/img/fourth_gallery_home_page.png';
+import fifthGalleryImg from '../../../shared/img/fifth_gallery_home_page.png';
+import sixthGalleryImg from '../../../shared/img/sixth_gallery_home_page.png';
 
-export const ImageSection = () => {
+export const GalleryImageSectionGalleryPage = () => {
   return (
     <section>
       <section className='container'>

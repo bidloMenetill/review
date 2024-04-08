@@ -1,4 +1,4 @@
-export { SectionGroup } from './sectionGroup/SectionGroup';
+export { SectionGroup } from './sectionGroups/sectionGroup/SectionGroup';
 export { BgIntroduction } from './bgIntroduction/BgIntroduction';
 export { NavigationOrange } from './navigationOrange/NavigationOrange';
 export { AccordionItems } from './accordionItems/AccordionItems';
