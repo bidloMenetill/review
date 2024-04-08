@@ -1,4 +1,4 @@
-export const ThirdVideoSection = () => {
+export const GalleryVideoSectionGalleryPage = () => {
   return (
     <section>
       <section className='container'>

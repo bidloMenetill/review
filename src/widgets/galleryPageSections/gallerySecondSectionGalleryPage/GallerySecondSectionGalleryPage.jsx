@@ -1,11 +1,11 @@
 import 'swiper/css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import firstCardBg from '../../shared/img/first_news_bg.png';
-import secondCardBg from '../../shared/img/second_news_bg.jpg';
-import thirdCardBg from '../../shared/img/third_news_bg.jpg';
+import firstCardBg from '../../../shared/img/first_news_bg.png';
+import secondCardBg from '../../../shared/img/second_news_bg.jpg';
+import thirdCardBg from '../../../shared/img/third_news_bg.jpg';
 
-export const SecondSection = () => {
+export const GallerySecondSectionGalleryPage = () => {
   return (
     <section className='container mt-[100px]'>
       <Swiper

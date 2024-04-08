@@ -1,3 +1,4 @@
+import { ImageModal } from './ui/imageModal/ImageModal';
 export { Button } from './ui/button/Button';
 export { AdvertisingSection } from './ui/advertising/AdvertisingSection';
 export { useMediaQuery } from './hooks/useMediaQuery';
