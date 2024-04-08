@@ -1,6 +1,6 @@
-import backImg from '../../shared/img/galleryPage/first.jpg';
+import backImg from '../../../shared/img/galleryPage/first.jpg';
 // FIX ME: add section
-export const GaleryMain = () => {
+export const GalleryFirstSectionGalleryPage = () => {
   return (
     <section
       className='h-[960px] bg-cover bg-no-repeat bg-center'
