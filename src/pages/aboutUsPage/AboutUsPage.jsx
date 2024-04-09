@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { AdvertisingSection } from '../../shared';
+import { Advertising } from '../../shared';
 import {
   WhyQRushSection,
   Team,
@@ -13,7 +13,7 @@ export const AboutUsPage = () => {
       <IntrodactionSectionAboutUs />
       <WhyQRushSection />
       <Team />
-      <AdvertisingSection
+      <Advertising
         title={t('aboutUs.fourthSection.title')}
         description={t('aboutUs.fourthSection.upperTitle')}
       />

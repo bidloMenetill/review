@@ -3,7 +3,7 @@ import instagram from '../../shared/img/footer/instagram.svg';
 import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
 import whatsapp from '../../shared/img/footer/whatsapp.svg';
-import { GeeksPro } from './GeeksPro';
+import { GeeksPro } from './geeksProSection/GeeksProSection';
 
 export const Footer = () => {
   const footerLinks = [
@@ -75,66 +75,90 @@ export const Footer = () => {
 
   return (
     <footer className=' bg-cover bg-no-repeat bg-center'>
-      <div className=' xl:container bg-black pt-[50px] pb-[50px] '>
-        <div className='text-white flex justify-around  font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] lg:text-[16px] lg:[&>ul>li]:mb-[20px] md:[&>ul>li]:mb-[10px] md:text-[12px]  [&>*]:max-w-[397px]'>
+      <div className=' container mx-auto bg-black pt-[50px] pb-[50px] '>
+        <div className=' text-white flex flex-col tablet:flex-row justify-around items-start    font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] text-[12px] lg:text-[16px] [&>ul>li]:mb-[10px] lg:[&>ul>li]:mb-[20px]  tablet:mb-[6px] tablet:text-[14px] tablet:[&>ul>li]:mb-[10px] tablet:items-start tablet:[&>ul]:mb-[100px] md:text-[10px] md:[&>ul>li]:mb-[8px] md:items-start  sm:text-[6  px] sm:[&>ul>li]:mb-[5px] sm:items-start '>
           <ul>
-            <li className='  font-bold  text-orange-600'>
-              <a href=''>О нас</a>
+            <li className='  font-bold  text-orange-600 hover:text-white'>
+              <a href='#'>О нас</a>
             </li>
             <li>
-              <a href=''>Нам доверяют</a>
-            </li>
-            <li>
-              <a href=''>Галерея</a>
-            </li>
-          </ul>
-          <ul>
-            <li className='   font-bold  text-orange-600'>
-              <a href=''>Новости</a>
-            </li>
-
-            <li>
-              <a href=''>Часто задаваемые вопросы</a>
-            </li>
-            <li>
-              <a href=''>Информация о Партнерах</a>
-            </li>
-          </ul>
-          <ul>
-            <li className='font-bold  text-orange-600'>
-              <a href=''>Услуги</a>
-            </li>
-            <li>
-              <a href=''>Репетиционная База</a>
-            </li>
-            <li>
-              <a href=''>Студия Звукозаписи</a>
-            </li>
-            <li>
-              <a href=''>Музыкальные Курсы</a>
-            </li>
-            <li>
-              <a href=''>Магазин</a>
-            </li>
-          </ul>
-          <ul>
-            <li className='  font-bold text-orange-600'>
-              <a href=''>Контакты</a>
-            </li>
-            <li>
-              <a href=''>Адрес: Чынгыза Айтматова 1а (школа Билимкана)</a>
-            </li>
-            <li>
-              <a href=''>
-                Посмотри подробную инструкцию как до нас добраться{' '}
-                <span className='text-orange-500 text-[30px]'>→</span>
+              <a href='#' className='hover:text-orange-600'>
+                Нам доверяют
               </a>
             </li>
             <li>
-              <a href=''>Телефон: +996 700 763736</a>
+              <a href='#' className='hover:text-orange-600'>
+                Галерея
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li className='   font-bold  text-orange-600 hover:text-white'>
+              <a href='#'>Новости</a>
+            </li>
+
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Часто задаваемые вопросы
+              </a>
             </li>
             <li>
-              <a href=''>Email: qrushstudio.music@gmail.com</a>
+              <a href='#' className='hover:text-orange-600'>
+                Информация о Партнерах
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li className='font-bold  text-orange-600 hover:text-white'>
+              <a href='#'>Услуги</a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Репетиционная База
+              </a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Студия Звукозаписи
+              </a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Музыкальные Курсы
+              </a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Магазин
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li className='  font-bold text-orange-600 hover:text-white'>
+              <a href='#'>Контакты</a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Адрес: Чынгыза Айтматова 1а (школа Билимкана)
+              </a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Посмотри подробную инструкцию как до нас добраться{' '}
+                <span className='text-orange-500 xl:text-[30px] lg:text-[22px] tablet:text-[16px] md:text-[14px] sm:text-[12px]'>
+                  →
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Телефон: +996 700 763736
+              </a>
+            </li>
+            <li>
+              <a href='#' className='hover:text-orange-600'>
+                Email: qrushstudio.music@gmail.com
+              </a>
             </li>
           </ul>
         </div>

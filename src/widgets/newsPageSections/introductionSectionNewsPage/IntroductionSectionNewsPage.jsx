@@ -5,7 +5,7 @@ import pic_news from '../../../shared/img/about/pic-news.png';
 import certificaty from '../../../shared/img/about/certificaty.png';
 import certificaty_2 from '../../../shared/img/about/certificaty_2.png';
 
-export const IntroductionNewsSection = () => {
+export const IntroductionSectionNewsPage = () => {
   return (
     <section className='max-w-[375px] mx-auto sm:max-w-[1920px]'>
       <div className='flex'>

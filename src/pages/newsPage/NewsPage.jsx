@@ -1,7 +1,7 @@
 import {
   // ApplicationSectionNewsPage,
   FeastSectionNewsPage,
-  IntroductionNewsSection,
+  IntroductionSectionNewsPage,
   EventSectionNewsPage,
   // SendUpSectionNewsPage,
 } from '../../widgets';
@@ -9,7 +9,7 @@ import {
 export const NewsPage = () => {
   return (
     <section className='flex box-border h-auto m-0 p-0 flex-col max-w-[1920px] mx-auto'>
-      <IntroductionNewsSection />
+      <IntroductionSectionNewsPage />
       <FeastSectionNewsPage />
       <EventSectionNewsPage />
       {/* <SendUpSectionNewsPage />

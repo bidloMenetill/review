@@ -133,8 +133,8 @@ export const Team = () => {
   ];
   return (
     <>
-      <section className='sm:bg-none bg-[url("/src/shared/img/aboutMobile/bg_section_2.png")] w-full bg-no-repeat flex min-h-[1159px]'>
-        <div className='sm:w-11/12 flex flex-col gap-y-12 mx-[2%]'>
+      <section className='sm:bg-none bg-[url("/src/shared/img/aboutMobile/bg_section_2.png")] w-full bg-cover bg-no-repeat flex min-h-[1159px]'>
+        <div className='sm:w-11/12 flex flex-col gap-y-12 mx-[6%]'>
           <h2
             className='text-left pt-[3%] xl:text-center xl:text-left text-3xl xl:text-7xl text-[#F5F5F5]
                 xl:pt-16 xl:font-medium xl:leading-[122px]'
@@ -147,7 +147,7 @@ export const Team = () => {
             просто выполняем свою работу, мы отдаемся ей с преданностью и
             энтузиазмом
           </p>
-          <ul className='w-full sm:max-w-full flex flex-wrap max-w-[375px] gap-6 sm:flex-wrap sm:gap-y-36 mx-[2%]'>
+          <ul className='w-full sm:max-w-full flex flex-wrap gap-6 sm:flex-wrap sm:gap-y-36 mx-[6%]'>
             {teams?.map(item => (
               <li
                 key={item.id}
