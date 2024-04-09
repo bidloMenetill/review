@@ -17,6 +17,8 @@ export const Button = ({
     viewAllButton: 'viewAllButton',
     moreInfoButton:
       'flex px-[24px] py-[10px] justify-center w-[248px] h-[50px] items-center gap-[10px] flex-shrink-0 rounded-[40px] text-[#E2DED3] bg-[var(--orange-600,_#F93822)] font-[Montserrat] text-[20px] not-italic font-medium leading-[normal]',
+    serviceButton:
+      'text-center font-[300] rounded-[10px] text-[12px] py-[2px] px-[8px] lg:rounded-[50px] bg-[#F93822] font-normal lg:text-[26px] xl:text-[30px] text-[#F5F5F5] lg:py-[18px] xl:py-[14px] lg:px-[60px] xl:px-[75px]',
   };
 
   const classNames = [variant && styles[variant], className];
