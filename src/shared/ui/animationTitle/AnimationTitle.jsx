@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 export const AnimationTitle = ({ value }) => {
   const marqueeVariants = {
     animate: {
-      x: ['100%', '-100%'],
+      x: ['100%', '-220%'],
       transition: {
         x: {
           repeat: Infinity,
-          duration: 4,
+          duration: 10,
           ease: 'linear',
         },
       },
@@ -21,8 +21,11 @@ export const AnimationTitle = ({ value }) => {
         variants={marqueeVariants}
         animate='animate'
       >
-        <h1>
-          <img src={value} alt='title' />
+        <h1 className='flex gap-x-[50px] mg:gap-x-[100px]'>
+          <img src={value} alt='title1' />
+          <img src={value} alt='title2' />
+          <img src={value} alt='title3' />
+          <img src={value} alt='title4' />
         </h1>
       </motion.div>
     </div>
