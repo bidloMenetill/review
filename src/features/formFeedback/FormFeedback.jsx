@@ -7,7 +7,7 @@ import { Button } from '../../shared';
 export const FormFeedback = () => {
   const {
     register,
-    formState: { errors },
+    formState: { errors, isValid },
     handleSubmit,
     reset,
   } = useForm({ mode: 'onBlur' });
@@ -53,7 +53,6 @@ export const FormFeedback = () => {
           <div>
             <input
               {...register('name', {
-                required: t('faqPage.inputs.formField'),
                 minLength: {
                   value: 3,
                   message:
@@ -77,7 +76,6 @@ export const FormFeedback = () => {
           <div>
             <input
               {...register('whatsappNumber', {
-                required: t('faqPage.inputs.formField'),
                 minLength: {
                   value: 6,
                   message:
