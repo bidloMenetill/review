@@ -293,5 +293,14 @@
       "title": "News",
       "upperTitle": "Here we publish studio news and articles"
     }
+  },
+  "faqPage": {
+    "inputs": {
+      "error" : "Error!",
+      "formField": "This field is required",
+      "minLengthPrefix": "Minimum ",
+      "minLengthSuffix": " characters"
+      
+    }
   }
 }
