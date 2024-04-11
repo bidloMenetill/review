@@ -4,17 +4,17 @@ import serviceBg from '../../../shared/img/servicesImg/About.png';
 import rectangl from '../../../shared/img/servicesImg/Rectangle_53.jpg';
 import rectangl2 from '../../../shared/img/third_studio_main_page.jpg';
 import rectangl3 from '../../../shared/img/first_studio_main_page.jpg';
-import { Button } from '../../../shared';
+import { Button, scrollToTop } from '../../../shared';
 
 export const ServiceLinks = () => {
   return (
-    <section className='relative w-full h-[490px] lg:h-[2500px] text-[#F5F5F5]'>
+    <section className='relative w-full h-[490px] lg:h-[2200px] xl:h-[2500px] text-[#F5F5F5]'>
       <img
         className='absolute z-[-1] w-full h-[100%] object-cover'
         src={serviceBg}
         alt='Задний-фон'
       />
-      <div className='mx-auto pt-[20px] w-[335px] xl:pt-[100px] xl:w-[1720px] lg:w-[1200px]'>
+      <div className='mx-auto pt-[20px] w-[335px] mb-[232px] xl:pt-[100px] xl:w-[1720px] lg:w-[1200px]'>
         <h2 className='text-[20px] mb-[20px] xl:text-[100px] xl:mb-[100px] lg:text-[90px]'>
           Услуги
         </h2>
@@ -28,7 +28,7 @@ export const ServiceLinks = () => {
             <h2 className='text-[14px] mb-[20px] lg:text-[40px] xl:text-[64px] lg:font-[700] lg:w-[350px] xl:w-[450px] lg:mb-[80px]'>
               Студия Звукозаписи
             </h2>
-            <Button variant='serviceButton'>
+            <Button onClick={scrollToTop} variant='serviceButton'>
               <Link to={'/sound-recording'}>Подробнее</Link>
             </Button>
           </div>
@@ -38,7 +38,7 @@ export const ServiceLinks = () => {
             <h2 className='text-[14px] mb-[20px] lg:text-[40px] xl:text-[64px] lg:font-[700] lg:w-[350px] xl:w-[450px] lg:mb-[80px]'>
               Музыкальные Курсы
             </h2>
-            <Button variant='serviceButton'>
+            <Button onClick={scrollToTop} variant='serviceButton'>
               <Link to={'/music-cours'}>Подробнее</Link>
             </Button>
           </div>
@@ -58,7 +58,7 @@ export const ServiceLinks = () => {
             <h2 className='text-[14px] mb-[20px] lg:text-[40px] xl:text-[64px] lg:font-[700] lg:w-[350px] xl:w-[450px] lg:mb-[80px]'>
               Репетиционная База
             </h2>
-            <Button variant='serviceButton'>
+            <Button onClick={scrollToTop} variant='serviceButton'>
               <Link to={'/rehearsal-cost'}> Подробнее</Link>
             </Button>
           </div>

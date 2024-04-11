@@ -77,8 +77,8 @@ export const FormFeedback = () => {
             </label>
           </div>
 
-          <div className='mt-[30px] text-right sm:text-center'>
-            <Button onClick={() => setOpen(true)} variant='orangeButton'>
+          <div className='mt-[30px] text-center'>
+            <Button onClick={() => setOpen(true)} variant='serviceButton'>
               Отправить
             </Button>
           </div>

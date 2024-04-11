@@ -7,10 +7,11 @@ export const ServiceSection = () => {
     <section className='relative w-full h-[230px] sm:h-[1080px] mx-auto text-[#f5f5f5] font-montserrat'>
       <div className='w-full h-full ease-out duration-300'>
         <ServiceSwiper />
-        <div className='absolute w-full h-full top-[-25%] sm:top-[55%] z-[1]'>
-          <h2 className='text-transparent sm:text-[#f5f5f5] text-[24px] mb-[20px] mx-[90px] xl:text-[50px] lg:text-[40px]'>
+        <div className='absolute w-full h-full top-[20%] sm:top-[40%] z-[1]'>
+          <h2 className='sm:text-[#f5f5f5] text-[24px] mb-[10px] sm:mb-[20px] mx-[20px] sm:mx-[90px] xl:text-[50px] lg:text-[40px]'>
             Выберите свою программу
           </h2>
+          <div className='shadow-[0px_0px_66px_45px_#000000] sm:shadow-none'></div>
           <hr className='border-0 mx-[20px] sm:border-[1px] sm:mx-[90px] sm:shadow-[0px_0px_600px_240px_#000000]' />
           <div className='mx-[20px] sm:mx-[90px]'>
             <motion.h2
@@ -26,10 +27,6 @@ export const ServiceSection = () => {
               Услуги
             </motion.h2>
           </div>
-          <div className='shadow-[0px_0px_66px_45px_#000000] sm:shadow-none'></div>
-          <h2 className='text-[#f5f5f5] sm:text-transparent text-[24px] mb-[20px] mx-[20px] xl:text-[50px] lg:text-[40px]'>
-            Выберите свою программу
-          </h2>
         </div>
       </div>
     </section>

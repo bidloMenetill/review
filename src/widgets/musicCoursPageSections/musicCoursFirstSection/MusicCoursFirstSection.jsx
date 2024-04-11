@@ -35,8 +35,8 @@ export const MusicCoursFirstSection = () => {
     },
   ];
   return (
-    <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[69px] md:mb-[154px]'>
-      <div className='mx-[20px] sm:text-center sm:mt-[100px]'>
+    <section className='w-full mx-auto font-montserrat text-[#E2DED3] mt-[40px] mb-[69px] md:mb-[154px]'>
+      <div className='mx-[20px] text-center sm:mt-[100px]'>
         <p className='text-[18px] font-[500] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
           1 филиал (Район Азия Молл)
         </p>

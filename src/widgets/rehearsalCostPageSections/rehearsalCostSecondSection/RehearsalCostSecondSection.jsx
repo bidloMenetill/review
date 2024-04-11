@@ -35,26 +35,6 @@ export const RehearsalCostSecondSection = () => {
     },
     {
       id: 1,
-      title: 'Гитары (на выбор)',
-      firstDescription: '- Yamaha BB 5 string',
-      secondDescription: '- Washburn bass 5 string',
-      thirdDescription: '- ESP ec256 (форма LesPaul)',
-      fourthDescription: '- Ibanez RG',
-      fifthDescription: '- Vintage (реплика Gibson SG)',
-      sixthDescription: '- Простая китайская Акустика',
-    },
-    {
-      id: 2,
-      title: 'Микрофоны (на выбор)',
-      firstDescription: '- Shure SM57 (2 шт)',
-      secondDescription: '- AKG D5',
-      thirdDescription: '- Shure SM 58',
-      fourthDescription: '- tBone sm58',
-      fifthDescription: '- Lane (2 шт.)',
-      sixthDescription: '',
-    },
-    {
-      id: 3,
       title: 'Пульт',
       firstDescription: '- Yamaha MG 166cx',
       secondDescription: '',
@@ -62,6 +42,26 @@ export const RehearsalCostSecondSection = () => {
       fourthDescription: '',
       fifthDescription: '',
       sixthDescription: '',
+    },
+    {
+      id: 2,
+      title: 'Цифровое Фортепиано',
+      firstDescription: '- Yamaha Grand dgx 630',
+      secondDescription: '',
+      thirdDescription: '',
+      fourthDescription: '',
+      fifthDescription: '',
+      sixthDescription: '',
+    },
+    {
+      id: 3,
+      title: 'Гитары (на выбор)',
+      firstDescription: '- Yamaha BB 5 string',
+      secondDescription: '- Washburn bass 5 string',
+      thirdDescription: '- ESP ec256 (форма LesPaul)',
+      fourthDescription: '- Ibanez RG',
+      fifthDescription: '- Vintage (реплика Gibson SG)',
+      sixthDescription: '- Простая китайская Акустика',
     },
     {
       id: 4,
@@ -85,12 +85,12 @@ export const RehearsalCostSecondSection = () => {
     },
     {
       id: 6,
-      title: 'Цифровое Фортепиано',
-      firstDescription: '- Yamaha Grand dgx 630',
-      secondDescription: '',
-      thirdDescription: '',
-      fourthDescription: '',
-      fifthDescription: '',
+      title: 'Микрофоны (на выбор)',
+      firstDescription: '- Shure SM57 (2 шт)',
+      secondDescription: '- AKG D5',
+      thirdDescription: '- Shure SM 58',
+      fourthDescription: '- tBone sm58',
+      fifthDescription: '- Lane (2 шт.)',
       sixthDescription: '',
     },
     {
@@ -113,20 +113,10 @@ export const RehearsalCostSecondSection = () => {
       fifthDescription: '',
       sixthDescription: '',
     },
-    {
-      id: 9,
-      title: 'Триггер для бочки',
-      firstDescription: '- TrigMic 2 Laser Pick',
-      secondDescription: '',
-      thirdDescription: '',
-      fourthDescription: '',
-      fifthDescription: '',
-      sixthDescription: '',
-    },
   ];
   return (
-    <section className='w-full mx-auto mb-[69px] md:mb-[154px] font-montserrat text-[#E2DED3]'>
-      <div className='mx-[20px] sm:text-center'>
+    <section className='w-full mx-auto mb-[10px] md:mb-[154px] font-montserrat text-[#E2DED3]'>
+      <div className='text-center'>
         <p className='text-[18px] font-[500] pb-[22px] md:pb-[20px] xl:text-[40px] lg:text-[23px] tablet:text-[20px]'>
           Вторая комната (22 м
           <sup className='text-[14px] md:text-[24px]'>2</sup>)
@@ -193,8 +183,8 @@ export const RehearsalCostSecondSection = () => {
         ) : (
           ''
         )} */}
-        <div className='mt-[56px]'>
-          <Button variant='orangeButton'>Отправить</Button>
+        <div className='mt-[5px] text-right sm:text-center mr-[14px]'>
+          <Button variant='serviceButton'>Забронировать</Button>
         </div>
       </div>
     </section>
