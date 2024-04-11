@@ -35,12 +35,12 @@ export const MusicCoursSecondSection = () => {
     },
   ];
   return (
-    <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[70px] md:mb-[154px]'>
-      <div className='mx-[20px] sm:text-center'>
-        <p className='text-[18px] font-[800] md:font-[500] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
+    <section className='w-full mx-auto font-montserrat text-[#E2DED3] md:mb-[154px]'>
+      <div className='mx-[20px] text-center'>
+        <p className='text-[18px] md:font-[500] text-[#FFFFFF] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
           2 филиал (Район Магистраль\Алматинка)
         </p>
-        <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] text-[#FFFFFF] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
+        <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
           Курсы игры на Гитаре и Барабанах
         </p>
       </div>
