@@ -1,6 +1,3 @@
-import { GalleryImageSectionGalleryPage } from './galleryPageSections/galleryImageSectionGalleryPage/GalleryImageSectionGalleryPage';
-import { GalleryVideoSectionGalleryPage } from './galleryPageSections/galleryVideoSectionGalleryPage/GalleryVideoSectionGalleryPage';
-import { GalleryVideoSliderSectionGalleryPage } from './galleryPageSections/galleryVideoSliderSectionGalleryPage/GalleryVideoSliderSectionGalleryPage';
 export { AboutUsSectionHomePage } from './homePageSections/aboutsUsSectionHomePage/AboutUsSectionHomePage';
 export { IntroductionSectionHomePage } from './homePageSections/introductionSectionHomePage/IntroductionSectionHomePage';
 export { ServicesSectionHomePage } from './homePageSections/servicesSectionHomePage/ServicesSectionHomePage';
@@ -31,11 +28,6 @@ export { GalleryImageSectionGalleryPage } from './galleryPageSections/galleryIma
 export { GalleryVideoSectionGalleryPage } from './galleryPageSections/galleryVideoSectionGalleryPage/GalleryVideoSectionGalleryPage';
 export { GalleryVideoSliderSectionGalleryPage } from './galleryPageSections/galleryVideoSliderSectionGalleryPage/GalleryVideoSliderSectionGalleryPage';
 
-export { IntroductionNewsSection } from './newsPageSections/introductionSectionNewsPage/IntroductionSectionNewsPage';
-export { FiestSection } from './newsPageSections/feastSectionNewsPage/FeastSectionNewsPage';
-export { EventSection } from './newsPageSections/eventSectionNewsPage/EventSectionNewsPage';
-export { SendUpSection } from './newsPageSections/sendUpSectionNewsPage/SendUpSectionNewsPage';
-export { ApplicationSection } from './newsPageSections/applicationSectionNewsPage/ApplicationSectionNewsPage';
 export { SoundSwiperSection } from './soundRecordingPageSections/soundSwiperSection/SoundSwiperSection';
 export { SoundRecordingSection } from './soundRecordingPageSections/soundRecordingSection/SoundRecordingSection';
 export { RehearsalSwiperSection } from './rehearsalCostPageSections/rehearsalSwiperSection/RehearsalSwiperSection';
@@ -46,3 +38,8 @@ export { MusicCoursSwiperSection } from './musicCoursPageSections/musicCoursSwip
 export { MusicCoursFirstSection } from './musicCoursPageSections/musicCoursFirstSection/MusicCoursFirstSection';
 export { MusicCoursSecondSection } from './musicCoursPageSections/musicCoursSecondSection/MusicCoursSecondSection';
 export { ServiceLinks } from './servicPageSections/serviceLinks/ServiceLinks';
+export { FeastSectionNewsPage } from './newsPageSections/feastSectionNewsPage/FeastSectionNewsPage';
+export { EventSectionNewsPage } from './newsPageSections/eventSectionNewsPage/EventSectionNewsPage';
+export { IntroductionSectionNewsPage } from './newsPageSections/introductionSectionNewsPage/IntroductionSectionNewsPage';
+// export { SendUpSectionNewsPage } from './newsPageSections/sendUpSectionNewsPage/SendUpSectionNewsPage';
+// export { ApplicationSectionNewsPage } from './newsPageSections/applicationSectionNewsPage/ApplicationSectionNewsPage';

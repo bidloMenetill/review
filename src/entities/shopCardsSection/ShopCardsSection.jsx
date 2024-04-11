@@ -94,7 +94,7 @@ export const ShopCardsSection = () => {
   return (
     <section>
       <ul
-        className={` max-w-[1920px] mx-auto mb-[100px]  font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center ${window.innerWidth <= 768 ? 'bg-[url("/src/shared/img/shop/bgShopCards.jpg")] bg-cover bg-no-repeat bg-center' : ''}`}
+        className={` max-w-[1920px] mx-auto mb-[100px]  font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center ${window.innerWidth < 768 ? 'bg-[url("/src/shared/img/shop/bgShopCards.jpg")] bg-cover bg-no-repeat bg-center' : ''}`}
       >
         <div className='max-w-[90%] mx-auto pt-[30px] flex justify-center'>
           <Input variant={'filterInput'} />
@@ -106,14 +106,14 @@ export const ShopCardsSection = () => {
         </div>
         {shopCard?.map(card => (
           <div
-            className={`h-[268px] mt-[40px] mx-auto sm:h-[358px] tablet:h-[550px] lg:h-[680px] xl:h-[860px] relative ${window.innerWidth <= 768 ? 'max-w-[90%] mx-auto ' : ''} ${isMobile ? 'h-[358px]' : ''}`}
+            className={`h-[268px] mt-[40px] mx-auto sm:h-[358px] md:h-[387px] md:mt-[100px] tablet:h-[460px] lg:h-[660px] xl:h-[860px] relative ${window.innerWidth < 768 ? 'max-w-[90%] mx-auto ' : ''} ${isMobile ? 'h-[358px]' : ''}`}
             key={card.id}
           >
             <li
-              className={`tablet:max-w-[87.24%] lg:max-w-[87.24%] sm:w-[518px] mx-auto xl:w-[1675px] flex justify-between items-center sm:gap-x-[30px] gap-x-[8px] mt-[30px]  tablet:gap-x-[65px] lg:gap-x-[27px] absolute tablet:items-center ${card.id % 2 === 0 ? 'tablet:max-w-[89.3%] tablet:flex-row-reverse tablet:right-0 lg:max-w-[89.3%] lg:flex-row-reverse lg:right-0' : ''} ${isMobile ? 'max-w-[90%] h-[185px]' : ''}`}
+              className={`md:max-w-[96%] tablet:max-w-[87.24%] lg:max-w-[87.24%] sm:max-w-[90%] mx-auto xl:max-w-[87.24%] flex justify-between items-center gap-x-[8px] sm:gap-x-[30px] mt-[30px] tablet:gap-x-[65px] absolute tablet:items-center ${card.id % 2 === 0 ? 'md:max-w-[94%] md:flex-row-reverse md:right-0 tablet:max-w-[89.3%] tablet:flex-row-reverse tablet:right-0 lg:max-w-[89.3%] lg:flex-row-reverse lg:right-0' : ''} ${isMobile ? 'max-w-[90%] h-[185px]' : ''}`}
             >
               <div
-                className={`w-[130px] h-[135px] mx-auto sm:w-[220px]  sm:h-[235px] tablet:w-[500px] tablet:h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[550px] lg:h-[660px] rounded-[5px] ${isMobile ? 'w-[157px] h-[165px]' : ''}`}
+                className={`w-[130px] h-[135px] mx-auto sm:w-[220px] sm:h-[235px] md:w-[361px] md:h-[387px] tablet:w-[500px] tablet:h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[605px] lg:h-[660px] rounded-[5px] ${isMobile ? 'w-[157px] h-[165px]' : ''}`}
               >
                 <Swiper
                   modules={[Autoplay, Navigation, Mousewheel, Pagination]}
@@ -133,7 +133,7 @@ export const ShopCardsSection = () => {
                     {card.img.map((item, index) => (
                       <SwiperSlide key={index}>
                         <img
-                          className={`w-[130px] h-[135px] sm:w-[220px] sm:h-[235px] tablet:w-[500px] tablet:h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[550px] lg:h-[660px] rounded-[5px] ${isMobile ? 'w-[157px] h-[165px]' : ''}`}
+                          className={`w-[130px] h-[135px] sm:w-[220px] sm:h-[235px] md:w-[361px] md:h-[387px] tablet:w-[500px] tablet:h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[605px] lg:h-[660px] rounded-[5px] ${isMobile ? 'w-[157px] h-[165px]' : ''}`}
                           src={item}
                           alt='cardImg'
                         />
@@ -143,15 +143,15 @@ export const ShopCardsSection = () => {
                 </Swiper>
               </div>
               <div
-                className={`w-[205px] h-[228px] sm:w-[290px] sm:h-[340px] tablet:h-full tablet:w-[405px] xl:w-[705px] lg:w-[490px] ${isMobile ? 'w-[240px] h-[278px]' : ''}`}
+                className={`w-[205px] h-[228px] sm:w-[290px] sm:h-[340px] md:w-[334px] md:h-[368px] tablet:h-full tablet:w-[405px] xl:w-[705px] lg:w-[550px] ${isMobile ? 'w-[240px] h-[278px]' : ''}`}
               >
                 <h2
-                  className={`font-bold text-[#E2DED3] sm:text-[22px] text-[14px] tablet:text-[25px] lg:text-[40px] xl:text-[50px] ${isMobile ? 'text-[18px]' : ''}`}
+                  className={`font-bold text-[#E2DED3] text-[14px] sm:text-[22px] md:text-[26px] lg:text-[40px] xl:text-[50px] ${isMobile ? 'text-[18px]' : ''}`}
                 >
                   {card.instrumentName}
                 </h2>
                 <ul
-                  className={`text-[12px] leading-[150%] sm:text-[18px] tablet:text-[22px] lg:text-[27px] xl:text-[30px] font-regular tablet:font-medium mt-[10px]  tablet:mt-[30px] ${isMobile ? 'text-[16px]' : ''}`}
+                  className={`text-[12px] leading-[150%] sm:text-[18px] md:font-medium tablet:text-[22px] lg:text-[27px] xl:text-[30px] font-regular mt-[10px]  tablet:mt-[30px] ${isMobile ? 'text-[16px]' : ''}`}
                 >
                   {properties.map(property => (
                     <li key={property}>
@@ -160,10 +160,10 @@ export const ShopCardsSection = () => {
                   ))}
                 </ul>
                 <div
-                  className={`w-[194px] h-[35px] sm:w-[290px] tablet:w-[434px] lg:w-[490px] xl:w-[674px] flex justify-around items-center mt-[15px]  tablet:mt-[10px] lg:mt-[30px] xl:mt-[87px] gap-x-[3px] ${isMobile ? 'w-[240px]' : ''}`}
+                  className={`w-[194px] h-[35px] font-montserrat sm:w-[290px] md:w-[344px] md:h-[45px] tablet:w-[434px] lg:w-[490px] xl:w-[674px] flex justify-around items-center mt-[15px]  tablet:mt-[10px] lg:mt-[30px] xl:mt-[87px] gap-x-[3px] ${isMobile ? 'w-[240px]' : ''}`}
                 >
                   <p
-                    className={`font-semibold mt-[20px] text-[#E2DED3] opacity-70 text-[11px] sm:text-[16px] tablet:text-[25px] lg:text-[27px] xl:text-[30px] ${isMobile ? 'text-[14px]' : ''}`}
+                    className={`font-semibold mt-[20px] text-[#d9d9d9] opacity-70 text-[11px] sm:text-[16px] md:text-[18px] md:font-semibold tablet:text-[25px] lg:text-[27px] xl:text-[30px] ${isMobile ? 'text-[14px]' : ''}`}
                   >
                     Цена: {card.price}
                   </p>
