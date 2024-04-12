@@ -1,4 +1,4 @@
-import { Advertising } from '../../shared';
+import { Advertising, useMediaQuery } from '../../shared';
 import {
   GalleryFirstSectionGalleryPage,
   GalleryImageSectionGalleryPage,
@@ -8,11 +8,17 @@ import {
 } from '../../widgets';
 
 export const Galery = () => {
+  const isMobile = useMediaQuery('(max-width: 1024px)');
   return (
-    <section>
+    <section className='w-full bg-center'>
       <GalleryFirstSectionGalleryPage />
-      <GallerySecondSectionGalleryPage />
+
       <GalleryImageSectionGalleryPage />
+      {isMobile ? (
+        <GalleryImageSectionGalleryPage />
+      ) : (
+        <GallerySecondSectionGalleryPage />
+      )}
       <GalleryVideoSectionGalleryPage />
       <GalleryVideoSliderSectionGalleryPage />
       <Advertising
