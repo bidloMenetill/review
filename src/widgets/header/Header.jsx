@@ -43,7 +43,9 @@ export const Header = () => {
   const isMobileAndTablet = useMediaQuery('( max-width: 1024px)');
 
   return (
-    <header className=' z-10  h-[100px] bg-black/50 backdrop-opacity-10 backdrop-invert flex items-center justify-center  top-0 backdrop-blur-50 sticky bg-cover bg-no-repeat bg-center'>
+    <header
+      className={`${isOpen ? 'bg-black ' : 'bg-black/50 backdrop-opacity-10 backdrop-invert'} z-10  h-[100px]   flex items-center justify-center  top-0 backdrop-blur-50 sticky bg-cover bg-no-repeat bg-center`}
+    >
       <nav className=' mx-auto flex justify-between items-center container '>
         <Link to={'/'} className='mr-[4vw]'>
           <img
@@ -104,7 +106,11 @@ export const Header = () => {
             >
               <div className='flex flex-col  text-white p-[20px]'>
                 {headerLinks.map((routes, index) => (
-                  <li className='list-none p-[10px]' key={index}>
+                  <li
+                    className='list-none p-[10px]'
+                    key={index}
+                    onClick={() => setIsOpen(false)}
+                  >
                     <Link to={routes.route}>{routes.link}</Link>
                   </li>
                 ))}

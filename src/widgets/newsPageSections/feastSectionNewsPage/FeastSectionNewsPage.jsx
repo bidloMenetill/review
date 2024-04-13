@@ -6,6 +6,7 @@ import AppStore from '../../../shared/img/news2/AppStore.png';
 import GooglePlay from '../../../shared/img/news2/GooglePlay.png';
 import unnamed_2 from '../../../shared/img/news2/unnamed 2.png';
 import unnamed_3 from '../../../shared/img/news2/unnamed_3.png';
+import { CardFeastSectionNewsPage } from './cardFeastSectionNewsPage/ectionNewsPage';
 
 export const FeastSectionNewsPage = () => {
   const applications = [
@@ -43,7 +44,7 @@ export const FeastSectionNewsPage = () => {
       id: 3,
       img: unnamed_3,
       text_h3: `EarMaster 7`,
-      text_p1: `Ear Training and Music Theory`,
+      text_p1: `Ear Training and Music Theory Purchases`,
       text_p3: `In-App`,
       text_p4: `Purchases`,
       text_h2: `EarMaster 7 помогает улучшить музыкальное слуховое восприятие
@@ -56,63 +57,38 @@ export const FeastSectionNewsPage = () => {
   ];
   return (
     <section>
-      <section className='hidden sm:block'>
+      <section className='sm:block sm:px-none max-w-full sm:max-w-[100%]'>
         <div>
-          <div className='bg-[url("src/shared/img/about/news_2.png")] bg-auto max-w-[1920px] h-[1725px] bg-no-repeat text-[white] text-8xl pt-[15%] pl-[15%]'>
-            Текст
-            <div className='max-w-[80%] bg-[white] h-[50%]'></div>
+          <div className='bg-[url("src/shared/img/about/news_2.png")] bg-auto h-[1725px] bg-no-repeat text-[#E2DED3] text-5xl sm:text-5xl sm:bold-semibold px-4 tablet:px-20 pt-14'>
+            Text
+            <hr />
+            <div className='max-w-[100%] bg-[#E2DED3] h-[359px] rounded-3xl mt-20'></div>
           </div>
         </div>
-        <div className='bg-[url("src/shared/img/about/news_studio.png")] bg-no-repeat bg-auto max-w-[1920px] h-[1935px] text-[white] text-8xl pt-[15%] pl-[15%]'>
-          Текст
-          <div className='max-w-[80%] bg-[white] h-[500px]'></div>
-          <div className='max-w-[80%] bg-[white] h-[500px] mt-[10%]'></div>
+        <div className='bg-[url("src/shared/img/about/news_studio.png")] bg-no-repeat bg-auto max-w-[1920px] h-[1935px] text-[#E2DED3] text-5xl px-4 tablet:px-20 pt-14'>
+          Text
+          <hr />
+          <div className='max-w-[100%] bg-[white] h-[500px] rounded-3xl mt-20'></div>
+          <div className='max-w-[100%] bg-[white] h-[500px] mt-[10%] rounded-3xl'></div>
         </div>
         <div className='bg-[url("src/shared/img/about/block_app.png")] bg-no-repeat bg-auto max-w-[1920px] min-h-[1117px]'>
-          <div className='flex pt-[8%]'>
-            <div className='hidden sm:block sm:w-[70%] ml-[5%]'>
-              <img src={Drummer} alt='Drummer' />
-            </div>
-            <div>
-              <section className='flex flex-col gap-[2%] max-w-[415px] sm:w-[100%] max-h-[250px] sm:h-[50%] mx-[auto] ml-[4%]'>
+          <div className='flex  max-w-[1920px] min-h-[1117px]'>
+            <p className='absolute text-xl pt-[10%] lg:pt-[5%] xl:pt-[2%] sm:text-3xl md:text-4xl font-medium text-[#E2DED3] sm:max-w-[751px] left-[6%] xl:left-[15%]'>
+              3 ПОЛЕЗНЫХ ПРИЛОЖЕНИЯ ДЛЯ БАРАБАНЩИКОВ
+            </p>
+            <div className='flex flex-col my-auto sm:flex sm:flex-row sm:max-w-[1720px] gap-y-5 sm:gap-x-1 sm:mx-auto sm:my-auto'>
+              <img
+                src={Drummer}
+                alt='Drummer'
+                className='pl-[3%] pr-[3%] sm:pr-0 sm:max-w-[68%] sm:max-h-[790px] sm:pl-[2%]'
+              />
+              <section className='flex flex-col sm:max-w-[415px] sm:max-h-[790px] sm:mx-auto gap-[2vh] sm:gap-[1vw] pl-[3%] sm:pl-0 pr-[3%] sm:pr-[2%]'>
                 {applications?.map(item => (
                   <div
                     key={item.id}
-                    className='flex max-w-[415px] sm:w-[100%] sm:max-h-[250px] max-h-[250px] border-[#E2DED3] border-solid border rounded-2xl bg-[#000000] mt-[3%]'
+                    className='flex sm:max-w-[415px] sm:h-[45%] border-[#E2DED3] border-solid border rounded-2xl bg-[#000000]'
                   >
-                    <div className='flex items-center gap-x-9 w-full pl-[4%] bg-[#1E1E1E] rounded-2xl py-[2%]'>
-                      <div className='max-w-[130px] sm:max-w-[80px]'>
-                        <img src={item.img} alt='unnamed' />
-                      </div>
-                      <div className='flex flex-col gap-[10%] h-[250px]'>
-                        <div className='flex flex-col py-[10%]'>
-                          <h3 className='text-[#E2DED3] font-bold text-xl'>
-                            {item.text_h3}
-                          </h3>
-                          <p className='text-[#B4B4B4] font-medium text-base'>
-                            {item.text_p1}
-                          </p>
-                          <p className='text-[#E2DED3] font-regular text-sm'>
-                            {item.text_p2}
-                          </p>
-                        </div>
-                        <div className='flex gap-[2%]'>
-                          <div className='bg-[#F93822] rounded-[20px]'>
-                            <button className='min-w-[100px] min-h-[40px]'>
-                              GET
-                            </button>
-                          </div>
-                          <div>
-                            <p className='text-[#F5F5F5] font-regular text-sm'>
-                              {item.text_p3}
-                            </p>
-                            <p className='text-[#F5F5F5] font-regular text-sm'>
-                              {item.text_p4}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <CardFeastSectionNewsPage item={item} />
                   </div>
                 ))}
               </section>
@@ -120,7 +96,7 @@ export const FeastSectionNewsPage = () => {
           </div>
         </div>
       </section>
-      <section className='sm:hidden bg-[url("/src/shared/img/aboutMobile/newspaper_news.png")] bg-auto max-w-[375px] mx-auto h-[412px] bg-no-repeat'>
+      <section className='hidden sm:hidden bg-[url("/src/shared/img/aboutMobile/newspaper_news.png")] bg-auto max-w-[375px] mx-auto h-[412px] bg-no-repeat'>
         <div className='mx-auto mt-[13%]'>
           <div className='flex'>
             <img src={MusicNote} alt='MusicNote' />
