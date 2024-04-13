@@ -57,21 +57,23 @@ export const FeastSectionNewsPage = () => {
   ];
   return (
     <section>
-      <section className='sm:block'>
+      <section className='sm:block sm:px-none max-w-full sm:max-w-[100%]'>
         <div>
-          <div className='bg-[url("src/shared/img/about/news_2.png")] bg-auto max-w-[1920px] h-[1725px] bg-no-repeat text-[white] text-5xl sm:text-6xl tablet:text-8xl pt-[15%] pl-[15%]'>
-            Текст
-            <div className='max-w-[80%] bg-[white] h-[50%]'></div>
+          <div className='bg-[url("src/shared/img/about/news_2.png")] bg-auto h-[1725px] bg-no-repeat text-[#E2DED3] text-5xl sm:text-5xl sm:bold-semibold px-4 tablet:px-20 pt-14'>
+            Text
+            <hr />
+            <div className='max-w-[100%] bg-[#E2DED3] h-[359px] rounded-3xl mt-20'></div>
           </div>
         </div>
-        <div className='bg-[url("src/shared/img/about/news_studio.png")] bg-no-repeat bg-auto max-w-[1920px] h-[1935px] text-[white] text-5xl sm:text-6xl tablet:text-8xl pt-[15%] pl-[15%]'>
-          Текст
-          <div className='max-w-[80%] bg-[white] h-[500px]'></div>
-          <div className='max-w-[80%] bg-[white] h-[500px] mt-[10%]'></div>
+        <div className='bg-[url("src/shared/img/about/news_studio.png")] bg-no-repeat bg-auto max-w-[1920px] h-[1935px] text-[#E2DED3] text-5xl px-4 tablet:px-20 pt-14'>
+          Text
+          <hr />
+          <div className='max-w-[100%] bg-[white] h-[500px] rounded-3xl mt-20'></div>
+          <div className='max-w-[100%] bg-[white] h-[500px] mt-[10%] rounded-3xl'></div>
         </div>
         <div className='bg-[url("src/shared/img/about/block_app.png")] bg-no-repeat bg-auto max-w-[1920px] min-h-[1117px]'>
           <div className='flex  max-w-[1920px] min-h-[1117px]'>
-            <p className='absolute text-xl pt-[15%] sm:text-[2.4vw] md:text-4xl font-medium text-[#E2DED3] sm:max-w-[751px] left-[6%]'>
+            <p className='absolute text-xl pt-[10%] lg:pt-[5%] xl:pt-[2%] sm:text-3xl md:text-4xl font-medium text-[#E2DED3] sm:max-w-[751px] left-[6%] xl:left-[15%]'>
               3 ПОЛЕЗНЫХ ПРИЛОЖЕНИЯ ДЛЯ БАРАБАНЩИКОВ
             </p>
             <div className='flex flex-col my-auto sm:flex sm:flex-row sm:max-w-[1720px] gap-y-5 sm:gap-x-1 sm:mx-auto sm:my-auto'>
