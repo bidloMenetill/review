@@ -4,10 +4,10 @@ import { ServiceSwiper } from '../../../shared';
 
 export const ServiceSection = () => {
   return (
-    <section className='relative w-full h-[230px] sm:h-[1080px] mx-auto text-[#f5f5f5] font-montserrat'>
+    <section className='relative w-full h-[700px] sm:h-[1080px] mx-auto text-[#f5f5f5] font-montserrat'>
       <div className='w-full h-full ease-out duration-300'>
         <ServiceSwiper />
-        <div className='absolute w-full h-full top-[20%] sm:top-[40%] z-[1]'>
+        <div className='absolute w-full h-full top-[40%] sm:top-[40%] z-[1]'>
           <h2 className='sm:text-[#f5f5f5] text-[24px] mb-[10px] sm:mb-[20px] mx-[20px] sm:mx-[90px] xl:text-[50px] lg:text-[40px]'>
             Выберите свою программу
           </h2>
