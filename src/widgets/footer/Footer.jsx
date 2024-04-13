@@ -74,9 +74,9 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className=' bg-cover bg-no-repeat bg-center'>
-      <div className=' container mx-auto bg-black pt-[50px] pb-[50px] '>
-        <div className=' text-white flex flex-col tablet:flex-row justify-around items-start    font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] text-[12px] lg:text-[16px] [&>ul>li]:mb-[10px] lg:[&>ul>li]:mb-[20px]  tablet:mb-[6px] tablet:text-[14px] tablet:[&>ul>li]:mb-[10px] tablet:items-start tablet:[&>ul]:mb-[100px] md:text-[10px] md:[&>ul>li]:mb-[8px] md:items-start  sm:text-[6  px] sm:[&>ul>li]:mb-[5px] sm:items-start '>
+    <footer className=' bg-cover bg-no-repeat bg-center max-w-full'>
+      <div className=' container w-[90%] mx-auto bg-black pt-[50px] pb-[50px] '>
+        <div className=' text-white flex flex-col tablet:flex-row justify-around items-start   font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] text-[12px] lg:text-[16px] [&>ul>li]:mb-[10px] lg:[&>ul>li]:mb-[20px]  tablet:mb-[6px] tablet:text-[14px] tablet:[&>ul>li]:mb-[10px] tablet:items-start tablet:[&>ul]:mb-[100px] md:text-[18px] md:[&>ul>li]:mb-[8px] md:items-start  '>
           <ul>
             <li className='  font-bold  text-orange-600 hover:text-white'>
               <a href='#'>О нас</a>
@@ -162,7 +162,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='flex-row flex justify-center gap-[100px] mt-[10vh]'>
+        <div className='flex-row flex justify-center gap-[10vw] mt-[10vh] xl:[&>img]:w-[50px]  tablet:[&>img]:w-[40px] sm:[&>img]:w-[30px]  '>
           <img src={telegram} alt='telegram' />
           <img src={instagram} alt='instagram' />
           <img src={youTube} alt='youTube' />
