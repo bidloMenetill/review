@@ -1,25 +1,15 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Mousewheel, Navigation, Pagination } from 'swiper/modules';
-import 'swiper/swiper-bundle.css';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/autoplay';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Button, Input, useMediaQuery } from '../../shared';
 import drumStick2 from '../../shared/img/shop/drumStick2.png';
 import drumStick1 from '../../shared/img/shop/drumStick1.png';
 import drumStick3 from '../../shared/img/shop/drumStick3.png';
 import drumStick4 from '../../shared/img/shop/drumStick4.png';
 import drumStick5 from '../../shared/img/shop/drumStick5.png';
-import filter from '../../shared/img/shop/filter.svg';
+import { CardsShopCardsSection } from './cardShopCardsSection/CardsShopCardsSection';
 
 export const ShopCardsSection = () => {
-  const isMobile = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
   const shopCard = [
     {
       id: 1,
-      img: [drumStick1, drumStick2, drumStick3],
+      img: drumStick1,
       instrumentName: 'Барабанные палочки Wincent/ Серия 5B',
       length: 'Длина: 406 мм / 16 дюймов',
       diameter: 'Диаметр: 15 мм / 0,591″',
@@ -31,7 +21,7 @@ export const ShopCardsSection = () => {
     },
     {
       id: 2,
-      img: [drumStick2, drumStick1],
+      img: drumStick2,
       instrumentName: 'Барабанные палочки ProMark Forward 5B',
       length: 'Длина: 406,4 мм / 16 дюймов',
       diameter: 'Диаметр: 15 мм / 0,590 дюймов',
@@ -44,7 +34,7 @@ export const ShopCardsSection = () => {
     },
     {
       id: 3,
-      img: [drumStick3],
+      img: drumStick3,
       instrumentName: 'Барабанные палочки Wincent Dynabeat 5B',
       length: 'Длина: 406 мм / 16 дюймов',
       diameter: 'Диаметр: 15 мм / 0,591 дюймов',
@@ -56,7 +46,7 @@ export const ShopCardsSection = () => {
     },
     {
       id: 4,
-      img: [drumStick4],
+      img: drumStick4,
       instrumentName: 'Барабанные палочки Millenium 7A',
       length: 'Длина: 393 мм',
       diameter: 'Диаметр: 14,0 мм ',
@@ -68,7 +58,7 @@ export const ShopCardsSection = () => {
     },
     {
       id: 5,
-      img: [drumStick5],
+      img: drumStick5,
       instrumentName: 'Нейлоновый комплект медиаторов, смешанный Harley Benton',
       amount: 'C 12 шт',
       material: 'Материал: Нейлон',
@@ -94,85 +84,17 @@ export const ShopCardsSection = () => {
   return (
     <section>
       <ul
-        className={` max-w-[1920px] mx-auto mb-[100px]  font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center ${window.innerWidth < 768 ? 'bg-[url("/src/shared/img/shop/bgShopCards.jpg")] bg-cover bg-no-repeat bg-center' : ''}`}
+        className={` max-w-[1920px] overflow-hidden mx-auto mb-[100px]  font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center`}
       >
-        <div className='max-w-[90%] mx-auto pt-[30px] flex justify-center'>
-          <Input variant={'filterInput'} />
-          <img
-            className='w-[50px] h-[40px] ml-[18px]'
-            src={filter}
-            alt='filter'
-          />
+        <div className='sm:mt-[100px] md:mt-[300px] tablet:mt-[100px] lg:mt-[200px] xl:mt-[300px]'>
+          {shopCard?.map(card => (
+            <CardsShopCardsSection
+              key={card.id}
+              card={card}
+              properties={properties}
+            />
+          ))}
         </div>
-        {shopCard?.map(card => (
-          <div
-            className={`h-[268px] mt-[40px] mx-auto sm:h-[358px] md:h-[387px] md:mt-[100px] tablet:h-[460px] lg:h-[660px] xl:h-[860px] relative ${window.innerWidth < 768 ? 'max-w-[90%] mx-auto ' : ''} ${isMobile ? 'h-[358px]' : ''}`}
-            key={card.id}
-          >
-            <li
-              className={`md:max-w-[96%] tablet:max-w-[87.24%] lg:max-w-[87.24%] sm:max-w-[90%] mx-auto xl:max-w-[87.24%] flex justify-between items-center gap-x-[8px] sm:gap-x-[30px] mt-[30px] tablet:gap-x-[65px] absolute tablet:items-center ${card.id % 2 === 0 ? 'md:max-w-[94%] md:flex-row-reverse md:right-0 tablet:max-w-[89.3%] tablet:flex-row-reverse tablet:right-0 lg:max-w-[89.3%] lg:flex-row-reverse lg:right-0' : ''} ${isMobile ? 'max-w-[90%] h-[185px]' : ''}`}
-            >
-              <div
-                className={`w-[130px] h-[135px] mx-auto sm:w-[220px] sm:h-[235px] md:w-[361px] md:h-[387px] tablet:w-[500px] tablet:h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[605px] lg:h-[660px] rounded-[5px] ${isMobile ? 'w-[157px] h-[165px]' : ''}`}
-              >
-                <Swiper
-                  modules={[Autoplay, Navigation, Mousewheel, Pagination]}
-                  autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                    reverseDirection: false,
-                  }}
-                  spaceBetween={20}
-                  speed={2000}
-                  slidesPerView={1}
-                  pagination={true}
-                  navigation={false}
-                  mousewheel={true}
-                >
-                  <div>
-                    {card.img.map((item, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                          className={`w-[130px] h-[135px] sm:w-[220px] sm:h-[235px] md:w-[361px] md:h-[387px] tablet:w-[500px] tablet:h-[460px] xl:w-[805px] xl:h-[860px] lg:w-[605px] lg:h-[660px] rounded-[5px] ${isMobile ? 'w-[157px] h-[165px]' : ''}`}
-                          src={item}
-                          alt='cardImg'
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </div>
-                </Swiper>
-              </div>
-              <div
-                className={`w-[205px] h-[228px] sm:w-[290px] sm:h-[340px] md:w-[334px] md:h-[368px] tablet:h-full tablet:w-[405px] xl:w-[705px] lg:w-[550px] ${isMobile ? 'w-[240px] h-[278px]' : ''}`}
-              >
-                <h2
-                  className={`font-bold text-[#E2DED3] text-[14px] sm:text-[22px] md:text-[26px] lg:text-[40px] xl:text-[50px] ${isMobile ? 'text-[18px]' : ''}`}
-                >
-                  {card.instrumentName}
-                </h2>
-                <ul
-                  className={`text-[12px] leading-[150%] sm:text-[18px] md:font-medium tablet:text-[22px] lg:text-[27px] xl:text-[30px] font-regular mt-[10px]  tablet:mt-[30px] ${isMobile ? 'text-[16px]' : ''}`}
-                >
-                  {properties.map(property => (
-                    <li key={property}>
-                      <p>{card[property]}</p>
-                    </li>
-                  ))}
-                </ul>
-                <div
-                  className={`w-[194px] h-[35px] font-montserrat sm:w-[290px] md:w-[344px] md:h-[45px] tablet:w-[434px] lg:w-[490px] xl:w-[674px] flex justify-around items-center mt-[15px]  tablet:mt-[10px] lg:mt-[30px] xl:mt-[87px] gap-x-[3px] ${isMobile ? 'w-[240px]' : ''}`}
-                >
-                  <p
-                    className={`font-semibold mt-[20px] text-[#d9d9d9] opacity-70 text-[11px] sm:text-[16px] md:text-[18px] md:font-semibold tablet:text-[25px] lg:text-[27px] xl:text-[30px] ${isMobile ? 'text-[14px]' : ''}`}
-                  >
-                    Цена: {card.price}
-                  </p>
-                  <Button children='Купить' variant='buyButton' />
-                </div>
-              </div>
-            </li>
-          </div>
-        ))}
       </ul>
     </section>
   );
