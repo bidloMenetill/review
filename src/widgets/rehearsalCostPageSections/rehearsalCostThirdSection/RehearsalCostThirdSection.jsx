@@ -15,6 +15,10 @@ export const RehearsalCostThirdSection = () => {
   const changeList = () => {
     setOpenList(!openList);
   };
+  const changeBackList = () => {
+    setOpenList(!openList);
+    window.scrollTo(0, 4350);
+  };
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -121,7 +125,7 @@ export const RehearsalCostThirdSection = () => {
     ],
   ];
   return (
-    <section className='w-full mx-auto mb-[69px] md:mb-[154px] font-montserrat text-[#E2DED3]'>
+    <section className='w-full mx-auto mb-[34px] md:mb-[154px] font-montserrat text-[#E2DED3]'>
       <div className='mx-[20px] sm:text-center'>
         <p className='text-[18px] font-[500] pb-[22px] md:pb-[20px] xl:text-[40px] lg:text-[23px] tablet:text-[20px]'>
           Третья комната (13 м
@@ -173,15 +177,15 @@ export const RehearsalCostThirdSection = () => {
         ) : mobileScreen && openList === true ? (
           <p
             className='underline underline-offset-4 text-[#F93822] text-[14px] mb-[20px]'
-            onClick={() => changeList()}
+            onClick={() => changeBackList()}
           >
             Скрыть
           </p>
         ) : (
           ''
         )}
-        <div className='mt-[56px]'>
-          <Button variant='orangeButton'>Отправить</Button>
+        <div className='mt-[5px] text-right sm:text-center mr-[14px]'>
+          <Button variant='serviceButton'>Забронировать</Button>
         </div>
       </div>
     </section>

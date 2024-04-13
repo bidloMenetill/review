@@ -35,7 +35,7 @@ export const ServiceSwiper = () => {
           className='!transition-all ease-out duration-300'
         >
           <img
-            className='w-full h-[230px] sm:h-[1080px] object-cover ease-in duration-300'
+            className='w-full h-[700px] sm:h-[1080px] object-cover ease-in duration-300'
             src={el.img}
             alt='firstBg'
           />

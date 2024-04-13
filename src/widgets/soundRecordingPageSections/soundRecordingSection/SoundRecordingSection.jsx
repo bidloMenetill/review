@@ -18,7 +18,7 @@ export const SoundRecordingSection = () => {
     },
   ];
   return (
-    <section className='relative w-full font-montserrat mb-[120px] md:mb-[164px] bg-[#0000008a] xl:h-[960px] xl:flex xl:justify-end lg:h-[960px] lg:flex lg:justify-end'>
+    <section className='relative w-full font-montserrat mb-[20px] md:mb-[164px] bg-[#0000008a] xl:h-[960px] xl:flex xl:justify-end lg:h-[960px] lg:flex lg:justify-end'>
       <div className='bg-[#0000008a]'>
         <img
           className='object-cover w-[75%] h-full mx-auto mt-[25px] mb-[50px] rounded-[16px] xl:mt-[0px] xl:absolute xl:z-[-1] xl:right-[-30px] lg:mt-[0px] lg:absolute lg:z-[-1] lg:right-[-30px]'
@@ -48,7 +48,7 @@ export const SoundRecordingSection = () => {
           </ul>
         ))}
         <div className='w-full text-center mt-[20px]'>
-          <Button variant='orangeButton'>Отправить</Button>
+          <Button variant='serviceButton'>Отправить</Button>
         </div>
       </div>
     </section>

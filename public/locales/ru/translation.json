@@ -298,5 +298,14 @@
       "upperTitle": "Звонки/WhatsApp +996 700 76 37 36",
       "buttonn": "Забронировать"
     }
+  },
+  "faqPage": {
+    "inputs": {
+      "error" : "Error!",
+      "formField": "This field is required",
+      "minLengthPrefix": "Minimum ",
+      "minLengthSuffix": " characters"
+      
+    }
   }
 }
