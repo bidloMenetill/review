@@ -22,8 +22,8 @@ export const Galery = () => {
       <GalleryVideoSectionGalleryPage />
       <GalleryVideoSliderSectionGalleryPage />
       <Advertising
-        title='Превзойдите ожидания и создайте свою легенду прямо здесь.'
-        description='Превзойдите ожидания и создайте свою легенду прямо здесь. Забронируйте свое место в Q Rush Studio прямо сейчас, нажав на кнопку ниже, или свяжитесь с Вадимом по номеру +996 700 763736.'
+        title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
+        description='Звонки/WhatsApp +996 700 76 37 36'
       />
     </section>
   );

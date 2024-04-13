@@ -13,7 +13,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
 
   return (
     <section className='bg-center max-w-full'>
-      <section className='max-w-full xl:container items-center mx-auto h-[705px]'>
+      <section className='max-w-full xl:container items-center mx-auto h-[450px]'>
         <div className='container'></div>
         <Swiper
           className='container flex justify-center  '
@@ -34,7 +34,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
             {VideoSlides.map((link, index) => (
               <SwiperSlide
                 key={index}
-                className='bg-cover bg-no-repeat  !flex justify-center items-center flex-col rounded-[30px] border-[1px] border-solid border-gray-500 !w-[705px] !h-[350px]'
+                className='bg-cover bg-no-repeat  !flex justify-center items-center flex-col rounded-[30px] border-[1px] border-solid border-gray-500 !w-[705px] !h-[3  50px]'
               >
                 <iframe
                   className='rounded-[30px] border-[2px] border-solid border-gray-500 '
