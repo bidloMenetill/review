@@ -7,7 +7,7 @@ export const Button = ({
 }) => {
   const styles = {
     buyButton:
-      'mt-[21px] rounded-[40px] bg-[#f93822] w-[100px] h-[35px] md:w-[183px] md:h-[45px] tablet:w-[200px] lg:w-[250px] xl:w-[344px] tablet:h-[50px] lg:h-[70px] font-montserrat font-semibold text-[12px] md:text-[14px] tablet:text-[20px] lg:text-[22px] xl:text-[25px]',
+      'bg-[#f93822] w-[247px] h-[44px] text-center flex justify-center items-center sm:w-[384px] py-[10px] px-[24px] md:w-[478px] md:h-[96px] md:py-[19px] md:px-[46px] tablet:w-[200px] lg:w-[250px] xl:w-[344px] tablet:h-[50px] lg:h-[70px] font-montserrat font-semibold text-[12px] md:text-[32px] tablet:text-[20px] lg:text-[22px] xl:text-[25px] rounded-[30px] md:rounded-[58px]',
     orangeButton:
       'px-[31px] transition-all duration-300 text-center rounded-[20px] lg:px-[65px] py-[7px] bg-[#F93822] font-normal text-[25px] text-[#F5F5F5] hover:opacity-80',
     customButton:
