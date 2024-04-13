@@ -1,3 +1,4 @@
+export { GalleryMobileVideoSection } from './galleryPageSections/galleryVideoSliderSectionGalleryPage/GalleryMobileVideoSection';
 export { AboutUsSectionHomePage } from './homePageSections/aboutsUsSectionHomePage/AboutUsSectionHomePage';
 export { IntroductionSectionHomePage } from './homePageSections/introductionSectionHomePage/IntroductionSectionHomePage';
 export { ServicesSectionHomePage } from './homePageSections/servicesSectionHomePage/ServicesSectionHomePage';
@@ -17,7 +18,6 @@ export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushS
 export { GallerySectionHomePage } from './homePageSections/gallerySectionHomePage/GallerySectionHomePage';
 export { VideoSectionHomePage } from './homePageSections/videoSectionsHomePage/videoSectionHomePage/VideoSectionHomePage';
 export { VideoSectionHomePageMobile } from './homePageSections/videoSectionsHomePage/videoSectionHomePageMobile/VideoSectionHomePageMobile';
-
 export { AccordionSection } from './accordionSections/accordionSection/AccordionSection';
 export { ErrorPageSection } from './errorPageSections/errorPageSection/ErrorPageSection';
 export { QrushShopSections } from './qrushShopSections/QrushShopSections';
