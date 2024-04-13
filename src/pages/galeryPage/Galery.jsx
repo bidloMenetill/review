@@ -2,6 +2,7 @@ import { Advertising, useMediaQuery } from '../../shared';
 import {
   GalleryFirstSectionGalleryPage,
   GalleryImageSectionGalleryPage,
+  GalleryMobileVideoSection,
   GallerySecondSectionGalleryPage,
   GalleryVideoSectionGalleryPage,
   GalleryVideoSliderSectionGalleryPage,
@@ -20,7 +21,12 @@ export const Galery = () => {
         <GallerySecondSectionGalleryPage />
       )}
       <GalleryVideoSectionGalleryPage />
-      <GalleryVideoSliderSectionGalleryPage />
+      {isMobile ? (
+        <GalleryMobileVideoSection />
+      ) : (
+        <GalleryVideoSliderSectionGalleryPage />
+      )}
+
       <Advertising
         title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
         description='Звонки/WhatsApp +996 700 76 37 36'
