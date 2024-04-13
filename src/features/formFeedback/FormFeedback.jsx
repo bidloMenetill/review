@@ -40,7 +40,7 @@ export const FormFeedback = () => {
     }
   };
   return (
-    <section className='max-w-[546px] mx-[20px] sm:mx-[auto] pb-[150px] xl:max-w-[1300px] lg:max-w-[900px] text-[#FFFFFF]'>
+    <section className='mx-[20px] sm:mx-[auto] pb-[150px] xl:max-w-[1300px] lg:max-w-[900px] text-[#FFFFFF]'>
       <h2 className='text-left w-[195px] pb-[23px] text-[20px] sm:w-full sm:text-center sm:pb-[90px] sm:text-[24px] xl:text-[50px] lg:text-[30px]'>
         Задайте свой вопрос
       </h2>
@@ -101,35 +101,7 @@ export const FormFeedback = () => {
               )}
             </div>
           </div>
-        </div>
-        <div className='w-[100%]'>
-          <div>
-            <textarea
-              {...register('feedbackText', {
-                required: t('faqPage.inputs.formField'),
-                minLength: {
-                  value: 10,
-                  message:
-                    t('faqPage.inputs.minLengthPrefix') +
-                    '10' +
-                    t('faqPage.inputs.minLengthSuffix'),
-                },
-              })}
-              className='w-[100%] sm:mb-[47px] py-[15px] px-[30px] rounded-[10px] sm:rounded-[30px] outline-none border-solid border-[0.5px] border-[#fff] sm:border-[#6d6d6d] bg-transparent sm:bg-neutral-900/[.30] placeholder:text-[#FFFFFF] overflow-hidden'
-              type='text'
-              placeholder='Текст'
-              rows={5}
-            />
-            <div className='text-red-600 ml-[5px] -mt-[40px] mb-[5px] text-[14px]'>
-              {errors?.feedbackText && (
-                <p>
-                  {errors?.feedbackText?.message || t('faqPage.inputs.error')}
-                </p>
-              )}
-            </div>
-          </div>
-
-          <div className='flex gap-[5px] sm:gap-[27px] items-center pt-[10px]'>
+          <div className='absolute top-[66.5%] sm:top-[71.4%] md:top-[68%] tablet:top-[70%] lg:top-0 lg:relative flex gap-[5px] sm:gap-[27px] items-center pt-[20px]'>
             <div>
               <div className='w-full flex gap-2'>
                 <input
@@ -163,16 +135,45 @@ export const FormFeedback = () => {
               </p>
             </label>
           </div>
-          <div className='text-red-600 ml-[5px] mt-[15px] text-[14px]'>
-            {errors?.check && (
-              <p>{errors?.check?.message || t('faqPage.inputs.error')}</p>
-            )}
-          </div>
+          <div className='absolute w-full left-0 top-[68%] lg:relative sm:top-[73%] lg:mx-auto tablet:top-[72%] md:top-[69.4%] lg:top-0 md:right-[10%]'>
+            <div className='text-red-600 ml-[5px] mt-[15px] text-[14px]'>
+              {errors?.check && (
+                <p>{errors?.check?.message || t('faqPage.inputs.error')}</p>
+              )}
+            </div>
 
-          <div className='mt-[30px] text-right sm:text-center'>
-            <Button type='submit' variant='orangeButton'>
-              Отправить
-            </Button>
+            <div className='mt-[30px] w-full text-center lg:text-left'>
+              <Button type='submit' variant='serviceButton'>
+                Отправить
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className='w-[100%]'>
+          <div>
+            <textarea
+              {...register('feedbackText', {
+                required: t('faqPage.inputs.formField'),
+                minLength: {
+                  value: 10,
+                  message:
+                    t('faqPage.inputs.minLengthPrefix') +
+                    '10' +
+                    t('faqPage.inputs.minLengthSuffix'),
+                },
+              })}
+              className='w-[100%] mt-[20px] lg:mt-0 mb-[40px] sm:mb-[47px] py-[15px] px-[10px] sm:px-[28px] rounded-[10px] sm:rounded-[30px] outline-none border-solid border-[0.5px] border-[#fff] sm:border-[#6d6d6d] bg-transparent sm:bg-neutral-900/[.30] placeholder:text-[#FFFFFF] overflow-hidden'
+              type='text'
+              placeholder='Задайте свой вопрос'
+              rows={12}
+            />
+            <div className='text-red-600 ml-[5px] -mt-[40px] mb-[5px] text-[14px]'>
+              {errors?.feedbackText && (
+                <p>
+                  {errors?.feedbackText?.message || t('faqPage.inputs.error')}
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </form>

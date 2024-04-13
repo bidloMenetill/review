@@ -15,6 +15,10 @@ export const RehearsalCostThirdSection = () => {
   const changeList = () => {
     setOpenList(!openList);
   };
+  const changeBackList = () => {
+    setOpenList(!openList);
+    window.scrollTo(0, 4350);
+  };
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -173,7 +177,7 @@ export const RehearsalCostThirdSection = () => {
         ) : mobileScreen && openList === true ? (
           <p
             className='underline underline-offset-4 text-[#F93822] text-[14px] mb-[20px]'
-            onClick={() => changeList()}
+            onClick={() => changeBackList()}
           >
             Скрыть
           </p>
