@@ -35,7 +35,7 @@ export const MusicCoursSecondSection = () => {
     },
   ];
   return (
-    <section className='w-full mx-auto font-montserrat text-[#E2DED3] md:mb-[154px]'>
+    <section className='w-full mx-auto font-montserrat text-[#E2DED3] md:mb-[90px] tablet:mb-[154px]'>
       <div className='mx-[20px] text-center'>
         <p className='text-[18px] md:font-[500] text-[#FFFFFF] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
           2 филиал (Район Магистраль\Алматинка)
@@ -45,16 +45,16 @@ export const MusicCoursSecondSection = () => {
         </p>
       </div>
 
-      <div className='ml-[20px] w-[365px] sm:mx-auto xl:w-[1820px] lg:w-[1320px]'>
+      <div className='ml-[20px] w-[365px] sm:mx-auto sm:w-[550px] tablet:w-[1000px] md:w-[700px] xl:w-[1820px] lg:w-[1320px]'>
         <SwiperPhotoItem arrayImg={arrayImg} />
       </div>
-      <div className='text-left mx-[20px] md:w-full sm:mx-auto mt-[27px] md:mt-[100px] md:text-center'>
-        <div className=' md:max-w-[1170px] md:mx-auto md:flex md:justify-between text-left xl:max-w-[1570px] lg:max-w-[1270px]'>
-          <section className='w-[100%] md:flex md:items-center md:justify-between'>
+      <div className='text-left mx-[20px] md:w-full sm:mx-auto mt-[27px] md:mt-[50px] tablet:mt-[100px] md:text-center'>
+        <div className='sm:w-[550px] md:w-[700px] tablet:w-[1000px] md:mx-auto sm:mx-auto lg:flex lg:justify-between text-left xl:w-[1570px] lg:w-[1270px]'>
+          <section className='w-[100%] tablet:flex tablet:items-center tablet:justify-between'>
             {arrayEquipment?.map(el => (
               <ul
                 key={el.id}
-                className='mb-[32px] md:max-w-[50%] text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
+                className='mb-[32px] sm:mx-auto tablet:max-w-[50%] text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
               >
                 <li>
                   <p className='mb-[18px] text-[#FFFFFF] md:text-[#E2DED3]'>

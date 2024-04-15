@@ -115,32 +115,33 @@ export const RehearsalCostSecondSection = () => {
     },
   ];
   return (
-    <section className='w-full mx-auto mb-[10px] md:mb-[154px] font-montserrat text-[#E2DED3]'>
-      <div className='text-center'>
-        <p className='text-[18px] font-[500] pb-[22px] md:pb-[20px] xl:text-[40px] lg:text-[23px] tablet:text-[20px]'>
+    <section className='w-full mx-auto font-montserrat text-[#E2DED3] mb-[10px] md:mb-[34px] tablet:mb-[94px] lg:mb-[154px]'>
+      <div className='mx-[20px] mt-[40px] sm:mx-auto sm:mt-[80px] tablet:mt-[100px] text-center'>
+        <p className='text-[18px] font-[500] pb-[22px] sm:text-[27px] sm:pb-[20px] xl:text-[40px] lg:text-[23px] tablet:text-[20px]'>
           Вторая комната (22 м
-          <sup className='text-[14px] md:text-[24px]'>2</sup>)
+          <sup className='text-[14px] md:text-[20px] tablet:text-[24px]'>2</sup>
+          )
         </p>
       </div>
-      <section className='ml-[20px] w-[365px] sm:mx-auto xl:w-[1820px] lg:w-[1320px]'>
+      <section className='ml-[20px] w-[365px] sm:mx-auto sm:w-[550px] tablet:w-[1000px] md:w-[700px] xl:w-[1820px] lg:w-[1320px]'>
         <SwiperPhotoItem arrayImg={arrayImg} />
       </section>
-      <div className='w-[365px] text-left mx-[20px] md:w-full sm:mx-auto mt-[27px] md:mt-[100px] md:text-center'>
-        <p className='md:w-[900px] text-left md:text-center mx-auto text-[14px] sm:text-[18px] font-[500] xl:text-[25px] xl:w-[900px] lg:text-[23px] lg:w-[700px] tablet:text-[20px] tablet:w-[600px]'>
+      <div className='w-[365px] sm:w-[560px] text-left mx-[20px] md:w-[700px] tablet:w-full sm:mx-auto mt-[27px] md:mt-[30px] tablet:mt-[100px] md:text-center'>
+        <p className='text-left tablet:text-center mx-auto sm:mx-0 tablet:mx-auto text-[20px] sm:text-[30px] md:w-[425px] font-[500] xl:text-[25px] xl:w-[900px] lg:text-[23px] lg:w-[700px] tablet:text-[20px] tablet:w-[600px]'>
           Стоимость групповой 2 часовой репетиции -
           <span className='font-[700] sm:font-[400]'> 400 сом\чел </span>
         </p>
-        <p className='mt-[10px] md:mt-0 sm:text-[#FFFFFF] sm:text-[25px] '>
+        <p className='mt-[10px] sm:mt-[16px] sm:text-[#FFFFFF] text-[20px] sm:text-[25px] md:text-[30px] sm:w-[350px] tablet:w-full tablet:text-center sm:text-left tablet:text-[25px] tablet:pt-0'>
           Индивидуальные репетиции - 250\час
         </p>
-        <h3 className='mt-[27px] mb-[20px] md:mt-[38px] md:mb-[32px] text-[20px] font-[600] xl:text-[30px] lg:text-[25px] tablet:text-[22px]'>
+        <h3 className='mt-[27px] mb-[20px] sm:mt-[38px] sm:mb-[32px] text-[20px] font-[600] sm:text-[30px] sm:text-left tablet:text-center xl:text-[30px] lg:text-[25px] tablet:text-[22px]'>
           Список оборудования
         </h3>
-        <section className=' md:w-[500px] lg:w-[1170px] xl:w-[1570px] md:mx-auto md:grid md:grid-cols-3 md:gap-x-[200px]'>
+        <section className='sm:w-[600px] md:w-[700px] tablet:w-[900px] lg:w-[1170px] xl:w-[1570px] sm:mx-auto tablet:grid tablet:grid-cols-3 tablet:gap-x-[70px] lg:gap-x-[200px]'>
           {arrayEquipment?.map(el => (
             <ul
               key={el.id}
-              className='text-[18px] text-left text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
+              className='text-[18px] text-left text-[#B4B4B4] sm:text-[25px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
             >
               <li>
                 <p className='mb-[16px] mt-[16px] text-[#E2DED3]'>{el.title}</p>
