@@ -1,23 +1,35 @@
-import { Advertising } from '../../shared';
+import { Advertising, useMediaQuery } from '../../shared';
 import {
   GalleryFirstSectionGalleryPage,
   GalleryImageSectionGalleryPage,
+  GalleryMobileVideoSection,
   GallerySecondSectionGalleryPage,
   GalleryVideoSectionGalleryPage,
   GalleryVideoSliderSectionGalleryPage,
 } from '../../widgets';
 
 export const Galery = () => {
+  const isMobile = useMediaQuery('(max-width: 1024px)');
   return (
-    <section>
+    <section className='w-full bg-center'>
       <GalleryFirstSectionGalleryPage />
-      <GallerySecondSectionGalleryPage />
+
       <GalleryImageSectionGalleryPage />
+      {isMobile ? (
+        <GalleryImageSectionGalleryPage />
+      ) : (
+        <GallerySecondSectionGalleryPage />
+      )}
       <GalleryVideoSectionGalleryPage />
-      <GalleryVideoSliderSectionGalleryPage />
+      {isMobile ? (
+        <GalleryMobileVideoSection />
+      ) : (
+        <GalleryVideoSliderSectionGalleryPage />
+      )}
+
       <Advertising
-        h3='Превзойдите ожидания и создайте свою легенду прямо здесь.'
-        p='Превзойдите ожидания и создайте свою легенду прямо здесь. Забронируйте свое место в Q Rush Studio прямо сейчас, нажав на кнопку ниже, или свяжитесь с Вадимом по номеру +996 700 763736.'
+        title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
+        description='Звонки/WhatsApp +996 700 76 37 36'
       />
     </section>
   );

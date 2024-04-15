@@ -1,5 +1,6 @@
 import Certificate from '../../../shared/img/aboutMobile/certificate.png';
 import QualityCertificate from '../../../shared/img/aboutMobile/quality_certificate.png';
+import bgAbout from '../../../shared/img/aboutMobile/bgAbout.png';
 import PicNews from '../../../shared/img/aboutMobile/pic_news.png';
 import pic_news from '../../../shared/img/about/pic-news.png';
 import certificaty from '../../../shared/img/about/certificaty.png';
@@ -7,15 +8,35 @@ import certificaty_2 from '../../../shared/img/about/certificaty_2.png';
 
 export const IntroductionSectionNewsPage = () => {
   return (
-    <section className='max-w-[375px] mx-auto sm:max-w-[1920px]'>
-      <div className='flex'>
+    <section className='max-w-full mx-auto sm:max-w-[1920px]'>
+      <div className='flex flex-col-reverse sm:flex sm:flex-row'>
         <div className='hidden sm:hidden'>
           <img src={Certificate} alt='Certificate' />
           <img src={QualityCertificate} alt='QualityCertificate' />
         </div>
         <div>
-          <img src={certificaty} alt='Certificate' />
-          <img src={certificaty_2} alt='QualityCertificate' />
+          <div className='sm:block absolute sm:top-64 left-[6vw]'>
+            <h2 className='font-bold text-6xl sm:text-[8.3vw] sm:font-medium text-[#E2DED3]'>
+              Новости
+            </h2>
+            <p className='text-xl sm:text-[3.4vw] font-medium text-[#E2DED3]'>
+              {' '}
+              Здесь мы публикуем новости и статьи студии
+            </p>
+          </div>
+          <span className='flex flex-col-reverse sm:flex-col'>
+            <img src={certificaty} alt='Certificate' />
+            <img
+              src={bgAbout}
+              alt='bgAbout'
+              className='sm:hidden h-[255px] w-[375px] sm:hidden'
+            />
+            <img
+              src={certificaty_2}
+              alt='QualityCertificate'
+              className='hidden sm:block'
+            />
+          </span>
         </div>
         <div className='hidden sm:hidden'>
           <img src={PicNews} alt='PicNews' />

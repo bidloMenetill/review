@@ -21,7 +21,7 @@ export const AnimationTitle = ({ value }) => {
         variants={marqueeVariants}
         animate='animate'
       >
-        <h1 className='flex gap-x-[50px] mg:gap-x-[100px]'>
+        <h1 className='flex gap-x-[50px] md:gap-x-[100px]'>
           <img src={value} alt='title1' />
           <img src={value} alt='title2' />
           <img src={value} alt='title3' />

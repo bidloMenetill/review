@@ -2,7 +2,7 @@ import Studio from '../../../shared/img/aboutMobile/studio.png';
 
 export const EventSectionNewsPage = () => {
   return (
-    <section className='sm:hidden bg-[url("/src/shared/img/aboutMobile/bg_section_3.png")] bg-auto bg-no-repeat w-[375px] h-[710px] mx-auto'>
+    <section className='hidden sm:hidden bg-[url("/src/shared/img/aboutMobile/bg_section_3.png")] bg-auto bg-no-repeat w-[375px] h-[710px] mx-auto'>
       <div className='flex flex-col gap-y-6 mt-[6%] mx-auto'>
         <div className='max-w-[335px] mx-auto'>
           <img src={Studio} alt='Studio' className='mx-auto' />
