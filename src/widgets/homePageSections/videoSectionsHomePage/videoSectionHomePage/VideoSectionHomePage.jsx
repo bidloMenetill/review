@@ -17,6 +17,7 @@ export const VideoSectionHomePage = () => {
         <section className='grid grid-rows-[48%_50%] grid-cols-4 gap-2 sm:gap-5'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             <iframe
+              loading='lazy'
               className='w-full h-full'
               src='https://www.youtube.com/embed/sgFsJuVcm18?si=RfOrOjLdPGVbfuRe&amp;start=2'
               title='YouTube video player'
@@ -27,6 +28,7 @@ export const VideoSectionHomePage = () => {
 
           <div className='col-start-3 col-end-4 row-start-1 row-end-2'>
             <iframe
+              loading='lazy'
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
@@ -36,6 +38,7 @@ export const VideoSectionHomePage = () => {
           </div>
           <div className='col-start-4 col-end-5 row-start-1 row-end-2'>
             <iframe
+              loading='lazy'
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
@@ -45,6 +48,7 @@ export const VideoSectionHomePage = () => {
           </div>
           <div className='col-start-3 col-end-4 row-start-2 row-end-3'>
             <iframe
+              loading='lazy'
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
@@ -54,6 +58,7 @@ export const VideoSectionHomePage = () => {
           </div>
           <div className='col-start-4 col-end-5  row-start-2 row-end-3'>
             <iframe
+              loading='lazy'
               className='w-full h-full'
               src='https://www.youtube.com/embed/sXFiaJr9los?si=sr7IZhPiA0xw_2am&amp;start=20'
               title='YouTube video player'
