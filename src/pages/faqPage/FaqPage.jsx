@@ -1,18 +1,18 @@
+import { useTranslation } from 'react-i18next';
 import { FormFeedback } from '../../features';
-import { ServiceFooter } from '../../shared';
+import { Advertising } from '../../shared';
 import { AccordionSection } from '../../widgets';
-// import { photo } from '../../shared/img/'
 
 export const FaqPage = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='mx-[auto] mt-[0px] font-montserrat bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#190604] via-[#190604] to-[#000000]'>
       <AccordionSection />
       <FormFeedback />
-      <ServiceFooter
-        description={
-          'Не жди следующего понедельника, бронируй время в студии уже сейчас!s'
-        }
-        number={'Звонки/WhatsApp +996 700 76 37 36'}
+      <Advertising
+        title={t('trustUsPage.fourthSection.title')}
+        description={t('trustUsPage.fourthSection.upperTitle')}
       />
     </section>
   );
