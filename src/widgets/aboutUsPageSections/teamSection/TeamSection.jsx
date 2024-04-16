@@ -104,7 +104,7 @@ export const Team = () => {
   return (
     <>
       <section className='bg-[url("/src/shared/img/aboutMobile/bg_section_2.png")] max-w-[1920px] bg-cover bg-no-repeat flex min-h-[1159px]'>
-        <div className='sm:max-w-[1023px] tablet:max-w-full flex flex-col justify-center text-center tablet:text-left items-center gap-y-12'>
+        <div className='sm:max-w-[1023px] tablet:max-w-full flex flex-col justify-center text-center tablet:text-left items-center gap-y-12 mx-auto'>
           <h2
             className='text-left pt-[3%] sm:text-6xl sm:font-bold sm:text-[#E2DED3] xl:text-center xl:text-left text-3xl xl:text-7xl text-[#F5F5F5]
                 xl:pt-16 xl:font-medium xl:leading-[122px]'
