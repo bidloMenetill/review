@@ -12,7 +12,7 @@ export const CelebritiesSection = ({ celebrities }) => {
             key={celeb.id}
           >
             <img
-              className={`w-full h-[357px] sm:w-full sm:h-[540px] md:w-[645px] md:h-[682px]  tablet:w-[266px] tablet:h-[293px] mx-auto xl:w-[520px] xl:h-[493px] lg:w-[356px] lg:h-[393px] rounded-t-[16px]  md:rounded-[17px] lg:rounded-[30px] md:mt-[20px] ${isMobile1 ? 'w-[410px] h-[425px]' : isMobile2 ? 'w-[637px] h-[652px]' : ''}`}
+              className={`w-full h-[357px] sm:w-full sm:h-[540px] md:w-[645px] md:h-[682px] tablet:w-[266px] tablet:h-[293px] mx-auto xl:w-[520px] xl:h-[493px] lg:w-[356px] lg:h-[393px] rounded-t-[16px] md:rounded-[17px] lg:rounded-[30px] md:mt-[20px] ${isMobile1 ? 'w-[410px] h-[425px]' : isMobile2 ? 'w-[637px] h-[652px]' : ''}`}
               src={celeb.img}
               alt='celebImg'
             />

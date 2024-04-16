@@ -45,7 +45,7 @@ export const BgQrushShop = () => {
     <section>
       <div className='max-w-[1920px] mx-auto flex justify-center items-center bg-[#000] '>
         <motion.div
-          className={`bg-cover bg-center w-[50%] h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
+          className={`bg-cover bg-center w-[50%] h-[464px] sm:h-[600px] md:h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
           style={{
             backgroundImage: `url(${bgImages1[indexQrushShop]})`,
             transition: 'background-image 1s ease-in-out',
@@ -54,14 +54,14 @@ export const BgQrushShop = () => {
         <div className=' flex justify-center items-center absolute '>
           <AnimationTitle value={qrushShop} />
         </div>
-        <div className='min-w-[300px] sm:min-w-[500px] max-w-[44%] mx-auto flex justify-center absolute mt-[287px]'>
+        <div className='min-w-[300px] sm:min-w-[500px] max-w-[44%] mx-auto flex justify-center absolute mt-[187px] sm:mt-[287px]'>
           <Input variant={'filterInput'} placeholder='Поиск' />
-          <div className='absolute top-3 sm:top-4 md:top-6 right-5'>
+          <div className='absolute top-3.5 sm:top-4 md:top-6 right-5'>
             <img src={array_right} alt='array_right' />
           </div>
         </div>
         <motion.div
-          className={`bg-cover bg-center w-[50%] h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
+          className={`bg-cover bg-center w-[50%] h-[464px] sm:h-[600px] md:h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
           style={{
             backgroundImage: `url(${bgImages2[indexQrushShop]})`,
             transition: 'background-image 1s ease-in-out',
