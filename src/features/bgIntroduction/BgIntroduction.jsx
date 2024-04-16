@@ -9,7 +9,7 @@ import { useMediaQuery } from '../../shared';
 import { usePages } from '../../app/store/store';
 
 export const BgIntroduction = () => {
-  // const { getHomePage } = usePages();
+  const { getHomePage } = usePages();
   const { t } = useTranslation();
   const bgForIntroduction = useMemo(
     () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],
@@ -20,10 +20,10 @@ export const BgIntroduction = () => {
   const [timeoutId, setTimeoutId] = useState(null);
   const [intervalActive, setIntervalActive] = useState(true);
 
-  // useEffect(() => {
-  //   getHomePage();
-  // }, []);
-  // console.log(getHomePage);
+  useEffect(() => {
+    getHomePage();
+  }, []);
+  console.log(getHomePage);
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isChangingBg && intervalActive) {
