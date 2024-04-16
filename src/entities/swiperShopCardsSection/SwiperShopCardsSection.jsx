@@ -3,9 +3,9 @@ import drumStick1 from '../../shared/img/shop/drumStick1.png';
 import drumStick3 from '../../shared/img/shop/drumStick3.png';
 import drumStick4 from '../../shared/img/shop/drumStick4.png';
 import drumStick5 from '../../shared/img/shop/drumStick5.png';
-import { CardsShopCardsSection } from './cardShopCardsSection/CardsShopCardsSection';
+import { CardsSwiperShopCardsSection } from './cardsSwiperShopCardsSection/CardsSwiperShopCardsSection';
 
-export const ShopCardsSection = () => {
+export const SwiperShopCardsSection = () => {
   const shopCard = [
     {
       id: 1,
@@ -88,7 +88,7 @@ export const ShopCardsSection = () => {
       >
         {shopCard?.map(card => (
           <li key={card.id}>
-            <CardsShopCardsSection card={card} properties={properties} />
+            <CardsSwiperShopCardsSection card={card} properties={properties} />
           </li>
         ))}
       </ul>

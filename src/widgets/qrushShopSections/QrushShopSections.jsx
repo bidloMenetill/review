@@ -1,11 +1,16 @@
 import React from 'react';
 import { BgQrushShop } from '../../features';
-import { ShopCardsSection } from '../../entities';
+import { ShopCardsSection, SwiperShopCardsSection } from '../../entities';
+
 export const QrushShopSections = () => {
   return (
     <>
       <BgQrushShop />
-      <ShopCardsSection />
+      {window.innerWidth <= 1023 ? (
+        <SwiperShopCardsSection />
+      ) : (
+        <ShopCardsSection />
+      )}
     </>
   );
 };

@@ -119,7 +119,7 @@ export const Team = () => {
           </p>
           <ul className='sm:max-w-[664px] tablet:flex-row flex flex-wrap gap-6 sm:flex-wrap sm:gap-y-36 items-center text-center mx-auto pl-[20%] pr-[20%] tablet:pl-0 tablet:pr-0'>
             {teams?.map(item => (
-              <CardTeamSection item={item} />
+              <CardTeamSection key={item.id} item={item} />
             ))}
           </ul>
         </div>

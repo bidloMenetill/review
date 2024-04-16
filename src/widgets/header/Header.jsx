@@ -40,6 +40,36 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle6'),
     },
   ];
+  const headerLinksMobile = [
+    {
+      route: '/about-us',
+      link: t('header.headerLink.linkTitle1'),
+    },
+    {
+      route: '/services',
+      link: t('header.headerLink.linkTitle2'),
+    },
+    {
+      route: '/trust-us',
+      link: t('header.headerLink.linkTitle3'),
+    },
+    {
+      route: '/news',
+      link: t('header.headerLink.linkTitle4'),
+    },
+    {
+      route: '/gallery',
+      link: t('header.headerLink.linkTitle5'),
+    },
+    {
+      route: '/faq',
+      link: t('header.headerLink.linkTitle6'),
+    },
+    {
+      route: '/shop',
+      link: 'Магазин',
+    },
+  ];
   const isMobileAndTablet = useMediaQuery('( max-width: 1024px)');
 
   return (
@@ -105,7 +135,7 @@ export const Header = () => {
               className={`${isOpen ? 'block' : 'hidden'} absolute top-[100px] w-[100%] left-0 right-0 bg-black text-[24px] font-montserrat `}
             >
               <div className='flex flex-col  text-white p-[20px]'>
-                {headerLinks.map((routes, index) => (
+                {headerLinksMobile.map((routes, index) => (
                   <li
                     className='list-none p-[10px]'
                     key={index}

@@ -51,7 +51,7 @@ export const PreviewSectionTrustUs = () => {
       id: 6,
       background: lightFon,
       img: pavel,
-      name: '',
+      name: 'Павел Холодянский',
       role: `Мастер класс Павла Холодянского барабанщика "Пошлой Молли"`,
     },
     {

@@ -1,5 +1,7 @@
 export const CardTeamSection = ({ item }) => {
   return (
+    // <li className='flex-row gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl p-2 mb-[50px] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 tablet:max-w-full'>
+    //   <p className='hidden sm:hidden tablet:w-full tablet:flex tablet:items-center tablet:gap-5 tablet:block tablet:text-2xl tablet:font-medium tablet:text-left tablet:max-h-[300px] tablet:leading-10 tablet:text-slate-100 tablet:font-sans'>
     <li
       key={item.id}
       className='flex-row gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl p-2 mb-[50px] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 tablet:max-w-full'
