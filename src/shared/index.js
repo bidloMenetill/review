@@ -1,4 +1,4 @@
-import { ImageModal } from './ui/imageModal/ImageModal';
+export { ImageModal } from './ui/imageModal/ImageModal';
 export { Button } from './ui/button/Button';
 export { Advertising } from './ui/advertising/Advertising';
 export { useMediaQuery } from './hooks/useMediaQuery';
@@ -8,6 +8,5 @@ export { CardSectionGroup } from './ui/cardSectionGroup/CardSectionGroup';
 export { CardRehearsalSection } from './ui/cardRehearsalSection/CardRehearsalSection';
 export { ServiceSwiper } from './ui/serviceSwiper/ServiceSwiper';
 export { SwiperPhotoItem } from './ui/swiperPhotoItem/SwiperPhotoItem';
-export { ServiceFooter } from './ui/serviceFooter/ServiceFooter';
 export { ServiceTitle } from './ui/serviceTitle/ServiceTitle';
 export { Input } from './ui/input/Input';
