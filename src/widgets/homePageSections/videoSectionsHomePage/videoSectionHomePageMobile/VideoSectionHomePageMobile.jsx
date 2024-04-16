@@ -1,5 +1,6 @@
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigate } from 'react-router-dom';
 import ViewAllLink from '../../../../shared/ui/viewAllLink/ViewAllLink';
 
 export const VideoSectionHomePageMobile = () => {
@@ -18,7 +19,7 @@ export const VideoSectionHomePageMobile = () => {
     },
   ];
   return (
-    <section className='pb-[40px]  pt-0 sm:pt-[9%]'>
+    <section className='pb-[40px]  pt-[30px] sm:pt-[9%]'>
       <section className='mx-auto max-w-[90%] xl:container'>
         <div className='mb-[20px]  sm:mb-0 pt-[50px] sm:pt-0 flex sm:block justify-between sm:justify-normal'>
           <h2 className='text-[#F5F5F5] font-[Montserrat]  text-[20px] sm:text-[80px] lg:text-[100px] not-italic font-medium leading-[normal]'>
@@ -37,13 +38,18 @@ export const VideoSectionHomePageMobile = () => {
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           ></iframe>
         </div>
-        <Swiper spaceBetween={15} speed={400} loop={false}>
-          <ul>
+        <Swiper
+          spaceBetween={15}
+          initialSlide={1.4}
+          slidesPerView={1.5}
+          speed={400}
+        >
+          <ul className='max-w-[245px]'>
             {srcArr?.map((item, index) => (
-              <SwiperSlide key={index} className='max-w-[245px]'>
-                <li className='max-w-[245px] h-full'>
+              <SwiperSlide key={index}>
+                <li className='w-full h-full'>
                   <iframe
-                    className='max-w-[245px] h-[130px]  rounded-[10.906px] border-[0.5px] border-solid border-[rgba(255,255,255,0.50)]'
+                    className='w-full h-full  rounded-[10.906px] border-[0.5px] border-solid border-[rgba(255,255,255,0.50)]'
                     src={item.src}
                     title='YouTube video player'
                     frameBorder='0'

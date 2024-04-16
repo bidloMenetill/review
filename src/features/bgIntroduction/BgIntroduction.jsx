@@ -1,16 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import arrayLeft from '../../shared/img/array_left.svg';
-import arrayRight from '../../shared/img/array_right.svg';
-
 import bgFirst from '../../shared/img/first_main_bg.jpg';
 import bgSecond from '../../shared/img/second_main_bg.jpg';
 import bgThird from '../../shared/img/third_main_bg.jpg';
 import bgFourth from '../../shared/img/forth_main_bg.jpg';
 import bgFifth from '../../shared/img/fifth_main_bg.jpg';
 import { useMediaQuery } from '../../shared';
+import { usePages } from '../../app/store/store';
 
 export const BgIntroduction = () => {
+  // const { getHomePage } = usePages();
   const { t } = useTranslation();
   const bgForIntroduction = useMemo(
     () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],
@@ -21,6 +20,10 @@ export const BgIntroduction = () => {
   const [timeoutId, setTimeoutId] = useState(null);
   const [intervalActive, setIntervalActive] = useState(true);
 
+  // useEffect(() => {
+  //   getHomePage();
+  // }, []);
+  // console.log(getHomePage);
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isChangingBg && intervalActive) {

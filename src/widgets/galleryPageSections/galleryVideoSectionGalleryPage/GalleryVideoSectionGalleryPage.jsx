@@ -3,6 +3,7 @@ export const GalleryVideoSectionGalleryPage = () => {
     <section className='bg-center max-w-full'>
       <div className='max-w-full flex justify-center  mb-[-40px] p-[5%]'>
         <iframe
+          loading='lazy'
           className='rounded-[30px] border-[2px] border-solid border-gray-500 '
           width='1430'
           height='700'
