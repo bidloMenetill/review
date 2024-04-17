@@ -10,7 +10,6 @@ export { MainSectionTrustUs } from './trustUsPageSections/mainSectionTrustUs/Mai
 export { PreviewSectionTrustUs } from './trustUsPageSections/previewSectionTrustUs/PreviewSectionTrustUs';
 export { NewsSectionHomePage } from './homePageSections/newsSectionHomePage/NewsSectionHomePage';
 export { ServiceSection } from './servicPageSections/ServiceSection/ServiceSection';
-export { WelcomeSection } from './servicPageSections/WelcomeSection/WelcomeSection';
 export { Team } from './aboutUsPageSections/teamSection/TeamSection';
 export { IntrodactionSectionAboutUs } from './aboutUsPageSections/introdactionSectionAboutUs/IntrodactionSectionAboutUs';
 export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';

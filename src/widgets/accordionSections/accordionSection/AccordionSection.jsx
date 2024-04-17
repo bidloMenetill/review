@@ -1,60 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AccordionItems } from '../../../features';
 import bgFAQ from '../../../shared/img/BackgroundFAQ.png';
+import { useZustandStore } from '../../../app/store/store';
 
 export const AccordionSection = () => {
   const [flag, setFlag] = useState('');
-  const arr = [
-    {
-      id: 0,
-      title: 'Title1',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-    {
-      id: 1,
-      title: 'Title2',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-    {
-      id: 2,
-      title: 'Title3',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-    {
-      id: 3,
-      title: 'Title4',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-    {
-      id: 4,
-      title: 'Title5',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-    {
-      id: 5,
-      title: 'Title6',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-    {
-      id: 6,
-      title: 'Title7',
-      text: 'какие музыкальные жанры есть  в q-rush studio ?',
-      description:
-        'Рок, поп, хип-хоп, электронная музыка, джаз, блюз, кантри, классическая музыка, и т.д. ',
-    },
-  ];
+  const { getFaqPage, faqData, getMusicCourcePage, musicCourceData } =
+    useZustandStore();
+  useEffect(() => {
+    getFaqPage();
+    getMusicCourcePage();
+  }, []);
 
   return (
     <section className='relative text-[#FFFFFF]'>
@@ -73,13 +29,13 @@ export const AccordionSection = () => {
         <h2 className='font-[600] pb-[23px] text-[30px] sm:w-full text-center sm:pb-[90px] sm:text-[24px] xl:text-[50px] lg:text-[40px] '>
           Вопросы и ответы
         </h2>
-        {arr?.map(el => {
+        {faqData?.map(el => {
           return (
             <div key={el.id}>
               <AccordionItems
-                title={el.title}
-                text={el.text}
-                description={el.description}
+                title={el.id}
+                text={el.question_ru}
+                description={el.answer_ru}
                 flag={flag}
                 setFlag={setFlag}
               />

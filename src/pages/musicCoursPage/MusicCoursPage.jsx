@@ -1,22 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   MusicCoursFirstSection,
   MusicCoursSecondSection,
   MusicCoursSwiperSection,
 } from '../../widgets';
-import { ServiceFooter } from '../../shared';
+import { Advertising } from '../../shared';
 
 export const MusicCoursPage = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <MusicCoursSwiperSection />
       <MusicCoursFirstSection />
       <MusicCoursSecondSection />
-      <ServiceFooter
-        description={
-          'Не жди следующего понедельника, бронируй время в студии уже сейчас!'
-        }
-        number={'Звонки/WhatsApp +996 700 76 37 36'}
+      <Advertising
+        title={t('trustUsPage.fourthSection.title')}
+        description={t('trustUsPage.fourthSection.upperTitle')}
       />
     </>
   );
