@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 // import photo from '../../../shared/img/bg_video_gallery.jpg';
+// import { useEffect } from 'react';
+// import axios from 'axios';
 import photo2 from '../../../shared/img/aboutMobile/rectangle_53.png';
 import photo3 from '../../../shared/img/aboutMobile/rectangle_55.png';
 import photo4 from '../../../shared/img/aboutMobile/rectangle_56.png';
@@ -117,7 +119,7 @@ export const Team = () => {
             просто выполняем свою работу, мы отдаемся ей с преданностью и
             энтузиазмом
           </p>
-          <ul className='sm:max-w-[664px] tablet:flex-row flex flex-wrap gap-6 sm:flex-wrap sm:gap-y-36 items-center text-center mx-auto pl-[20%] pr-[20%] tablet:pl-0 tablet:pr-0'>
+          <ul className='sm:max-w-[664px] tablet:flex-row flex flex-wrap gap-6 sm:flex-wrap sm:gap-y-36 items-center text-center mx-auto pl-[20%] pr-[20%] tablet:pl-0 tablet:pr-0 xl:pl-0 xl:pr-0 lg:flex-row lg:max-w-full lg:justify-center'>
             {teams?.map(item => (
               <CardTeamSection key={item.id} item={item} />
             ))}

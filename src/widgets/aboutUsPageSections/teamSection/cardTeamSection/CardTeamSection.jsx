@@ -1,12 +1,10 @@
 export const CardTeamSection = ({ item }) => {
   return (
-    // <li className='flex-row gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl p-2 mb-[50px] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 tablet:max-w-full'>
-    //   <p className='hidden sm:hidden tablet:w-full tablet:flex tablet:items-center tablet:gap-5 tablet:block tablet:text-2xl tablet:font-medium tablet:text-left tablet:max-h-[300px] tablet:leading-10 tablet:text-slate-100 tablet:font-sans'>
     <li
       key={item.id}
-      className='flex-row gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl p-2 mb-[50px] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 tablet:max-w-full'
+      className='flex-row gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl p-2 mb-[50px] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 tablet:max-w-full lg:flex lg:max-w-[665px]'
     >
-      <p className='hidden sm:hidden tablet:w-full tablet:flex xl:flex tablet:items-center tablet:gap-5 tablet:hidden xl:block tablet:text-2xl tablet:font-medium tablet:text-left tablet:max-h-[300px] tablet:leading-10 tablet:text-slate-100 tablet:font-sans'>
+      <p className='hidden sm:hidden tablet:w-full tablet:flex xl:flex tablet:items-center tablet:gap-5 tablet:hidden tablet:text-2xl tablet:font-medium tablet:text-left tablet:max-h-[300px] tablet:leading-10 tablet:text-slate-100 tablet:font-sans xl:hidden'>
         <img
           className='hidden sm:hidden tablet:block tablet:max-w-[80%]'
           src={item.img}
@@ -36,20 +34,20 @@ export const CardTeamSection = ({ item }) => {
         <img
           src={item.img}
           alt='photos_1'
-          className='max-w-[99%] mx-auto tablet:hidden xl:block'
+          className='max-w-[99%] mx-auto tablet:hidden'
         />
-        <h3 className='text-[#F93822] font-bold text-xl sm:text-4xl py-7 tablet:hidden xl:block'>
+        <h3 className='text-[#F93822] font-bold text-xl sm:text-4xl py-7 tablet:hidden'>
           {item.textName}
         </h3>
-        <p className='font-medium text-[#E2DED3] text-base sm:text-3xl max-w-[270px] sm:max-w-[300px] tablet:hidden xl:block'>
+        <p className='font-medium text-[#E2DED3] text-base sm:text-3xl max-w-[270px] sm:max-w-[300px] tablet:hidden'>
           {item.text}
         </p>
       </div>
-      <div className='hidden text-center max-w-[575px] sm:max-w-[99%] tablet:block sm:justify-items-center sm:text-center mx-auto xl:hidden'>
+      <div className='hidden text-center max-w-[575px] sm:max-w-[99%] tablet:block sm:justify-items-center sm:text-center lg:max-w-[550px] mx-auto'>
         <img
           src={item.photo_1}
           alt='photos_1'
-          className='max-w-[99%] mx-auto'
+          className='max-w-[99%] mx-auto lg:max-w-[550px]'
         />
         <h3 className='text-[#F93822] font-bold text-xl sm:text-4xl py-7'>
           {item.text_h3}
