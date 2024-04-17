@@ -6,10 +6,10 @@ import bgThird from '../../shared/img/third_main_bg.jpg';
 import bgFourth from '../../shared/img/forth_main_bg.jpg';
 import bgFifth from '../../shared/img/fifth_main_bg.jpg';
 import { useMediaQuery } from '../../shared';
-import { usePages } from '../../app/store/store';
+import { useZustandStore } from '../../app/store/store';
 
 export const BgIntroduction = () => {
-  const { getHomePage } = usePages();
+  const { getHomePage } = useZustandStore();
   const { t } = useTranslation();
   const bgForIntroduction = useMemo(
     () => [bgFirst, bgSecond, bgThird, bgFourth, bgFifth],
