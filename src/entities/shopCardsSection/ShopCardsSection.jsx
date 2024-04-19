@@ -3,9 +3,11 @@ import drumStick1 from '../../shared/img/shop/drumStick1.png';
 import drumStick3 from '../../shared/img/shop/drumStick3.png';
 import drumStick4 from '../../shared/img/shop/drumStick4.png';
 import drumStick5 from '../../shared/img/shop/drumStick5.png';
+import { useMediaQuery } from '../../shared';
 import { CardsShopCardsSection } from './cardShopCardsSection/CardsShopCardsSection';
 
 export const ShopCardsSection = () => {
+  const isMobile = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
   const shopCard = [
     {
       id: 1,
@@ -84,10 +86,13 @@ export const ShopCardsSection = () => {
   return (
     <section>
       <ul
-        className={` max-w-[1920px] overflow-hidden mx-auto mb-[100px]  font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center`}
+        className={` max-w-[1920px] mx-auto mt-[100px] mb-[100px] font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center`}
       >
         {shopCard?.map(card => (
-          <li key={card.id}>
+          <li
+            className={`sm:mt-0 ${isMobile ? 'mt-[0px]' : 'mt-[90px]'}`}
+            key={card.id}
+          >
             <CardsShopCardsSection card={card} properties={properties} />
           </li>
         ))}

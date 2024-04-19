@@ -1,22 +1,22 @@
-import { useTranslation } from 'react-i18next';
-import trustMainBg from '../../../shared/img/TrustUs/trustMainBg.jpg';
+// import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import { usePages } from '../../../app/store/store';
 
 export const MainSectionTrustUs = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+  const { getTrustUsMainSection, trustUs } = usePages();
 
+  useEffect(() => {
+    getTrustUsMainSection();
+  }, []);
   return (
-    <section
-      className='bg-cover bg-no-repeat bg-center h-[764px] md:h-[968px] tablet:h-[966px] '
-      style={{ backgroundImage: `url(${trustMainBg})` }}
-    >
+    <section className='bg-cover bg-no-repeat bg-center h-[145px] sm:h-[] md:h-[185px] tablet:h-[235px] lg:h-[300px] xl:h-[355px]'>
       <div className='max-w-[90%]  mx-auto xl:container text-[#e2ded3] font-montserrat'>
-        <div className=' max-w-[90%] mx-auto md:w-[595px] tablet:w-[877px] xl:w-[1077px] lg:w-[977px] h-[328px] absolute mt-[180px] md:mt-[160px] tablet:mt-[336px]'>
+        <div className=' w-[232px] md:w-[332px] tablet:w-[432px] mt-[25px] md:mt-[35px] tablet:mt-[55px] lg:mt-[75px]'>
           <h2 className='font-bold tablet:font-medium text-[48px] md:fond-semibold tablet:text-[60px] xl:text-[100px] lg:text-[80px]'>
-            {t('trustUsPage.firstSection.title')}
+            {/* {t('trustUsPage.firstSection.title')} */}
+            {trustUs.title}
           </h2>
-          <p className='font-medium mt-[16px] md:mt-[24px] tablet:mt-[50px] text-[16px] md:text-[24px] md:leading-[142%] tablet:text-[20px] xl:text-[25px] lg:text-[22px]'>
-            {t('trustUsPage.firstSection.upperTitle')}
-          </p>
         </div>
       </div>
     </section>

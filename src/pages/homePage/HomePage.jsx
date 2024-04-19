@@ -31,10 +31,7 @@ export const HomePage = () => {
         <GallerySectionHomePage />
         {isMobile ? <VideoSectionHomePageMobile /> : <VideoSectionHomePage />}
 
-        <Advertising
-          title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
-          description='Звонки/WhatsApp +996 700 76 37 36'
-        />
+        <Advertising />
       </section>
     </>
   );
