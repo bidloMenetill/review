@@ -22,13 +22,20 @@ export const SectionGroupMobile = props => {
       title: firstSubTitle,
       description: firstDescription,
       img: firstImg,
+      href: '/sound-recording',
     },
     {
       title: secondSubTitle,
       description: secondDescription,
       img: secondImg,
+      href: '/rehearsal-cost',
     },
-    { title: thirdSubTitle, description: thirdDescription, img: thirdImg },
+    {
+      title: thirdSubTitle,
+      description: thirdDescription,
+      img: thirdImg,
+      href: '/music-courses',
+    },
   ];
 
   return (
@@ -42,7 +49,9 @@ export const SectionGroupMobile = props => {
         </h2>
         <ul className='flex flex-col gap-y-[10px]'>
           {dataArr?.map((item, index) => (
-            <CardSectionGroupMobile item={item} key={index} />
+            <Link onClick={scrollToTop} to={item.href} key={index}>
+              <CardSectionGroupMobile item={item} />
+            </Link>
           ))}
         </ul>{' '}
         <Link

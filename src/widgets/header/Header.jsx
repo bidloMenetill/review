@@ -95,7 +95,6 @@ export const Header = () => {
                         ? 'text-white'
                         : 'text-gray-500'
                     }`}
-                    // FIX ME: remove
                     style={{
                       fontWeight:
                         i18n.resolvedLanguage === locale ? 'bold' : 'normal',
@@ -166,7 +165,6 @@ export const Header = () => {
                           ? 'text-white'
                           : 'text-gray-500'
                       }`}
-                      // FIX ME: remove
                       style={{
                         fontWeight:
                           i18n.resolvedLanguage === locale ? 'bold' : 'normal',

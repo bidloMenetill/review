@@ -25,15 +25,22 @@ export const SectionGroup = props => {
       title: firstSubTitle,
       description: firstDescription,
       img: firstImg,
+      href: '/rehearsal-cost',
     },
     {
       title: secondSubTitle,
       description: secondDescription,
       img: secondImg,
+      href: '/sound-recording',
     },
-    { title: thirdSubTitle, description: thirdDescription, img: thirdImg },
+    {
+      title: thirdSubTitle,
+      description: thirdDescription,
+      img: thirdImg,
+      href: '/music-courses',
+    },
   ];
-  const listData = [...dataArr];
+
   return (
     <section
       className='h-[336px] sm:h-[736px] xl:h-[1174px]  lg:h-[900px] bg-cover bg-no-repeat bg-center'

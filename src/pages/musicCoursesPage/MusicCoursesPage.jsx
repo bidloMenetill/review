@@ -1,20 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  MusicCoursFirstSection,
-  MusicCoursSecondSection,
-  MusicCoursSwiperSection,
+  MusicCoursesFirstSection,
+  MusicCoursesSecondSection,
+  MusicCoursesSwiperSection,
 } from '../../widgets';
 import { Advertising } from '../../shared';
 
-export const MusicCoursPage = () => {
+export const MusicCoursesPage = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <MusicCoursSwiperSection />
-      <MusicCoursFirstSection />
-      <MusicCoursSecondSection />
+      <MusicCoursesSwiperSection />
+      <MusicCoursesFirstSection />
+      <MusicCoursesSecondSection />
       <Advertising
         title={t('trustUsPage.fourthSection.title')}
         description={t('trustUsPage.fourthSection.upperTitle')}
