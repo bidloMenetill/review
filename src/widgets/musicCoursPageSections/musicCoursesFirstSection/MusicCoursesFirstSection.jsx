@@ -5,7 +5,7 @@ import rectangle55 from '../../../shared/img/Rectangle_71.png';
 import rectangle56 from '../../../shared/img/servicesImg/Rectangle_57.png';
 import { SwiperPhotoItem } from '../../../shared';
 
-export const MusicCoursSecondSection = () => {
+export const MusicCoursesFirstSection = () => {
   const arrayImg = [
     { id: 0, img: rectangle51 },
     { id: 1, img: rectangle54 },
@@ -36,16 +36,16 @@ export const MusicCoursSecondSection = () => {
   ];
   return (
     <section className='w-full mx-auto font-montserrat text-[#E2DED3] md:mb-[90px] tablet:mb-[154px]'>
-      <div className='mx-[20px] text-center'>
-        <p className='text-[18px] md:font-[500] text-[#FFFFFF] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
-          2 филиал (Район Магистраль\Алматинка)
+      <div className='mx-[20px] text-center sm:mt-[30px] tablet:mt-[100px]'>
+        <p className='text-[18px] font-[500] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
+          1 филиал (Район Азия Молл)
         </p>
-        <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
-          Курсы игры на Гитаре и Барабанах
+        <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] text-[#FFFFFF] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
+          У нас вы можете найти курсы Гитары, Барабанов, Битмейкинга
         </p>
       </div>
 
-      <div className='ml-[20px] w-[365px] sm:mx-auto sm:w-[90%] xl:w-[1820px]'>
+      <div className='ml-[20px] w-[365px] sm:mx-auto sm:w-[95%] xl:w-[1820px]'>
         <SwiperPhotoItem arrayImg={arrayImg} />
       </div>
       <div className='text-left mx-[20px] md:w-full sm:mx-auto mt-[27px] md:mt-[50px] tablet:mt-[100px] md:text-center'>

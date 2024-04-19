@@ -16,7 +16,7 @@ export const Button = ({
       'py-[10px]  bg-[#F93822]  rounded-full  text-[white] font-montserrat font-medium xl:w-[200px] xl:h-[60px] xl:text-[20px] xl:px-[24px]  xl:ml-[20px] w-[120px] lg:w-[160px] h-[40px] lg:h-[50px] text-[14px] lg:text-[16px] ml-[12px] lg:ml-[15px]  px-[16px] lg:px-[20px]',
     viewAllButton: 'viewAllButton',
     moreInfoButton:
-      'flex px-[24px] py-[10px] justify-center w-[248px] h-[50px] items-center gap-[10px] flex-shrink-0 rounded-[40px] text-[#E2DED3] bg-[var(--orange-600,_#F93822)] font-[Montserrat] text-[20px] not-italic font-medium leading-[normal]',
+      'flex px-[24px] sm:px-[50px] py-[10px] sm:py-[20px] justify-center w-[248px] sm:w-[490px] h-[50px] sm:h-[100px] items-center gap-[10px] flex-shrink-0 rounded-[40px] text-[#E2DED3] bg-[var(--orange-600,_#F93822)] font-[Montserrat] text-[20px] sm:text-[40px] not-italic font-medium leading-[normal]',
     serviceButton:
       'sm:w-auto sm:h-auto text-center font-[300] rounded-[500px] text-[12px] py-[10.5px] px-[30px] tablet:text-[28px] lg:rounded-[50px] bg-[#F93822] font-normal lg:text-[26px] xl:text-[30px] text-[#F5F5F5] lg:py-[18px] xl:py-[14px] lg:px-[60px] xl:px-[75px] transition-all duration-300 hover:opacity-80',
   };

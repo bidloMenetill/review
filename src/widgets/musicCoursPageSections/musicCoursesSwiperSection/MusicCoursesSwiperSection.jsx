@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const MusicCoursSwiperSection = () => {
+export const MusicCoursesSwiperSection = () => {
   return (
     <section className='relative w-full h-[150px] mb-[20px] sm:h-[200px] sm:mb-[50px] tablet:mb-[250px] text-[#f5f5f5] font-montserrat'>
       <div className='w-full mb-[0px] sm:mb-[55px] pt-[35px] sm:pt-[100px]'>
