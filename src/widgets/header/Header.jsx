@@ -41,6 +41,36 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle6'),
     },
   ];
+  const headerLinksMobile = [
+    {
+      route: '/about-us',
+      link: t('header.headerLink.linkTitle1'),
+    },
+    {
+      route: '/services',
+      link: t('header.headerLink.linkTitle2'),
+    },
+    {
+      route: '/trust-us',
+      link: t('header.headerLink.linkTitle3'),
+    },
+    {
+      route: '/news',
+      link: t('header.headerLink.linkTitle4'),
+    },
+    {
+      route: '/gallery',
+      link: t('header.headerLink.linkTitle5'),
+    },
+    {
+      route: '/faq',
+      link: t('header.headerLink.linkTitle6'),
+    },
+    {
+      route: '/shop',
+      link: 'Магазин',
+    },
+  ];
   const isMobileAndTablet = useMediaQuery('( max-width: 1024px)');
 
   return (

@@ -37,6 +37,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
                   className='bg-cover bg-no-repeat  !flex justify-center items-center flex-col rounded-[30px] border-[1px] border-solid border-gray-500 !w-[705px] !h-[3  50px]'
                 >
                   <iframe
+                    loading='lazy'
                     className='rounded-[30px] border-[2px] border-solid border-gray-500 '
                     width='705'
                     height='350'

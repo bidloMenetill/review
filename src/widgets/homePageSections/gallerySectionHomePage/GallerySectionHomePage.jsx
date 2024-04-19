@@ -19,7 +19,7 @@ export const GallerySectionHomePage = () => {
             <ViewAllLink linkAddress={'news'} />
           </div>
         </div>
-        <section className='grid grid-rows-[33.14%_31.20%_33.14%]   grid-column gap-1 sm:gap-4'>
+        <section className='grid grid-rows-[40.14%_41.20%_40.14%] tablet:grid-rows-[33.14%_31.20%_33.14%]   grid-column gap-1 sm:gap-4'>
           <div className='col-start-1 col-end-3 row-start-1 row-end-3'>
             {' '}
             <img

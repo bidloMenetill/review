@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ImageModal } from '../../../shared/ui/imageModal/ImageModal';
+import { ImageModal } from '../../../shared';
 import firstGalleryImg from '../../../shared/img/first_gallery_home_page.png';
 import secondGalleryImg from '../../../shared/img/second_gallery_home_page.png';
 import thirdGalleryImg from '../../../shared/img/third_gallery_home_page.png';

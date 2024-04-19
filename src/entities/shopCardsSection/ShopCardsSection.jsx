@@ -86,15 +86,11 @@ export const ShopCardsSection = () => {
       <ul
         className={` max-w-[1920px] overflow-hidden mx-auto mb-[100px]  font-montserrat text-[#E2DED3] bg-cover bg-no-repeat bg-center`}
       >
-        <div className='sm:mt-[100px] md:mt-[300px] tablet:mt-[100px] lg:mt-[200px] xl:mt-[300px]'>
-          {shopCard?.map(card => (
-            <CardsShopCardsSection
-              key={card.id}
-              card={card}
-              properties={properties}
-            />
-          ))}
-        </div>
+        {shopCard?.map(card => (
+          <li key={card.id}>
+            <CardsShopCardsSection card={card} properties={properties} />
+          </li>
+        ))}
       </ul>
     </section>
   );

@@ -45,11 +45,11 @@ export const MusicCoursFirstSection = () => {
         </p>
       </div>
 
-      <div className='ml-[20px] w-[365px] sm:mx-auto sm:w-[550px] tablet:w-[1000px] md:w-[700px] xl:w-[1820px] lg:w-[1320px]'>
+      <div className='ml-[20px] w-[365px] sm:mx-auto sm:w-[95%] xl:w-[1820px]'>
         <SwiperPhotoItem arrayImg={arrayImg} />
       </div>
       <div className='text-left mx-[20px] md:w-full sm:mx-auto mt-[27px] md:mt-[50px] tablet:mt-[100px] md:text-center'>
-        <div className='sm:w-[550px] md:w-[700px] tablet:w-[1000px] md:mx-auto sm:mx-auto lg:flex lg:justify-between text-left xl:w-[1570px] lg:w-[1270px]'>
+        <div className='sm:w-[90%] sm:mx-auto lg:flex lg:justify-between text-left xl:w-[1570px] lg:w-[1270px]'>
           <section className='w-[100%] tablet:flex tablet:items-center tablet:justify-between'>
             {arrayEquipment?.map(el => (
               <ul

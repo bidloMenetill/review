@@ -133,7 +133,7 @@ export const RehearsalCostThirdSection = () => {
           )
         </p>
       </div>
-      <section className='ml-[20px] w-[365px] sm:mx-auto sm:w-[550px] tablet:w-[1000px] md:w-[700px] xl:w-[1820px] lg:w-[1320px]'>
+      <section className='ml-[20px] w-[365px] sm:mx-auto sm:w-[95%] xl:w-[1820px]'>
         <SwiperPhotoItem arrayImg={arrayImg} />
       </section>
       <div className='w-[365px] sm:w-[560px] text-left mx-[20px] md:w-[700px] tablet:w-full sm:mx-auto mt-[27px] md:mt-[30px] tablet:mt-[100px] md:text-center'>
