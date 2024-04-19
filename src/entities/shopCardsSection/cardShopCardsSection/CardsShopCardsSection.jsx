@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Button, useMediaQuery } from '../../../shared';
-import { usePages } from '../../../app/store/store';
 export const CardsShopCardsSection = ({ card, properties }) => {
   // const { getShopCards, shopCards } = usePages();
   // useEffect(() => {

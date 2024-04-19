@@ -7,7 +7,7 @@ export const GeeksPro = () => {
         2024 Q Rush Studio Политика Конфидициальности
       </span>
       <span className='xl:text-[20px] lg:text-[16px] md:text-[12px]'>
-        Made By GEEKS PRO
+        <a href='https://geeks.kg/geeks-pro'> Made By GEEKS PRO</a>
       </span>
     </div>
   );

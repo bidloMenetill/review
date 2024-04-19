@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { usePages } from '../../../app/store/store';
+import { useZustandStore } from '../../../app/store/store';
 
 export const Advertising = props => {
-  const { getAdverts, adverts1, adverts2 } = usePages();
+  const { getAdverts, adverts1, adverts2 } = useZustandStore();
   useEffect(() => {
     getAdverts();
   }, []);

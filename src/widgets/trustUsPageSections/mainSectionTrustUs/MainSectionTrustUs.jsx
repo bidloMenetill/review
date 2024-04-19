@@ -1,10 +1,10 @@
 // import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
-import { usePages } from '../../../app/store/store';
+import { useZustandStore } from '../../../app/store/store';
 
 export const MainSectionTrustUs = () => {
   // const { t } = useTranslation();
-  const { getTrustUsMainSection, trustUs } = usePages();
+  const { getTrustUsMainSection, trustUs } = useZustandStore();
 
   useEffect(() => {
     getTrustUsMainSection();

@@ -9,11 +9,11 @@ import { useEffect } from 'react';
 // import zere from '../../../shared/img/TrustUs/zere.png';
 // import arsen2 from '../../../shared/img/TrustUs/arsen2.png';
 // import bakr2 from '../../../shared/img/TrustUs/bakr2.png';
-import { usePages } from '../../../app/store/store';
+import { useZustandStore } from '../../../app/store/store';
 import { CelebritiesSection } from '../../../entities';
 
 export const PreviewSectionTrustUs = () => {
-  const { getTrustUsCelebrities, celebrities } = usePages();
+  const { getTrustUsCelebrities, celebrities } = useZustandStore();
   useEffect(() => {
     getTrustUsCelebrities();
   }, []);

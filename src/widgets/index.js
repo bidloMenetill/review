@@ -10,7 +10,6 @@ export { MainSectionTrustUs } from './trustUsPageSections/mainSectionTrustUs/Mai
 export { PreviewSectionTrustUs } from './trustUsPageSections/previewSectionTrustUs/PreviewSectionTrustUs';
 export { NewsSectionHomePage } from './homePageSections/newsSectionHomePage/NewsSectionHomePage';
 export { ServiceSection } from './servicPageSections/ServiceSection/ServiceSection';
-export { WelcomeSection } from './servicPageSections/WelcomeSection/WelcomeSection';
 export { Team } from './aboutUsPageSections/teamSection/TeamSection';
 export { IntrodactionSectionAboutUs } from './aboutUsPageSections/introdactionSectionAboutUs/IntrodactionSectionAboutUs';
 export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
@@ -34,9 +33,9 @@ export { RehearsalSwiperSection } from './rehearsalCostPageSections/rehearsalSwi
 export { RehearsalCostFirstSection } from './rehearsalCostPageSections/rehearsalCostFirstSection/RehearsalCostFirstSection';
 export { RehearsalCostSecondSection } from './rehearsalCostPageSections/rehearsalCostSecondSection/RehearsalCostSecondSection';
 export { RehearsalCostThirdSection } from './rehearsalCostPageSections/rehearsalCostThirdSection/RehearsalCostThirdSection';
-export { MusicCoursSwiperSection } from './musicCoursPageSections/musicCoursSwiperSection/MusicCoursSwiperSection';
-export { MusicCoursFirstSection } from './musicCoursPageSections/musicCoursFirstSection/MusicCoursFirstSection';
-export { MusicCoursSecondSection } from './musicCoursPageSections/musicCoursSecondSection/MusicCoursSecondSection';
+export { MusicCoursesSwiperSection } from './musicCoursPageSections/musicCoursesSwiperSection/MusicCoursesSwiperSection';
+export { MusicCoursesFirstSection } from './musicCoursPageSections/musicCoursesFirstSection/MusicCoursesFirstSection';
+export { MusicCoursesSecondSection } from './musicCoursPageSections/musicCoursesSecondSection/MusicCoursesSecondSection';
 export { ServiceLinks } from './servicPageSections/serviceLinks/ServiceLinks';
 export { FeastSectionNewsPage } from './newsPageSections/feastSectionNewsPage/FeastSectionNewsPage';
 export { EventSectionNewsPage } from './newsPageSections/eventSectionNewsPage/EventSectionNewsPage';
