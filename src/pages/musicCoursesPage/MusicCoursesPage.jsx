@@ -15,10 +15,7 @@ export const MusicCoursesPage = () => {
       <MusicCoursesSwiperSection />
       <MusicCoursesFirstSection />
       <MusicCoursesSecondSection />
-      <Advertising
-        title={t('trustUsPage.fourthSection.title')}
-        description={t('trustUsPage.fourthSection.upperTitle')}
-      />
+      <Advertising />
     </>
   );
 };

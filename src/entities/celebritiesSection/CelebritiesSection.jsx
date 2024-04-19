@@ -3,6 +3,7 @@ import { useMediaQuery } from '../../shared';
 export const CelebritiesSection = ({ celebrities }) => {
   const isMobile1 = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
   const isMobile2 = useMediaQuery('(min-width: 700px) and (max-width: 767px)');
+
   return (
     <section>
       <ul className=' max-w-[90%] xl:container mx-auto flex justify-between flex-wrap text-[#e2ded3] md:gap-x-[20px] gap-y-[36px] md:gap-y-[87px] tablet:gap-y-[100px] mt-[32px] md:mt-[22px]  mb-[28px] tablet:mb-[200px] '>
@@ -13,7 +14,7 @@ export const CelebritiesSection = ({ celebrities }) => {
           >
             <img
               className={`w-full h-[357px] sm:w-full sm:h-[540px] md:w-[645px] md:h-[682px] tablet:w-[266px] tablet:h-[293px] mx-auto xl:w-[520px] xl:h-[493px] lg:w-[356px] lg:h-[393px] rounded-t-[16px] md:rounded-[17px] lg:rounded-[30px] md:mt-[20px] ${isMobile1 ? 'w-[410px] h-[425px]' : isMobile2 ? 'w-[637px] h-[652px]' : ''}`}
-              src={celeb.img}
+              src={celeb.image}
               alt='celebImg'
             />
             <div
@@ -22,7 +23,7 @@ export const CelebritiesSection = ({ celebrities }) => {
               <h4
                 className={`font-bold text-[20px] text-[#f93822] md:text-[#e2ded3] sm:text-[22px] md:text-[24px] lg:text-[27px] xl:text-[30px] text-center`}
               >
-                {celeb.name}
+                {celeb.first_name}
               </h4>
               <p
                 className={`w-[302px] md:w-[402px] tablet:w-full lg:w-[370px] mx-auto text-[16px] text-center sm:text-[17px] md:text-[19px] lg:text-[20px] md:font-semibold font-medium tablet:font-bold`}
