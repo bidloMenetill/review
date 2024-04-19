@@ -3,6 +3,7 @@ import instagram from '../../shared/img/footer/instagram.svg';
 import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
 import whatsapp from '../../shared/img/footer/whatsapp.svg';
+import { scrollToTop } from '../../shared';
 import { GeeksPro } from './geeksProSection/GeeksProSection';
 
 export const Footer = () => {
@@ -12,26 +13,42 @@ export const Footer = () => {
         <div className=' text-white flex flex-col tablet:flex-row justify-around items-start   font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] text-[12px] lg:text-[16px] [&>ul>li]:mb-[10px] lg:[&>ul>li]:mb-[20px]  tablet:mb-[6px] tablet:text-[14px] tablet:[&>ul>li]:mb-[10px] tablet:items-start tablet:[&>ul]:mb-[100px] md:text-[18px] md:[&>ul>li]:mb-[8px] md:items-start  '>
           <ul>
             <li className='  font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/about-us'}>О нас</Link>
+              <Link onClick={scrollToTop()} to={'/about-us'}>
+                О нас
+              </Link>
             </li>
             <li>
-              <Link to={'/trust-us'} className='hover:text-orange-600'>
+              <Link
+                to={'/trust-us'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Нам доверяют
               </Link>
             </li>
             <li>
-              <Link to={'/gallery'} className='hover:text-orange-600'>
+              <Link
+                to={'/gallery'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Галерея
               </Link>
             </li>
           </ul>
           <ul>
             <li className='   font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/news'}>Новости</Link>
+              <Link to={'/news'} onClick={scrollToTop()}>
+                Новости
+              </Link>
             </li>
 
             <li>
-              <Link to={'/faq'} className='hover:text-orange-600'>
+              <Link
+                to={'/faq'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Часто задаваемые вопросы
               </Link>
             </li>
@@ -43,25 +60,43 @@ export const Footer = () => {
           </ul>
           <ul>
             <li className='font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/services'}>Услуги</Link>
+              <Link to={'/services'} onClick={scrollToTop()}>
+                Услуги
+              </Link>
             </li>
             <li>
-              <Link to={'/rehearsal-cost'} className='hover:text-orange-600'>
+              <Link
+                to={'/rehearsal-cost'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Репетиционная База
               </Link>
             </li>
             <li>
-              <Link to={'/sound-recording'} className='hover:text-orange-600'>
+              <Link
+                to={'/sound-recording'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Студия Звукозаписи
               </Link>
             </li>
             <li>
-              <Link to={'/music-cours'} className='hover:text-orange-600'>
+              <Link
+                to={'/music-cours'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Музыкальные Курсы
               </Link>
             </li>
             <li>
-              <Link to={'/shop'} className='hover:text-orange-600'>
+              <Link
+                to={'/shop'}
+                onClick={scrollToTop()}
+                className='hover:text-orange-600'
+              >
                 Магазин
               </Link>
             </li>
