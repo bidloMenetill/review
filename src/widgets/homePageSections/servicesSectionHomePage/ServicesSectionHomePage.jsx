@@ -7,7 +7,7 @@ import { useMediaQuery } from '../../../shared';
 import { SectionGroupMobile } from '../../../features/sectionGroups/sectionGroupMobile/SectionGroupMobile';
 
 export const ServicesSectionHomePage = () => {
-  const isMobile = useMediaQuery('(max-width: 576px)');
+  const isTabletAndMobile = useMediaQuery('(max-width: 1024px)');
   const studioData = {
     background: servicesBg,
     linkAddress: '/services',
@@ -21,7 +21,7 @@ export const ServicesSectionHomePage = () => {
   };
   return (
     <>
-      {isMobile ? (
+      {isTabletAndMobile ? (
         <SectionGroupMobile {...studioData} />
       ) : (
         <SectionGroup {...studioData} />

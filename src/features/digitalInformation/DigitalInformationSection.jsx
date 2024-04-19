@@ -36,12 +36,12 @@ export const DigitalInformationSection = () => {
     <section className='pt-[28px] sm:pt-[70px] pb-[16px] sm:pb-[126px] xl:pt-[126px] flex justify-center items-center'>
       <section
         ref={ref}
-        className='px-[16px] sm:px-0 max-w-full sm:max-w-[90%] xl:container mx-auto flex justify-center flex-col items-center align-middle'
+        className='px-[16px] sm:px-10 max-w-full sm:max-w-[90%] xl:container mx-auto flex justify-center flex-col items-center align-middle'
       >
         <h4 className='text-[#F5F5F5] font-[Montserrat] text-[26px] sm:text-[50px] not-italic font-medium leading-[normal]'>
           За все время
         </h4>
-        <section className='flex flex-wrap justify-between sm:justify-start sm:flex-nowrap gap-x-[30px] xl:gap-x-[110px] lg:gap-x-[70px]  items-center   mt-[25px] sm:mt-[60px]'>
+        <section className='flex flex-wrap justify-between sm:justify-between sm:flex-wrap gap-x-[30px] xl:gap-x-[110px] lg:gap-x-[70px]  items-center   mt-[25px] sm:mt-[60px]'>
           <div className='inline-flex flex-col'>
             <CountUp
               duration={2.5}
@@ -88,7 +88,7 @@ export const DigitalInformationSection = () => {
               Репетиций проведено
             </p>
           </div>
-          <div className='inline-flex flex-col mx-auto sm:mx-0 mt-[20px] sm:mt-0'>
+          <div className='inline-flex flex-col mx-auto mt-[20px] sm:mt-16 tablet:mt-0'>
             <CountUp
               duration={2.5}
               delay={0}
