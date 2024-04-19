@@ -25,8 +25,8 @@ export const AccordionSection = () => {
             <div key={el.id}>
               <AccordionItems
                 title={el.id}
-                text={el.question_ru}
-                description={el.answer_ru}
+                text={el.question}
+                description={el.answer}
                 flag={flag}
                 setFlag={setFlag}
               />
