@@ -10,7 +10,7 @@ export const CardSectionGroup = ({ item }) => {
           src={item.img}
           alt={`employer`}
           className={
-            'w-[137px] sm:w-full h-[148px] sm:h-[263px] xl:h-[563px] lg:h-[370px] rounded-[30px] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]'
+            'w-[137px] sm:w-full h-[148px] sm:h-[293px] xl:h-[563px] lg:h-[370px] rounded-[30px] [box-shadow:0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]'
           }
         />
         <p className='font-bold text-[14px] sm:text-[24px] lg:text-[30px] mb-[5px]  text-center  mt-[5px] sm:mt-[20px] text-[#fff]'>

@@ -88,7 +88,7 @@ export const DigitalInformationSection = () => {
               Репетиций проведено
             </p>
           </div>
-          <div className='inline-flex flex-col mx-auto mt-[20px] sm:mt-12'>
+          <div className='inline-flex flex-col mx-auto mt-[20px] sm:mt-16 tablet:mt-0'>
             <CountUp
               duration={2.5}
               delay={0}

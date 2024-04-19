@@ -40,14 +40,14 @@ export const SectionGroupMobile = props => {
 
   return (
     <section
-      className='h-[736px] bg-cover bg-no-repeat'
+      className='h-[736px] sm:h-[1533px] bg-cover bg-no-repeat'
       style={{ backgroundImage: `url(${background})` }}
     >
-      <section className='mx-auto px-4'>
-        <h2 className='text-[#E2DED3] text-center pt-[24px] pb-[17px] font-[Montserrat] text-[30px] font-bold leading-[normal]'>
+      <section className='mx-auto px-10'>
+        <h2 className='text-[#E2DED3] text-center pt-[24px] pb-[17px] sm:pb-[64px] font-[Montserrat] text-[30px] sm:text-[64px] font-bold leading-[normal]'>
           {title}
         </h2>
-        <ul className='flex flex-col gap-y-[10px]'>
+        <ul className='flex flex-col gap-y-[10px] sm:gap-y-[20px]'>
           {dataArr?.map((item, index) => (
             <Link onClick={scrollToTop} to={item.href} key={index}>
               <CardSectionGroupMobile item={item} />
@@ -56,7 +56,7 @@ export const SectionGroupMobile = props => {
         </ul>{' '}
         <Link
           to='services'
-          className='flex justify-center mt-[25px]'
+          className='flex justify-center mt-[100px]'
           onClick={scrollToTop}
         >
           <Button variant='moreInfoButton'>Подробнее</Button>

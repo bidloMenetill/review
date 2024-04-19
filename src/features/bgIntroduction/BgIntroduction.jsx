@@ -79,7 +79,7 @@ export const BgIntroduction = () => {
     >
       <section className='w-[100%] max-w-[1720px] px-0 sm:px-[40px] mx-auto  relative'>
         <div className='block tablet:flex justify-center px-4 sm:px-0 items-end'>
-          <h2 className='text-[#E2DED3] tablet:text-[#F5F5F5] font-[Montserrat] mt-[53px] sm:mt-0 tablet:max-w-[4000px] max-w-[336px] sm:max-w-[660px]  mb-[150px] lg:mb-0 text-start tablet:text-center text-[48px] sm:text-[70px] xl:text-[60px] lg: tablet:text-[42px]  not-italic font-bold sm:font-bold leading-[normal]  '>
+          <h2 className='text-[#E2DED3] tablet:text-[#F5F5F5] font-[Montserrat] mt-[53px] sm:mt-0 tablet:max-w-[4000px] max-w-[336px] sm:max-w-[660px]  mb-[150px] lg:mb-0 text-start tablet:text-center text-[48px] sm:text-[70px] xl:text-[60px] tablet:text-[49px]  not-italic font-bold sm:font-bold leading-[normal]  '>
             {t('homePage.firstSection.title')}
           </h2>
         </div>

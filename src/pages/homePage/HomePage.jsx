@@ -14,7 +14,7 @@ import {
 import bgForVideoAndGallery from '../../shared/img/bg_video_gallery.jpg';
 
 export const HomePage = () => {
-  const isMobile = useMediaQuery('(max-width: 576px)');
+  const isMobileAndTablet = useMediaQuery('(max-width: 1026px)');
   return (
     <>
       <section>
@@ -29,7 +29,11 @@ export const HomePage = () => {
         style={{ backgroundImage: `url(${bgForVideoAndGallery})` }}
       >
         <GallerySectionHomePage />
-        {isMobile ? <VideoSectionHomePageMobile /> : <VideoSectionHomePage />}
+        {isMobileAndTablet ? (
+          <VideoSectionHomePageMobile />
+        ) : (
+          <VideoSectionHomePage />
+        )}
 
         <Advertising
           title='Не жди следующего понедельника, бронируй время в студии уже сейчас!'
