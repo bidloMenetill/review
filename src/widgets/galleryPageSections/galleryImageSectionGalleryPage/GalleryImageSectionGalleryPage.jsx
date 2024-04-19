@@ -10,7 +10,7 @@ const GalleryImage = ({ image, onClick }) => (
     <img
       src={image}
       alt='gallery_image'
-      className='w-full h-auto border-[2px] border-solid border-gray-500 rounded-[20px]'
+      className='w-full h-full border-[2px] border-solid border-gray-500 rounded-[20px] xl:rounded-[20px] tablet:rounded-[10px]'
     />
   </div>
 );
@@ -41,7 +41,7 @@ export const GalleryImageSectionGalleryPage = () => {
     <section className='bg-center max-w-full'>
       <section>
         <section className='max-w-[90%] xl:container items-center mx-auto'>
-          <section className='grid grid-cols-2 xl:grid-cols-2 gap-4 mt-[100px]'>
+          <section className='grid grid-cols-2 xl:grid-cols-2 gap-4 mt-[10vh]'>
             {galleryImages.map((image, index) => (
               <GalleryImageWrapper
                 key={index}
