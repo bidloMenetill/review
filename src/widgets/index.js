@@ -9,7 +9,6 @@ export { Header } from './header/Header';
 export { MainSectionTrustUs } from './trustUsPageSections/mainSectionTrustUs/MainSectionTrustUs';
 export { PreviewSectionTrustUs } from './trustUsPageSections/previewSectionTrustUs/PreviewSectionTrustUs';
 export { NewsSectionHomePage } from './homePageSections/newsSectionHomePage/NewsSectionHomePage';
-export { ServiceSection } from './servicPageSections/ServiceSection/ServiceSection';
 export { Team } from './aboutUsPageSections/teamSection/TeamSection';
 export { IntrodactionSectionAboutUs } from './aboutUsPageSections/introdactionSectionAboutUs/IntrodactionSectionAboutUs';
 export { WhyQRushSection } from './aboutUsPageSections/whyQRushSection/WhyQRushSection';
@@ -37,8 +36,6 @@ export { MusicCoursesSwiperSection } from './musicCoursPageSections/musicCourses
 export { MusicCoursesFirstSection } from './musicCoursPageSections/musicCoursesFirstSection/MusicCoursesFirstSection';
 export { MusicCoursesSecondSection } from './musicCoursPageSections/musicCoursesSecondSection/MusicCoursesSecondSection';
 export { ServiceLinks } from './servicPageSections/serviceLinks/ServiceLinks';
-export { FeastSectionNewsPage } from './newsPageSections/feastSectionNewsPage/FeastSectionNewsPage';
-export { EventSectionNewsPage } from './newsPageSections/eventSectionNewsPage/EventSectionNewsPage';
-export { IntroductionSectionNewsPage } from './newsPageSections/introductionSectionNewsPage/IntroductionSectionNewsPage';
 // export { SendUpSectionNewsPage } from './newsPageSections/sendUpSectionNewsPage/SendUpSectionNewsPage';
 // export { ApplicationSectionNewsPage } from './newsPageSections/applicationSectionNewsPage/ApplicationSectionNewsPage';
+export { AllNewsCardSection } from './newsPageSections/allNewsCardSection/AllNewsCardSection';

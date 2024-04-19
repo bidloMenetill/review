@@ -1,19 +1,16 @@
-import {
-  // ApplicationSectionNewsPage,
-  FeastSectionNewsPage,
-  IntroductionSectionNewsPage,
-  EventSectionNewsPage,
-  // SendUpSectionNewsPage,
-} from '../../widgets';
+import { useTranslation } from 'react-i18next';
+import { Advertising } from '../../shared';
+import { AllNewsCardSection } from '../../widgets';
 
 export const NewsPage = () => {
+  const { t } = useTranslation();
   return (
-    <section className='flex box-border h-auto m-0 p-0 flex-col max-w-[1920px] mx-auto'>
-      <IntroductionSectionNewsPage />
-      <FeastSectionNewsPage />
-      <EventSectionNewsPage />
-      {/* <SendUpSectionNewsPage />
-      <ApplicationSectionNewsPage /> */}
+    <section>
+      <AllNewsCardSection />
+      <Advertising
+        title={t('trustUsPage.fourthSection.title')}
+        description={t('trustUsPage.fourthSection.upperTitle')}
+      />
     </section>
   );
 };
