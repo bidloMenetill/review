@@ -5,7 +5,6 @@ import bgSecond from '../../shared/img/second_main_bg.jpg';
 import bgThird from '../../shared/img/third_main_bg.jpg';
 import bgFourth from '../../shared/img/forth_main_bg.jpg';
 import bgFifth from '../../shared/img/fifth_main_bg.jpg';
-import { useMediaQuery } from '../../shared';
 import { useZustandStore } from '../../app/store/store';
 
 export const BgIntroduction = () => {
