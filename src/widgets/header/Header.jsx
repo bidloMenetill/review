@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 import { useState } from 'react';
 import logo from '../../shared/img/rush1.svg';
-import { Button, useMediaQuery } from '../../shared';
+import { Button, scrollToTop, useMediaQuery } from '../../shared';
 
 const locales = {
   ru: { title: 'RU' },
@@ -13,6 +13,7 @@ const locales = {
 export const Header = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+
   const genericHamburgerLine = `h-[2px] w-8 my-[4.9px] rounded-full bg-white transition ease transform duration-300`;
   const headerLinks = [
     {
@@ -48,7 +49,7 @@ export const Header = () => {
     >
       <section className='bg-cover bg-no-repeat bg-center container '>
         <nav className=' mx-auto flex justify-between items-center container '>
-          <Link to={'/'} className='mr-[4vw]'>
+          <Link to={'/'} className='mr-[4vw]' onClick={scrollToTop}>
             <img
               src={logo}
               className='xl:w-[203px] xl:h-[100px]  lg:w-[181px] lg:h-[80px] tablet:w-[223px]  tablet:h-[120px] md:w-[200px] md:h-[100px] sm:w-[181px] sm:h-[80px] flex align-center'
@@ -112,7 +113,9 @@ export const Header = () => {
                       key={index}
                       onClick={() => setIsOpen(false)}
                     >
-                      <Link to={routes.route}>{routes.link}</Link>
+                      <Link onClick={scrollToTop} to={routes.route}>
+                        {routes.link}
+                      </Link>
                     </li>
                   ))}
                 </div>
@@ -123,7 +126,9 @@ export const Header = () => {
               <ul className='flex flex-row justify-around items-center text-gray-100 font-montserrat leading-normal xl:text-2xl xl:gap-8 lg:text-lg lg:gap-5 tablet:text-base tablet:gap-3 md:text-xs md:gap-2 sm:text-xs sm:gap-1'>
                 {headerLinks.map((routes, index) => (
                   <li key={index}>
-                    <Link to={routes.route}>{routes.link}</Link>
+                    <Link onClick={scrollToTop} to={routes.route}>
+                      {routes.link}
+                    </Link>
                   </li>
                 ))}
               </ul>
