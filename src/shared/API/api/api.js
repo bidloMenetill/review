@@ -20,4 +20,10 @@ export const QRUSHAPI = {
   getRehearsalSecondBasePage() {
     return instance.get('v2/srs/rehearsal_base/');
   },
+  getAboutUsArtist() {
+    return instance.get('v1/content/team/');
+  },
+  getAboutUsTeam() {
+    return instance.get('v1/pages/about_us/');
+  },
 };
