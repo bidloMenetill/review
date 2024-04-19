@@ -23,7 +23,6 @@ export const BgIntroduction = () => {
   useEffect(() => {
     getHomePage();
   }, []);
-  console.log(getHomePage);
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isChangingBg && intervalActive) {

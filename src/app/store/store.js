@@ -23,7 +23,6 @@ export const useZustandStore = create(set => ({
   getMusicCourcePage: async () => {
     try {
       const response = await QRUSHAPI.getMusicCourcePage();
-      console.log(response);
       set({ musicCourceData: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
