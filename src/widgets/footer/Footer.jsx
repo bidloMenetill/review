@@ -13,14 +13,14 @@ export const Footer = () => {
         <div className=' text-white flex flex-col tablet:flex-row justify-around items-start   font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] text-[12px] lg:text-[16px] [&>ul>li]:mb-[10px] lg:[&>ul>li]:mb-[20px]  tablet:mb-[6px] tablet:text-[14px] tablet:[&>ul>li]:mb-[10px] tablet:items-start tablet:[&>ul]:mb-[100px] md:text-[18px] md:[&>ul>li]:mb-[8px] md:items-start  '>
           <ul>
             <li className='  font-bold  text-orange-600 hover:text-white'>
-              <Link onClick={scrollToTop()} to={'/about-us'}>
+              <Link onClick={scrollToTop} to={'/about-us'}>
                 О нас
               </Link>
             </li>
             <li>
               <Link
                 to={'/trust-us'}
-                onClick={scrollToTop()}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Нам доверяют
@@ -29,7 +29,7 @@ export const Footer = () => {
             <li>
               <Link
                 to={'/gallery'}
-                onClick={scrollToTop()}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Галерея
@@ -38,7 +38,7 @@ export const Footer = () => {
           </ul>
           <ul>
             <li className='   font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/news'} onClick={scrollToTop()}>
+              <Link to={'/news'} onClick={scrollToTop}>
                 Новости
               </Link>
             </li>
@@ -46,7 +46,7 @@ export const Footer = () => {
             <li>
               <Link
                 to={'/faq'}
-                onClick={scrollToTop()}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Часто задаваемые вопросы
@@ -60,14 +60,14 @@ export const Footer = () => {
           </ul>
           <ul>
             <li className='font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/services'} onClick={scrollToTop()}>
+              <Link to={'/services'} onClick={scrollToTop}>
                 Услуги
               </Link>
             </li>
             <li>
               <Link
                 to={'/rehearsal-cost'}
-                onClick={scrollToTop()}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Репетиционная База
@@ -76,7 +76,7 @@ export const Footer = () => {
             <li>
               <Link
                 to={'/sound-recording'}
-                onClick={scrollToTop()}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Студия Звукозаписи
@@ -84,8 +84,8 @@ export const Footer = () => {
             </li>
             <li>
               <Link
-                to={'/music-cours'}
-                onClick={scrollToTop()}
+                to={'/music-courses'}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Музыкальные Курсы
@@ -94,7 +94,7 @@ export const Footer = () => {
             <li>
               <Link
                 to={'/shop'}
-                onClick={scrollToTop()}
+                onClick={scrollToTop}
                 className='hover:text-orange-600'
               >
                 Магазин
