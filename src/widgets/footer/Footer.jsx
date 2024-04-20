@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { t } from 'i18next';
 import instagram from '../../shared/img/footer/instagram.svg';
 import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
@@ -7,100 +8,57 @@ import { scrollToTop } from '../../shared';
 import { GeeksPro } from './geeksProSection/GeeksProSection';
 
 export const Footer = () => {
+  const footerLinks = [
+    {
+      title: { title: 'О нас', route: '/about-us' },
+      links: [
+        { route: '/trustus', title: t('footer.aboutUs.link1') },
+        { route: '/gallery', title: t('footer.aboutUs.link2') },
+      ],
+    },
+    {
+      title: { title: 'Новости', route: '/news' },
+      links: [
+        { route: '/faq', title: t('footer.news.link1') },
+        { route: '', title: t('footer.news.link2') },
+      ],
+    },
+    {
+      title: { title: 'Услуги', route: '/services' },
+      links: [
+        { route: '/', title: t('footer.services.link1') },
+        { route: '/', title: t('footer.services.link2') },
+        { route: '/', title: t('footer.services.link3') },
+        { route: '/', title: t('footer.services.link4') },
+      ],
+    },
+  ];
+
   return (
     <footer className=' bg-cover bg-no-repeat bg-center max-w-full'>
       <div className=' container w-[90%] mx-auto bg-black pt-[50px] pb-[50px] '>
         <div className=' text-white flex flex-col tablet:flex-row justify-around items-start   font-montserrat  xl:text-[20px] xl:[&>ul>li]:mb-[30px] text-[12px] lg:text-[16px] [&>ul>li]:mb-[10px] lg:[&>ul>li]:mb-[20px]  tablet:mb-[6px] tablet:text-[14px] tablet:[&>ul>li]:mb-[10px] tablet:items-start tablet:[&>ul]:mb-[100px] md:text-[18px] md:[&>ul>li]:mb-[8px] md:items-start  '>
-          <ul>
-            <li className='  font-bold  text-orange-600 hover:text-white'>
-              <Link onClick={scrollToTop()} to={'/about-us'}>
-                О нас
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/trust-us'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Нам доверяют
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/gallery'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Галерея
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className='   font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/news'} onClick={scrollToTop()}>
-                Новости
-              </Link>
-            </li>
+          {footerLinks.map((section, index) => (
+            <ul key={index}>
+              <li className='font-bold text-orange-600 hover:text-white'>
+                <Link to={section.title.route} onClick={scrollToTop}>
+                  {section.title.title}
+                </Link>
+              </li>
+              {section.links.map((link, linkIndex) => (
+                <li key={linkIndex}>
+                  <Link
+                    to={link.route}
+                    onClick={scrollToTop}
+                    className='hover:text-orange-600'
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ))}
 
-            <li>
-              <Link
-                to={'/faq'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Часто задаваемые вопросы
-              </Link>
-            </li>
-            <li>
-              <a href='#' className='hover:text-orange-600'>
-                Информация о Партнерах
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li className='font-bold  text-orange-600 hover:text-white'>
-              <Link to={'/services'} onClick={scrollToTop()}>
-                Услуги
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/rehearsal-cost'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Репетиционная База
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/sound-recording'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Студия Звукозаписи
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/music-cours'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Музыкальные Курсы
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={'/shop'}
-                onClick={scrollToTop()}
-                className='hover:text-orange-600'
-              >
-                Магазин
-              </Link>
-            </li>
-          </ul>
           <ul>
             <li className='  font-bold text-orange-600 hover:text-white'>
               <Link to={'faq'}>Контакты</Link>
