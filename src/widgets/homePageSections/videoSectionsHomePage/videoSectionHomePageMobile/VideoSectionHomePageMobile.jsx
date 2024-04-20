@@ -19,9 +19,9 @@ export const VideoSectionHomePageMobile = () => {
     },
   ];
   return (
-    <section className='pb-[40px]  pt-[30px] sm:pt-[9%]'>
+    <section className='pb-[40px] pt-[30px] sm:mt-[100px]'>
       <section className='mx-auto max-w-[90%] xl:container'>
-        <div className='mb-[20px]  sm:mb-0 pt-[50px] sm:pt-0 flex sm:block justify-between sm:justify-normal'>
+        <div className='mb-[20px] sm:mb-0 pt-[50px] sm:pt-0 flex sm:block justify-between sm:justify-normal'>
           <h2 className='text-[#F5F5F5] font-[Montserrat]  text-[20px] sm:text-[80px] lg:text-[100px] not-italic font-medium leading-[normal]'>
             Видео
           </h2>
@@ -29,7 +29,7 @@ export const VideoSectionHomePageMobile = () => {
             <ViewAllLink linkAddress={'news'} />
           </div>
         </div>
-        <div className='px-[18px] h-[170px] mb-[25px]'>
+        <div className='px-[18px] sm:px-0 h-[170px] sm:h-[334px] mb-[25px]'>
           <iframe
             className='w-full h-full rounded-[10.906px] border-[0.5px] border-solid border-[rgba(255,255,255,0.50)]'
             src='https://www.youtube.com/embed/sgFsJuVcm18?si=RfOrOjLdPGVbfuRe&amp;start=2'
@@ -47,7 +47,7 @@ export const VideoSectionHomePageMobile = () => {
           <ul className='max-w-[245px]'>
             {srcArr?.map((item, index) => (
               <SwiperSlide key={index}>
-                <li className='w-full h-full'>
+                <li className='w-full h-full sm:h-[250px]'>
                   <iframe
                     className='w-full h-full  rounded-[10.906px] border-[0.5px] border-solid border-[rgba(255,255,255,0.50)]'
                     src={item.src}

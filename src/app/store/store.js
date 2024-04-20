@@ -4,6 +4,11 @@ import { QRUSHAPI } from '../../shared/API/api/api';
 export const useZustandStore = create(set => ({
   news: [],
   faqData: [],
+  trustUs: [],
+  celebrities: [],
+  adverts1: [],
+  adverts2: [],
+  shopCards: [],
   getHomePage: async () => {
     try {
       const response = await QRUSHAPI.getHomePage();
@@ -23,8 +28,40 @@ export const useZustandStore = create(set => ({
   getMusicCourcePage: async () => {
     try {
       const response = await QRUSHAPI.getMusicCourcePage();
-      console.log(response);
       set({ musicCourceData: response.data });
+    } catch (error) {
+      console.error('Ошибка при получении страницы', error);
+    }
+  },
+  getTrustUsMainSection: async () => {
+    try {
+      const response = await QRUSHAPI.getTrustUsMainSection();
+      set({ trustUs: response.data.results[0] });
+    } catch (error) {
+      console.error('Ошибка при получении страницы', error);
+    }
+  },
+  getTrustUsCelebrities: async () => {
+    try {
+      const response = await QRUSHAPI.getTrustUsCelebrities();
+      set({ celebrities: response.data.results });
+    } catch (error) {
+      console.error('Ошибка при получении страницы', error);
+    }
+  },
+  getAdverts: async () => {
+    try {
+      const response = await QRUSHAPI.getAdverts();
+      set({ adverts1: response.data.results[0] });
+      set({ adverts2: response.data.results[1] });
+    } catch (error) {
+      console.error('Ошибка при получении страницы', error);
+    }
+  },
+  getShopCards: async () => {
+    try {
+      const response = await QRUSHAPI.getShopCards();
+      set({ shopCards: response.data.results });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }

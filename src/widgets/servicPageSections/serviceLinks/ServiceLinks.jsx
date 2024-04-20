@@ -16,7 +16,7 @@ export const ServiceLinks = () => {
     {
       img: rectangl2,
       title: 'Музыкальные Курсы',
-      links: '/music-cours',
+      links: '/music-courses',
     },
     {
       img: rectangl3,

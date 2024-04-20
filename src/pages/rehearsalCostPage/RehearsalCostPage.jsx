@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   RehearsalCostFirstSection,
   RehearsalCostSecondSection,
@@ -9,18 +8,13 @@ import {
 import { Advertising } from '../../shared';
 
 export const RehearsalCostPage = () => {
-  const { t } = useTranslation();
-
   return (
     <>
       <RehearsalSwiperSection />
       <RehearsalCostFirstSection />
       <RehearsalCostSecondSection />
       <RehearsalCostThirdSection />
-      <Advertising
-        title={t('trustUsPage.fourthSection.title')}
-        description={t('trustUsPage.fourthSection.upperTitle')}
-      />
+      <Advertising />
     </>
   );
 };

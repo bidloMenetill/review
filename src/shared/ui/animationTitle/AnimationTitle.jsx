@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export const AnimationTitle = ({ value }) => {
   const marqueeVariants = {
     animate: {
-      x: ['100%', '-220%'],
+      x: ['1%', '-220%'],
       transition: {
         x: {
           repeat: Infinity,

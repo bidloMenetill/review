@@ -7,7 +7,7 @@ import { Button } from '../../shared';
 export const FormFeedback = () => {
   const {
     register,
-    formState: { errors, isValid },
+    formState: { errors },
     handleSubmit,
     reset,
   } = useForm({ mode: 'onBlur' });
@@ -53,6 +53,7 @@ export const FormFeedback = () => {
           <div>
             <input
               {...register('name', {
+                required: t('faqPage.inputs.formField'),
                 minLength: {
                   value: 3,
                   message:
@@ -76,6 +77,7 @@ export const FormFeedback = () => {
           <div>
             <input
               {...register('whatsappNumber', {
+                required: t('faqPage.inputs.formField'),
                 minLength: {
                   value: 6,
                   message:
@@ -101,7 +103,7 @@ export const FormFeedback = () => {
               )}
             </div>
           </div>
-          <div className='absolute top-[66.5%] sm:top-[71.4%] md:top-[68%] tablet:top-[70%] lg:top-0 lg:relative flex gap-[5px] sm:gap-[27px] items-center pt-[20px]'>
+          <div className='absolute bottom-[1020px] sm:bottom-[1000px] md:bottom-[1300px] tablet:bottom-[1060px] lg:bottom-0 lg:relative flex gap-[5px] sm:gap-[27px] items-center pt-[20px]'>
             <div>
               <div className='w-full flex gap-2'>
                 <input
@@ -135,7 +137,7 @@ export const FormFeedback = () => {
               </p>
             </label>
           </div>
-          <div className='absolute w-full left-0 top-[68%] lg:relative sm:top-[73%] lg:mx-auto tablet:top-[72%] md:top-[69.4%] lg:top-0 md:right-[10%]'>
+          <div className='absolute w-full left-0 bottom-[940px] md:bottom-[1220px] tablet:bottom-[970px] lg:bottom-[0px] lg:relative lg:mx-auto md:right-[10%]'>
             <div className='text-red-600 ml-[5px] mt-[15px] text-[14px]'>
               {errors?.check && (
                 <p>{errors?.check?.message || t('faqPage.inputs.error')}</p>
