@@ -1,12 +1,7 @@
-import { useEffect } from 'react';
 import { Button, useMediaQuery } from '../../../shared';
-export const CardsShopCardsSection = ({ card, properties }) => {
-  // const { getShopCards, shopCards } = usePages();
-  // useEffect(() => {
-  //   getShopCards();
-  // }, []);
-  // console.log(shopCards);
+export const CardsShopCardsSection = ({ card }) => {
   const isMobile = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
+  const urlForImage = import.meta.env.VITE_IMG_URL;
   return (
     <div
       className={`tablet:mt-[100px] flex justify-center tablet:flex-none tablet:justify-between mx-auto h-[662px] sm:h-[1086px] md:h-[1438px] tablet:h-[460px] lg:h-[660px] xl:h-[860px] relative ${isMobile ? 'max-w-[90%] h-[858px] mx-auto' : ''}`}
@@ -18,7 +13,7 @@ export const CardsShopCardsSection = ({ card, properties }) => {
         <div>
           <img
             className={`w-[340px] h-[343px] mx-auto border-[0.50px] border-[solid] border-[#e2ded3] rounded-[16px] sm:w-[518px] sm:h-[504px] md:w-[691px] md:h-[681px] tablet:w-[500px] tablet:h-[460px] lg:w-[680px] lg:h-[660px] xl:w-[805px] xl:h-[860px] ${isMobile ? 'w-[405px] h-[395px]' : ''}`}
-            src={card.img}
+            src={urlForImage + card.image}
             alt='cardImg'
           />
         </div>
@@ -31,14 +26,14 @@ export const CardsShopCardsSection = ({ card, properties }) => {
             <h2
               className={`w-[220px] sm:w-[350px] md:w-[440px] tablet:w-[405px] lg:w-[505px] xl:w-[645px] font-bold text-[#E2DED3] text-[14px] sm:text-[22px] md:text-[27px] tablet:text-[30px] lg:text-[40px] xl:text-[50px] ${isMobile ? 'text-[18px] w-[295px]' : ''}`}
             >
-              {card.instrumentName}
+              {card.title}
             </h2>
             <ul
-              className={`text-[12px] sm:text-[18px] md:text-[23px] font-medium mt-[8px] md:mt-[15px] tablet:text-[22px] lg:text-[27px] xl:text-[30px] tablet:mt-[10px] tablet:ml-[16px] ml-[24px] ${isMobile ? 'text-[16px]' : ''}`}
+              className={`text-[12px] sm:text-[18px] md:text-[23px] list-disc font-medium mt-[8px] md:mt-[15px] tablet:text-[22px] lg:text-[27px] xl:text-[30px] tablet:mt-[10px] ml-[24px] md:ml-[30px] tablet:ml-[36px] ${isMobile ? 'text-[16px]' : ''}`}
             >
-              {properties.map(property => (
-                <li key={property}>
-                  <p>{card[property]}</p>
+              {card.product_description.map(description => (
+                <li key={description.id}>
+                  <p>{description.description}</p>
                 </li>
               ))}
             </ul>
@@ -48,7 +43,7 @@ export const CardsShopCardsSection = ({ card, properties }) => {
               <p
                 className={`font-semibold text-[#d9d9d9] opacity-70 text-[14px] sm:text-[16px] md:text-[27px] md:font-semibold mt-[8px] md:mt-[15px] tablet:text-[25px] lg:text-[27px] xl:text-[30px] tablet:mt-[40px] ${isMobile ? 'text-[14px]' : ''}`}
               >
-                Цена: {card.price}
+                Цена: {card.price} сом
               </p>
               <div className='mt-[16px] md:mt-[31px] text-center'>
                 <Button variant='buyButton'>Купить</Button>
