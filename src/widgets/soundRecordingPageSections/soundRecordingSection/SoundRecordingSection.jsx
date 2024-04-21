@@ -1,40 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '../../../shared';
 import studioRecording from '../../../shared/img/first_gallery_home_page.png';
-import vector from '../../../shared/img/Polygon_1.png';
+import { useZustandStore } from '../../../app/store/store';
 
 export const SoundRecordingSection = () => {
-  const arrayContent = [
-    { id: 0, text: 'ЗАПИСЬ ВОКАЛА' },
-    { id: 1, text: 'СОЗДАНИЕ МУЗЫКИ И АРАНЖИРОВОК' },
-    { id: 2, text: 'ЗАПИСЬ МЫЗЫКАЛЬНЫХ ИНСТРУМЕНТОВ' },
-    {
-      id: 3,
-      text: 'ИЗГОТОВЛЕНИЕ РЕКЛАМНЫХ РОЛИКОВ С ЛУЧШИМИ ДИКТОРАМИ КР',
-    },
-    {
-      id: 4,
-      text: 'МНОГОКАНАЛЬНАЯ ЗАПИСЬ КОНЦЕРТОВ РЕПЕТИЦИЙ И КОНФЕРЕНЦИЙ',
-    },
-  ];
+  const { getSoundRecordingStudioPage, soundRecordingData } = useZustandStore();
+  useEffect(() => {
+    getSoundRecordingStudioPage();
+  }, []);
   return (
-    <section className='relative w-full font-montserrat mb-[20px] md:mb-[164px] bg-[#0000008a] xl:h-[960px] xl:flex xl:justify-end lg:h-[960px] lg:flex lg:justify-end'>
+    <section className='relative w-full font-montserrat mb-[20px] md:mb-[164px] h-[480px] sm:h-[680] tablet:h-[800px] bg-[#0000008a] xl:flex xl:justify-end lg:h-[1300px] lg:flex lg:justify-end'>
       <div className='bg-[#0000008a]'>
         <img
-          className='object-cover w-[75%] h-full mx-auto mt-[25px] mb-[50px] rounded-[16px] xl:mt-[0px] xl:absolute xl:z-[-1] xl:right-[-30px] lg:mt-[0px] lg:absolute lg:z-[-1] lg:right-[-30px]'
+          className='object-cover w-full h-full mx-auto mb-[50px] absolute z-[-1] right-[0px] mt-[0px]'
           src={studioRecording}
           alt='studioRecording'
         />
       </div>
-      <div className='mx-[20px] sm:w-[700px] text-[#fff] xl:absolute xl:left-[100px] xl:z-[2] xl:top-[175px] lg:absolute lg:left-[100px] lg:top-[175px] lg:z-10'>
-        <h3 className='text-[24px] md:text-[50px] font-[500] mb-[24px]'>
-          СТУДИЯ ЗВУКОЗАПИСИ
+      <div className='mx-[20px] py-[50px] sm:w-[700px] text-[#fff] sm:py-[50px] sm:mx-[50px] tablet:py-[10px] xl:absolute xl:left-[100px] xl:z-[2] xl:top-[175px] lg:absolute lg:left-[100px] lg:top-[175px] lg:z-10'>
+        <h3 className='w-[100px] md:w-full text-[32px] tablet:text-[60px] lg:text-[80px] tablet:w-[835px] font-[500] mb-[24px]'>
+          <p>{soundRecordingData.service_name}</p>
         </h3>
-        {arrayContent?.map(el => (
+        {soundRecordingData.description?.map(el => (
           <ul key={el.id}>
             <li>
-              <p className='text-[14px] md:text-[30px] font-[400] text-[#FFFFFF] md:text-[#B4B4B4] mb-[10px] md:mb-[24px] lg:w-full'>
-                {el.text}
+              <p className='text-[14px] md:text-[20px] w-[330px] md:w-[450px] tablet:text-[30px] tablet:w-full font-[400] text-[#FFFFFF] md:text-[#B4B4B4] mb-[10px] md:mb-[12px] tablet:mb-[24px] lg:w-full'>
+                {el.desc}
               </p>
             </li>
           </ul>
