@@ -1,39 +1,19 @@
 export const CardTeamSection = ({ item }) => {
+  const urlForImages = import.meta.env.VITE_IMG_URL;
   return (
-    <li className='flex-row gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl p-2 mb-[50px] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 tablet:max-w-full'>
-      <p className='hidden sm:hidden tablet:w-full tablet:flex tablet:items-center tablet:gap-5 tablet:block tablet:text-2xl tablet:font-medium tablet:text-left tablet:max-h-[300px] tablet:leading-10 tablet:text-slate-100 tablet:font-sans'>
+    <li className='flex-row ml-[3%] mr-[3%] tablet:ml-0 tablet:mr-0 gap-2 pb-[2%] border-[#F93822] border-2 rounded-xl tablet:items-start p-2 mb-[50px] tablet:mb-[120px] xl:my-[6%] border-solid sm:border-transparent sm:flex-row flex sm:pt-2 sm:gap-8 md:flex-col lg:flex'>
+      <div className='p-2 text-center max-w-[575px] mb-[10%] sm:max-w-[750px] md:w-[700px]  tablet:block sm:justify-items-center sm:text-center tablet:h-[650px] tablet:max-w-[450px] lg:max-w-[600px] xl:max-w-[520px] xl:h-[650px] mx-auto px-auto'>
         <img
-          className='hidden sm:hidden tablet:block tablet:max-w-[80%]'
-          src={item.img}
-          alt='photos'
+          // eslint-disable-next-line no-undef
+          src={`${urlForImages}${item.image}`}
+          alt='photos_1'
+          className='rounded-2xl w-[570px] max-h-[650px] h-[650px] xl:rounded-2xl mx-auto sm:w-[750px] md:w-[700px] tablet:max-w-[450px] lg:max-w-[600px] xl:w-[520px] xl:h-[650px] object-cover'
         />
-        <span className='flex tablet:flex-col'>
-          <span className='text-[#F93822] font-bold text-xl tablet:text-3xl'>
-            {item.textName}
-          </span>
-          <span className='tablet:overflow-auto'>{item.text}</span>
-        </span>
-      </p>
-      {/* <div className='sm:hidden max-w-[160px] bg-[#383838] w-[150px] rounded-md'>
-        <img
-          className='sm:hidden max-w-[150px]'
-          src={item.man_150}
-          alt='photos'
-        />
-        <h3 className='sm:hidden text-center max-w-[150px] font-bold text-[20px] text-[#F93822]'>
-          {item.dump}
-        </h3>
-        <p className='sm:hidden text-center max-w-[150px] font-medium text-[16px] text-[#E2DED3]'>
-          {item.andrei_h3}
-        </p>
-      </div> */}
-      <div className='block text-center max-w-[575px] sm:max-w-[99%] sm:block tablet:hidden sm:justify-items-center sm:text-center mx-auto tablet:block'>
-        <img src={item.img} alt='photos_1' className='max-w-[99%] mx-auto' />
         <h3 className='text-[#F93822] font-bold text-xl sm:text-4xl py-7'>
-          {item.textName}
+          {item.first_name}
         </h3>
-        <p className='font-medium text-[#E2DED3] text-base sm:text-3xl max-w-[270px] sm:max-w-[300px]'>
-          {item.text}
+        <p className='font-medium max-w-full md:max-w-full text-[#E2DED3] text-base sm:text-3xl tablet:max-w-full'>
+          {item.role}
         </p>
       </div>
     </li>
