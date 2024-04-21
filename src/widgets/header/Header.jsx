@@ -97,7 +97,6 @@ export const Header = () => {
                           ? 'text-white'
                           : 'text-gray-500'
                       }`}
-                      // FIX ME: remove
                       style={{
                         fontWeight:
                           i18n.resolvedLanguage === locale ? 'bold' : 'normal',
@@ -172,13 +171,6 @@ export const Header = () => {
                             ? 'text-white'
                             : 'text-gray-500'
                         }`}
-                        // FIX ME: remove
-                        style={{
-                          fontWeight:
-                            i18n.resolvedLanguage === locale
-                              ? 'bold'
-                              : 'normal',
-                        }}
                         type='submit'
                         onClick={() => i18n.changeLanguage(locale)}
                       >
@@ -187,9 +179,15 @@ export const Header = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant={'headerButton'}>
-                  {t('header.headerButton')}
-                </Button>
+                <a
+                  target='_blank'
+                  href='https://api.whatsapp.com/send/?phone=996700763736&text&type=phone_number&app_absent=0'
+                  rel='noreferrer'
+                >
+                  <Button variant={'headerButton'}>
+                    {t('header.headerButton')}
+                  </Button>
+                </a>
               </div>
             </>
           )}
