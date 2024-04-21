@@ -1,20 +1,24 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect } from 'react';
 import {
   MusicCoursesFirstSection,
-  MusicCoursesSecondSection,
   MusicCoursesSwiperSection,
 } from '../../widgets';
 import { Advertising } from '../../shared';
+import { useZustandStore } from '../../app/store/store';
 
 export const MusicCoursesPage = () => {
-  const { t } = useTranslation();
-
+  const { getMusicCourcePage, musicCourceData } = useZustandStore();
+  useEffect(() => {
+    getMusicCourcePage();
+  }, []);
   return (
     <>
       <MusicCoursesSwiperSection />
-      <MusicCoursesFirstSection />
-      <MusicCoursesSecondSection />
+      {musicCourceData?.map(item => (
+        <div key={item.id}>
+          <MusicCoursesFirstSection item={item} />
+        </div>
+      ))}
       <Advertising />
     </>
   );

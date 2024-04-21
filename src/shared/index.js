@@ -9,3 +9,4 @@ export { CardRehearsalSection } from './ui/cardRehearsalSection/CardRehearsalSec
 export { SwiperPhotoItem } from './ui/swiperPhotoItem/SwiperPhotoItem';
 export { Input } from './ui/input/Input';
 export { NewsCard } from './ui/newsCard/NewsCard';
+export { CardMusicSection } from './ui/cardMusicSection/CardMusicSection';

@@ -1,35 +1,31 @@
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-export const CardRehearsalSection = ({ el }) => {
+export const CardRehearsalSection = ({ item, openList }) => {
   return (
     <>
-      {el.map(item => (
-        <ul
-          key={item.id}
-          className='text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
-        >
-          <li>
-            <p className='mb-[16px] text-[#E2DED3]'>{item.title}</p>
-          </li>
-          <li>
-            <p>{item.firstDescription}</p>
-          </li>
-          <li>
-            <p>{item.secondDescription}</p>
-          </li>
-          <li>
-            <p>{item.thirdDescription}</p>
-          </li>
-          <li>
-            <p>{item.fourthDescription}</p>
-          </li>
-          <li>
-            <p>{item.fifthDescription}</p>
-          </li>
-          <li>
-            <p>{item.sixthDescription}</p>
-          </li>
-        </ul>
+      {item.map(item => (
+        <div key={item.id}>
+          <ul className='invisible h-0 tablet:visible tablet:h-auto text-[18px] text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
+            <li>
+              <p>{item.naming}</p>
+            </li>
+          </ul>
+          <AnimatePresence>
+            {openList && (
+              <motion.ul
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                key={item.id}
+              >
+                <li>
+                  <p>{item.naming}</p>
+                </li>
+              </motion.ul>
+            )}
+          </AnimatePresence>
+        </div>
       ))}
     </>
   );

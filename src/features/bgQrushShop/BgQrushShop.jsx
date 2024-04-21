@@ -8,7 +8,7 @@ import blackGuitar from '../../shared/img/shop/blackGuitar.png';
 import secondDrumStickBg from '../../shared/img/shop/secondDrumStickBg.png';
 import promark from '../../shared/img/shop/promark.png';
 import heartFire from '../../shared/img/shop/heartFire.png';
-import array_right from '../../shared/img/shop/right_arrow.svg';
+import searchEngine from '../../shared/img/shop/searchEngine.svg';
 
 export const BgQrushShop = () => {
   const bgImages1 = [blueGuitar, promark, secondDrumStickBg];
@@ -54,10 +54,14 @@ export const BgQrushShop = () => {
         <div className=' flex justify-center items-center absolute '>
           <AnimationTitle value={qrushShop} />
         </div>
-        <div className='min-w-[300px] sm:min-w-[500px] max-w-[44%] mx-auto flex justify-center absolute mt-[187px] sm:mt-[287px]'>
+        <div className=' mx-auto flex justify-center absolute mt-[357px] sm:mt-[487px] md:mt-[585px] tablet:mt-[380px] xl:mt-[494px] '>
           <Input variant={'filterInput'} placeholder='Поиск' />
-          <div className='absolute top-3.5 sm:top-4 md:top-6 right-5'>
-            <img src={array_right} alt='array_right' />
+          <div className='absolute top-3 sm:top-3.3 md:top-6 xl:top-8 right-5'>
+            <img
+              className='w-[26px] h-[29px] lg:w-[30px] lg:h-[31px]'
+              src={searchEngine}
+              alt='array_right'
+            />
           </div>
         </div>
         <motion.div

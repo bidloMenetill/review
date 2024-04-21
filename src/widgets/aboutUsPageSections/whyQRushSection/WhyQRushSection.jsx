@@ -20,7 +20,7 @@ export const WhyQRushSection = () => {
     },
   ];
   return (
-    <section className="hidden xl:block xl:bg-[url('/src/shared/img/Why-Q-Rush-1.png')] xl:min-h-[802px] xl:py-28">
+    <section className="hidden xl:bg-[url('/src/shared/img/Why-Q-Rush-1.png')] xl:min-h-[802px] xl:py-28">
       <div className='w-11/12 mx-auto'>
         <h3 className='xl:text-[#F5F5F5] xl:text-center xl:text-5xl xl:leading-[61px] xl:font-medium lg:font-normal lg:text-4xl'>
           {t('aboutUs.secondSection.title')}
