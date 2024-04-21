@@ -18,36 +18,36 @@
     "headerButton": "Contact us"
   },
   "footer": {
-    "aboutUs":{
-      "mainLink":"About Us",
-      "secondLinks":{
-        "link1":"Trust us",
-        "link2":"Gallery"
+    "aboutUs": {
+      "mainLink": "About Us",
+      "secondLinks": {
+        "link1": "Trust us",
+        "link2": "Gallery"
       }
     },
-    "news":{
+    "news": {
       "mainLink": "News",
-      "secondLinks":{
-        "link1":"FAQ",
-        "link2":"Information about Partners"
+      "secondLinks": {
+        "link1": "FAQ",
+        "link2": "Information about Partners"
       }
     },
-    "services":{
-    "mainLink": "Services",
-    "secondLinks": {
-      "link1":"Repitition base",
-      "link2":"Audio Studios",
-      "link3":"Musical Courses",
-      "link4":"shop"
-    }
+    "services": {
+      "mainLink": "Services",
+      "secondLinks": {
+        "link1": "Repitition base",
+        "link2": "Audio Studios",
+        "link3": "Musical Courses",
+        "link4": "Shop"
+      }
     },
-    "contacts":{
+    "contacts": {
       "mainLink": "Contacts",
-      "secondLinks": { 
-        "link1":"Adres: Chingiza Aytmatova 1а (Bilimkana School)",
-        "link2":"See detailed instructions on how to get to us",
-        "link3":"phone number: +996 700 763736",
-        "link4":"Email: qrushstudio.music@gmail.com"
+      "secondLinks": {
+        "link1": "Adres: Chingiza Aytmatova 1а (Bilimkana School)",
+        "link2": "See detailed instructions on how to get to us",
+        "link3": "phone number: +996 700 763736",
+        "link4": "Email: qrushstudio.music@gmail.com"
       }
     }
   },
@@ -300,7 +300,7 @@
       "buttonn": "Reserve"
     }
   },
-    "newsBlock": {
+  "newsBlock": {
     "firstSection": {
       "title": "News",
       "upperTitle": "Here we publish studio news and articles"
@@ -308,11 +308,10 @@
   },
   "faqPage": {
     "inputs": {
-      "error" : "Error!",
+      "error": "Error!",
       "formField": "This field is required",
       "minLengthPrefix": "Minimum ",
       "minLengthSuffix": " characters"
-      
     }
   }
 }
