@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react';
 import { AccordionItems } from '../../../features';
-import bgFAQ from '../../../shared/img/BackgroundFAQ.png';
 import { useZustandStore } from '../../../app/store/store';
 
 export const AccordionSection = () => {
   const [flag, setFlag] = useState('');
-  const { getFaqPage, faqData, getMusicCourcePage, musicCourceData } =
-    useZustandStore();
+  const { getFaqPage, faqData } = useZustandStore();
   useEffect(() => {
     getFaqPage();
-    getMusicCourcePage();
   }, []);
 
   return (

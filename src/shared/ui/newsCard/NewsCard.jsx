@@ -1,5 +1,14 @@
 import React from 'react';
 export const NewsCard = ({ img, title, description, warning, date }) => {
+  const formatDate = dateString => {
+    const date = new Date(dateString);
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day < 10 ? '0' : ''}${day}.${month < 10 ? '0' : ''}${month}.${year}`;
+  };
+
+  const formattedDate = formatDate(date);
   return (
     <section className='w-[100%]'>
       <div className='relative w-[100%] pt-[100%] border-solid border-[1px] border-[#fff] rounded-[20px] mb-[20px]'>
@@ -22,7 +31,7 @@ export const NewsCard = ({ img, title, description, warning, date }) => {
           </p>
         </ul>
         <p className='absolute sm:text-[24px] md:text-[] tablet:text-[24px] lg:text-[30px] xl:text-[40px] italic bottom-[20px]'>
-          {date}
+          {formattedDate}
         </p>
       </div>
     </section>
