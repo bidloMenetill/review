@@ -4,7 +4,7 @@ export { IntroductionSectionHomePage } from './homePageSections/introductionSect
 export { ServicesSectionHomePage } from './homePageSections/servicesSectionHomePage/ServicesSectionHomePage';
 export { TrustUsSectionHomePage } from './homePageSections/trustUsSectionHomePage/TrustUsSectionHomePage';
 export { Footer } from './footer/Footer';
-export { GeeksPro } from './footer/geeksProSection/GeeksProSection';
+export { GeeksProSection } from './footer/geeksProSection/GeeksProSection';
 export { Header } from './header/Header';
 export { MainSectionTrustUs } from './trustUsPageSections/mainSectionTrustUs/MainSectionTrustUs';
 export { PreviewSectionTrustUs } from './trustUsPageSections/previewSectionTrustUs/PreviewSectionTrustUs';

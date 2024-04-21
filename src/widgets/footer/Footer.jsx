@@ -5,7 +5,7 @@ import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
 import whatsapp from '../../shared/img/footer/whatsapp.svg';
 import { scrollToTop } from '../../shared';
-import { GeeksPro } from './geeksProSection/GeeksProSection';
+import { GeeksProSection } from './geeksProSection/GeeksProSection';
 
 export const Footer = () => {
   const footerLinks = [
@@ -65,16 +65,20 @@ export const Footer = () => {
             </li>
             <li>
               <a
+                target='_blank'
                 href='https://go.2gis.com/9do9b'
                 className='hover:text-orange-600'
+                rel='noreferrer'
               >
                 Адрес: Чынгыза Айтматова 1а (школа Билимкана)
               </a>
             </li>
             <li>
               <a
+                target='_blank'
                 href='https://go.2gis.com/9do9b'
                 className='hover:text-orange-600'
+                rel='noreferrer'
               >
                 Посмотри подробную инструкцию как до нас добраться{' '}
                 <span className='text-orange-500 xl:text-[30px] lg:text-[22px] tablet:text-[16px] md:text-[14px] sm:text-[12px]'>
@@ -83,14 +87,20 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='wa.me/996700763736' className='hover:text-orange-600'>
+              <a
+                target='_blank'
+                href='wa.me/996700763736'
+                className='hover:text-orange-600'
+              >
                 Телефон: +996 700 763736
               </a>
             </li>
             <li>
               <a
+                target='_blank'
                 href='https://www.google.com/intl/ru/gmail/about/'
                 className='hover:text-orange-600'
+                rel='noreferrer'
               >
                 Email: qrushstudio.music@gmail.com
               </a>
@@ -98,24 +108,32 @@ export const Footer = () => {
           </ul>
         </div>
         <div className='flex-row flex justify-center gap-[10vw] mt-[10vh] xl:[&>img]:w-[50px]  tablet:[&>img]:w-[40px] sm:[&>img]:w-[30px]  '>
-          <a href='https://t.me/taihop'>
+          <a target='_blank' href='https://t.me/taihop' rel='noreferrer'>
             {' '}
             <img src={telegram} alt='telegram' />
           </a>
-          <a href='https://ig.me/m/qrushstudio'>
+          <a
+            target='_blank'
+            href='https://ig.me/m/qrushstudio'
+            rel='noreferrer'
+          >
             <img src={instagram} alt='instagram' />
           </a>
-          <a href='https://www.youtube.com/@qrushstudio5574'>
+          <a
+            target='_blank'
+            href='https://www.youtube.com/@qrushstudio5574'
+            rel='noreferrer'
+          >
             {' '}
             <img src={youTube} alt='youTube' />
           </a>
-          <a href='wa.me/996700763736'>
+          <a target='_blank' href='wa.me/996700763736'>
             {' '}
             <img src={whatsapp} alt='whatsapp' />
           </a>
         </div>
       </div>
-      <GeeksPro />
+      <GeeksProSection />
     </footer>
   );
 };
