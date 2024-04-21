@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import instagram from '../../shared/img/footer/instagram.svg';
 import telegram from '../../shared/img/footer/telegram.svg';
 import youTube from '../../shared/img/footer/youtube.svg';
@@ -8,32 +8,41 @@ import { scrollToTop } from '../../shared';
 import { GeeksProSection } from './geeksProSection/GeeksProSection';
 
 export const Footer = () => {
+  const { t } = useTranslation();
   const footerLinks = [
     {
-      title: { title: 'О нас', route: '/about-us' },
+      title: { title: t('footer.aboutUs.mainLink'), route: '/about-us' },
       links: [
-        { route: '/trustus', title: t('footer.aboutUs.link1') },
-        { route: '/gallery', title: t('footer.aboutUs.link2') },
+        { route: '/trust-us', title: t('footer.aboutUs.secondLinks.link1') },
+        { route: '/gallery', title: t('footer.aboutUs.secondLinks.link2') },
       ],
     },
     {
-      title: { title: 'Новости', route: '/news' },
+      title: { title: t('footer.news.mainLink'), route: '/news' },
       links: [
-        { route: '/faq', title: t('footer.news.link1') },
-        { route: '', title: t('footer.news.link2') },
+        { route: '/faq', title: t('footer.news.secondLinks.link1') },
+        { route: '/', title: t('footer.news.secondLinks.link2') },
       ],
     },
     {
-      title: { title: 'Услуги', route: '/services' },
+      title: { title: t('footer.services.mainLink'), route: '/services' },
       links: [
-        { route: '/', title: t('footer.services.link1') },
-        { route: '/', title: t('footer.services.link2') },
-        { route: '/', title: t('footer.services.link3') },
-        { route: '/', title: t('footer.services.link4') },
+        {
+          route: '/rehearsal-cost',
+          title: t('footer.services.secondLinks.link1'),
+        },
+        {
+          route: '/sound-recording',
+          title: t('footer.services.secondLinks.link2'),
+        },
+        {
+          route: '/music-courses',
+          title: t('footer.services.secondLinks.link3'),
+        },
+        { route: '/shop', title: t('footer.services.secondLinks.link4') },
       ],
     },
   ];
-
   return (
     <footer className=' bg-cover bg-no-repeat bg-center max-w-full'>
       <div className=' container w-[90%] mx-auto bg-black pt-[50px] pb-[50px] '>
@@ -61,7 +70,7 @@ export const Footer = () => {
 
           <ul>
             <li className='  font-bold text-orange-600 hover:text-white'>
-              <Link to={'faq'}>Контакты</Link>
+              <Link to={'faq'}>{t('footer.contacts.mainLink')}</Link>
             </li>
             <li>
               <a
@@ -70,7 +79,7 @@ export const Footer = () => {
                 className='hover:text-orange-600'
                 rel='noreferrer'
               >
-                Адрес: Чынгыза Айтматова 1а (школа Билимкана)
+                {t('footer.contacts.secondLinks.link1')}
               </a>
             </li>
             <li>
@@ -80,7 +89,7 @@ export const Footer = () => {
                 className='hover:text-orange-600'
                 rel='noreferrer'
               >
-                Посмотри подробную инструкцию как до нас добраться{' '}
+                {t('footer.contacts.secondLinks.link2')}
                 <span className='text-orange-500 xl:text-[30px] lg:text-[22px] tablet:text-[16px] md:text-[14px] sm:text-[12px]'>
                   →
                 </span>
@@ -89,10 +98,11 @@ export const Footer = () => {
             <li>
               <a
                 target='_blank'
-                href='wa.me/996700763736'
+                href='tel:+996700763736'
                 className='hover:text-orange-600'
+                rel='noreferrer'
               >
-                Телефон: +996 700 763736
+                {t('footer.contacts.secondLinks.link3')}
               </a>
             </li>
             <li>
@@ -102,7 +112,7 @@ export const Footer = () => {
                 className='hover:text-orange-600'
                 rel='noreferrer'
               >
-                Email: qrushstudio.music@gmail.com
+                {t('footer.contacts.secondLinks.link4')}
               </a>
             </li>
           </ul>
@@ -127,7 +137,11 @@ export const Footer = () => {
             {' '}
             <img src={youTube} alt='youTube' />
           </a>
-          <a target='_blank' href='wa.me/996700763736'>
+          <a
+            target='_blank'
+            href='https://api.whatsapp.com/send/?phone=996700763736&text&type=phone_number&app_absent=0'
+            rel='noreferrer'
+          >
             {' '}
             <img src={whatsapp} alt='whatsapp' />
           </a>
