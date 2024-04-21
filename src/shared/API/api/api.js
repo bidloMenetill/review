@@ -17,8 +17,11 @@ export const QRUSHAPI = {
   getRehearsalFirstBasePage() {
     return instance.get('v2/rb/rehearsal_base/');
   },
-  getRehearsalSecondBasePage() {
-    return instance.get('v2/srs/rehearsal_base/');
+  getNewsPage() {
+    return instance.get('v1/content/news/');
+  },
+  getSoundRecordingPage() {
+    return instance.get('v2/srs/sound_recording_studio/');
   },
   getTrustUsMainSection() {
     return instance.get('v1/pages/trust_us/');
