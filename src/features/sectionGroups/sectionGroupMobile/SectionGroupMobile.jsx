@@ -56,7 +56,7 @@ export const SectionGroupMobile = props => {
         </ul>{' '}
         <Link
           to='services'
-          className='flex justify-center mt-[100px]'
+          className='flex justify-center mt-[20px] sm:mt-[100px]'
           onClick={scrollToTop}
         >
           <Button variant='moreInfoButton'>Подробнее</Button>
