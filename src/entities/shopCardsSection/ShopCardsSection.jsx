@@ -1,15 +1,8 @@
-import { useEffect } from 'react';
 import { useMediaQuery } from '../../shared';
-import { useZustandStore } from '../../app/store/store';
 import { CardsShopCardsSection } from './cardShopCardsSection/CardsShopCardsSection';
 
-export const ShopCardsSection = () => {
+export const ShopCardsSection = ({ shopCards }) => {
   const isMobile = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
-  const { getShopCards, shopCards } = useZustandStore();
-  useEffect(() => {
-    getShopCards();
-  }, []);
-
   return (
     <section>
       <ul
