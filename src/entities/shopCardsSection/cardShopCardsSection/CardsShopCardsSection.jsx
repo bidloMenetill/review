@@ -46,7 +46,13 @@ export const CardsShopCardsSection = ({ card }) => {
                 Цена: {card.price} сом
               </p>
               <div className='mt-[16px] md:mt-[31px] text-center'>
-                <Button variant='buyButton'>Купить</Button>
+                <a
+                  href='https://api.whatsapp.com/send/?phone=996700763736&text&type=phone_number&app_absent=0'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Button variant='buyButton'>Купить</Button>
+                </a>
               </div>
             </div>
           </div>
