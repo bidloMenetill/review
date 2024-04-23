@@ -1,5 +1,5 @@
 import backImg from '../../../shared/img/galleryPage/first.jpg';
-// FIX ME: add section
+
 export const GalleryFirstSectionGalleryPage = () => {
   return (
     <section

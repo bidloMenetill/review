@@ -28,7 +28,7 @@ export const CelebritiesSection = ({ celebrities }) => {
               <p
                 className={`w-[302px] md:w-[402px] tablet:w-full lg:w-[370px] mx-auto text-[16px] text-center sm:text-[17px] md:text-[19px] lg:text-[20px] md:font-semibold font-medium tablet:font-bold`}
               >
-                {celeb.role === '-' ? '' : true}
+                {celeb.role}
               </p>
             </div>
           </li>

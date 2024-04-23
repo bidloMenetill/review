@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import { Navigation } from 'swiper/modules';
 import bgNews from '../../../shared/img/main_page_bg.jpg';
 import firstCardBg from '../../../shared/img/first_news_bg.png';
 import secondCardBg from '../../../shared/img/second_news_bg.jpg';
@@ -60,9 +61,10 @@ export const NewsSectionHomePage = () => {
           </div>
         </div>
         <Swiper
+          modules={Navigation}
           spaceBetween={isMobile ? 20 : 30}
           slidesPerView={1.6}
-          navigation={false}
+          navigation={true}
         >
           <ul className='mt-[65px] flex'>
             {cards.map((item, index) => (

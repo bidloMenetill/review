@@ -20,7 +20,6 @@ export const ErrorPageSection = () => {
           </p>
         </div>
         <div className='text-center mt-[49px]'>
-          {/* FIX ME: children */}
           <Button variant='orangeButton'>На главную</Button>
         </div>
       </div>

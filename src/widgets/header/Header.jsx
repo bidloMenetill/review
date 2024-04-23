@@ -11,6 +11,7 @@ const locales = {
   kg: { title: 'KG' },
 };
 export const Header = () => {
+  const isMobileAndTablet = useMediaQuery('( max-width: 1026px)');
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,38 +42,12 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle6'),
     },
   ];
-  const headerLinksMobile = [
-    {
-      route: '/about-us',
-      link: t('header.headerLink.linkTitle1'),
-    },
-    {
-      route: '/services',
-      link: t('header.headerLink.linkTitle2'),
-    },
-    {
-      route: '/trust-us',
-      link: t('header.headerLink.linkTitle3'),
-    },
-    {
-      route: '/news',
-      link: t('header.headerLink.linkTitle4'),
-    },
-    {
-      route: '/gallery',
-      link: t('header.headerLink.linkTitle5'),
-    },
-    {
-      route: '/faq',
-      link: t('header.headerLink.linkTitle6'),
-    },
-    {
+  if (isMobileAndTablet) {
+    headerLinks.push({
       route: '/shop',
-      link: 'Магазин',
-    },
-  ];
-  const isMobileAndTablet = useMediaQuery('( max-width: 1024px)');
-
+      link: t('header.headerLink.linkTitle7'),
+    });
+  }
   return (
     <header
       className={`${isOpen ? 'bg-black ' : 'bg-black/50 backdrop-opacity-10 backdrop-invert'} z-10  h-[100px]  w-full flex items-center justify-center  top-0 backdrop-blur-50 fixed `}
@@ -142,7 +117,11 @@ export const Header = () => {
                       key={index}
                       onClick={() => setIsOpen(false)}
                     >
-                      <Link onClick={scrollToTop} to={routes.route}>
+                      <Link
+                        className=''
+                        onClick={scrollToTop}
+                        to={routes.route}
+                      >
                         {routes.link}
                       </Link>
                     </li>
