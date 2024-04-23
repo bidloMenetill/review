@@ -1,6 +1,6 @@
 export const ModalWindow = ({ openModal, setOpenModal }) => {
   return (
-    <div
+    <section
       onClick={() => setOpenModal(false)}
       className={`${openModal ? 'bg-[#0000005b] w-full h-[100vh] fixed top-[0] left-[0] flex items-center opacity-1' : ' opacity-0'} ease-out duration-[0.5s]`}
     >
@@ -12,6 +12,6 @@ export const ModalWindow = ({ openModal, setOpenModal }) => {
           на ваш вопрос ответит наш сотрудник.
         </p>
       </div>
-    </div>
+    </section>
   );
 };

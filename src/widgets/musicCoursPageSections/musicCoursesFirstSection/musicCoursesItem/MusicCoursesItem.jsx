@@ -1,19 +1,17 @@
 import React from 'react';
-import { CardMusicSection, SwiperPhotoItem } from '../../../shared';
-import { MusicCoursesItem } from './musicCoursesItem/MusicCoursesItem';
+import { CardMusicSection, SwiperPhotoItem } from '../../../../shared';
 
-export const MusicCoursesFirstSection = ({ item }) => {
-  // const arrayMusicCourses = item.description[0].mc_name;
-  // const arrayImg = item.description[0].image;
-  console.log(item);
+export const MusicCoursesItem = ({ item }) => {
+  const arrayMusicCourses = item.mc_name;
+  const arrayImg = item.image;
   return (
-    <section className='w-full mx-auto font-montserrat text-[#E2DED3] md:mb-[90px] tablet:mb-[154px]'>
-      {/* <div className='mx-[20px] text-center sm:mt-[30px] tablet:mt-[100px]'>
+    <div>
+      <div className='mx-[20px] text-center sm:mt-[30px] tablet:mt-[100px]'>
         <p className='text-[18px] font-[500] pb-[22px] md:pb-[38px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
-          {item.service_name}
+          {item.title}
         </p>
         <p className='text-[14px] sm:text-[18px] font-[500] pb-[10px] md:pb-[25px] text-[#FFFFFF] sm:text-[#B4B4B4] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'>
-          {item.description[0].title}
+          {item.desc}
         </p>
       </div>
 
@@ -36,10 +34,7 @@ export const MusicCoursesFirstSection = ({ item }) => {
             ))}
           </section>
         </div>
-      </div> */}
-      {item.description?.map(item => (
-        <MusicCoursesItem item={item} />
-      ))}
-    </section>
+      </div>
+    </div>
   );
 };

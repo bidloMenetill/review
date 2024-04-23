@@ -13,9 +13,9 @@ export const MusicCoursesPage = () => {
   }, []);
   return (
     <>
-      <MusicCoursesSwiperSection />
       {musicCourceData?.map(item => (
         <div key={item.id}>
+          <MusicCoursesSwiperSection item={item} />
           <MusicCoursesFirstSection item={item} />
         </div>
       ))}
