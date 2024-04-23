@@ -35,4 +35,10 @@ export const QRUSHAPI = {
   getShopCards() {
     return instance.get('v1/content/shop/');
   },
+  getAboutUsArtist() {
+    return instance.get('v1/content/team/');
+  },
+  getAboutUsTeam() {
+    return instance.get('v1/pages/about_us/');
+  },
 };

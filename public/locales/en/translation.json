@@ -13,30 +13,43 @@
       "linkTitle3": "News",
       "linkTitle4": "Trust us",
       "linkTitle5": "Gallery",
-      "linkTitle6": "Contacts"
+      "linkTitle6": "Contacts",
+      "linkTitle7": "Shop"
     },
     "headerButton": "Contact us"
   },
   "footer": {
-    "aboutUs":{
-      "link1":"Trust us",
-      "link2":"Gallery"
+    "aboutUs": {
+      "mainLink": "About Us",
+      "secondLinks": {
+        "link1": "Trust us",
+        "link2": "Gallery"
+      }
     },
-    "news":{
-      "link1":"Часто задаваемые вопросы",
-      "link2":"Информация о Партнерах"
+    "news": {
+      "mainLink": "News",
+      "secondLinks": {
+        "link1": "FAQ",
+        "link2": "Information about Partners"
+      }
     },
-    "services":{
-    "link1":"Repitition base",
-    "link2":"Audio Studios",
-    "link3":"Musical Courses",
-    "link4":"shop"
+    "services": {
+      "mainLink": "Services",
+      "secondLinks": {
+        "link1": "Repitition base",
+        "link2": "Audio Studios",
+        "link3": "Musical Courses",
+        "link4": "Shop"
+      }
     },
-    "contacts":{
-      "link1":"Adres: Chingiza Aytmatova 1а (Bilimkana School)",
-      "link2":"Посмотри подробную инструкцию как до нас добраться                                    ",
-      "link3":"phone number: +996 700 763736",
-      "link4":"Email: qrushstudio.music@gmail.com"
+    "contacts": {
+      "mainLink": "Contacts",
+      "secondLinks": {
+        "link1": "Adres: Chingiza Aytmatova 1а (Bilimkana School)",
+        "link2": "See detailed instructions on how to get to us",
+        "link3": "phone number: +996 700 763736",
+        "link4": "Email: qrushstudio.music@gmail.com"
+      }
     }
   },
 
@@ -288,7 +301,7 @@
       "buttonn": "Reserve"
     }
   },
-    "newsBlock": {
+  "newsBlock": {
     "firstSection": {
       "title": "News",
       "upperTitle": "Here we publish studio news and articles"
@@ -296,11 +309,10 @@
   },
   "faqPage": {
     "inputs": {
-      "error" : "Error!",
+      "error": "Error!",
       "formField": "This field is required",
       "minLengthPrefix": "Minimum ",
       "minLengthSuffix": " characters"
-      
     }
   }
 }

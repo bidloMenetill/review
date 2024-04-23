@@ -9,11 +9,22 @@ import secondDrumStickBg from '../../shared/img/shop/secondDrumStickBg.png';
 import promark from '../../shared/img/shop/promark.png';
 import heartFire from '../../shared/img/shop/heartFire.png';
 import searchEngine from '../../shared/img/shop/searchEngine.svg';
+import { useZustandStore } from '../../app/store/store';
+import { ShopCardsSection } from '../../entities/shopCardsSection/ShopCardsSection';
 
 export const BgQrushShop = () => {
-  const bgImages1 = [blueGuitar, promark, secondDrumStickBg];
-  const bgImages2 = [drumStickBg, blackGuitar, heartFire];
-
+  const { getShopCards, shopCards } = useZustandStore();
+  useEffect(() => {
+    getShopCards();
+  }, []);
+  const bgImages1 = [
+    blueGuitar,
+    drumStickBg,
+    promark,
+    blackGuitar,
+    secondDrumStickBg,
+    heartFire,
+  ];
   const [indexQrushShop, setIndexQrushShop] = useState(0);
   const isChangingBg = false;
   const timeoutId = null;
@@ -22,7 +33,6 @@ export const BgQrushShop = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isChangingBg && intervalActive) {
-        setIndexQrushShop(prevIndex => (prevIndex + 1) % bgImages2.length);
         setIndexQrushShop(prevIndex => (prevIndex + 1) % bgImages1.length);
       }
     }, 4000);
@@ -31,21 +41,24 @@ export const BgQrushShop = () => {
       clearInterval(interval);
       if (timeoutId) clearTimeout(timeoutId);
     };
-  }, [
-    bgImages1.length,
-    bgImages2.length,
-    timeoutId,
-    isChangingBg,
-    intervalActive,
-  ]);
+  }, [bgImages1.length, timeoutId, isChangingBg, intervalActive]);
 
   const isMobile = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
+
+  const [searchTerm, setSearchTerm] = useState('');
+  const handleSearchChange = event => {
+    setSearchTerm(event.target.value);
+  };
+
+  const filteredShopCards = shopCards.filter(card =>
+    card.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <section>
       <div className='max-w-[1920px] mx-auto flex justify-center items-center bg-[#000] '>
         <motion.div
-          className={`bg-cover bg-center w-[50%] h-[464px] sm:h-[600px] md:h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
+          className={`bg-cover bg-center w-[100%] h-[464px] sm:h-[650px] md:h-[804px] tablet:h-[980px] lg:h-[1300px] xl:h-[1560px] bg-[#000] bg-animation ${isMobile ? 'h-[560px]' : ''}`}
           style={{
             backgroundImage: `url(${bgImages1[indexQrushShop]})`,
             transition: 'background-image 1s ease-in-out',
@@ -55,7 +68,12 @@ export const BgQrushShop = () => {
           <AnimationTitle value={qrushShop} />
         </div>
         <div className=' mx-auto flex justify-center absolute mt-[357px] sm:mt-[487px] md:mt-[585px] tablet:mt-[380px] xl:mt-[494px] '>
-          <Input variant={'filterInput'} placeholder='Поиск' />
+          <Input
+            value={searchTerm}
+            onChange={handleSearchChange}
+            variant={'filterInput'}
+            placeholder='Поиск'
+          />
           <div className='absolute top-3 sm:top-3.3 md:top-6 xl:top-8 right-5'>
             <img
               className='w-[26px] h-[29px] lg:w-[30px] lg:h-[31px]'
@@ -64,18 +82,12 @@ export const BgQrushShop = () => {
             />
           </div>
         </div>
-        <motion.div
-          className={`bg-cover bg-center w-[50%] h-[464px] sm:h-[600px] md:h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
-          style={{
-            backgroundImage: `url(${bgImages2[indexQrushShop]})`,
-            transition: 'background-image 1s ease-in-out',
-          }}
-        />
       </div>
+      <ShopCardsSection shopCards={filteredShopCards} searchTerm={searchTerm} />
     </section>
   );
 };
-
+//FIX ME:
 // import { useEffect, useState } from 'react';
 // import { motion } from 'framer-motion';
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -94,13 +106,25 @@ export const BgQrushShop = () => {
 // import secondDrumStickBg from '../../shared/img/shop/secondDrumStickBg.png';
 // import promark from '../../shared/img/shop/promark.png';
 // import heartFire from '../../shared/img/shop/heartFire.png';
-// import array_right from '../../shared/img/shop/right_arrow.svg';
+// import searchEngine from '../../shared/img/shop/searchEngine.svg';
+// import { useZustandStore } from '../../app/store/store';
+// import { ShopCardsSection } from '../../entities/shopCardsSection/ShopCardsSection';
 
 // const arrayImg = Array(4).fill(qrushShop);
 
 // export const BgQrushShop = () => {
-//   const bgImages1 = [blueGuitar, promark, secondDrumStickBg];
-//   const bgImages2 = [drumStickBg, blackGuitar, heartFire];
+//   const { getShopCards, shopCards } = useZustandStore();
+//   useEffect(() => {
+//     getShopCards();
+//   }, []);
+//   const bgImages1 = [
+//     blueGuitar,
+//     drumStickBg,
+//     promark,
+//     blackGuitar,
+//     secondDrumStickBg,
+//     heartFire,
+//   ];
 
 //   const [indexQrushShop, setIndexQrushShop] = useState(0);
 //   const isChangingBg = false;
@@ -110,7 +134,6 @@ export const BgQrushShop = () => {
 //   useEffect(() => {
 //     const interval = setInterval(() => {
 //       if (!isChangingBg && intervalActive) {
-//         setIndexQrushShop(prevIndex => (prevIndex + 1) % bgImages2.length);
 //         setIndexQrushShop(prevIndex => (prevIndex + 1) % bgImages1.length);
 //       }
 //     }, 4000);
@@ -119,21 +142,24 @@ export const BgQrushShop = () => {
 //       clearInterval(interval);
 //       if (timeoutId) clearTimeout(timeoutId);
 //     };
-//   }, [
-//     bgImages1.length,
-//     bgImages2.length,
-//     timeoutId,
-//     isChangingBg,
-//     intervalActive,
-//   ]);
+//   }, [bgImages1.length, timeoutId, isChangingBg, intervalActive]);
 
 //   const isMobile = useMediaQuery('(min-width: 450px) and (max-width: 575px)');
+
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const handleSearchChange = event => {
+//     setSearchTerm(event.target.value);
+//   };
+
+//   const filteredShopCards = shopCards.filter(card =>
+//     card.title.toLowerCase().includes(searchTerm.toLowerCase())
+//   );
 
 //   return (
 //     <section>
 //       <div className='max-w-[1920px] mx-auto flex justify-center items-center bg-[#000] '>
 //         <motion.div
-//           className={`bg-cover bg-center w-[50%] h-[464px] sm:h-[600px] md:h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
+//           className={`bg-cover bg-center w-[100%] h-[464px] sm:h-[650px] md:h-[804px] tablet:h-[980px] lg:h-[1300px] xl:h-[1560px] bg-[#000] bg-animation ${isMobile ? 'h-[560px]' : ''}`}
 //           style={{
 //             backgroundImage: `url(${bgImages1[indexQrushShop]})`,
 //             transition: 'background-image 1s ease-in-out',
@@ -153,7 +179,7 @@ export const BgQrushShop = () => {
 //             loop={true}
 //           >
 //             {arrayImg?.map((img, index) => (
-//               <SwiperSlide>
+//               <SwiperSlide key={index}>
 //                 <img
 //                   className='w-[100%] h-[50px] sm:h-[80px] md:h-[120px] lg:h-[160px] xl:h-[240px] '
 //                   src={img}
@@ -163,20 +189,24 @@ export const BgQrushShop = () => {
 //             ))}
 //           </Swiper>
 //         </div>
-//         <div className='min-w-[300px] sm:min-w-[500px] max-w-[44%] mx-auto flex justify-center absolute mt-[187px] sm:mt-[287px]'>
-//           <Input variant={'filterInput'} placeholder='Поиск' />
-//           <div className='absolute top-3.5 sm:top-4 md:top-6 right-5'>
-//             <img src={array_right} alt='array_right' />
+
+//         <div className=' mx-auto flex justify-center absolute mt-[357px] sm:mt-[487px] md:mt-[585px] tablet:mt-[380px] xl:mt-[494px] '>
+//           <Input
+//             value={searchTerm}
+//             onChange={handleSearchChange}
+//             variant={'filterInput'}
+//             placeholder='Поиск'
+//           />
+//           <div className='absolute top-3 sm:top-3.3 md:top-6 xl:top-8 right-5'>
+//             <img
+//               className='w-[26px] h-[29px] lg:w-[30px] lg:h-[31px]'
+//               src={searchEngine}
+//               alt='array_right'
+//             />
 //           </div>
 //         </div>
-//         <motion.div
-//           className={`bg-cover bg-center w-[50%] h-[464px] sm:h-[600px] md:h-[764px] tablet:h-[620px] lg:h-[800px] xl:h-[960px] bg-[#000] bg-animation ${isMobile ? 'h-[260px]' : ''}`}
-//           style={{
-//             backgroundImage: `url(${bgImages2[indexQrushShop]})`,
-//             transition: 'background-image 1s ease-in-out',
-//           }}
-//         />
 //       </div>
+//       <ShopCardsSection shopCards={filteredShopCards} searchTerm={searchTerm} />
 //     </section>
 //   );
 // };

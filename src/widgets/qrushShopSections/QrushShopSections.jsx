@@ -6,7 +6,7 @@ export const QrushShopSections = () => {
   return (
     <>
       <BgQrushShop />
-      <ShopCardsSection />
+      {/* <ShopCardsSection /> */}
     </>
   );
 };

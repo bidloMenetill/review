@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 export const SwiperPhotoItem = ({ arrayImg }) => {
@@ -8,6 +9,8 @@ export const SwiperPhotoItem = ({ arrayImg }) => {
   const baseUrlImg = import.meta.env.VITE_IMG_URL;
   return (
     <Swiper
+      modules={{ Navigation }}
+      navigation={true}
       slidesPerView={mobileScreen ? 1.1 : tabletScreen ? 2.3 : 3.1}
       loop={true}
       pagination={{ clickable: true }}
