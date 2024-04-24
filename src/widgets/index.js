@@ -27,9 +27,7 @@ export { GalleryVideoSectionGalleryPage } from './galleryPageSections/galleryVid
 export { GalleryVideoSliderSectionGalleryPage } from './galleryPageSections/galleryVideoSliderSectionGalleryPage/GalleryVideoSliderSectionGalleryPage';
 
 export { SoundRecordingSection } from './soundRecordingPageSections/soundRecordingSection/SoundRecordingSection';
-export { RehearsalSwiperSection } from './rehearsalCostPageSections/rehearsalSwiperSection/RehearsalSwiperSection';
 export { RehearsalCostFirstSection } from './rehearsalCostPageSections/rehearsalCostFirstSection/RehearsalCostFirstSection';
-export { MusicCoursesSwiperSection } from './musicCoursPageSections/musicCoursesSwiperSection/MusicCoursesSwiperSection';
 export { MusicCoursesFirstSection } from './musicCoursPageSections/musicCoursesFirstSection/MusicCoursesFirstSection';
 export { ServiceLinks } from './servicPageSections/serviceLinks/ServiceLinks';
 // export { SendUpSectionNewsPage } from './newsPageSections/sendUpSectionNewsPage/SendUpSectionNewsPage';
