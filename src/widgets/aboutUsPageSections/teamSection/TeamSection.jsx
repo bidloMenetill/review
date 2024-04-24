@@ -9,8 +9,15 @@ export const Team = () => {
     getAboutUsArtist();
     getAboutUsTeam();
   }, []);
+  const urlForBgImage = import.meta.env.VITE_IMG_URL;
   return (
-    <section className='bg-[url("/src/shared/img/aboutMobile/bg_section_2.png")] max-w-[1920px] bg-cover bg-no-repeat flex min-h-[1159px]'>
+    <section
+      style={{
+        backgroudImage: `url(${urlForBgImage}${aboutUsTeam[1]?.background[0]?.background})`,
+      }}
+      className='bg-cover bg-no-repeat flex min-h-[1159px]'
+    >
+      {/* <section className='bg-[url("/src/shared/img/aboutMobile/bg_section_2.png")] max-w-[1920px] bg-cover bg-no-repeat flex min-h-[1159px]'> */}
       <div className='tablet:max-w-[99%] flex flex-col justify-center text-center tablet:text-left items-center gap-y-12 lg:max-w-[1500px] mx-auto'>
         <h2
           className='text-left pt-[3%] sm:text-6xl sm:font-bold sm:text-[#E2DED3] xl:text-left text-3xl xl:text-7xl text-[#F5F5F5]
