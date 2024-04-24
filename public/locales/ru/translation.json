@@ -12,41 +12,42 @@
       "linkTitle4": "Новости",
       "linkTitle3": "Нам доверяют",
       "linkTitle5": "Галерея",
-      "linkTitle6": "Контакты"
+      "linkTitle6": "Контакты",
+      "linkTitle7": "Магазин"
     },
     "headerButton": "Связаться"
   },
   "footer": {
-    "aboutUs":{
-      "mainLink":"О нас",
-      "secondLinks":{        
-        "link1":"Нам доверяют",
-        "link2":"Галерея"
+    "aboutUs": {
+      "mainLink": "О нас",
+      "secondLinks": {
+        "link1": "Нам доверяют",
+        "link2": "Галерея"
       }
     },
-    "news":{
-      "mainLink":"Новости",
-      "secondLinks":{
-        "link1":"Часто задаваемые вопросы",
-        "link2":"Информация о Партнерах"
+    "news": {
+      "mainLink": "Новости",
+      "secondLinks": {
+        "link1": "Часто задаваемые вопросы",
+        "link2": "Информация о Партнерах"
       }
     },
-    "services":{
-      "mainLink":"Услуги",
-      "secondLinks":{
-        "link1":"Репетиционная База",
-        "link2":"Студия Звукозаписи",
-        "link3":"Музыкальные Курсы",
-        "link4":"Магазин"
+    "services": {
+      "mainLink": "Услуги",
+      "secondLinks": {
+        "link1": "Репетиционная База",
+        "link2": "Студия Звукозаписи",
+        "link3": "Музыкальные Курсы",
+        "link4": "Магазин"
       }
     },
-    "contacts":{
-      "mainLink":"Контакты",
-      "secondLinks":{
-        "link1":"Адрес: Чынгыза Айтматова 1а (школа Билимкана)",
-        "link2":"Посмотри подробную инструкцию как до нас добраться",
-        "link3":"Телефон: +996 700 763736",
-        "link4":"Email: qrushstudio.music@gmail.com"
+    "contacts": {
+      "mainLink": "Контакты",
+      "secondLinks": {
+        "link1": "Адрес: Чынгыза Айтматова 1а (школа Билимкана)",
+        "link2": "Посмотри подробную инструкцию как до нас добраться",
+        "link3": "Телефон: +996 700 763736",
+        "link4": "Email: qrushstudio.music@gmail.com"
       }
     }
   },
@@ -301,11 +302,10 @@
   },
   "faqPage": {
     "inputs": {
-      "error" : "Error!",
+      "error": "Error!",
       "formField": "This field is required",
       "minLengthPrefix": "Minimum ",
       "minLengthSuffix": " characters"
-      
     }
   }
 }

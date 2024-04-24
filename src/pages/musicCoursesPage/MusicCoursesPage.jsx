@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  MusicCoursesFirstSection,
-  MusicCoursesSwiperSection,
-} from '../../widgets';
+import { MusicCoursesFirstSection } from '../../widgets';
 import { Advertising } from '../../shared';
 import { useZustandStore } from '../../app/store/store';
 
@@ -13,7 +10,6 @@ export const MusicCoursesPage = () => {
   }, []);
   return (
     <>
-      <MusicCoursesSwiperSection />
       {musicCourceData?.map(item => (
         <div key={item.id}>
           <MusicCoursesFirstSection item={item} />

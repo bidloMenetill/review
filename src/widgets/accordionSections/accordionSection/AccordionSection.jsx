@@ -17,19 +17,20 @@ export const AccordionSection = () => {
         </h2>
       </div>
       <div className='max-w-[600px] mx-[16px] mb-[50px] sm:mx-auto sm:mb-[120px] xl:max-w-[1300px] lg:max-w-[900px] lg:mb-[80px]'>
-        {faqData?.map(el => {
-          return (
-            <div key={el.id}>
-              <AccordionItems
-                title={el.id}
-                text={el.question}
-                description={el.answer}
-                flag={flag}
-                setFlag={setFlag}
-              />
-            </div>
-          );
-        })}
+        {faqData &&
+          faqData?.map(el => {
+            return (
+              <div key={el.id}>
+                <AccordionItems
+                  title={el.id}
+                  text={el.question}
+                  description={el.answer}
+                  flag={flag}
+                  setFlag={setFlag}
+                />
+              </div>
+            );
+          })}
       </div>
     </section>
   );

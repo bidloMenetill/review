@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { QRUSHAPI } from '../../shared/API/api/api';
 
 export const useZustandStore = create(set => ({
-  news: [],
+  homePageData: [],
   faqData: [],
   soundRecordingData: [],
   newsData: [],
@@ -18,7 +18,7 @@ export const useZustandStore = create(set => ({
   getHomePage: async () => {
     try {
       const response = await QRUSHAPI.getHomePage();
-      set({ news: response.data });
+      set({ homePageData: response.data.results });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }

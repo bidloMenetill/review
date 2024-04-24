@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-// FIX ME: add section
 export const GalleryVideoSliderSectionGalleryPage = () => {
   const VideoSlides = [
     'https://www.youtube.com/embed/8t0vNu2fCCM',
@@ -28,7 +27,7 @@ export const GalleryVideoSliderSectionGalleryPage = () => {
             slidesPerView={3}
             initialSlide={0}
             centeredSlides={true}
-            navigation={false}
+            navigation={true}
           >
             <div className=' flex '>
               {VideoSlides.map((link, index) => (
