@@ -9,7 +9,7 @@ export const SoundRecordingSection = () => {
     getSoundRecordingStudioPage();
   }, []);
   return (
-    <section className='relative w-full font-montserrat mb-[20px] md:mb-[164px] h-[480px] sm:h-[680] tablet:h-[800px] bg-[#0000008a] xl:flex xl:justify-end lg:h-[1300px] lg:flex lg:justify-end'>
+    <section className='relative w-full font-montserrat mb-[20px] md:mb-[164px] h-[520px] sm:h-[600px] tablet:h-[800px] bg-[#0000008a] xl:flex xl:justify-end lg:h-[1300px] lg:flex lg:justify-end'>
       <div className='bg-[#0000008a]'>
         <img
           className='object-cover w-full h-full mx-auto mb-[50px] absolute z-[-1] right-[0px] mt-[0px]'
@@ -17,19 +17,20 @@ export const SoundRecordingSection = () => {
           alt='studioRecording'
         />
       </div>
-      <div className='mx-[20px] py-[50px] sm:w-[700px] text-[#fff] sm:py-[50px] sm:mx-[50px] tablet:py-[10px] xl:absolute xl:left-[100px] xl:z-[2] xl:top-[175px] lg:absolute lg:left-[100px] lg:top-[175px] lg:z-10'>
-        <h3 className='w-[100px] md:w-full text-[32px] tablet:text-[60px] lg:text-[80px] tablet:w-[835px] font-[500] mb-[24px]'>
+      <div className='mx-[20px] pt-[140px] sm:w-[700px] text-[#fff] sm:pt-[145px] sm:mx-[50px] tablet:top-[0px] absolute lg:left-[100px] lg:top-[200px] lg:z-10'>
+        <h3 className='w-[100px] md:w-full text-[32px] tablet:text-[60px] lg:text-[80px] tablet:w-[300px] lg:w-full font-[500] mb-[24px]'>
           <p>{soundRecordingData.service_name}</p>
         </h3>
-        {soundRecordingData.description?.map(el => (
-          <ul key={el.id}>
-            <li>
-              <p className='text-[14px] md:text-[20px] w-[330px] md:w-[450px] tablet:text-[30px] tablet:w-full font-[400] text-[#FFFFFF] md:text-[#B4B4B4] mb-[10px] md:mb-[12px] tablet:mb-[24px] lg:w-full'>
-                {el.desc}
-              </p>
-            </li>
-          </ul>
-        ))}
+        {soundRecordingData.description &&
+          soundRecordingData.description?.map(el => (
+            <ul key={el.id}>
+              <li>
+                <p className='text-[14px] md:text-[20px] w-[330px] md:w-[450px] tablet:text-[30px] tablet:w-full font-[400] text-[#FFFFFF] md:text-[#B4B4B4] mb-[10px] md:mb-[12px] tablet:mb-[24px] lg:w-full'>
+                  {el.desc}
+                </p>
+              </li>
+            </ul>
+          ))}
         <div className='w-full text-center mt-[20px]'>
           <Button variant='serviceButton'>Отправить</Button>
         </div>
