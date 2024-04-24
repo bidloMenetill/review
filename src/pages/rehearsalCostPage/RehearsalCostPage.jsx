@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  RehearsalCostFirstSection,
-  RehearsalSwiperSection,
-} from '../../widgets';
+import { RehearsalCostFirstSection } from '../../widgets';
 import { Advertising } from '../../shared';
 import { useZustandStore } from '../../app/store/store';
 
