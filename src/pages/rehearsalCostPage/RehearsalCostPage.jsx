@@ -15,8 +15,7 @@ export const RehearsalCostPage = () => {
     <>
       {rehearsalBaseData?.map(item => (
         <div key={item.id}>
-          <RehearsalSwiperSection title={item.service_name} />
-          <RehearsalCostFirstSection item={item.description} />
+          <RehearsalCostFirstSection item={item} />
         </div>
       ))}
 

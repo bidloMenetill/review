@@ -39,22 +39,23 @@ export const RehearsalSectionItem = ({ item, length }) => {
           {item.list_tech}
         </h3>
         <section className='sm:w-[95%] xl:w-[1570px] tablet:mx-auto tablet:grid tablet:grid-cols-3 tablet:gap-x-[70px] lg:gap-x-[200px]'>
-          {arrayEquipment?.map(item => (
-            <ul
-              key={item.id}
-              className='text-[18px] text-left text-[#B4B4B4] sm:text-[25px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
-            >
-              <li>
-                <p className='mb-[16px] mt-[16px] text-[#E2DED3]'>
-                  {item.tech_name}
-                </p>
-              </li>
-              <CardRehearsalSection
-                item={item.description}
-                openList={openList}
-              />
-            </ul>
-          ))}
+          {arrayEquipment &&
+            arrayEquipment?.map(item => (
+              <ul
+                key={item.id}
+                className='text-[18px] text-left text-[#B4B4B4] sm:text-[25px] xl:text-[25px] lg:text-[23px] tablet:text-[20px]'
+              >
+                <li>
+                  <p className='mb-[16px] mt-[16px] text-[#E2DED3]'>
+                    {item.tech_name}
+                  </p>
+                </li>
+                <CardRehearsalSection
+                  item={item.description}
+                  openList={openList}
+                />
+              </ul>
+            ))}
         </section>
         <p
           className='tablet:hidden underline text-[#F93822] text-[24px] md:text-[28px] underline-offset-4 mb-[20px] mt-[20px] text-left'
