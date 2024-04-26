@@ -24,8 +24,10 @@ export const AboutUsSectionHomePage = () => {
             Не жди следующего понедельника, бронируй время в студии уже сейчас!
           </h3>
           <a
+            target='_blank'
             href='https://api.whatsapp.com/send/?phone=996700763736&text&type=phone_number&app_absent=0'
             className='font-[Montserrat] lg:mt-0 text-[#F93822] text-[13px] sm:text-[30px] not-italic font-medium leading-[normal] [text-decoration-line:underline] hover:text-[#F5F5F5]'
+            rel='noreferrer'
           >
             Звонки/WhatsApp +996 700 76 37 36
           </a>
