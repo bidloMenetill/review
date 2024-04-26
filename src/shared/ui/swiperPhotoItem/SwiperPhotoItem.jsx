@@ -1,6 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import './styleSwiper/swiper.css';
 import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 export const SwiperPhotoItem = ({ arrayImg }) => {
@@ -9,11 +12,11 @@ export const SwiperPhotoItem = ({ arrayImg }) => {
   const baseUrlImg = import.meta.env.VITE_IMG_URL;
   return (
     <Swiper
-      modules={{ Navigation }}
-      navigation={true}
       slidesPerView={mobileScreen ? 1.1 : tabletScreen ? 2.3 : 3.1}
+      navigation={true}
       loop={true}
       pagination={{ clickable: true }}
+      modules={[Navigation]}
       className='mySwiper'
     >
       <section className='flex justify-center text-white'>

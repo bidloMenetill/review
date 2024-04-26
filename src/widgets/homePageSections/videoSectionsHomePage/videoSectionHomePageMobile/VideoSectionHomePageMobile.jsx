@@ -1,6 +1,7 @@
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigate } from 'react-router-dom';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import ViewAllLink from '../../../../shared/ui/viewAllLink/ViewAllLink';
 
 export const VideoSectionHomePageMobile = () => {
@@ -43,6 +44,8 @@ export const VideoSectionHomePageMobile = () => {
           initialSlide={1.4}
           slidesPerView={1.5}
           speed={400}
+          navigation={true}
+          modules={[Navigation]}
         >
           <ul className='max-w-[245px]'>
             {srcArr?.map((item, index) => (

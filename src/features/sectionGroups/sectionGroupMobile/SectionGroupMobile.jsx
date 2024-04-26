@@ -53,7 +53,7 @@ export const SectionGroupMobile = props => {
               <CardSectionGroupMobile item={item} />
             </Link>
           ))}
-        </ul>{' '}
+        </ul>
         <Link
           to='services'
           className='flex justify-center mt-[20px] sm:mt-[100px]'

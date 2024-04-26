@@ -6,7 +6,7 @@ export const CardSectionGroupMobile = ({ item }) => {
           src={item.img}
           alt={`employer`}
           className={
-            'border-[0.5px] border-[solid] border-[#E2DED3] rounded-2xl w-full h-[180px] sm:h-[360px]'
+            'border-[0.5px] border-[solid] object-cover border-[#E2DED3] rounded-2xl w-full h-[180px] sm:h-[360px]'
           }
         />
         <h6 className='font-bold text-[20px] sm:text-[40px] leading-normal absolute  top-1/1 right-1/1  text-center  text-[#fff]'>

@@ -1,6 +1,7 @@
 import 'swiper/css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import firstCardBg from '../../../shared/img/first_news_bg.png';
 import secondCardBg from '../../../shared/img/second_news_bg.jpg';
 import thirdCardBg from '../../../shared/img/third_news_bg.jpg';
@@ -17,10 +18,11 @@ export const GallerySecondSectionGalleryPage = () => {
     <section className='bg-center max-w-full'>
       <section className='max-w-full xl:container items-center mx-auto mt-[100px]'>
         <Swiper
-          className=' gap-x-3'
+          className='gap-x-3'
           spaceBetween={15}
           slidesPerView={2}
-          navigation={false}
+          navigation={true}
+          modules={[Navigation]}
         >
           <div className='mt-[65px] flex gap-x-3'>
             {SliderImage.map((image, index) => (
