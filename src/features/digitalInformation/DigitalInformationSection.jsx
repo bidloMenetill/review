@@ -41,8 +41,8 @@ export const DigitalInformationSection = () => {
         <h4 className='text-[#F5F5F5] font-[Montserrat] text-[26px] sm:text-[50px] not-italic font-medium leading-[normal]'>
           За все время
         </h4>
-        <section className='flex flex-wrap justify-between sm:justify-between sm:flex-wrap gap-x-[30px] xl:gap-x-[110px] lg:gap-x-[70px]  items-center   mt-[25px] sm:mt-[60px]'>
-          <div className='inline-flex flex-col'>
+        <section className='flex flex-wrap justify-between sm:justify-between gap-x-[10px] xl:gap-x-[110px] lg:gap-x-[70px] tablet:gap-x-[50px] md:gap-x-[90px] items-center mt-[25px] sm:mt-[60px]'>
+          <div className='inline-flex flex-col w-[50%] sm:w-auto'>
             <CountUp
               duration={2.5}
               delay={0}
@@ -55,13 +55,13 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] text-[20px] sm:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-[20px] sm:text-[60px] md:text-[80px] inline-block text-center xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
                 >
                   1500
                 </h5>
               )}
             </CountUp>
-            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[23px]  xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
+            <p className='text-center text-[#F5F5F5] font-[Montserrat] text-[12px] sm:text-[18px] md:text-[23px] xl:[27px] lg:text-[25px] mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
               Записей проведено
             </p>
           </div>
@@ -78,13 +78,13 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] text-[20px] sm:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-[20px] sm:text-[60px] md:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
                 >
                   3000
                 </h5>
               )}
             </CountUp>
-            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[23px]  xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
+            <p className='text-center text-[#F5F5F5] font-[Montserrat] text-[12px] sm:text-[18px]  md:text-[23px] xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
               Репетиций проведено
             </p>
           </div>
@@ -101,14 +101,14 @@ export const DigitalInformationSection = () => {
               {({ countUpRef }) => (
                 <h5
                   ref={countUpRef}
-                  className='font-[Montserrat] text-[20px] sm:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
+                  className='font-[Montserrat] text-[20px] sm:text-[60px] md:text-[80px] inline-block  text-center  xl:text-[88px] lg:text-[85px] not-italic font-semibold leading-5 xl:leading-[50px]  text-[#F93822]'
                 >
                   1000
                 </h5>
               )}
             </CountUp>
 
-            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[23px]  xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
+            <p className='text-center text-[#F5F5F5]   font-[Montserrat] text-[12px] sm:text-[18px]  md:text-[23px] xl:[27px] lg:text-[25px]   mt-0 sm:mt-[30px] not-italic font-medium leading-5 sm:leading-[34px]'>
               Уроков проведено
             </p>
           </div>

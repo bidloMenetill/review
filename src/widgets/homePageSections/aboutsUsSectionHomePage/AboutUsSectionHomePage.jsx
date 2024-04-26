@@ -10,9 +10,9 @@ export const AboutUsSectionHomePage = () => {
       <section className='px-4 sm:px-10 max-w-full tablet:max-w-[92%] xl:container mx-auto flex justify-center items-center '>
         <div className='flex flex-col items-center pt-[5%] sm:pt-[100px]'>
           <h3 className='font-[Montserrat] text-[#F5F5F5]  max-w-[341px]   sm:max-w-[1176px] lg:max-w-[1356px] text-center  text-[12px] sm:text-[30px] not-italic font-medium leading-[normal]'>
-            <span className='text-[#F93822] sm:text-[#F5F5F5]'>
+            <span className='text-[#F93822] sm:text-[#F5F5F5] mr-[10px]'>
               Q-Rush Studio
-            </span>{' '}
+            </span>
             музыкальная студия в центре Бишкека, была основана в 2016 году. Это
             уникальное место, где каждый может воплотить свои творческие идеи в
             жизнь. Сейчас у нас 3 основных направления: звукозапись,
@@ -23,9 +23,12 @@ export const AboutUsSectionHomePage = () => {
           <h3 className='font-[Montserrat] text-[#F5F5F5]   text-center px-[14px] pt-[19px] sm:pt-[30px] text-[13px] sm:text-[30px] not-italic font-medium leading-[normal]'>
             Не жди следующего понедельника, бронируй время в студии уже сейчас!
           </h3>
-          <h3 className='font-[Montserrat] lg:mt-0 text-[#F93822] text-[13px] sm:text-[30px] not-italic font-medium leading-[normal] [text-decoration-line:underline]'>
+          <a
+            href='https://api.whatsapp.com/send/?phone=996700763736&text&type=phone_number&app_absent=0'
+            className='font-[Montserrat] lg:mt-0 text-[#F93822] text-[13px] sm:text-[30px] not-italic font-medium leading-[normal] [text-decoration-line:underline] hover:text-[#F5F5F5]'
+          >
             Звонки/WhatsApp +996 700 76 37 36
-          </h3>
+          </a>
         </div>
       </section>
       <DigitalInformationSection />
