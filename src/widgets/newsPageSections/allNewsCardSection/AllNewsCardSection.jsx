@@ -7,7 +7,6 @@ export const AllNewsCardSection = () => {
   useEffect(() => {
     getNewsPage();
   }, []);
-  const baseUrlImg = import.meta.env.VITE_IMG_URL;
   return (
     <section className='w-[90%] xl:w-[1720px] mx-auto text-[#fff] font-montserrat'>
       <div className='w-full my-[90px] pt-[150px] sm:pt-[156px] tablet:pt-[190px]'>
@@ -20,7 +19,8 @@ export const AllNewsCardSection = () => {
           newsData?.map(el => (
             <div className='mb-[80px]' key={el.id}>
               <NewsCard
-                img={`${baseUrlImg}${el.image}`}
+                key={el.id}
+                img={el.image}
                 title={el.title}
                 description={el.description}
                 warning={el.warning}

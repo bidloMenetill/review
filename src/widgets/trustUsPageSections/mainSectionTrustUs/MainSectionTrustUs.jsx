@@ -2,11 +2,12 @@ import { useEffect } from 'react';
 import { useZustandStore } from '../../../app/store/store';
 
 export const MainSectionTrustUs = () => {
-  const { getTrustUsMainSection, trustUs } = useZustandStore();
+  const { getPages, trustUs } = useZustandStore();
 
   useEffect(() => {
-    getTrustUsMainSection();
+    getPages();
   }, []);
+  console.log(trustUs);
   return (
     <section className='bg-cover bg-no-repeat bg-center h-[145px] sm:h-[] md:h-[185px] tablet:h-[235px] lg:h-[300px] xl:h-[355px]'>
       <div className='max-w-[90%]  mx-auto xl:container text-[#e2ded3] font-montserrat'>

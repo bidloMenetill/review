@@ -7,6 +7,7 @@ export const useZustandStore = create(set => ({
   soundRecordingData: [],
   newsData: [],
   trustUs: [],
+  shopBg: [],
   celebrities: [],
   adverts1: [],
   adverts2: [],
@@ -18,7 +19,7 @@ export const useZustandStore = create(set => ({
   getHomePage: async () => {
     try {
       const response = await QRUSHAPI.getHomePage();
-      set({ homePageData: response.data.results });
+      set({ homePageData: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -26,7 +27,7 @@ export const useZustandStore = create(set => ({
   getFaqPage: async () => {
     try {
       const response = await QRUSHAPI.getFaqPage();
-      set({ faqData: response.data.results });
+      set({ faqData: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -34,7 +35,7 @@ export const useZustandStore = create(set => ({
   getMusicCourcePage: async () => {
     try {
       const response = await QRUSHAPI.getMusicCourcePage();
-      set({ musicCourceData: response.data.results });
+      set({ musicCourceData: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -42,7 +43,7 @@ export const useZustandStore = create(set => ({
   getSoundRecordingStudioPage: async () => {
     try {
       const response = await QRUSHAPI.getSoundRecordingPage();
-      set({ soundRecordingData: response.data.results[0] });
+      set({ soundRecordingData: response.data[0] });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -50,15 +51,16 @@ export const useZustandStore = create(set => ({
   getNewsPage: async () => {
     try {
       const response = await QRUSHAPI.getNewsPage();
-      set({ newsData: response.data.results });
+      set({ newsData: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
   },
-  getTrustUsMainSection: async () => {
+  getPages: async () => {
     try {
-      const response = await QRUSHAPI.getTrustUsMainSection();
-      set({ trustUs: response.data.results[0] });
+      const response = await QRUSHAPI.getPages();
+      set({ trustUs: response.data[4] });
+      set({ shopBg: response.data[6] });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -66,7 +68,7 @@ export const useZustandStore = create(set => ({
   getTrustUsCelebrities: async () => {
     try {
       const response = await QRUSHAPI.getTrustUsCelebrities();
-      set({ celebrities: response.data.results });
+      set({ celebrities: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -74,8 +76,8 @@ export const useZustandStore = create(set => ({
   getAdverts: async () => {
     try {
       const response = await QRUSHAPI.getAdverts();
-      set({ adverts1: response.data.results[0] });
-      set({ adverts2: response.data.results[1] });
+      set({ adverts1: response.data[0] });
+      set({ adverts2: response.data[1] });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -83,7 +85,7 @@ export const useZustandStore = create(set => ({
   getShopCards: async () => {
     try {
       const response = await QRUSHAPI.getShopCards();
-      set({ shopCards: response.data.results });
+      set({ shopCards: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -91,7 +93,7 @@ export const useZustandStore = create(set => ({
   getRehearsalFirstBasePage: async () => {
     try {
       const response = await QRUSHAPI.getRehearsalFirstBasePage();
-      set({ rehearsalBaseData: response.data.results });
+      set({ rehearsalBaseData: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -100,7 +102,7 @@ export const useZustandStore = create(set => ({
     try {
       const response = await QRUSHAPI.getAboutUsArtist();
       console.log(response);
-      set({ aboutUsArtist: response.data.results });
+      set({ aboutUsArtist: response.data });
     } catch (error) {
       console.error('Ошибка при получении артистов', error);
     }
@@ -109,7 +111,7 @@ export const useZustandStore = create(set => ({
     try {
       const response = await QRUSHAPI.getAboutUsTeam();
       console.log(response);
-      set({ aboutUsTeam: response.data.results });
+      set({ aboutUsTeam: response.data });
     } catch (error) {
       console.error('Ошибка при получении текстов', error);
     }
