@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://209.38.228.54/ru/api/',
+  baseURL: 'http://13.48.44.67/api/',
 });
 
 export const QRUSHAPI = {
@@ -23,8 +23,8 @@ export const QRUSHAPI = {
   getSoundRecordingPage() {
     return instance.get('v2/srs/sound_recording_studio/');
   },
-  getTrustUsMainSection() {
-    return instance.get('v1/pages/trust_us/');
+  getPages() {
+    return instance.get('v1/pages/pages');
   },
   getTrustUsCelebrities() {
     return instance.get('v1/content/trust_us/');
