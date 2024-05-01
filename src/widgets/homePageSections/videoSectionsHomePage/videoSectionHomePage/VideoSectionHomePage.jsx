@@ -11,7 +11,7 @@ export const VideoSectionHomePage = () => {
             Видео
           </h2>
           <div className='flex justify-end mb-0 sm:mb-[40px]'>
-            <ViewAllLink linkAddress={'news'} />
+            <ViewAllLink linkAddress={'gallery'} />
           </div>
         </div>
         <section className='grid grid-rows-[48%_50%] grid-cols-4 gap-2 sm:gap-5'>

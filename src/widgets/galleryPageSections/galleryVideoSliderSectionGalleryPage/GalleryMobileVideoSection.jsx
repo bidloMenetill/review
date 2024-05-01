@@ -17,7 +17,7 @@ export const GalleryMobileVideoSection = () => {
             className='rounded-[30px] flex items-center justify-center border-[2px] border-solid border-gray-500  md:w-[100%] sm:w-[100%] w-[100%] h-[180px] '
             src={link}
             title='YouTube video player'
-            frameborder='0'
+            frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             // allowfullscreen
           ></iframe>
