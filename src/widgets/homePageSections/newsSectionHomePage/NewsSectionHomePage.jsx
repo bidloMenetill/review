@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import bgNews from '../../../shared/img/main_page_bg.jpg';
 import firstCardBg from '../../../shared/img/first_news_bg.png';
 import secondCardBg from '../../../shared/img/second_news_bg.jpg';
 import thirdCardBg from '../../../shared/img/third_news_bg.jpg';
@@ -49,7 +48,7 @@ export const NewsSectionHomePage = () => {
   return (
     <section
       className='bg-cover bg-no-repeat w-full h-[269px] sm:h-[700px] xl:h-[907px] lg:h-[800px]  bg-center '
-      style={{ backgroundImage: `url(${bgNews})` }}
+      // style={{ backgroundImage: `url(${bgNews})` }}
     >
       <div className='mx-auto px-4  sm:px-10 tablet:px-0 tablet:max-w-[90%] xl:container pt-[38px]  sm:pt-[100px] pb-[66px]'>
         <div className='mb-[17px]  flex sm:block justify-between sm:justify-normal'>

@@ -2,15 +2,14 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 import { useState } from 'react';
-import axios from 'axios';
+
 import logo from '../../shared/img/rush1.svg';
 import { Button, scrollToTop, useMediaQuery } from '../../shared';
-import { instance } from '../../shared/API/api/api';
 
 const locales = {
-  ru: { title: 'RU' },
-  en: { title: 'EN' },
-  kg: { title: 'KG' },
+  ru: { title: 'Ru' },
+  en: { title: 'En' },
+  kg: { title: 'Kg' },
 };
 export const Header = () => {
   const isMobileAndTablet = useMediaQuery('( max-width: 1026px)');
@@ -50,19 +49,6 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle7'),
     });
   }
-  const handleLanguageChange = locale => {
-    i18n.changeLanguage(locale);
-    axios.defaults.headers.common['Accept-Language'] = locale;
-
-    axios
-      .post(instance, { language: locale })
-      .then(response => {
-        console.log('Language updated successfully:', response.data);
-      })
-      .catch(error => {
-        console.error('Failed to update language:', error);
-      });
-  };
 
   return (
     <header
@@ -93,7 +79,7 @@ export const Header = () => {
                           i18n.resolvedLanguage === locale ? 'bold' : 'normal',
                       }}
                       type='submit'
-                      onClick={() => handleLanguageChange(locale)}
+                      onClick={() => i18n.changeLanguage(locale)}
                     >
                       {locales[locale].title}
                     </button>
@@ -147,7 +133,7 @@ export const Header = () => {
             </div>
           ) : (
             <>
-              <ul className='flex flex-row justify-around items-center text-gray-100 font-montserrat leading-normal xl:text-2xl xl:gap-8 lg:text-lg lg:gap-5 tablet:text-base tablet:gap-3 md:text-xs md:gap-2 sm:text-xs sm:gap-1'>
+              <ul className='flex flex-row justify-around text-nowrap items-center text-gray-100 font-montserrat leading-normal xl:text-2xl xl:gap-8 lg:text-lg lg:gap-5 tablet:text-base tablet:gap-3 md:text-xs md:gap-2 sm:text-xs sm:gap-1'>
                 {headerLinks.map((routes, index) => (
                   <li key={index}>
                     <Link onClick={scrollToTop} to={routes.route}>
