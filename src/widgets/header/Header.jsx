@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 import { useState } from 'react';
+import axios from 'axios';
 import logo from '../../shared/img/rush1.svg';
 import { Button, scrollToTop, useMediaQuery } from '../../shared';
+import { instance } from '../../shared/API/api/api';
 
 const locales = {
   ru: { title: 'RU' },
@@ -48,6 +50,20 @@ export const Header = () => {
       link: t('header.headerLink.linkTitle7'),
     });
   }
+  const handleLanguageChange = locale => {
+    i18n.changeLanguage(locale);
+    axios.defaults.headers.common['Accept-Language'] = locale;
+
+    axios
+      .post(instance, { language: locale })
+      .then(response => {
+        console.log('Language updated successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Failed to update language:', error);
+      });
+  };
+
   return (
     <header
       className={`${isOpen ? 'bg-black ' : 'bg-black/50 backdrop-opacity-10 backdrop-invert'} z-10  h-[100px]  w-full flex items-center justify-center  top-0 backdrop-blur-50 fixed `}
@@ -63,7 +79,7 @@ export const Header = () => {
           </Link>
           {isMobileAndTablet ? (
             <div className='flex flex-row items-center gap-[20px]'>
-              <ul className='uppercase flex gap-2 ml-4 text-gray-500 xl:text-lg text-sm lg:text-base'>
+              <ul className='uppercase text-nowrap flex gap-2 ml-4 text-gray-500 xl:text-lg text-sm lg:text-base'>
                 {Object.keys(locales).map(locale => (
                   <li key={locale}>
                     <button
@@ -77,7 +93,7 @@ export const Header = () => {
                           i18n.resolvedLanguage === locale ? 'bold' : 'normal',
                       }}
                       type='submit'
-                      onClick={() => i18n.changeLanguage(locale)}
+                      onClick={() => handleLanguageChange(locale)}
                     >
                       {locales[locale].title}
                     </button>

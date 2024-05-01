@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: 'http://209.38.228.54/ru/api/',
 });
 
