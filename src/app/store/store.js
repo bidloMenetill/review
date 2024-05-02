@@ -9,8 +9,7 @@ export const useZustandStore = create(set => ({
   trustUs: [],
   shopBg: [],
   celebrities: [],
-  adverts1: [],
-  adverts2: [],
+  adverts: [],
   shopCards: [],
   rehearsalBaseData: [],
   musicCourceData: [],
@@ -59,8 +58,8 @@ export const useZustandStore = create(set => ({
   getPages: async () => {
     try {
       const response = await QRUSHAPI.getPages();
-      set({ trustUs: response.data[4] });
-      set({ shopBg: response.data[6] });
+      set({ trustUs: response.data });
+      set({ shopBg: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
@@ -76,8 +75,7 @@ export const useZustandStore = create(set => ({
   getAdverts: async () => {
     try {
       const response = await QRUSHAPI.getAdverts();
-      set({ adverts1: response.data[0] });
-      set({ adverts2: response.data[1] });
+      set({ adverts: response.data });
     } catch (error) {
       console.error('Ошибка при получении страницы', error);
     }
