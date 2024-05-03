@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { Button } from '../button/Button';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -23,7 +24,7 @@ export const CardSectionGroup = ({ item }) => {
         {!item.description && (
           <Link to={item.href} onClick={scrollToTop}>
             <Button className='hidden sm:block' variant='orangeButton'>
-              Подробнее
+              {item.button}
             </Button>
           </Link>
         )}

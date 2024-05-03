@@ -41,4 +41,7 @@ export const QRUSHAPI = {
   getAboutUsTeam() {
     return instance.get('v1/pages/about_us/');
   },
+  getVideos() {
+    return instance.get('v1/content/video/');
+  },
 };

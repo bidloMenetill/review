@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import serviceBg from '../../../shared/img/servicesImg/About.png';
+import serviceBg from '../../../shared/img/bg_services_home_page.webp';
 import rectangl from '../../../shared/img/servicesImg/Rectangle_53.jpg';
-import rectangl2 from '../../../shared/img/third_studio_main_page.jpg';
-import rectangl3 from '../../../shared/img/first_studio_main_page.jpg';
+import rectangl2 from '../../../shared/img/third_studio_main_page.webp';
+import rectangl3 from '../../../shared/img/first_studio_main_page.webp';
 import { Button, scrollToTop } from '../../../shared';
 
 export const ServiceLinks = () => {

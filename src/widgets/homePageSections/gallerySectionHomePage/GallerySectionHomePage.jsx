@@ -7,16 +7,16 @@ import sixthGalleryImg from '../../../shared/img/sixth_gallery_home_page.png';
 
 import ViewAllLink from '../../../shared/ui/viewAllLink/ViewAllLink';
 
-export const GallerySectionHomePage = () => {
+export const GallerySectionHomePage = ({ title, button }) => {
   return (
     <section>
       <section className='max-w-[90%] xl:container mx-auto '>
         <div className='mb-[20px]  sm:mb-0 pt-[8%] flex sm:block justify-between sm:justify-normal'>
           <h2 className='text-[#F5F5F5] font-[Montserrat]  text-[20px] sm:text-[80px] lg:text-[100px] not-italic font-medium leading-[normal]'>
-            Галлерея
+            {title}
           </h2>
           <div className='flex justify-end mb-0 sm:mb-[40px]'>
-            <ViewAllLink linkAddress={'gallery'} />
+            <ViewAllLink text={button} linkAddress={'gallery'} />
           </div>
         </div>
         <section className='grid grid-rows-[40.14%_41.20%_40.14%] tablet:grid-rows-[33.14%_31.20%_33.14%]   grid-column gap-1 sm:gap-4'>

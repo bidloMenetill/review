@@ -19,6 +19,7 @@ export const AboutUsSectionHomePage = () => {
     getHomePage();
   }, []);
   const backgroundUrl = ImageURL + filteredData[0]?.background[0].background;
+
   return (
     <section
       className='bg-cover bg-no-repeat -mt-[9px] bg-center h-auto '

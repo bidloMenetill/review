@@ -16,6 +16,7 @@ export const useZustandStore = create(set => ({
   musicCourceData: [],
   aboutUsArtist: [],
   aboutUsTeam: [],
+  videos: [],
   getHomePage: async () => {
     try {
       const response = await QRUSHAPI.getHomePage();
@@ -114,6 +115,14 @@ export const useZustandStore = create(set => ({
       set({ aboutUsTeam: response.data });
     } catch (error) {
       console.error('Ошибка при получении текстов', error);
+    }
+  },
+  getVideos: async () => {
+    try {
+      const response = await QRUSHAPI.getVideos();
+      set({ videos: response.data });
+    } catch (error) {
+      console.error('Ошибка при получении видео', error);
     }
   },
 }));
