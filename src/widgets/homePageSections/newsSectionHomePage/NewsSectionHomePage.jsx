@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import firstCardBg from '../../../shared/img/first_news_bg.png';
@@ -60,7 +60,7 @@ export const NewsSectionHomePage = () => {
           </div>
         </div>
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Pagination]}
           pagination={{ clickable: true }}
           spaceBetween={isMobile ? 20 : 30}
           slidesPerView={1.6}
