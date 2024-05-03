@@ -38,9 +38,7 @@ export const QRUSHAPI = {
   getAboutUsArtist() {
     return instance.get('v1/content/team/');
   },
-  getAboutUsTeam() {
-    return instance.get('v1/pages/about_us/');
-  },
+
   getVideos() {
     return instance.get('v1/content/video/');
   },
