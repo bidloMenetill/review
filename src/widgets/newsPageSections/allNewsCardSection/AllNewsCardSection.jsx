@@ -4,6 +4,7 @@ import { useZustandStore } from '../../../app/store/store';
 
 export const AllNewsCardSection = () => {
   const { getNewsPage, newsData } = useZustandStore();
+  console.log(newsData);
   useEffect(() => {
     getNewsPage();
   }, []);
@@ -16,15 +17,15 @@ export const AllNewsCardSection = () => {
       </div>
       <div className='w-full tablet:grid tablet:grid-cols-2 tablet:gap-[20px]'>
         {newsData &&
-          newsData?.map(el => (
-            <div className='mb-[80px]' key={el.id}>
+          newsData?.map((element, index) => (
+            <div className='mb-[80px]' key={index}>
               <NewsCard
-                key={el.id}
-                img={el.image}
-                title={el.title}
-                description={el.description}
-                warning={el.warning}
-                date={el.created_et}
+                key={element.id}
+                img={element.image}
+                title={element.title}
+                description={element.description}
+                warning={element.warning}
+                date={element.created_et}
               />
             </div>
           ))}
